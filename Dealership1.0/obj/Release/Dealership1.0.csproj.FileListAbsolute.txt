@@ -1,0 +1,17 @@
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\Dealership1.0.exe.config
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Interop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\AxInterop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1.0.csproj.ResolveComReference.cache
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\Dealership1.0.exe
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\Dealership1.0.pdb
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\DielershipLibrary.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\DielershipLibrary.pdb
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\Interop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Release\AxInterop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1.0.csprojResolveAssemblyReference.cache
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1._0.ContractForm.resources
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1._0.DielershipUI.resources
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1._0.Properties.Resources.resources
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1.0.csproj.GenerateResource.Cache
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1.0.exe
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Release\Dealership1.0.pdb

@@ -1,0 +1,35 @@
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\Dealership1.0.exe.config
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\Dealership1.0.exe
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\Dealership1.0.pdb
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csprojResolveAssemblyReference.cache
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.Properties.Resources.resources
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csproj.GenerateResource.Cache
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.exe
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.pdb
+c:\users\krisi\documents\visual studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.resources
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\DielershipLibrary.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\DielershipLibrary.pdb
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csproj.ResolveComReference.cache
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.InfoForm.resources
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\Dealership1.0.exe.config
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\Dealership1.0.exe
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\Dealership1.0.pdb
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\DielershipLibrary.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\DielershipLibrary.pdb
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csprojResolveAssemblyReference.cache
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csproj.ResolveComReference.cache
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.resources
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.FullInfoForm.resources
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.InfoForm.resources
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1._0.Properties.Resources.resources
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csproj.GenerateResource.Cache
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.exe
+C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.pdb
