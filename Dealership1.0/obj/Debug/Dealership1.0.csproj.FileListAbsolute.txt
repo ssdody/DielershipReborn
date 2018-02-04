@@ -33,3 +33,9 @@ C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1
 C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.csproj.GenerateResource.Cache
 C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.exe
 C:\Users\krisi\Desktop\gittest\Dealership1.0\Dealership1.0\obj\Debug\Dealership1.0.pdb
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\Dealership1.0.exe.config
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Interop.AcroPDFLib.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\AxInterop.AcroPDFLib.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.csproj.ResolveComReference.cache
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.exe
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.pdb
