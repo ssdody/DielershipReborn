@@ -39,3 +39,15 @@ D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\AxInterop.AcroPDFLi
 D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.csproj.ResolveComReference.cache
 D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.exe
 D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.pdb
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.csprojResolveAssemblyReference.cache
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.FullInfoForm.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.InfoForm.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.Properties.Resources.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1.0.csproj.GenerateResource.Cache
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\Dealership1.0.exe
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\Dealership1.0.pdb
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\DielershipLibrary.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\DielershipLibrary.pdb
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\Interop.AcroPDFLib.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\AxInterop.AcroPDFLib.dll

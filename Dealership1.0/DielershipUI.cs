@@ -41,7 +41,7 @@
             carsListBox.DisplayMember = "Display";
             carsListBox.ValueMember = "Display";
 
-
+            HidablePricePanel.Visible = false;
             //MenuStrip menuStrip = new MenuStrip();
         }
         //// setupData empty
@@ -683,7 +683,16 @@
             //UpdateCarData((Car)carsListBox.SelectedItem);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void StatusRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (carsListBox.SelectedItem == null)
+            {
+                MessageBox.Show("Не е избран автомобил!", "Промяна", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                
+            }
+        }
+
+        private void HidePricePanelButton_Click(object sender, EventArgs e)
         {
             if (HidablePricePanel.Visible == true)
             {
@@ -695,51 +704,81 @@
             }
         }
 
-        private void StatusRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void UploadButton_Click(object sender, EventArgs e) // OK! 05.02.18
         {
-            if (carsListBox.SelectedItem == null)
-            {
-                MessageBox.Show("Не е избран автомобил!", "Промяна", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-            }
-        }
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
             if (carsListBox.SelectedItem == null)
             {
-                MessageBox.Show("Снимки", "Избери кола от списъка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Избери автомобил от списъка!", "Upload", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
             }
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            using (OpenFileDialog ofd = new OpenFileDialog())
             {
-                
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                DialogResult dialogResult = openFileDialog.ShowDialog();
-                pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
-                Image imagee = Image.FromFile(openFileDialog.FileName);
-                //imagee.Save(@"..\car");
+                ofd.ShowDialog();
 
-                Car currentCar = (Car)carsListBox.SelectedItem;
-                imagee.Tag = currentCar.ContractNumber;
-                if (!Directory.Exists($"..\\Images\\{imagee.Tag}"))
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    Directory.CreateDirectory($"..\\Images\\{imagee.Tag}");
-                    
-                }
-                if (File.Exists($"..\\Images\\{imagee.Tag}\\{imagee.Tag}.jpeg"))
-                {
-                    imagee.Tag = imagee.Tag + "1";
-                }
-                pictureBox1.Image.Save($"..\\Images\\{imagee.Tag}\\{imagee.Tag}.jpeg", ImageFormat.Jpeg); // throw exception here ! todo !
 
-                
-                pictureBox1.Dispose();
-                imagee.Dispose();
-                pictureBox1.Image.Dispose();
+                    string fileName = ofd.FileName;
+                    Image imageFromFile = Image.FromFile(fileName);
+                    pictureBox1.Image = imageFromFile;
+
+                }
+                else
+                {
+                    return;
+                }
 
 
             }
+            
 
+
+        }
+
+        private void SaveImageButton_Click(object sender, EventArgs e) // OK! 05.02.18
+        {
+            Car currCar = (Car)carsListBox.SelectedItem;
+            if (pictureBox1.Image != null && currCar != null)
+            {
+
+                int carNumber = currCar.ContractNumber;
+                if (Directory.Exists($"..\\Images\\{carNumber}"))
+                {
+
+                    string fileName = carNumber.ToString();
+                    if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
+                    {
+                        System.IO.File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
+                    }
+                    
+
+                    pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + ".jpeg", ImageFormat.Jpeg);
+                    
+
+                    //pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}.jpeg", ImageFormat.Jpeg);
+
+                }
+                else
+                {
+                    Directory.CreateDirectory($"..\\Images\\{currCar.ContractNumber}");
+
+                    string fileName = carNumber.ToString() + "1";
+                    while (File.Exists($"{carNumber}" + "1"))
+                    {
+                        fileName += "1";
+                    }
+                    pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "1" + ".jpeg", ImageFormat.Jpeg);
+
+
+                    //pictureBox1.Image.Save($"..\\Images\\{carNumber}.jpeg", ImageFormat.Jpeg);
+                }
+                pictureBox1.Image = null;
+
+
+            }
         }
     }
 }
+

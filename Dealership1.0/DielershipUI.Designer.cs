@@ -76,6 +76,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.ExtrasCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.HidePricePanelButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.OwnerByVoucherLabel = new System.Windows.Forms.Label();
+            this.OwnerByVoucherTextbox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -83,38 +88,34 @@
             this.StatusInfoComboBox = new System.Windows.Forms.ComboBox();
             this.ContractNumberInfoLabel = new System.Windows.Forms.Label();
             this.DateOfImportInfoLabel = new System.Windows.Forms.Label();
-            this.OwnerByVoucherLabel = new System.Windows.Forms.Label();
             this.HidablePricePanel = new System.Windows.Forms.Panel();
-            this.OwnerByVoucherTextbox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.SellingPriceTextbox = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.PercendDDSTextbox = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.HidePricePanelButton = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PercendDDSTextbox = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.SellingPriceTextbox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.soldButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UploadButton = new System.Windows.Forms.Button();
+            this.SaveImageButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TireGripSizeUpDown)).BeginInit();
             this.panel1.SuspendLayout();
@@ -866,6 +867,64 @@
             this.panel1.Size = new System.Drawing.Size(1362, 40);
             this.panel1.TabIndex = 134;
             // 
+            // HidePricePanelButton
+            // 
+            this.HidePricePanelButton.BackColor = System.Drawing.Color.Transparent;
+            this.HidePricePanelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.HidePricePanelButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.HidePricePanelButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.HidePricePanelButton.Image = global::Dealership1._0.Properties.Resources.icons8_ninja_turtle_24;
+            this.HidePricePanelButton.Location = new System.Drawing.Point(1317, 1);
+            this.HidePricePanelButton.Name = "HidePricePanelButton";
+            this.HidePricePanelButton.Size = new System.Drawing.Size(40, 36);
+            this.HidePricePanelButton.TabIndex = 29;
+            this.HidePricePanelButton.UseVisualStyleBackColor = false;
+            this.HidePricePanelButton.Click += new System.EventHandler(this.HidePricePanelButton_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(1111, 6);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(148, 27);
+            this.textBox1.TabIndex = 138;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label13.Location = new System.Drawing.Point(1000, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 21);
+            this.label13.TabIndex = 137;
+            this.label13.Text = "Собственик";
+            // 
+            // OwnerByVoucherLabel
+            // 
+            this.OwnerByVoucherLabel.AutoSize = true;
+            this.OwnerByVoucherLabel.BackColor = System.Drawing.Color.Transparent;
+            this.OwnerByVoucherLabel.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.OwnerByVoucherLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.OwnerByVoucherLabel.Location = new System.Drawing.Point(669, 10);
+            this.OwnerByVoucherLabel.Name = "OwnerByVoucherLabel";
+            this.OwnerByVoucherLabel.Size = new System.Drawing.Size(179, 21);
+            this.OwnerByVoucherLabel.TabIndex = 136;
+            this.OwnerByVoucherLabel.Text = "Собственик по талон";
+            // 
+            // OwnerByVoucherTextbox
+            // 
+            this.OwnerByVoucherTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OwnerByVoucherTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.OwnerByVoucherTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.OwnerByVoucherTextbox.Location = new System.Drawing.Point(847, 6);
+            this.OwnerByVoucherTextbox.Name = "OwnerByVoucherTextbox";
+            this.OwnerByVoucherTextbox.Size = new System.Drawing.Size(148, 27);
+            this.OwnerByVoucherTextbox.TabIndex = 137;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -946,18 +1005,6 @@
             this.DateOfImportInfoLabel.TabIndex = 1;
             this.DateOfImportInfoLabel.Text = "             ";
             // 
-            // OwnerByVoucherLabel
-            // 
-            this.OwnerByVoucherLabel.AutoSize = true;
-            this.OwnerByVoucherLabel.BackColor = System.Drawing.Color.Transparent;
-            this.OwnerByVoucherLabel.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.OwnerByVoucherLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.OwnerByVoucherLabel.Location = new System.Drawing.Point(669, 10);
-            this.OwnerByVoucherLabel.Name = "OwnerByVoucherLabel";
-            this.OwnerByVoucherLabel.Size = new System.Drawing.Size(179, 21);
-            this.OwnerByVoucherLabel.TabIndex = 136;
-            this.OwnerByVoucherLabel.Text = "Собственик по талон";
-            // 
             // HidablePricePanel
             // 
             this.HidablePricePanel.Controls.Add(this.textBox7);
@@ -985,205 +1032,6 @@
             this.HidablePricePanel.Name = "HidablePricePanel";
             this.HidablePricePanel.Size = new System.Drawing.Size(1362, 96);
             this.HidablePricePanel.TabIndex = 137;
-            // 
-            // OwnerByVoucherTextbox
-            // 
-            this.OwnerByVoucherTextbox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.OwnerByVoucherTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.OwnerByVoucherTextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.OwnerByVoucherTextbox.Location = new System.Drawing.Point(847, 6);
-            this.OwnerByVoucherTextbox.Name = "OwnerByVoucherTextbox";
-            this.OwnerByVoucherTextbox.Size = new System.Drawing.Size(148, 27);
-            this.OwnerByVoucherTextbox.TabIndex = 137;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label13.Location = new System.Drawing.Point(1000, 11);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 21);
-            this.label13.TabIndex = 137;
-            this.label13.Text = "Собственик";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(1111, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 27);
-            this.textBox1.TabIndex = 138;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 13);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(139, 21);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Продажна цена";
-            // 
-            // SellingPriceTextbox
-            // 
-            this.SellingPriceTextbox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.SellingPriceTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.SellingPriceTextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.SellingPriceTextbox.Location = new System.Drawing.Point(148, 9);
-            this.SellingPriceTextbox.Name = "SellingPriceTextbox";
-            this.SellingPriceTextbox.Size = new System.Drawing.Size(104, 27);
-            this.SellingPriceTextbox.TabIndex = 10;
-            this.SellingPriceTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(254, 13);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 21);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "с ДДС";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(252, 52);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 21);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "20% ДДС";
-            // 
-            // PercendDDSTextbox
-            // 
-            this.PercendDDSTextbox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.PercendDDSTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.PercendDDSTextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.PercendDDSTextbox.Location = new System.Drawing.Point(148, 49);
-            this.PercendDDSTextbox.Name = "PercendDDSTextbox";
-            this.PercendDDSTextbox.Size = new System.Drawing.Size(104, 27);
-            this.PercendDDSTextbox.TabIndex = 13;
-            this.PercendDDSTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(560, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 27);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(367, 46);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(104, 27);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(477, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 21);
-            this.label18.TabIndex = 16;
-            this.label18.Text = "Фактура";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(392, 22);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 21);
-            this.label19.TabIndex = 17;
-            this.label19.Text = "Мин.";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(572, 22);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(58, 21);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "Макс.";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(719, 64);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 21);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "Козметика";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(719, 11);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 21);
-            this.label22.TabIndex = 20;
-            this.label22.Text = "Гориво";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(719, 38);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(68, 21);
-            this.label23.TabIndex = 19;
-            this.label23.Text = "Сервиз";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(811, 61);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(104, 27);
-            this.textBox4.TabIndex = 22;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(811, 34);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(104, 27);
-            this.textBox5.TabIndex = 23;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(811, 7);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(104, 27);
-            this.textBox6.TabIndex = 24;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox7
             // 
@@ -1227,18 +1075,172 @@
             this.label25.TabIndex = 25;
             this.label25.Text = "Комисионна";
             // 
-            // HidePricePanelButton
+            // textBox6
             // 
-            this.HidePricePanelButton.BackColor = System.Drawing.Color.Transparent;
-            this.HidePricePanelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.HidePricePanelButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.HidePricePanelButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.HidePricePanelButton.Location = new System.Drawing.Point(1317, 1);
-            this.HidePricePanelButton.Name = "HidePricePanelButton";
-            this.HidePricePanelButton.Size = new System.Drawing.Size(40, 36);
-            this.HidePricePanelButton.TabIndex = 29;
-            this.HidePricePanelButton.UseVisualStyleBackColor = false;
-            this.HidePricePanelButton.Click += new System.EventHandler(this.button1_Click);
+            this.textBox6.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox6.Location = new System.Drawing.Point(811, 7);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(104, 27);
+            this.textBox6.TabIndex = 24;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox5.Location = new System.Drawing.Point(811, 34);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(104, 27);
+            this.textBox5.TabIndex = 23;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox4.Location = new System.Drawing.Point(811, 61);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(104, 27);
+            this.textBox4.TabIndex = 22;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(719, 64);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(95, 21);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "Козметика";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(719, 11);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(65, 21);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "Гориво";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(719, 38);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(68, 21);
+            this.label23.TabIndex = 19;
+            this.label23.Text = "Сервиз";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(572, 22);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(58, 21);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "Макс.";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(392, 22);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(49, 21);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "Мин.";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(477, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(79, 21);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "Фактура";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Location = new System.Drawing.Point(560, 46);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(104, 27);
+            this.textBox2.TabIndex = 15;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox3.Location = new System.Drawing.Point(367, 46);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(104, 27);
+            this.textBox3.TabIndex = 14;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PercendDDSTextbox
+            // 
+            this.PercendDDSTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.PercendDDSTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.PercendDDSTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.PercendDDSTextbox.Location = new System.Drawing.Point(148, 49);
+            this.PercendDDSTextbox.Name = "PercendDDSTextbox";
+            this.PercendDDSTextbox.Size = new System.Drawing.Size(104, 27);
+            this.PercendDDSTextbox.TabIndex = 13;
+            this.PercendDDSTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(252, 52);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 21);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "20% ДДС";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(254, 13);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 21);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "с ДДС";
+            // 
+            // SellingPriceTextbox
+            // 
+            this.SellingPriceTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.SellingPriceTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.SellingPriceTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.SellingPriceTextbox.Location = new System.Drawing.Point(148, 9);
+            this.SellingPriceTextbox.Name = "SellingPriceTextbox";
+            this.SellingPriceTextbox.Size = new System.Drawing.Size(104, 27);
+            this.SellingPriceTextbox.TabIndex = 10;
+            this.SellingPriceTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 13);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(139, 21);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Продажна цена";
             // 
             // UpdateButton
             // 
@@ -1249,6 +1251,7 @@
             this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UpdateButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.UpdateButton.Image = global::Dealership1._0.Properties.Resources.icons8_synchronize_26__1_;
             this.UpdateButton.Location = new System.Drawing.Point(768, 156);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(41, 31);
@@ -1266,7 +1269,8 @@
             this.soldButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.soldButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.soldButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.soldButton.Location = new System.Drawing.Point(306, 442);
+            this.soldButton.Image = global::Dealership1._0.Properties.Resources.icons8_trash_can_26;
+            this.soldButton.Location = new System.Drawing.Point(1337, 665);
             this.soldButton.Name = "soldButton";
             this.soldButton.Size = new System.Drawing.Size(25, 32);
             this.soldButton.TabIndex = 99;
@@ -1282,6 +1286,7 @@
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.addButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.addButton.Image = global::Dealership1._0.Properties.Resources.icons8_add_new_261;
             this.addButton.Location = new System.Drawing.Point(498, 442);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(32, 32);
@@ -1302,23 +1307,25 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button1
+            // UploadButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(848, 442);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 32);
-            this.button1.TabIndex = 139;
-            this.button1.Text = "+";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.UploadButton.Location = new System.Drawing.Point(875, 450);
+            this.UploadButton.Name = "UploadButton";
+            this.UploadButton.Size = new System.Drawing.Size(75, 23);
+            this.UploadButton.TabIndex = 139;
+            this.UploadButton.Text = "Upload";
+            this.UploadButton.UseVisualStyleBackColor = true;
+            this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
+            // 
+            // SaveImageButton
+            // 
+            this.SaveImageButton.Location = new System.Drawing.Point(1086, 449);
+            this.SaveImageButton.Name = "SaveImageButton";
+            this.SaveImageButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveImageButton.TabIndex = 140;
+            this.SaveImageButton.Text = "Save";
+            this.SaveImageButton.UseVisualStyleBackColor = true;
+            this.SaveImageButton.Click += new System.EventHandler(this.SaveImageButton_Click);
             // 
             // DielershipUI
             // 
@@ -1326,7 +1333,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1362, 698);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SaveImageButton);
+            this.Controls.Add(this.UploadButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HidablePricePanel);
             this.Controls.Add(this.panel1);
@@ -1487,7 +1495,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button UploadButton;
+        private System.Windows.Forms.Button SaveImageButton;
     }
 }
 

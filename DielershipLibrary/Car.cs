@@ -22,7 +22,9 @@ namespace DielershipLibrary
         private int _contractNumber = 0;
         private string _price = string.Empty;
         private string _engineVolumeCc = string.Empty;
-        private string _win = string.Empty;
+        private string _vin = string.Empty;
+        private string _tires = string.Empty;
+        private string _numberOfKeys = string.Empty;
         private string _autoStartStop = string.Empty;
         private string _bluetoothHf = string.Empty;
         private string _dvdTv = string.Empty;
@@ -610,16 +612,16 @@ namespace DielershipLibrary
         {
             get
             {
-                return _win;
+                return _vin;
             }
 
             set
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    _win = "----";
+                    _vin = "----";
                 }
-                _win = value;
+                _vin = value;
             }
         }
         [System.Xml.Serialization.XmlElement("Status")]
@@ -636,54 +638,64 @@ namespace DielershipLibrary
                 {
                     _status = "Неясен";
                 }
-                _win = value;
+                _vin = value;
             }
         }
-       
-        
+        [System.Xml.Serialization.XmlElement("Tires")]
+        public string Tires
+        {
+            get
+            {
+                return _tires;
+            }
+
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    _tires = string.Empty;
+                }
+                else
+                {
+                    _tires = value;
+
+                }
+            }
+        }
+        [System.Xml.Serialization.XmlElement("NumberOfKeys")]
+        public string NumberOfKeys
+        {
+            get
+            {
+                return _numberOfKeys;
+            }
+
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    _numberOfKeys = "1";
+                }
+                else
+                {
+                    _numberOfKeys = value;
+                }
+            }
+        }
+
+
 
         public Car()
         {
 
         }
-        //public static List<Car> LoadXMLDatabase() //CHECKED ! WORKS FINE , MOVED TO XMLDatabase !
-        //{
-        //    List<Car> listo = new List<Car>();
-        //    XDocument dox = XDocument.Load("data.xml");
-        //    //var studentLst = dox.Descendants("Car").Select(d =>
-        //    //    new {
-        //    //              Brand = d.Element("Brand").Value,
-        //    //              Name = d.Element("Model").Value
-        //    //        }).ToList();
-        //    listo = dox.Descendants("Car").Select(d =>
-        //        new Car
-        //        {
-        //            Brand = d.Element("Brand").Value,
-        //            Model = d.Element("Model").Value,
-        //            BodyworkType = d.Element("BodyworkType").Value,
-        //            HorsePower = d.Element("HorsePower").Value,
-        //            FuelType = d.Element("FuelType").Value,
-        //            Color = d.Element("Color").Value,
-        //            ProductionDate = d.Element("ProductionDate").Value,
-        //            Mileage = d.Element("Mileage").Value,
-        //            AdditionalInfo = d.Element("AdditionalInfo").Value,
-        //            Price = d.Element("Price").Value,
-        //            EngineVolumeCc = d.Element("EngineVolumeCc").Value,
-        //            Win = d.Element("Win").Value,
-        //            ContractNumber = int.Parse(d.Element("ContractNumber").Value)
-
-        //        }).ToList();
-
-        //    return listo;
-
-        //}
         public Car(int contractNumber)
         {
             this._contractNumber = contractNumber;
 
         }
 
-        
+
 
         public string Display
         {
@@ -692,7 +704,6 @@ namespace DielershipLibrary
                 return string.Format("#{0}      {1} {2} {3}", ContractNumber, Brand, Model, ProductionDate);
             }
         }
-
 
         public static string FirstLetterToUpperCaseOrConvertNullToEmptyString(string value)
         {
