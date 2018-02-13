@@ -72,9 +72,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="XMLDatabase.cs" />
-    <EmbeddedResource Include="DielershipUI.resx">
-      <DependentUpon>DielershipUI.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="DielershipUInotsure.resx" />
     <EmbeddedResource Include="FullInfoForm.resx">
       <DependentUpon>FullInfoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +139,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-add-new-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-filled-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-filled-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-math-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-upload-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-browse-folder-filled-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

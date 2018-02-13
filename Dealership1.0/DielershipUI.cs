@@ -9,14 +9,10 @@
     using DielershipLibrary.CarModelsLists;
     using DielershipLibrary;
     using Properties;
-    using System.Text;
     using System.Xml.Linq;
-    using System.Xml.XPath;
     using System.Drawing;
-    using System.Drawing.Drawing2D;
     using System.IO;
     using System.Drawing.Imaging;
-
     /// <summary>
     /// Dielership Main
     /// </summary>
@@ -27,6 +23,7 @@
         private BindingSource carsListBinding = new BindingSource();
         private BindingSource soldCarsListBinding = new BindingSource();
         private int contractNumber;
+        private bool IsReadOnly;
 
         public DielershipUI()
         {
@@ -52,39 +49,90 @@
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (BrandsComboBox.SelectedItem == null || ModelCombobox.SelectedItem == null)
+            if (CheckIfAllComboboxesAreAssigned())
             {
-                MessageBox.Show("Трябва да избереш поне марка и модел!");
-                return;
+
+
+                var Id = IsIdAlreadyTaken(this.NextContractNumber());
+                Car newCar = new Car(Id);
+                newCar.DateOfCreatingAd = DateTime.Now.Date.ToShortDateString();
+                newCar.Category = Convert.ToString(CategoryCombobox.SelectedItem);
+                newCar.Brand = Convert.ToString(BrandsComboBox.SelectedItem);
+                newCar.Model = Convert.ToString(ModelCombobox.SelectedItem);
+                newCar.BodyworkType = Convert.ToString(BodyTypeCombobox.SelectedItem);
+                newCar.EngineVolumeCc = EngineVolumeCCTextBox.Text;
+                newCar.HorsePower = horsePowerTextBox.Text;
+                newCar.FuelType = Convert.ToString(FuelTypeCombobox.SelectedItem);
+                newCar.Color = Convert.ToString(ColorsCombobox.SelectedItem);
+                newCar.ProductionDate = productionDateTextBox.Text;
+                newCar.Mileage = mileageTextBox.Text;
+                newCar.Price = priceTextBox.Text;
+                newCar.AdditionalInfo = additionalCarInfoTextBox.Text;
+                newCar.Vin = WinTextBox.Text;
+                newCar.IsSold = false;
+                newCar.Status = Convert.ToString(StatusCombobox.SelectedItem);
+                newCar.Category = Convert.ToString(CategoryCombobox.SelectedItem);
+                newCar.NumberOfKeys = NumberOfKeysNumericUpDown.Value.ToString();
+                newCar.Tires = Convert.ToString(TiresCombobox.SelectedItem);
+                //this.AddExtrasToCarExtrasFieldIfChecked(newCar);
+
+                XMLDatabase.AppendNewCarDataToXML(newCar); // works fine
+
+
+
             }
-            var id = this.NextContractNumber();
-            Car newCar = new Car(id);
-            newCar.Brand = BrandsComboBox.SelectedItem.ToString();//brandTextBox.Text;
-            newCar.Model = ModelCombobox.SelectedItem.ToString();//modelTextBox.Text;
-            newCar.BodyworkType = CategoryCombobox.SelectedItem.ToString();//typeTextBox.Text;
-            newCar.EngineVolumeCc = EngineVolumeCCTextBox.Text;
-            newCar.HorsePower = horsePowerTextBox.Text;
-            newCar.FuelType = FuelTypeCombobox.SelectedItem.ToString();//fuelTypeTextBox.Text;
-            newCar.Color = ColorsCombobox.SelectedItem.ToString();/*colorTextBox.Text*/;
-            newCar.ProductionDate = productionDateTextBox.Text;
-            newCar.Mileage = mileageTextBox.Text;
-            newCar.Price = priceTextBox.Text;
-            newCar.AdditionalInfo = additionalCarInfoTextBox.Text;
-            newCar.Win = WinTextBox.Text;
-            newCar.IsSold = false;
-            newCar.Status = StatusCombobox.SelectedItem.ToString();
-            //this.AddExtrasToCarExtrasFieldIfChecked(newCar);
-
-            XMLDatabase.AppendNewCarDataToXML(newCar); // works fine
-
             this.carsListBinding.ResetBindings(false);
-
-
             this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
-
             this.ClearTextboxesAndComboboxes();
             //this.UncheckCheckboxes();
 
+        }
+
+        private int IsIdAlreadyTaken(int id)
+        {
+            int finalId = id;
+            foreach (var car in carsListBox.Items)
+            {
+                Car currentCar = (Car)car;
+                if (currentCar.ContractNumber > id)
+                {
+                    finalId = currentCar.ContractNumber + 1;
+                }
+
+            }
+            return finalId;
+        }
+
+        private bool CheckIfAllComboboxesAreAssigned()
+        {
+            List<System.Windows.Forms.ComboBox> comboboxesList = new List<System.Windows.Forms.ComboBox>();
+            comboboxesList.Add(CategoryCombobox);
+            comboboxesList.Add(BrandsComboBox);
+            comboboxesList.Add(ModelCombobox);
+            comboboxesList.Add(FuelTypeCombobox);
+            comboboxesList.Add(ColorsCombobox);
+            comboboxesList.Add(GearboxesCombobox);
+            comboboxesList.Add(StatusCombobox);
+            comboboxesList.Add(TiresCombobox);
+
+            if (comboboxesList.All(x => x.SelectedItem == null))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+
+            }
+
+            //foreach (var box in comboboxesList)
+            //{
+            //    if (box.SelectedItem == null)
+            //    {
+            //        MessageBox.Show("Всички полета трябва да са попълнени", "Грешка");
+            //        return false;
+            //    }
+            //}
         }
 
         public void UpdateCarData(Car carToUpdateData) // to do
@@ -488,13 +536,15 @@
 
         public void ClearTextboxesAndComboboxes() // WORKS FINE
         {
+            CategoryCombobox.SelectedIndex = -1;
             BrandsComboBox.SelectedIndex = -1;
             GearboxesCombobox.SelectedIndex = -1;
             ModelCombobox.SelectedIndex = -1;
-            CategoryCombobox.SelectedIndex = -1;
+            BodyTypeCombobox.SelectedIndex = -1;
             FuelTypeCombobox.SelectedIndex = -1;
             StatusCombobox.SelectedIndex = -1;
             ColorsCombobox.SelectedIndex = -1;
+            TiresCombobox.SelectedIndex = -1;
 
 
             EngineVolumeCCTextBox.Clear();
@@ -526,26 +576,33 @@
 
         private int NextContractNumber()
         {
-            int result = int.Parse(Settings.Default["NumOfContracts"].ToString());
-            Settings.Default["NumOfContracts"] = result + 1;
+            int id = int.Parse(Settings.Default["NumOfContracts"].ToString());
+            Settings.Default["NumOfContracts"] = id + 1;
             Settings.Default.Save();
-            return ++result;
+            return ++id;
         }
 
 
 
-        private void carsListBox_DoubleClick(object sender, EventArgs e) //// WORK FINE
+        private void carsListBox_DoubleClick(object sender, EventArgs e)
         {
-            if (carsListBox.Items.Count > 0 && carsListBox.SelectedItem != null)
+
+            var car = (Car)carsListBox.SelectedItem;
+            string carNumber = car.ContractNumber.ToString();
+            if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
             {
-                InfoForm infoForm = new InfoForm();
-
-                infoForm.FillInfoFormTextbox(carsListBox.SelectedItem);
-
-                infoForm.Show();
-
-                ////soldCarsListBox.ClearSelected();
+                pictureBox1.Image = null;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
+                SaveImageButton.Enabled = false;
             }
+            else
+            {
+                pictureBox1.Image = pictureBox1.InitialImage;
+
+            }
+
+            FillCarInfoToTextboxes(carsListBox.SelectedItem);
         }
 
         private void priceTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -610,7 +667,7 @@
 
         private void BrandsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (BrandsComboBox.SelectedItem.ToString())
+            switch (Convert.ToString(BrandsComboBox.SelectedItem))
             {
                 case "Audi":
                     ModelCombobox.Items.Clear();
@@ -652,6 +709,9 @@
                     ModelCombobox.Items.Clear();
                     ModelCombobox.Items.AddRange(CarsModelsLists.FerrariModels);
                     break;
+
+                default:
+                    break;
             }
         } // todo
 
@@ -688,7 +748,7 @@
             if (carsListBox.SelectedItem == null)
             {
                 MessageBox.Show("Не е избран автомобил!", "Промяна", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-                
+
             }
         }
 
@@ -723,7 +783,7 @@
                     string fileName = ofd.FileName;
                     Image imageFromFile = Image.FromFile(fileName);
                     pictureBox1.Image = imageFromFile;
-
+                    SaveImageButton.Enabled = true;
                 }
                 else
                 {
@@ -732,7 +792,7 @@
 
 
             }
-            
+
 
 
         }
@@ -748,14 +808,22 @@
                 {
 
                     string fileName = carNumber.ToString();
+                    // wallpaper pic naming
+                    if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
+                    {
+                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "header.jpeg", ImageFormat.Jpeg);
+                        pictureBox1.Image = null;
+                        return;
+                    }
+
                     if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
                     {
                         System.IO.File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
                     }
-                    
+
 
                     pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + ".jpeg", ImageFormat.Jpeg);
-                    
+
 
                     //pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}.jpeg", ImageFormat.Jpeg);
 
@@ -764,7 +832,16 @@
                 {
                     Directory.CreateDirectory($"..\\Images\\{currCar.ContractNumber}");
 
-                    string fileName = carNumber.ToString() + "1";
+                    string fileName = carNumber.ToString();
+
+                    if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
+                    {
+                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "header.jpeg", ImageFormat.Jpeg);
+                        pictureBox1.Image = null;
+                        return;
+                    }
+                    fileName += "1";
+
                     while (File.Exists($"{carNumber}" + "1"))
                     {
                         fileName += "1";
@@ -778,6 +855,101 @@
 
 
             }
+        }
+
+        private void ShowInfoFormButton_Click(object sender, EventArgs e)
+        {
+            if (carsListBox.Items.Count > 0 && carsListBox.SelectedItem != null)
+            {
+
+                //FillCarInfoToTextboxes(carsListBox.SelectedItem);
+
+                InfoForm infoForm = new InfoForm();
+                if (true)
+                {
+
+                }
+                infoForm.FillInfoFormTextbox(carsListBox.SelectedItem);
+
+                infoForm.Show();
+
+                ////soldCarsListBox.ClearSelected();
+            }
+        }
+        private void FillCarInfoToTextboxes(object selectedItem)
+        {
+
+            Car selectedCar = (Car)selectedItem;
+            //TopPanel
+            DateOfImportInfoLabel.Text = selectedCar.DateOfCreatingAd;
+            ContractNumberInfoLabel.Text = selectedCar.ContractNumber.ToString();
+            //comboboxes
+            CategoryCombobox.SelectedIndex = CategoryCombobox.FindStringExact(selectedCar.Category);
+            BrandsComboBox.SelectedIndex = BrandsComboBox.FindStringExact(selectedCar.Brand);
+            ModelCombobox.SelectedIndex = ModelCombobox.FindStringExact(selectedCar.Model);
+            BodyTypeCombobox.SelectedIndex = BodyTypeCombobox.FindStringExact(selectedCar.BodyworkType);
+            FuelTypeCombobox.SelectedIndex = FuelTypeCombobox.FindStringExact(selectedCar.FuelType);
+            ColorsCombobox.SelectedIndex = ColorsCombobox.FindStringExact(selectedCar.Color);
+            GearboxesCombobox.SelectedIndex = GearboxesCombobox.FindStringExact(selectedCar.Gearbox);
+            StatusCombobox.SelectedIndex = StatusCombobox.FindStringExact(selectedCar.Status);
+            TiresCombobox.SelectedIndex = TiresCombobox.FindStringExact(selectedCar.Tires);
+            //textboxes
+            EngineVolumeCCTextBox.Text = selectedCar.EngineVolumeCc;
+            horsePowerTextBox.Text = selectedCar.HorsePower;
+            productionDateTextBox.Text = selectedCar.ProductionDate;
+            mileageTextBox.Text = selectedCar.Mileage;
+            priceTextBox.Text = selectedCar.Price;
+            WinTextBox.Text = selectedCar.Vin;
+            //hidable additional price panel
+            RealSellingPriceTextbox.Text = selectedCar.RealSellingPrice.ToString();
+            PercendDDSTextbox.Text = (((double)selectedCar.RealSellingPrice / 100) * 20).ToString();
+            MinBillValueTextbox.Text = selectedCar.MinBillValue.ToString();
+            MaxBillValueTextbox.Text = selectedCar.MaxBillValue.ToString();
+            FuelCostsTextbox.Text = selectedCar.FuelCosts.ToString();
+            ServiceCostsTextbox.Text = selectedCar.ServiceCosts.ToString();
+            CosmeticsCostsTextbox.Text = selectedCar.CosmeticsCosts.ToString();
+            ComissionTextbox.Text = selectedCar.Comission.ToString();
+            CzsTextbox.Text = selectedCar.Czs.ToString();
+
+            //ComboboxesAndTextboxesReadonly();
+
+        }
+
+        private void ComboboxesAndTextboxesReadonly(bool condition)
+        {
+            List<System.Windows.Forms.ComboBox> comboList = new List<System.Windows.Forms.ComboBox>();
+            comboList.Add(CategoryCombobox);
+            comboList.Add(BrandsComboBox);
+            comboList.Add(ModelCombobox);
+            comboList.Add(BodyTypeCombobox);
+            comboList.Add(FuelTypeCombobox);
+            comboList.Add(ColorsCombobox);
+            comboList.Add(GearboxesCombobox);
+            comboList.Add(StatusCombobox);
+            comboList.Add(TiresCombobox);
+            foreach (var box in comboList)
+            {
+
+            }
+            this.IsReadOnly = true;
+
+
+        }
+
+
+
+        private void CategoryCombobox_MouseHover(object sender, EventArgs e)
+        {
+            //if (IsReadOnly)
+            //{
+            //    CategoryCombobox.Enabled = false;
+
+            //}
+        }
+
+        private void CategoryCombobox_MouseLeave(object sender, EventArgs e)
+        {
+            //CategoryCombobox.Enabled = true;
         }
     }
 }

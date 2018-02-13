@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DielershipUI));
             this.carsListBox = new System.Windows.Forms.ListBox();
             this.brandLabel = new System.Windows.Forms.Label();
             this.modelLabel = new System.Windows.Forms.Label();
@@ -55,7 +54,7 @@
             this.ResetProfitLabelButton = new System.Windows.Forms.Button();
             this.BrandsComboBox = new System.Windows.Forms.ComboBox();
             this.ModelCombobox = new System.Windows.Forms.ComboBox();
-            this.CategoryCombobox = new System.Windows.Forms.ComboBox();
+            this.BodyTypeCombobox = new System.Windows.Forms.ComboBox();
             this.FuelTypeCombobox = new System.Windows.Forms.ComboBox();
             this.ColorsCombobox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,12 +66,10 @@
             this.AreRealMileageCheckbox = new System.Windows.Forms.CheckBox();
             this.NumberOfKeysNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.NumberOfKeysLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TiresCombobox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TireGripSizeUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
             this.FirmInfoComboBox = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CategoryCombobox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.ExtrasCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -82,42 +79,40 @@
             this.OwnerByVoucherLabel = new System.Windows.Forms.Label();
             this.OwnerByVoucherTextbox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.StatusInfoComboBox = new System.Windows.Forms.ComboBox();
             this.ContractNumberInfoLabel = new System.Windows.Forms.Label();
             this.DateOfImportInfoLabel = new System.Windows.Forms.Label();
             this.HidablePricePanel = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.CzsTextbox = new System.Windows.Forms.TextBox();
+            this.ComissionTextbox = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.FuelCostsTextbox = new System.Windows.Forms.TextBox();
+            this.ServiceCostsTextbox = new System.Windows.Forms.TextBox();
+            this.CosmeticsCostsTextbox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.MaxBillValueTextbox = new System.Windows.Forms.TextBox();
+            this.MinBillValueTextbox = new System.Windows.Forms.TextBox();
             this.PercendDDSTextbox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.SellingPriceTextbox = new System.Windows.Forms.TextBox();
+            this.RealSellingPriceTextbox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.ShowInfoFormButton = new System.Windows.Forms.Button();
+            this.SaveImageButton = new System.Windows.Forms.Button();
+            this.UploadButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.soldButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.UploadButton = new System.Windows.Forms.Button();
-            this.SaveImageButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TireGripSizeUpDown)).BeginInit();
             this.panel1.SuspendLayout();
             this.HidablePricePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -250,9 +245,9 @@
             this.EngineVolumeCCTextBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.EngineVolumeCCTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EngineVolumeCCTextBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.EngineVolumeCCTextBox.Location = new System.Drawing.Point(452, 236);
+            this.EngineVolumeCCTextBox.Location = new System.Drawing.Point(432, 236);
             this.EngineVolumeCCTextBox.Name = "EngineVolumeCCTextBox";
-            this.EngineVolumeCCTextBox.Size = new System.Drawing.Size(65, 20);
+            this.EngineVolumeCCTextBox.Size = new System.Drawing.Size(85, 20);
             this.EngineVolumeCCTextBox.TabIndex = 3;
             this.EngineVolumeCCTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.EngineVolumeCCTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EngineVolumeCCTextBox_KeyPress);
@@ -273,9 +268,9 @@
             this.horsePowerTextBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.horsePowerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.horsePowerTextBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.horsePowerTextBox.Location = new System.Drawing.Point(452, 258);
+            this.horsePowerTextBox.Location = new System.Drawing.Point(432, 258);
             this.horsePowerTextBox.Name = "horsePowerTextBox";
-            this.horsePowerTextBox.Size = new System.Drawing.Size(65, 20);
+            this.horsePowerTextBox.Size = new System.Drawing.Size(85, 20);
             this.horsePowerTextBox.TabIndex = 4;
             this.horsePowerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.horsePowerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.horsePowerTextBox_KeyPress);
@@ -314,7 +309,7 @@
             this.additionalCarInfoTextBox.Multiline = true;
             this.additionalCarInfoTextBox.Name = "additionalCarInfoTextBox";
             this.additionalCarInfoTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.additionalCarInfoTextBox.Size = new System.Drawing.Size(266, 188);
+            this.additionalCarInfoTextBox.Size = new System.Drawing.Size(266, 151);
             this.additionalCarInfoTextBox.TabIndex = 12;
             // 
             // ContractNumberLabel
@@ -335,7 +330,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(537, 149);
+            this.label2.Location = new System.Drawing.Point(539, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 19);
             this.label2.TabIndex = 33;
@@ -456,15 +451,15 @@
             this.ModelCombobox.Sorted = true;
             this.ModelCombobox.TabIndex = 101;
             // 
-            // CategoryCombobox
+            // BodyTypeCombobox
             // 
-            this.CategoryCombobox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.CategoryCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CategoryCombobox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CategoryCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CategoryCombobox.ForeColor = System.Drawing.SystemColors.Window;
-            this.CategoryCombobox.FormattingEnabled = true;
-            this.CategoryCombobox.Items.AddRange(new object[] {
+            this.BodyTypeCombobox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.BodyTypeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BodyTypeCombobox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BodyTypeCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.BodyTypeCombobox.ForeColor = System.Drawing.SystemColors.Window;
+            this.BodyTypeCombobox.FormattingEnabled = true;
+            this.BodyTypeCombobox.Items.AddRange(new object[] {
             "Бус",
             "Ван",
             "Кабрио",
@@ -474,11 +469,11 @@
             "Пикап",
             "Седан",
             "Хечбек"});
-            this.CategoryCombobox.Location = new System.Drawing.Point(396, 213);
-            this.CategoryCombobox.Name = "CategoryCombobox";
-            this.CategoryCombobox.Size = new System.Drawing.Size(121, 21);
-            this.CategoryCombobox.Sorted = true;
-            this.CategoryCombobox.TabIndex = 102;
+            this.BodyTypeCombobox.Location = new System.Drawing.Point(396, 213);
+            this.BodyTypeCombobox.Name = "BodyTypeCombobox";
+            this.BodyTypeCombobox.Size = new System.Drawing.Size(121, 21);
+            this.BodyTypeCombobox.Sorted = true;
+            this.BodyTypeCombobox.TabIndex = 102;
             // 
             // FuelTypeCombobox
             // 
@@ -581,7 +576,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(537, 176);
+            this.label7.Location = new System.Drawing.Point(539, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 19);
             this.label7.TabIndex = 122;
@@ -619,10 +614,15 @@
             this.NumberOfKeysNumericUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NumberOfKeysNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberOfKeysNumericUpDown.ForeColor = System.Drawing.SystemColors.Window;
-            this.NumberOfKeysNumericUpDown.Location = new System.Drawing.Point(619, 231);
+            this.NumberOfKeysNumericUpDown.Location = new System.Drawing.Point(631, 230);
             this.NumberOfKeysNumericUpDown.Name = "NumberOfKeysNumericUpDown";
             this.NumberOfKeysNumericUpDown.Size = new System.Drawing.Size(35, 20);
             this.NumberOfKeysNumericUpDown.TabIndex = 125;
+            this.NumberOfKeysNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // NumberOfKeysLabel
             // 
@@ -630,27 +630,29 @@
             this.NumberOfKeysLabel.BackColor = System.Drawing.Color.Transparent;
             this.NumberOfKeysLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.NumberOfKeysLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.NumberOfKeysLabel.Location = new System.Drawing.Point(537, 230);
+            this.NumberOfKeysLabel.Location = new System.Drawing.Point(539, 229);
             this.NumberOfKeysLabel.Name = "NumberOfKeysLabel";
             this.NumberOfKeysLabel.Size = new System.Drawing.Size(80, 19);
             this.NumberOfKeysLabel.TabIndex = 126;
             this.NumberOfKeysLabel.Text = "Ключове";
             // 
-            // comboBox1
+            // TiresCombobox
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Летни",
+            this.TiresCombobox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.TiresCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TiresCombobox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TiresCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TiresCombobox.ForeColor = System.Drawing.SystemColors.Window;
+            this.TiresCombobox.FormattingEnabled = true;
+            this.TiresCombobox.Items.AddRange(new object[] {
             "Зимни",
+            "Летни",
             "Летни и зимни"});
-            this.comboBox1.Location = new System.Drawing.Point(592, 203);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(97, 21);
-            this.comboBox1.TabIndex = 127;
+            this.TiresCombobox.Location = new System.Drawing.Point(631, 203);
+            this.TiresCombobox.Name = "TiresCombobox";
+            this.TiresCombobox.Size = new System.Drawing.Size(121, 21);
+            this.TiresCombobox.Sorted = true;
+            this.TiresCombobox.TabIndex = 127;
             // 
             // label6
             // 
@@ -658,40 +660,11 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(537, 203);
+            this.label6.Location = new System.Drawing.Point(539, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 19);
             this.label6.TabIndex = 128;
             this.label6.Text = "Гуми";
-            // 
-            // TireGripSizeUpDown
-            // 
-            this.TireGripSizeUpDown.BackColor = System.Drawing.SystemColors.WindowText;
-            this.TireGripSizeUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TireGripSizeUpDown.DecimalPlaces = 1;
-            this.TireGripSizeUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TireGripSizeUpDown.ForeColor = System.Drawing.SystemColors.Window;
-            this.TireGripSizeUpDown.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.TireGripSizeUpDown.Location = new System.Drawing.Point(696, 203);
-            this.TireGripSizeUpDown.Name = "TireGripSizeUpDown";
-            this.TireGripSizeUpDown.Size = new System.Drawing.Size(48, 20);
-            this.TireGripSizeUpDown.TabIndex = 129;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.Window;
-            this.label8.Location = new System.Drawing.Point(750, 206);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 18);
-            this.label8.TabIndex = 130;
-            this.label8.Text = "мм";
             // 
             // FirmInfoComboBox
             // 
@@ -703,30 +676,32 @@
             this.FirmInfoComboBox.Items.AddRange(new object[] {
             "EXOTIC CARS",
             "DYNAMIC AUTO"});
-            this.FirmInfoComboBox.Location = new System.Drawing.Point(530, 5);
+            this.FirmInfoComboBox.Location = new System.Drawing.Point(366, 4);
             this.FirmInfoComboBox.Name = "FirmInfoComboBox";
-            this.FirmInfoComboBox.Size = new System.Drawing.Size(133, 29);
+            this.FirmInfoComboBox.Size = new System.Drawing.Size(199, 29);
             this.FirmInfoComboBox.TabIndex = 3;
             // 
-            // comboBox2
+            // CategoryCombobox
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CategoryCombobox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.CategoryCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CategoryCombobox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CategoryCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.CategoryCombobox.ForeColor = System.Drawing.SystemColors.Window;
+            this.CategoryCombobox.FormattingEnabled = true;
+            this.CategoryCombobox.Items.AddRange(new object[] {
             "Бус",
             "Джип",
             "Камион",
             "Лек автомобил",
             "Мотоциклет"});
-            this.comboBox2.Location = new System.Drawing.Point(396, 144);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.Sorted = true;
-            this.comboBox2.TabIndex = 131;
+            this.CategoryCombobox.Location = new System.Drawing.Point(396, 144);
+            this.CategoryCombobox.Name = "CategoryCombobox";
+            this.CategoryCombobox.Size = new System.Drawing.Size(121, 21);
+            this.CategoryCombobox.Sorted = true;
+            this.CategoryCombobox.TabIndex = 131;
+            this.CategoryCombobox.MouseLeave += new System.EventHandler(this.CategoryCombobox_MouseLeave);
+            this.CategoryCombobox.MouseHover += new System.EventHandler(this.CategoryCombobox_MouseHover);
             // 
             // label9
             // 
@@ -854,10 +829,8 @@
             this.panel1.Controls.Add(this.OwnerByVoucherLabel);
             this.panel1.Controls.Add(this.OwnerByVoucherTextbox);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.StatusInfoComboBox);
             this.panel1.Controls.Add(this.ContractNumberInfoLabel);
             this.panel1.Controls.Add(this.DateOfImportInfoLabel);
             this.panel1.Controls.Add(this.FirmInfoComboBox);
@@ -886,9 +859,9 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.WindowText;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(1111, 6);
+            this.textBox1.Location = new System.Drawing.Point(1056, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 27);
+            this.textBox1.Size = new System.Drawing.Size(188, 27);
             this.textBox1.TabIndex = 138;
             // 
             // label13
@@ -897,7 +870,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label13.Location = new System.Drawing.Point(1000, 11);
+            this.label13.Location = new System.Drawing.Point(941, 11);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(105, 21);
             this.label13.TabIndex = 137;
@@ -909,7 +882,7 @@
             this.OwnerByVoucherLabel.BackColor = System.Drawing.Color.Transparent;
             this.OwnerByVoucherLabel.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.OwnerByVoucherLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.OwnerByVoucherLabel.Location = new System.Drawing.Point(669, 10);
+            this.OwnerByVoucherLabel.Location = new System.Drawing.Point(572, 11);
             this.OwnerByVoucherLabel.Name = "OwnerByVoucherLabel";
             this.OwnerByVoucherLabel.Size = new System.Drawing.Size(179, 21);
             this.OwnerByVoucherLabel.TabIndex = 136;
@@ -920,30 +893,20 @@
             this.OwnerByVoucherTextbox.BackColor = System.Drawing.SystemColors.WindowText;
             this.OwnerByVoucherTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.OwnerByVoucherTextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.OwnerByVoucherTextbox.Location = new System.Drawing.Point(847, 6);
+            this.OwnerByVoucherTextbox.Location = new System.Drawing.Point(757, 6);
             this.OwnerByVoucherTextbox.Name = "OwnerByVoucherTextbox";
-            this.OwnerByVoucherTextbox.Size = new System.Drawing.Size(148, 27);
+            this.OwnerByVoucherTextbox.Size = new System.Drawing.Size(157, 27);
             this.OwnerByVoucherTextbox.TabIndex = 137;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(478, 10);
+            this.label10.Location = new System.Drawing.Point(291, 12);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 21);
             this.label10.TabIndex = 6;
             this.label10.Text = "Каса";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(283, 10);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 21);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Статус";
             // 
             // label12
             // 
@@ -964,22 +927,6 @@
             this.label14.Size = new System.Drawing.Size(76, 21);
             this.label14.TabIndex = 3;
             this.label14.Text = "Договор";
-            // 
-            // StatusInfoComboBox
-            // 
-            this.StatusInfoComboBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.StatusInfoComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.StatusInfoComboBox.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.StatusInfoComboBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.StatusInfoComboBox.FormattingEnabled = true;
-            this.StatusInfoComboBox.Items.AddRange(new object[] {
-            "Наличен",
-            "В сервиз",
-            "Очакван внос"});
-            this.StatusInfoComboBox.Location = new System.Drawing.Point(349, 5);
-            this.StatusInfoComboBox.Name = "StatusInfoComboBox";
-            this.StatusInfoComboBox.Size = new System.Drawing.Size(121, 29);
-            this.StatusInfoComboBox.TabIndex = 2;
             // 
             // ContractNumberInfoLabel
             // 
@@ -1007,25 +954,25 @@
             // 
             // HidablePricePanel
             // 
-            this.HidablePricePanel.Controls.Add(this.textBox7);
-            this.HidablePricePanel.Controls.Add(this.textBox8);
+            this.HidablePricePanel.Controls.Add(this.CzsTextbox);
+            this.HidablePricePanel.Controls.Add(this.ComissionTextbox);
             this.HidablePricePanel.Controls.Add(this.label24);
             this.HidablePricePanel.Controls.Add(this.label25);
-            this.HidablePricePanel.Controls.Add(this.textBox6);
-            this.HidablePricePanel.Controls.Add(this.textBox5);
-            this.HidablePricePanel.Controls.Add(this.textBox4);
+            this.HidablePricePanel.Controls.Add(this.FuelCostsTextbox);
+            this.HidablePricePanel.Controls.Add(this.ServiceCostsTextbox);
+            this.HidablePricePanel.Controls.Add(this.CosmeticsCostsTextbox);
             this.HidablePricePanel.Controls.Add(this.label21);
             this.HidablePricePanel.Controls.Add(this.label22);
             this.HidablePricePanel.Controls.Add(this.label23);
             this.HidablePricePanel.Controls.Add(this.label20);
             this.HidablePricePanel.Controls.Add(this.label19);
             this.HidablePricePanel.Controls.Add(this.label18);
-            this.HidablePricePanel.Controls.Add(this.textBox2);
-            this.HidablePricePanel.Controls.Add(this.textBox3);
+            this.HidablePricePanel.Controls.Add(this.MaxBillValueTextbox);
+            this.HidablePricePanel.Controls.Add(this.MinBillValueTextbox);
             this.HidablePricePanel.Controls.Add(this.PercendDDSTextbox);
             this.HidablePricePanel.Controls.Add(this.label17);
             this.HidablePricePanel.Controls.Add(this.label16);
-            this.HidablePricePanel.Controls.Add(this.SellingPriceTextbox);
+            this.HidablePricePanel.Controls.Add(this.RealSellingPriceTextbox);
             this.HidablePricePanel.Controls.Add(this.label15);
             this.HidablePricePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.HidablePricePanel.Location = new System.Drawing.Point(0, 40);
@@ -1033,27 +980,27 @@
             this.HidablePricePanel.Size = new System.Drawing.Size(1362, 96);
             this.HidablePricePanel.TabIndex = 137;
             // 
-            // textBox7
+            // CzsTextbox
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox7.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox7.Location = new System.Drawing.Point(1057, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(104, 27);
-            this.textBox7.TabIndex = 28;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CzsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CzsTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.CzsTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.CzsTextbox.Location = new System.Drawing.Point(1057, 0);
+            this.CzsTextbox.Name = "CzsTextbox";
+            this.CzsTextbox.Size = new System.Drawing.Size(104, 27);
+            this.CzsTextbox.TabIndex = 28;
+            this.CzsTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox8
+            // ComissionTextbox
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox8.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox8.Location = new System.Drawing.Point(1057, 31);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(104, 27);
-            this.textBox8.TabIndex = 27;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ComissionTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ComissionTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ComissionTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.ComissionTextbox.Location = new System.Drawing.Point(1057, 31);
+            this.ComissionTextbox.Name = "ComissionTextbox";
+            this.ComissionTextbox.Size = new System.Drawing.Size(104, 27);
+            this.ComissionTextbox.TabIndex = 27;
+            this.ComissionTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label24
             // 
@@ -1075,38 +1022,38 @@
             this.label25.TabIndex = 25;
             this.label25.Text = "Комисионна";
             // 
-            // textBox6
+            // FuelCostsTextbox
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(811, 7);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(104, 27);
-            this.textBox6.TabIndex = 24;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.FuelCostsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.FuelCostsTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.FuelCostsTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.FuelCostsTextbox.Location = new System.Drawing.Point(811, 7);
+            this.FuelCostsTextbox.Name = "FuelCostsTextbox";
+            this.FuelCostsTextbox.Size = new System.Drawing.Size(104, 27);
+            this.FuelCostsTextbox.TabIndex = 24;
+            this.FuelCostsTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox5
+            // ServiceCostsTextbox
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(811, 34);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(104, 27);
-            this.textBox5.TabIndex = 23;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ServiceCostsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ServiceCostsTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ServiceCostsTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.ServiceCostsTextbox.Location = new System.Drawing.Point(811, 34);
+            this.ServiceCostsTextbox.Name = "ServiceCostsTextbox";
+            this.ServiceCostsTextbox.Size = new System.Drawing.Size(104, 27);
+            this.ServiceCostsTextbox.TabIndex = 23;
+            this.ServiceCostsTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // CosmeticsCostsTextbox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(811, 61);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(104, 27);
-            this.textBox4.TabIndex = 22;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CosmeticsCostsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CosmeticsCostsTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.CosmeticsCostsTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.CosmeticsCostsTextbox.Location = new System.Drawing.Point(811, 61);
+            this.CosmeticsCostsTextbox.Name = "CosmeticsCostsTextbox";
+            this.CosmeticsCostsTextbox.Size = new System.Drawing.Size(104, 27);
+            this.CosmeticsCostsTextbox.TabIndex = 22;
+            this.CosmeticsCostsTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label21
             // 
@@ -1168,27 +1115,27 @@
             this.label18.TabIndex = 16;
             this.label18.Text = "Фактура";
             // 
-            // textBox2
+            // MaxBillValueTextbox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(560, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 27);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MaxBillValueTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.MaxBillValueTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.MaxBillValueTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.MaxBillValueTextbox.Location = new System.Drawing.Point(560, 46);
+            this.MaxBillValueTextbox.Name = "MaxBillValueTextbox";
+            this.MaxBillValueTextbox.Size = new System.Drawing.Size(104, 27);
+            this.MaxBillValueTextbox.TabIndex = 15;
+            this.MaxBillValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // MinBillValueTextbox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(367, 46);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(104, 27);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MinBillValueTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.MinBillValueTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.MinBillValueTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.MinBillValueTextbox.Location = new System.Drawing.Point(367, 46);
+            this.MinBillValueTextbox.Name = "MinBillValueTextbox";
+            this.MinBillValueTextbox.Size = new System.Drawing.Size(104, 27);
+            this.MinBillValueTextbox.TabIndex = 14;
+            this.MinBillValueTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // PercendDDSTextbox
             // 
@@ -1221,16 +1168,16 @@
             this.label16.TabIndex = 11;
             this.label16.Text = "с ДДС";
             // 
-            // SellingPriceTextbox
+            // RealSellingPriceTextbox
             // 
-            this.SellingPriceTextbox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.SellingPriceTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.SellingPriceTextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.SellingPriceTextbox.Location = new System.Drawing.Point(148, 9);
-            this.SellingPriceTextbox.Name = "SellingPriceTextbox";
-            this.SellingPriceTextbox.Size = new System.Drawing.Size(104, 27);
-            this.SellingPriceTextbox.TabIndex = 10;
-            this.SellingPriceTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RealSellingPriceTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.RealSellingPriceTextbox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.RealSellingPriceTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.RealSellingPriceTextbox.Location = new System.Drawing.Point(148, 9);
+            this.RealSellingPriceTextbox.Name = "RealSellingPriceTextbox";
+            this.RealSellingPriceTextbox.Size = new System.Drawing.Size(104, 27);
+            this.RealSellingPriceTextbox.TabIndex = 10;
+            this.RealSellingPriceTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label15
             // 
@@ -1242,6 +1189,70 @@
             this.label15.TabIndex = 4;
             this.label15.Text = "Продажна цена";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // ShowInfoFormButton
+            // 
+            this.ShowInfoFormButton.BackColor = System.Drawing.Color.Transparent;
+            this.ShowInfoFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ShowInfoFormButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ShowInfoFormButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ShowInfoFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ShowInfoFormButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.ShowInfoFormButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.ShowInfoFormButton.Image = global::Dealership1._0.Properties.Resources.icons8_information_filled_24__1_;
+            this.ShowInfoFormButton.Location = new System.Drawing.Point(307, 439);
+            this.ShowInfoFormButton.Name = "ShowInfoFormButton";
+            this.ShowInfoFormButton.Size = new System.Drawing.Size(31, 33);
+            this.ShowInfoFormButton.TabIndex = 141;
+            this.ShowInfoFormButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ShowInfoFormButton.UseVisualStyleBackColor = false;
+            this.ShowInfoFormButton.Click += new System.EventHandler(this.ShowInfoFormButton_Click);
+            // 
+            // SaveImageButton
+            // 
+            this.SaveImageButton.BackColor = System.Drawing.Color.Transparent;
+            this.SaveImageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.SaveImageButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.SaveImageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SaveImageButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SaveImageButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.SaveImageButton.Image = global::Dealership1._0.Properties.Resources.icons8_upload_24__1_;
+            this.SaveImageButton.Location = new System.Drawing.Point(848, 403);
+            this.SaveImageButton.Name = "SaveImageButton";
+            this.SaveImageButton.Size = new System.Drawing.Size(35, 34);
+            this.SaveImageButton.TabIndex = 140;
+            this.SaveImageButton.UseVisualStyleBackColor = false;
+            this.SaveImageButton.Click += new System.EventHandler(this.SaveImageButton_Click);
+            // 
+            // UploadButton
+            // 
+            this.UploadButton.BackColor = System.Drawing.Color.Transparent;
+            this.UploadButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.UploadButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.UploadButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.UploadButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.UploadButton.Image = global::Dealership1._0.Properties.Resources.icons8_browse_folder_filled_24;
+            this.UploadButton.Location = new System.Drawing.Point(1225, 405);
+            this.UploadButton.Name = "UploadButton";
+            this.UploadButton.Size = new System.Drawing.Size(35, 34);
+            this.UploadButton.TabIndex = 139;
+            this.UploadButton.UseVisualStyleBackColor = false;
+            this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(848, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(412, 247);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 138;
+            this.pictureBox1.TabStop = false;
+            // 
             // UpdateButton
             // 
             this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
@@ -1252,9 +1263,9 @@
             this.UpdateButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.ForeColor = System.Drawing.SystemColors.Window;
             this.UpdateButton.Image = global::Dealership1._0.Properties.Resources.icons8_synchronize_26__1_;
-            this.UpdateButton.Location = new System.Drawing.Point(768, 156);
+            this.UpdateButton.Location = new System.Drawing.Point(773, 150);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(41, 31);
+            this.UpdateButton.Size = new System.Drawing.Size(36, 37);
             this.UpdateButton.TabIndex = 109;
             this.UpdateButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.UpdateButton.UseVisualStyleBackColor = false;
@@ -1286,46 +1297,14 @@
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.addButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.addButton.Image = global::Dealership1._0.Properties.Resources.icons8_add_new_261;
-            this.addButton.Location = new System.Drawing.Point(498, 442);
+            this.addButton.Image = global::Dealership1._0.Properties.Resources.icons8_plus_math_24__1_;
+            this.addButton.Location = new System.Drawing.Point(307, 478);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(32, 32);
+            this.addButton.Size = new System.Drawing.Size(31, 33);
             this.addButton.TabIndex = 17;
             this.addButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(848, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 247);
-            this.pictureBox1.TabIndex = 138;
-            this.pictureBox1.TabStop = false;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // UploadButton
-            // 
-            this.UploadButton.Location = new System.Drawing.Point(875, 450);
-            this.UploadButton.Name = "UploadButton";
-            this.UploadButton.Size = new System.Drawing.Size(75, 23);
-            this.UploadButton.TabIndex = 139;
-            this.UploadButton.Text = "Upload";
-            this.UploadButton.UseVisualStyleBackColor = true;
-            this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
-            // 
-            // SaveImageButton
-            // 
-            this.SaveImageButton.Location = new System.Drawing.Point(1086, 449);
-            this.SaveImageButton.Name = "SaveImageButton";
-            this.SaveImageButton.Size = new System.Drawing.Size(75, 23);
-            this.SaveImageButton.TabIndex = 140;
-            this.SaveImageButton.Text = "Save";
-            this.SaveImageButton.UseVisualStyleBackColor = true;
-            this.SaveImageButton.Click += new System.EventHandler(this.SaveImageButton_Click);
             // 
             // DielershipUI
             // 
@@ -1333,6 +1312,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1362, 698);
+            this.Controls.Add(this.ShowInfoFormButton);
             this.Controls.Add(this.SaveImageButton);
             this.Controls.Add(this.UploadButton);
             this.Controls.Add(this.pictureBox1);
@@ -1340,11 +1320,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ExtrasCheckedListBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.TireGripSizeUpDown);
+            this.Controls.Add(this.CategoryCombobox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TiresCombobox);
             this.Controls.Add(this.NumberOfKeysLabel);
             this.Controls.Add(this.NumberOfKeysNumericUpDown);
             this.Controls.Add(this.AreRealMileageCheckbox);
@@ -1357,7 +1335,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.ColorsCombobox);
             this.Controls.Add(this.FuelTypeCombobox);
-            this.Controls.Add(this.CategoryCombobox);
+            this.Controls.Add(this.BodyTypeCombobox);
             this.Controls.Add(this.ModelCombobox);
             this.Controls.Add(this.BrandsComboBox);
             this.Controls.Add(this.ResetProfitLabelButton);
@@ -1390,7 +1368,6 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DielershipUI";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Dealership1.0";
@@ -1398,7 +1375,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DielershipUI_FormClosed);
             this.Load += new System.EventHandler(this.DielershipUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TireGripSizeUpDown)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.HidablePricePanel.ResumeLayout(false);
@@ -1438,7 +1414,7 @@
         private System.Windows.Forms.Button ResetProfitLabelButton;
         private System.Windows.Forms.ComboBox BrandsComboBox;
         private System.Windows.Forms.ComboBox ModelCombobox;
-        private System.Windows.Forms.ComboBox CategoryCombobox;
+        private System.Windows.Forms.ComboBox BodyTypeCombobox;
         private System.Windows.Forms.ComboBox FuelTypeCombobox;
         private System.Windows.Forms.ComboBox ColorsCombobox;
         private System.Windows.Forms.Label label5;
@@ -1451,12 +1427,10 @@
         private System.Windows.Forms.CheckBox AreRealMileageCheckbox;
         private System.Windows.Forms.NumericUpDown NumberOfKeysNumericUpDown;
         private System.Windows.Forms.Label NumberOfKeysLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox TiresCombobox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown TireGripSizeUpDown;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox FirmInfoComboBox;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CategoryCombobox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckedListBox ExtrasCheckedListBox;
         private System.Windows.Forms.Panel panel1;
@@ -1465,38 +1439,37 @@
         private System.Windows.Forms.Label OwnerByVoucherLabel;
         private System.Windows.Forms.TextBox OwnerByVoucherTextbox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox StatusInfoComboBox;
         private System.Windows.Forms.Label ContractNumberInfoLabel;
         private System.Windows.Forms.Label DateOfImportInfoLabel;
         private System.Windows.Forms.Panel HidablePricePanel;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox FuelCostsTextbox;
+        private System.Windows.Forms.TextBox ServiceCostsTextbox;
+        private System.Windows.Forms.TextBox CosmeticsCostsTextbox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox MaxBillValueTextbox;
+        private System.Windows.Forms.TextBox MinBillValueTextbox;
         private System.Windows.Forms.TextBox PercendDDSTextbox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox SellingPriceTextbox;
+        private System.Windows.Forms.TextBox RealSellingPriceTextbox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button HidePricePanelButton;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox CzsTextbox;
+        private System.Windows.Forms.TextBox ComissionTextbox;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button UploadButton;
         private System.Windows.Forms.Button SaveImageButton;
+        private System.Windows.Forms.Button ShowInfoFormButton;
     }
 }
 

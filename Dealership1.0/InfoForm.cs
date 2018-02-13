@@ -96,7 +96,7 @@ namespace Dealership1._0
             propsList.Add(car.ProductionDate);
             propsList.Add(car.Mileage);
             propsList.Add(car.Price);
-            propsList.Add(car.Win);
+            propsList.Add(car.Vin);
             propsList.Add(car.AdditionalInfo);
             ////propsList.Add(car.AutoStartStop);
             ////propsList.Add(car.BluetoothHF);

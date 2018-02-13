@@ -43,8 +43,8 @@
   <ItemGroup>
     <Compile Include="AdditionalCarExtrasStrings.cs" />
     <Compile Include="Car.cs" />
-    <Compile Include="ComboboxCollections\CarsModelsLists.cs" />
-    <Compile Include="ComboboxCollections\CategoryFuelTypeAndGearboxesCollections.cs" />
+    <Compile Include="ComboboxStringsCollections\CarsModelsLists.cs" />
+    <Compile Include="ComboboxStringsCollections\CategoryFuelTypeAndGearboxesCollections.cs" />
     <Compile Include="Contracts\IClearTextboxes.cs" />
     <Compile Include="Dieler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

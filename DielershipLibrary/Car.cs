@@ -8,7 +8,9 @@ namespace DielershipLibrary
 {
     [Serializable]
     public class Car
-    {
+    {   //
+        private int _contractNumber = 0;
+        private string _category = string.Empty;
         private string _brand = string.Empty;
         private string _model = string.Empty;
         private string _bodywork = string.Empty;
@@ -19,12 +21,26 @@ namespace DielershipLibrary
         private string _mileage = string.Empty;
         private bool _isSold;
         private string _additionalCarInfo = string.Empty;
-        private int _contractNumber = 0;
         private string _price = string.Empty;
         private string _engineVolumeCc = string.Empty;
         private string _vin = string.Empty;
         private string _tires = string.Empty;
+        private string _gearbox = string.Empty;
         private string _numberOfKeys = string.Empty;
+        //hideable additional price info panel
+        private int _realSellingPrice = 0;
+        private int _minBillValue = 0;
+        private int _maxBillValue = 0;
+        private string _dateOfCreatingAd = string.Empty;
+        private string _ownerByVoucher = string.Empty;
+        private string _ownerByBusiness = string.Empty;
+        private int _fuelCosts = 0;
+        private int _serviceCosts = 0;
+        private int _cosmeticsCosts = 0;
+        private int _comission = 0;
+        private int _czs = 0;
+
+        //checkboxes
         private string _autoStartStop = string.Empty;
         private string _bluetoothHf = string.Empty;
         private string _dvdTv = string.Empty;
@@ -416,7 +432,8 @@ namespace DielershipLibrary
                     MessageBox.Show("Invalid brand digit lenght !");
                     return;
                 }
-                _brand = value.ToUpper();
+                else
+                    _brand = value.ToUpper();
             }
         }
         [System.Xml.Serialization.XmlElement("Model")]
@@ -432,7 +449,8 @@ namespace DielershipLibrary
                 {
                     value = "----";
                 }
-                _model = value;
+                else
+                    _model = value;
             }
         }
         [System.Xml.Serialization.XmlElement("Bodytype")]
@@ -444,11 +462,12 @@ namespace DielershipLibrary
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     value = "----";
                 }
-                _bodywork = FirstLetterToUpperCaseOrConvertNullToEmptyString(value);
+                else
+                    _bodywork = FirstLetterToUpperCaseOrConvertNullToEmptyString(value);
             }
         }
         [System.Xml.Serialization.XmlElement("HorsePower")]
@@ -460,11 +479,12 @@ namespace DielershipLibrary
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     value = "----";
                 }
-                _horsePower = value;
+                else
+                    _horsePower = value;
             }
         }
         [System.Xml.Serialization.XmlElement("FuelType")]
@@ -476,12 +496,13 @@ namespace DielershipLibrary
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     value = "----";
 
                 }
-                _fuelType = value;
+                else
+                    _fuelType = value;
             }
         }
         [System.Xml.Serialization.XmlElement("Color")]
@@ -493,11 +514,15 @@ namespace DielershipLibrary
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     value = "----";
                 }
-                _color = FirstLetterToUpperCaseOrConvertNullToEmptyString(value);
+                else
+                {
+                    _color = FirstLetterToUpperCaseOrConvertNullToEmptyString(value);
+
+                }
             }
         }
         [System.Xml.Serialization.XmlElement("ProductionDate")]
@@ -513,7 +538,11 @@ namespace DielershipLibrary
                 {
                     value = "----";
                 }
-                _productionDate = value;
+                else
+                {
+                    _productionDate = value;
+
+                }
             }
         }
         [System.Xml.Serialization.XmlElement("Mileage")]
@@ -529,7 +558,8 @@ namespace DielershipLibrary
                 {
                     value = "----";
                 }
-                _mileage = value;
+                else
+                    _mileage = value;
             }
         }
         [System.Xml.Serialization.XmlElement("IsSold")]
@@ -557,7 +587,8 @@ namespace DielershipLibrary
                 {
                     value = "----";
                 }
-                _additionalCarInfo = value;
+                else
+                    _additionalCarInfo = value;
             }
         }
         [System.Xml.Serialization.XmlElement("ContractNumber")]
@@ -603,12 +634,14 @@ namespace DielershipLibrary
                 if (string.IsNullOrEmpty(value))
                 {
                     _engineVolumeCc = "----";
+
                 }
-                _engineVolumeCc = value;
+                else
+                    _engineVolumeCc = value;
             }
         }
         [System.Xml.Serialization.XmlElement("WIN")]
-        public string Win
+        public string Vin
         {
             get
             {
@@ -621,7 +654,8 @@ namespace DielershipLibrary
                 {
                     _vin = "----";
                 }
-                _vin = value;
+                else
+                    _vin = value;
             }
         }
         [System.Xml.Serialization.XmlElement("Status")]
@@ -634,11 +668,15 @@ namespace DielershipLibrary
 
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     _status = "Неясен";
                 }
-                _vin = value;
+                else
+                {
+                    _vin = value;
+
+                }
             }
         }
         [System.Xml.Serialization.XmlElement("Tires")]
@@ -651,7 +689,7 @@ namespace DielershipLibrary
 
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     _tires = string.Empty;
                 }
@@ -682,7 +720,212 @@ namespace DielershipLibrary
                 }
             }
         }
+        [System.Xml.Serialization.XmlElement("Category")]
+        public string Category
+        {
+            get
+            {
+                return _category;
+            }
 
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    _category = string.Empty;
+                }
+                else
+                {
+                    _category = value;
+
+                }
+            }
+        }
+        [System.Xml.Serialization.XmlElement("Gearbox")]
+        public string Gearbox
+        {
+            get
+            {
+                return _gearbox;
+            }
+
+            set
+            {
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+                {
+                    _gearbox = string.Empty;
+                }
+                else
+                {
+                    _gearbox = value;
+
+                }
+            }
+        }
+        [System.Xml.Serialization.XmlElement("RealSellingPrice")]
+        public int RealSellingPrice
+        {
+            get
+            {
+                return _realSellingPrice;
+            }
+
+
+            set
+            {
+
+
+                _realSellingPrice = value;
+
+            }
+        }
+        [System.Xml.Serialization.XmlElement("MinBillValue")]
+        public int MinBillValue
+        {
+            get
+            {
+                return _minBillValue;
+            }
+
+            set
+            {
+                _minBillValue = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("MaxBillValue")]
+        public int MaxBillValue
+        {
+            get
+            {
+                return _maxBillValue;
+            }
+
+            set
+            {
+                _maxBillValue = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("DateOfCreatingAd")]
+        public string DateOfCreatingAd
+        {
+            get
+            {
+                return _dateOfCreatingAd;
+            }
+
+            set
+            {
+                _dateOfCreatingAd = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("OwnerByVoucher")]
+        public string OwnerByVoucher
+        {
+            get
+            {
+                return _ownerByVoucher;
+            }
+
+            set
+            {
+                if ((string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value)))
+                {
+                    _ownerByVoucher = string.Empty;
+                }
+                else
+                {
+                    _ownerByVoucher = value;
+
+                }
+                _ownerByVoucher = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("OwnerByBusiness")]
+        public string OwnerByBusiness
+        {
+            get
+            {
+                return _ownerByBusiness;
+            }
+
+            set
+            {
+                if ((string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value)))
+                {
+                    _ownerByBusiness = string.Empty;
+                }
+                else
+                {
+                    _ownerByBusiness = value;
+
+                }
+            }
+        }
+        [System.Xml.Serialization.XmlElement("FuelCosts")]
+        public int FuelCosts
+        {
+            get
+            {
+                return _fuelCosts;
+            }
+
+            set
+            {
+                _fuelCosts = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("ServiceCosts")]
+        public int ServiceCosts
+        {
+            get
+            {
+                return _serviceCosts;
+            }
+
+            set
+            {
+                _serviceCosts = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("CosmeticsCosts")]
+        public int CosmeticsCosts
+        {
+            get
+            {
+                return _cosmeticsCosts;
+            }
+
+            set
+            {
+                _cosmeticsCosts = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("Comission")]
+        public int Comission
+        {
+            get
+            {
+                return _comission;
+            }
+
+            set
+            {
+                _comission = value;
+            }
+        }
+        [System.Xml.Serialization.XmlElement("Czs")]
+        public int Czs
+        {
+            get
+            {
+                return _czs;
+            }
+
+            set
+            {
+                _czs = value;
+            }
+        }
 
 
         public Car()
@@ -694,6 +937,7 @@ namespace DielershipLibrary
             this._contractNumber = contractNumber;
 
         }
+
 
 
 
