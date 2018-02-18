@@ -670,11 +670,11 @@ namespace DielershipLibrary
             {
                 if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
-                    _status = "Неясен";
+                    _status = "";
                 }
                 else
                 {
-                    _vin = value;
+                    _status = value;
 
                 }
             }

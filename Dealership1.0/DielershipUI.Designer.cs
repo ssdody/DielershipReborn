@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DielershipUI));
             this.carsListBox = new System.Windows.Forms.ListBox();
             this.brandLabel = new System.Windows.Forms.Label();
             this.modelLabel = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.WinTextBox = new System.Windows.Forms.TextBox();
+            this.VinTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ProfitLabel = new System.Windows.Forms.Label();
             this.ResetProfitLabelButton = new System.Windows.Forms.Button();
@@ -360,17 +361,17 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "$";
             // 
-            // WinTextBox
+            // VinTextBox
             // 
-            this.WinTextBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.WinTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WinTextBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.WinTextBox.Location = new System.Drawing.Point(398, 376);
-            this.WinTextBox.Name = "WinTextBox";
-            this.WinTextBox.Size = new System.Drawing.Size(120, 20);
-            this.WinTextBox.TabIndex = 10;
-            this.WinTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.WinTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WinTextBox_KeyPress);
+            this.VinTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.VinTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VinTextBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.VinTextBox.Location = new System.Drawing.Point(398, 376);
+            this.VinTextBox.Name = "VinTextBox";
+            this.VinTextBox.Size = new System.Drawing.Size(120, 20);
+            this.VinTextBox.TabIndex = 10;
+            this.VinTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.VinTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WinTextBox_KeyPress);
             // 
             // label4
             // 
@@ -390,7 +391,7 @@
             this.ProfitLabel.BackColor = System.Drawing.Color.Transparent;
             this.ProfitLabel.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold);
             this.ProfitLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ProfitLabel.Location = new System.Drawing.Point(983, 526);
+            this.ProfitLabel.Location = new System.Drawing.Point(858, 487);
             this.ProfitLabel.Name = "ProfitLabel";
             this.ProfitLabel.Size = new System.Drawing.Size(68, 24);
             this.ProfitLabel.TabIndex = 40;
@@ -403,7 +404,7 @@
             this.ResetProfitLabelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ResetProfitLabelButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.ResetProfitLabelButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.ResetProfitLabelButton.Location = new System.Drawing.Point(978, 563);
+            this.ResetProfitLabelButton.Location = new System.Drawing.Point(974, 487);
             this.ResetProfitLabelButton.Name = "ResetProfitLabelButton";
             this.ResetProfitLabelButton.Size = new System.Drawing.Size(62, 37);
             this.ResetProfitLabelButton.TabIndex = 41;
@@ -669,16 +670,18 @@
             // FirmInfoComboBox
             // 
             this.FirmInfoComboBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.FirmInfoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FirmInfoComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.FirmInfoComboBox.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.FirmInfoComboBox.ForeColor = System.Drawing.SystemColors.Window;
             this.FirmInfoComboBox.FormattingEnabled = true;
             this.FirmInfoComboBox.Items.AddRange(new object[] {
-            "EXOTIC CARS",
-            "DYNAMIC AUTO"});
+            "DYNAMIC AUTO",
+            "EXOTIC CARS"});
             this.FirmInfoComboBox.Location = new System.Drawing.Point(366, 4);
             this.FirmInfoComboBox.Name = "FirmInfoComboBox";
             this.FirmInfoComboBox.Size = new System.Drawing.Size(199, 29);
+            this.FirmInfoComboBox.Sorted = true;
             this.FirmInfoComboBox.TabIndex = 3;
             // 
             // CategoryCombobox
@@ -816,7 +819,7 @@
             this.ExtrasCheckedListBox.Name = "ExtrasCheckedListBox";
             this.ExtrasCheckedListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ExtrasCheckedListBox.ScrollAlwaysVisible = true;
-            this.ExtrasCheckedListBox.Size = new System.Drawing.Size(655, 155);
+            this.ExtrasCheckedListBox.Size = new System.Drawing.Size(1062, 155);
             this.ExtrasCheckedListBox.TabIndex = 133;
             // 
             // panel1
@@ -902,7 +905,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(291, 12);
+            this.label10.Location = new System.Drawing.Point(309, 9);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 21);
             this.label10.TabIndex = 6;
@@ -1214,7 +1217,6 @@
             // SaveImageButton
             // 
             this.SaveImageButton.BackColor = System.Drawing.Color.Transparent;
-            this.SaveImageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.SaveImageButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.SaveImageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.SaveImageButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -1235,7 +1237,7 @@
             this.UploadButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UploadButton.ForeColor = System.Drawing.SystemColors.Window;
             this.UploadButton.Image = global::Dealership1._0.Properties.Resources.icons8_browse_folder_filled_24;
-            this.UploadButton.Location = new System.Drawing.Point(1225, 405);
+            this.UploadButton.Location = new System.Drawing.Point(1210, 405);
             this.UploadButton.Name = "UploadButton";
             this.UploadButton.Size = new System.Drawing.Size(35, 34);
             this.UploadButton.TabIndex = 139;
@@ -1248,7 +1250,7 @@
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(848, 152);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 247);
+            this.pictureBox1.Size = new System.Drawing.Size(397, 247);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 138;
             this.pictureBox1.TabStop = false;
@@ -1281,7 +1283,7 @@
             this.soldButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.soldButton.ForeColor = System.Drawing.SystemColors.Window;
             this.soldButton.Image = global::Dealership1._0.Properties.Resources.icons8_trash_can_26;
-            this.soldButton.Location = new System.Drawing.Point(1337, 665);
+            this.soldButton.Location = new System.Drawing.Point(1325, 478);
             this.soldButton.Name = "soldButton";
             this.soldButton.Size = new System.Drawing.Size(25, 32);
             this.soldButton.TabIndex = 99;
@@ -1311,6 +1313,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1362, 698);
             this.Controls.Add(this.ShowInfoFormButton);
             this.Controls.Add(this.SaveImageButton);
@@ -1340,7 +1343,7 @@
             this.Controls.Add(this.BrandsComboBox);
             this.Controls.Add(this.ResetProfitLabelButton);
             this.Controls.Add(this.ProfitLabel);
-            this.Controls.Add(this.WinTextBox);
+            this.Controls.Add(this.VinTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.priceTextBox);
@@ -1408,7 +1411,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox WinTextBox;
+        private System.Windows.Forms.TextBox VinTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label ProfitLabel;
         private System.Windows.Forms.Button ResetProfitLabelButton;

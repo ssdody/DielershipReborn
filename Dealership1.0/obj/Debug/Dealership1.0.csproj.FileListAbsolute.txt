@@ -51,3 +51,4 @@ D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\DielershipLibrary.p
 D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\Interop.AcroPDFLib.dll
 D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\AxInterop.AcroPDFLib.dll
 D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUInotsure.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.resources

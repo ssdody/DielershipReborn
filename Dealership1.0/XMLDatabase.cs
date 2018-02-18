@@ -12,12 +12,13 @@ namespace Dealership1._0
     public class XMLDatabase
     {
         private static XmlSerializer seriliazer = new XmlSerializer(typeof(Car));
-        private static string filename = "data.xml";
-
-        public static void AppendNewCarDataToXML(Car car)        // CHECKED
+        private const string filename = "data.xml";
+        private XMLDatabase()
         {
 
-
+        }
+        public static void AppendNewCarDataToXML(Car car)        // CHECKED
+        {
             XmlDocument doc = new XmlDocument();
 
             doc.Load(filename);
@@ -293,7 +294,6 @@ namespace Dealership1._0
                 var newCar = new Car();
                 newCar.Category = d.Element("Category").Value;
                 newCar.DateOfCreatingAd = d.Element("DateOfCreatingAd").Value;
-                //newCar.ContractNumber = int.TryParse(d.Element("ContractNumber").Value, out outParamValue) ? outParamValue : 1;
                 newCar.ContractNumber = int.Parse(d.Element("ContractNumber").Value);
                 newCar.Brand = d.Element("Brand").Value;
                 newCar.Model = d.Element("Model").Value;
@@ -340,6 +340,8 @@ namespace Dealership1._0
                 newCar.HeatingSys = d.Element("HeatingSys").Value;
                 newCar.Extras = d.Element("Extras").Value;
                 newCar.Gearbox = d.Element("Gearbox").Value;
+                newCar.NumberOfKeys = d.Element("NumberOfKeys").Value;
+                newCar.Tires = d.Element("Tires").Value;
 
                 if (int.TryParse(d.Element("RealSellingPrice").Value, out outParamValue))
                 {
@@ -474,12 +476,12 @@ namespace Dealership1._0
             XDocument xDoc = XDocument.Load(filename);
 
 
-
+            
             var car = xDoc.Descendants("Car")
                             .First(a => a.Element("ContractNumber").Value == carIndex.ToString());
+            car.SetElementValue(nodeElement, newValue);
 
-
-            car.Element(nodeElement).Value = newValue;
+            //car.Element(nodeElement).Value = newValue;
 
             xDoc.Save(filename);
 

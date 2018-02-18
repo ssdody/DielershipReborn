@@ -52,6 +52,11 @@
     <Compile Include="DielershipUI.Designer.cs">
       <DependentUpon>DielershipUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="DielershipUInotsure.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DielershipUInotsure.resx</DependentUpon>
+    </Compile>
     <Compile Include="FullInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,7 +77,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="XMLDatabase.cs" />
-    <EmbeddedResource Include="DielershipUInotsure.resx" />
+    <EmbeddedResource Include="DielershipUI.resx">
+      <DependentUpon>DielershipUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DielershipUInotsure.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DielershipUInotsure.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FullInfoForm.resx">
       <DependentUpon>FullInfoForm.cs</DependentUpon>
     </EmbeddedResource>
