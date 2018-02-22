@@ -9,7 +9,7 @@ namespace DielershipLibrary
     [Serializable]
     public class Car
     {   //
-        private int _contractNumber = 0;
+        private  int _contractNumber = 0;
         private string _category = string.Empty;
         private string _brand = string.Empty;
         private string _model = string.Empty;
@@ -20,6 +20,7 @@ namespace DielershipLibrary
         private string _productionDate = string.Empty;
         private string _mileage = string.Empty;
         private bool _isSold;
+        private string _areMileageReal;
         private string _additionalCarInfo = string.Empty;
         private string _price = string.Empty;
         private string _engineVolumeCc = string.Empty;
@@ -27,6 +28,7 @@ namespace DielershipLibrary
         private string _tires = string.Empty;
         private string _gearbox = string.Empty;
         private string _numberOfKeys = string.Empty;
+        private string _payCase = string.Empty;
         //hideable additional price info panel
         private int _realSellingPrice = 0;
         private int _minBillValue = 0;
@@ -773,8 +775,11 @@ namespace DielershipLibrary
 
             set
             {
-
-
+                if (value < 0)
+                {
+                    _realSellingPrice = 0;
+                }
+                else
                 _realSellingPrice = value;
 
             }
@@ -837,7 +842,7 @@ namespace DielershipLibrary
                     _ownerByVoucher = value;
 
                 }
-                _ownerByVoucher = value;
+                
             }
         }
         [System.Xml.Serialization.XmlElement("OwnerByBusiness")]
@@ -926,6 +931,42 @@ namespace DielershipLibrary
                 _czs = value;
             }
         }
+        [System.Xml.Serialization.XmlElement("AreMileageReal")]
+        public string AreMileageReal
+        {
+            get
+            {
+                return _areMileageReal;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    _areMileageReal = "0";
+                }
+                    _areMileageReal = value;  
+            }
+        }
+        public string PayCase
+        {
+            get
+            {
+                return _payCase;
+            }
+
+            set
+            {
+                if ((string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value)))
+                {
+                    _payCase = string.Empty;
+                }
+                else
+                {
+                    _payCase = value;
+
+                }
+            }
+        }
 
 
         public Car()
@@ -945,7 +986,7 @@ namespace DielershipLibrary
         {
             get
             {
-                return string.Format("#{0}      {1} {2} {3}", ContractNumber, Brand, Model, ProductionDate);
+                return string.Format(" {0} {1} {2}  {3}", Brand, Model, ProductionDate, FuelType);
             }
         }
 

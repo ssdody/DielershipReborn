@@ -1,6 +1,6 @@
 ﻿namespace Dealership1._0
 {
-    partial class InfoForm
+    partial class ExtrasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExtrasForm));
             this.CarInfoTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 

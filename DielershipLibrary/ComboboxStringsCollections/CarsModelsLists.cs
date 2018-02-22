@@ -27,6 +27,8 @@ namespace DielershipLibrary.CarModelsLists
             "1 Series",
             "3 series",
             "5 Series" ,
+            "M1",
+            "M3",
             "M5",
             "6 Series",
             "M6",
@@ -34,7 +36,10 @@ namespace DielershipLibrary.CarModelsLists
             "8 Series",
             "BMW i8",
             "BMW i3",
-            "BMW E9"
+            "BMW E9",
+            "X5 M",
+            "X5",
+            "X3"
         };
 
         public static readonly object[] FordModels = new object[] {
@@ -172,7 +177,7 @@ namespace DielershipLibrary.CarModelsLists
             "S 560",
             "S 500",
             "S 500",
-            "S 600",                                           
+            "S 600",
             "S 63 AMG",
             "S 65 AMG",
             "G",
@@ -253,7 +258,7 @@ namespace DielershipLibrary.CarModelsLists
             "Karmann Ghia",
             "Lupo",
             "New Beetle",
-            "Passat / Quantum",
+            "Passat",
             "Phaeton",
             "Polo",
             "Scirocco",
@@ -560,6 +565,375 @@ namespace DielershipLibrary.CarModelsLists
             "Yaris Verso",
             "Avensis Verso"
         };
+
+        public static readonly object[] HyundaiModels = new object[]
+        {
+            "Elantra",
+            "i20",
+            "Eon",
+            "Grand i10",
+            "i10",
+            "Verna",
+            "Santa Fe",
+            "Santro",
+            "Sonata",
+            "Terracan",
+            "ix30",
+            "Tucson",
+            "Accent",
+            "Entourage",
+            "Grandeur",
+            "Genesis",
+            "Genesis Coupe",
+            "Veracruz",
+            "Equus",
+            "Getz",
+            "Lavita",
+            "Coupe",
+            "Trajet",
+
+        };
+        public static readonly object[] KiaModels = new object[]
+       {
+            "Cadenza",
+            "Cee'd",
+            "Cerato",
+            "Forte Koup",
+            "Quoris",
+            "Magentis/",
+            "Picanto",
+            "Ray",
+            "Rio",
+            "Soul",
+            "Stinger",
+            "Stonic",
+            "Carens",
+            "Carnival",
+            "Mohave",
+            "Sorento",
+            "Sportage",
+            "Pregio",
+            "Soul",
+            "Niro"
+       };
+
+        public static readonly object[] DaciaModels = new object[]
+      {
+        "Logan",
+        "Sandero",
+        "Sandero Stepway",
+        "Duster",
+        "Lodgy",
+        "Lodgy Stepway",
+        "Dokker",
+        "Dokker Van",
+        "Dokker Stepway",
+      };
+
+        public static readonly object[] VolvoModels = new object[]
+     {
+         "S40",
+         "V40",
+          "S70",
+          "V70",
+          "S90",
+          "V90",
+          "C70 coupe",
+          "V70 XC",
+          "C70",
+          "S80",
+          "S60",
+          "V70",
+          "V70 XC",
+          "XC90",
+          "V50",
+          "C30",
+          "XC60",
+          "S90",
+     };
+
+
+        public static readonly object[] AstonMartinModels = new object[]
+     {
+            "V8 Coupe/V8 Volante",
+            "DB7 / Vantage",
+            "V12 Vanquish/ S",
+            "DB7 Zagato",
+            "DB AR1",
+            "DB9",
+            "V8 and V12 Vantage",
+            "DBS V12",
+            "One-77",
+            "Rapide / S",
+            "Virage/Virage Volante",
+            "Cygnet",
+            "V12 Zagato",
+            "Vanquish / Volante",
+            "DB11"
+     };
+
+        public static readonly object[] BentleyModels = new object[]
+     {
+         "Flying Spur",
+         "Bentayga",
+         "Continental GT",
+         "Mulsanne",
+         "Continental GTC"
+     };
+
+        public static readonly object[] JaguarModels = new object[]
+      {
+            "F-Type",
+            "XE",
+            "XF",
+            "XJ",
+            "R"
+
+      };
+
+        public static readonly object[] LandRoverModels = new object[]
+      {
+        "Discovery Sport",
+        "Discovery 5 Large",
+        "Range Rover Evoque",
+        "Range Rover Velar",
+        "Range Rover Sport",
+        "Range Rover",
+      };
+
+        public static readonly object[] MiniModels = new object[]
+     {
+         "One",
+         "One D",
+         "Hatch",
+         "Convertable",
+         "Clubman",
+         "Convertible/Hardtop",
+         "Countryman",
+         "Coupe",
+         "Roadster",
+         "Paceman",
+         "First",
+         "Cooper",
+         "Cooper D",
+         "Cooper SD",
+         "Cooper S",
+         "E",
+         "John Cooper Works"
+     };
+
+        public static readonly object[] GreatWallModels = new object[]
+    {
+       "Volex",
+       "Hover",
+       "Hover H3",
+       "Hover H5",
+       "Hover H6"
+
+    };
+
+        public static readonly object[] RenaultModels = new object[]
+    {
+        "Alaskan",
+        "Captur",
+        "Clio",
+        "Duster",
+        "Espace",
+        "Fluence",
+        "Kadjar",
+        "Kangoo",
+        "Koleos",
+        "Kwid",
+        "Megane",
+        "Pulse",
+        "Safrane",
+        "Scala",
+        "Scenic",
+        "Symbol",
+        "Talisman",
+        "Twingo",
+        "Twizy",
+        "Zoe",
+        "Duster",
+        "Logan",
+        "Sandero",
+        "Lodgy",
+        "Latitude",
+    };
+
+        public static readonly object[] BugattiModels = new object[]
+    {
+        "Veyron",
+        "Chiron",
+    };
+
+        public static readonly object[] SmartModels = new object[]
+    {
+        "ForTwo",
+        "ForFour",
+        "Roadster",
+        "Crossblade",
+        "City"
+    };
+
+        public static readonly object[] LexusModels = new object[]
+    {
+        "IS200",
+        "IS200d",
+        "IS220d",
+        "IS250",
+        "IS300",
+        "IS350",
+        "IS F",
+        "GX",
+        "RC",
+        "CT",
+        "HS",
+        "RX",
+        "ES 250",
+        "ES 300",
+        "ES 300",
+        "ES 330",
+        "ES 350",
+        "ES 240",
+        "ES 250",
+        "ES 300h",
+        "ES 350",
+        "ES 200",
+        "ES 250",
+        "ES 300h",
+        "ES 350",
+        "GS 300",
+        "GS 300",
+        "GS 400",
+        "GS 430",
+        "GS 300",
+        "GS 300 AWD",
+        "GS 430",
+        "GS 450h",
+        "GS 35",
+        "GS 350 AWD",
+        "GS 460",
+        "GS 250",
+        "GS 350",
+        "GS 350 AWD",
+        "GS 450h",
+        "GS 200t",
+        "GS 250",
+        "GS 350",
+        "GS 350 AWD",
+        "GS 450h",
+        "GS F",
+        "LS 400",
+        "LS 430",
+        "LS 460",
+        "LS 460L",
+        "LS 600h",
+        "LS 600hL",
+        "LS 460",
+        "LS 460 AWD",
+        "LS 460L",
+        "LS 460L AWD",
+        "LS 460SZ",
+        "LS 460",
+        "LS 460 AWD",
+        "LS 460L",
+        "LS 460L AWD",
+        "LS 600hL",
+        "LS 500",
+        "LS 500h",
+
+    };
+
+
+        public static readonly object[] SsangYongModels = new object[]
+    {
+        "Tivoli",
+        "Actyon",
+        "Rexton",
+        "Korando",
+        "Actyon Sports",
+        "Rodius/Stavic",
+        "Chairman W",
+        "Kyron",
+        "Musso",
+    };
+
+        public static readonly object[] DodgeModels = new object[]
+   {
+        "Challenger",
+        "Charger",
+        "Durango",
+        "Grand Caravan",
+        "Journey",
+        "Neon",
+        "Viper",
+        "Ram",
+        "Sprinter",
+        "SRT-4",
+        "Stratus",
+        "Nitro",
+        "Dart",
+        "Dakota",
+        "Caliber",
+        "Avenger"
+   };
+
+        public static readonly object[] ChryslerModels = new object[]
+   {
+       "Voyager",
+       "Sebring",
+       "PT Cruiser",
+       "Delta",
+       "Crossfire",
+       "Aspen",
+       "200",
+       "300M",
+       "300C",
+       "Ypsilon"
+   };
+
+        public static readonly object[] JeepModels = new object[]
+   {
+       "Cherokee",
+       "Grand Cherokee",
+       "Gladiator",
+       "Wrangler",
+       "Commander",
+       "Compass",
+   };
+        public static readonly object[] CadillacModels = new object[]
+   {
+        "Escalade",
+        "Escalade ESV",
+        "CTS",
+        "CTS-V",
+        "CTS-V",
+        "ATS",
+        "ATS-V",
+        "XTS",
+        "CT6",
+        "XT5"
+   };
+        public static readonly object[] ChevroletModels = new object[]
+   {
+       "Captiva",
+       "Blazer",
+       "Camaro",
+       "Corvette",
+       "Impala",
+       "Malibu",
+       "Cruze",
+       "Volt",
+       "Sonic",
+       "Trax",
+       "Equinox",
+       "Traverse",
+       "Tahoe",
+       "Colorado",
+       "Silverado",
+       "Lanos",
+   };
     }
 }
 

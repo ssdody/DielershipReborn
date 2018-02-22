@@ -13,13 +13,13 @@ using System.Xml.Linq;
 
 namespace Dealership1._0
 {
-    public partial class InfoForm : Form
+    public partial class ExtrasForm : Form
     {
-        public InfoForm()
+        public ExtrasForm()
         {
             InitializeComponent();
         }
-        public void FillInfoFormTextbox(object car)
+        public void FillExtrasListFormTextbox(object car)
         {
             if (car != null)
             {
@@ -86,54 +86,54 @@ namespace Dealership1._0
         private void AppendToStringBuilderIfValuesAreNotNullOrEmptyString(Car car, StringBuilder sBuilder)
         {
             List<string> propsList = new List<string>();
-            propsList.Add(car.Brand);
-            propsList.Add(car.Model);
-            propsList.Add(car.BodyworkType);
-            propsList.Add(car.EngineVolumeCc);
-            propsList.Add(car.HorsePower);
-            propsList.Add(car.Color);
-            propsList.Add(car.FuelType);
-            propsList.Add(car.ProductionDate);
-            propsList.Add(car.Mileage);
-            propsList.Add(car.Price);
-            propsList.Add(car.Vin);
-            propsList.Add(car.AdditionalInfo);
-            ////propsList.Add(car.AutoStartStop);
-            ////propsList.Add(car.BluetoothHF);
-            ////propsList.Add(car.DvdTv);
-            ////propsList.Add(car.SteptronicTiptronic);
-            ////propsList.Add(car.USBAudioVideoAUX);
-            ////propsList.Add(car.AdaptiveAirSusp);
-            ////propsList.Add(car.KeylessGo);
-            ////propsList.Add(car.DifferentialLock);
-            ////propsList.Add(car.ECU);
-            ////propsList.Add(car.ElMirrors);
-            ////propsList.Add(car.ElWindows);
-            ////propsList.Add(car.ElAdjustmentSusp);
-            ////propsList.Add(car.DPFFilter);
-            ////propsList.Add(car.CoolingGlovebox);
-            ////propsList.Add(car.Stereo);
-            ////propsList.Add(car.ElSteerAmplifier);
-            ////propsList.Add(car.AirConditioning);
-            ////propsList.Add(car.Climatronic);
-            ////propsList.Add(car.MultifunctionSteer);
-            ////propsList.Add(car.Navigation);
-            ////propsList.Add(car.SteeringHeater);
-            ////propsList.Add(car.FrontWindowHeating);
-            ////propsList.Add(car.Autopilot);
-            ////propsList.Add(car.SeatsHeating);
-            ////propsList.Add(car.RainSensor);
-            ////propsList.Add(car.SteeringAdjustment);
-            ////propsList.Add(car.ServoSteerAmplifier);
-            ////propsList.Add(car.HeatingSys);
-            ////propsList.Add(car.Extras.ToString());
-            foreach (var prop in propsList)
-            {
-                if (!string.IsNullOrEmpty(prop))
-                {
-                    sBuilder.AppendLine(prop);
-                }
-            }
+            //propsList.Add(car.Brand);
+            //propsList.Add(car.Model);
+            //propsList.Add(car.BodyworkType);
+            //propsList.Add(car.EngineVolumeCc);
+            //propsList.Add(car.HorsePower);
+            //propsList.Add(car.Color);
+            //propsList.Add(car.FuelType);
+            //propsList.Add(car.ProductionDate);
+            //propsList.Add(car.Mileage);
+            //propsList.Add(car.Price);
+            //propsList.Add(car.Vin);
+            //propsList.Add(car.AdditionalInfo);
+            //////propsList.Add(car.AutoStartStop);
+            //////propsList.Add(car.BluetoothHF);
+            //////propsList.Add(car.DvdTv);
+            //////propsList.Add(car.SteptronicTiptronic);
+            //////propsList.Add(car.USBAudioVideoAUX);
+            //////propsList.Add(car.AdaptiveAirSusp);
+            //////propsList.Add(car.KeylessGo);
+            //////propsList.Add(car.DifferentialLock);
+            //////propsList.Add(car.ECU);
+            //////propsList.Add(car.ElMirrors);
+            //////propsList.Add(car.ElWindows);
+            //////propsList.Add(car.ElAdjustmentSusp);
+            //////propsList.Add(car.DPFFilter);
+            //////propsList.Add(car.CoolingGlovebox);
+            //////propsList.Add(car.Stereo);
+            //////propsList.Add(car.ElSteerAmplifier);
+            //////propsList.Add(car.AirConditioning);
+            //////propsList.Add(car.Climatronic);
+            //////propsList.Add(car.MultifunctionSteer);
+            //////propsList.Add(car.Navigation);
+            //////propsList.Add(car.SteeringHeater);
+            //////propsList.Add(car.FrontWindowHeating);
+            //////propsList.Add(car.Autopilot);
+            //////propsList.Add(car.SeatsHeating);
+            //////propsList.Add(car.RainSensor);
+            //////propsList.Add(car.SteeringAdjustment);
+            //////propsList.Add(car.ServoSteerAmplifier);
+            //////propsList.Add(car.HeatingSys);
+            //////propsList.Add(car.Extras.ToString());
+            //foreach (var prop in propsList)
+            //{
+            //    if (!string.IsNullOrEmpty(prop))
+            //    {
+            //        sBuilder.AppendLine(prop);
+            //    }
+            //}
             string[] listStr = car.Extras.Split('$');
             for (int i = 0; i < listStr.Count(); i++)
             {

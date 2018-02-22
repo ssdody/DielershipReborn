@@ -2,3 +2,7 @@ C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLib
 C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\bin\Release\DielershipLibrary.pdb
 C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\obj\Release\DielershipLibrary.dll
 C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\obj\Release\DielershipLibrary.pdb
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.dll
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.pdb
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.dll
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.pdb
