@@ -13,9 +13,9 @@ using System.Xml.Linq;
 
 namespace Dealership1._0
 {
-    public partial class ExtrasForm : Form
+    public partial class ExtrasInfoForm : Form
     {
-        public ExtrasForm()
+        public ExtrasInfoForm()
         {
             InitializeComponent();
         }
@@ -145,7 +145,7 @@ namespace Dealership1._0
         }
         private void InfoForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void CarInfoTextbox_KeyDown(object sender, KeyEventArgs e)
@@ -154,6 +154,28 @@ namespace Dealership1._0
             {
                 this.Close();
             }
+        }
+
+        private void TopMostButton_Click(object sender, EventArgs e)
+        {
+            if (TopMost == false)
+            {
+                this.TopMost = true;
+                
+                TopMostButton.Image = new Bitmap(Properties.Resources.icons8_push_pin_24);
+                CarInfoTextbox.Focus();
+            }
+            else
+            {
+                this.TopMost = false;
+                TopMostButton.Image = new Bitmap(Properties.Resources.icons8_pin_24);
+                CarInfoTextbox.Focus();
+            }
+        }
+
+        private void CopyToClipboardButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(this.CarInfoTextbox.Text);
         }
     }
 }

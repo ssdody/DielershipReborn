@@ -103,6 +103,36 @@ namespace Dealership1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_copy_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-copy-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_information_filled_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-information-filled-24", resourceCulture);
@@ -143,9 +173,29 @@ namespace Dealership1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_pin_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pin-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_plus_math_24__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-plus-math-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_push_pin_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-push-pin-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +216,16 @@ namespace Dealership1._0.Properties {
         internal static System.Drawing.Bitmap icons8_trash_can_26 {
             get {
                 object obj = ResourceManager.GetObject("icons8-trash-can-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_unpin_2_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-unpin-2-26", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

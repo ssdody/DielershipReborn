@@ -57,22 +57,22 @@ namespace DielershipLibrary
         private string _elAdjustmentSusp = string.Empty;
         private string _elAdjustmentSeats = string.Empty;
         private string _elSteerAmplifier = string.Empty;
-        private string _airConditioning = string.Empty;//"Климатик";
-        private string _climatronic = string.Empty;//"Климатроник";
-        private string _multifuntionSteer = string.Empty;//"Мултифункционален волан";
-        private string _navigation = string.Empty;//"Навигация";
-        private string _steeringHeater = string.Empty;// "Отопление на волана";
-        private string _heatingSys = string.Empty;//"Печка";
-        private string _frontWindowHeating = string.Empty;//"Подгряване на предното стъкло";
-        private string _seatsHeating = string.Empty;//"Подгряване на седалките";
-        private string _steeringAdjustment = string.Empty;//"Регулиране на волана";
-        private string _rainSensor = string.Empty;//"Сензор за дъжд";
-        private string _servoSteerAmplifier = string.Empty;//"Серво усилвател на волана";
-        private string _headlightWash = string.Empty;//"Система за измиване на фаровете";
-        private string _autopilot = string.Empty;//"Автопилот";
-        private string _stereo = string.Empty;//"Стерео уредба";
-        private string _dpfFilter = string.Empty;// "Филтър за твърди частици";
-        private string _coolingGlovebox = string.Empty;//"Хладилна жабка";
+        private string _airConditioning = string.Empty;
+        private string _climatronic = string.Empty;
+        private string _multifuntionSteer = string.Empty;
+        private string _navigation = string.Empty;
+        private string _steeringHeater = string.Empty;
+        private string _heatingSys = string.Empty;
+        private string _frontWindowHeating = string.Empty;
+        private string _seatsHeating = string.Empty;
+        private string _steeringAdjustment = string.Empty;
+        private string _rainSensor = string.Empty;
+        private string _servoSteerAmplifier = string.Empty;
+        private string _headlightWash = string.Empty;
+        private string _autopilot = string.Empty;
+        private string _stereo = string.Empty;
+        private string _dpfFilter = string.Empty;
+        private string _coolingGlovebox = string.Empty;
         private string _extras = string.Empty;
         private string _status = string.Empty;
 
@@ -947,6 +947,7 @@ namespace DielershipLibrary
                     _areMileageReal = value;  
             }
         }
+        [System.Xml.Serialization.XmlElement("PayCase")]
         public string PayCase
         {
             get

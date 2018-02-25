@@ -74,45 +74,9 @@
     <AreMileageReal>0</AreMileageReal>
   </Car>
   <Car>
-    <ContractNumber>60</ContractNumber>
-    <Category>Джип</Category>
-    <PayCase>EXOTIC CARS</PayCase>
-    <Brand>ASTON MARTIN</Brand>
-    <Model>DB11</Model>
-    <BodyworkType>Комби</BodyworkType>
-    <HorsePower>343</HorsePower>
-    <FuelType>Бензин</FuelType>
-    <Color>Зелен</Color>
-    <ProductionDate>2011</ProductionDate>
-    <Mileage>22342234</Mileage>
-    <Price>325345</Price>
-    <AdditionalInfo>
-    </AdditionalInfo>
-    <EngineVolumeCc>2345</EngineVolumeCc>
-    <Vin>SAFSDGF435</Vin>
-    <Status>В сервиз</Status>
-    <Gearbox>Ръчна</Gearbox>
-    <Extras>Auto Start Stop function$Bluetooth \ handsfree система$DVD, TV$Steptronic, Tiptronic$USB, audio\video, IN\AUX изводи$Адаптивно въздушно окачване$Безключово палене $Блокаж на диференциала$Бордкомпютър$Датчик за светлина$Ел. Стъкла$Ел. регулиране на окачването$Ел. регулиране на седалките$Климатроник$Мултифункционален волан$Отопление на волана$Подгряване на предното стъкло$Подгряване на седалките$Регулиране на волана$Серво усилвател на волана$Система за измиване на фаровете$Система за контрол на скоростта (автопилот)$Стерео уредба$GPS система за проследяване$Система за контрол на дистанцията$7 места$Buy back$Бартер$Капариран\Продаден$Катастрофирал$4(5) Врати$LED фарове$Ксенонови фарове$Лети джанти$Халогенни фарове$Брониран$Велурен салон$Десен волан$Кожен салон$</Extras>
-    <NumberOfKeys>3</NumberOfKeys>
-    <Tires>Зимни</Tires>
-    <DateOfCreatingAd>2018-02-22</DateOfCreatingAd>
-    <RealSellingPrice>2434</RealSellingPrice>
-    <MinBillValue>234234</MinBillValue>
-    <MaxBillValue>234234</MaxBillValue>
-    <OwnerByVoucher>azz</OwnerByVoucher>
-    <OwnerByBusiness>az</OwnerByBusiness>
-    <FuelCosts>2352</FuelCosts>
-    <ServiceCosts>3434</ServiceCosts>
-    <CosmeticsCosts>345443</CosmeticsCosts>
-    <Comission>455</Comission>
-    <Czs>345</Czs>
-    <AreMileageReal>1</AreMileageReal>
-  </Car>
-  <Car>
     <ContractNumber>61</ContractNumber>
     <Category>Лек автомобил</Category>
-    <PayCase>EXOTIC CARS
-    </PayCase>
+    <PayCase>EXOTIC CARS</PayCase>
     <Brand>DODGE</Brand>
     <Model>Avenger</Model>
     <BodyworkType>Седан</BodyworkType>
@@ -178,38 +142,39 @@
     <AreMileageReal>0</AreMileageReal>
   </Car>
   <Car>
-    <ContractNumber>66</ContractNumber>
-    <Category>Миниван</Category>
-    <PayCase>DYNAMIC AUTO</PayCase>
-    <Brand>HONDA</Brand>
-    <Model>FR-V</Model>
-    <BodyworkType>
-    </BodyworkType>
-    <HorsePower>140</HorsePower>
-    <FuelType>Дизел</FuelType>
-    <Color>Черен</Color>
-    <ProductionDate>2007</ProductionDate>
-    <Mileage>178000</Mileage>
-    <Price>6999</Price>
-    <AdditionalInfo>Удри уйно..</AdditionalInfo>
-    <EngineVolumeCc>2198</EngineVolumeCc>
-    <Vin>SDFERG3534T</Vin>
+    <ContractNumber>68</ContractNumber>
+    <Category>Лек автомобил</Category>
+    <PayCase>EXOTIC CARS</PayCase>
+    <Brand>AUDI</Brand>
+    <Model>A6</Model>
+    <BodyworkType>Седан</BodyworkType>
+    <HorsePower>150</HorsePower>
+    <FuelType>Бензин</FuelType>
+    <Color>Сив</Color>
+    <ProductionDate>2003</ProductionDate>
+    <Mileage>1323214</Mileage>
+    <Price>3000</Price>
+    <AdditionalInfo>
+    </AdditionalInfo>
+    <EngineVolumeCc>1789</EngineVolumeCc>
+    <Vin>LLJLKJ</Vin>
     <Status>Налична</Status>
-    <Gearbox>Ръчна</Gearbox>
-    <Extras>Auto Start Stop function$Bluetooth \ handsfree система$DVD, TV$USB, audio\video, IN\AUX изводи$Бордкомпютър$Датчик за светлина$Ел. Стъкла$Ел. регулиране на окачването$Ел. регулиране на седалките$Ел. усилвател на волана$Климатроник$Мултифункционален волан$Отопление на волана$Печка$Подгряване на предното стъкло$Сензор за дъжд$Система за измиване на фаровете$Система за контрол на скоростта (автопилот)$Стерео уредба$Филтър за твърди частици$Хладилна жабка$GPS система за проследяване$Автоматичен контрол на стабилността$Адаптивни предни светлини$Въздушни възглавници - Задни$Въздушни възглавници - Предни$Парктроник$Система за динамична устойчивост$Система за защита от пробуксуване$Buy back$Газова уредба$Капариран\Продаден$На части$LED фарове$Лети джанти$Металик$Отопляеми чистачки$Теглич$Шибедах$Аларма$Брониран$Имобилайзер$</Extras>
-    <NumberOfKeys>2</NumberOfKeys>
-    <Tires>Летни и зимни</Tires>
-    <DateOfCreatingAd>2018-02-22</DateOfCreatingAd>
-    <RealSellingPrice>5000</RealSellingPrice>
-    <MinBillValue>150</MinBillValue>
-    <MaxBillValue>5000</MaxBillValue>
-    <OwnerByVoucher>Ти</OwnerByVoucher>
-    <OwnerByBusiness>Да ти</OwnerByBusiness>
-    <FuelCosts>20</FuelCosts>
-    <ServiceCosts>200</ServiceCosts>
-    <CosmeticsCosts>60</CosmeticsCosts>
-    <Comission>1000</Comission>
-    <Czs>555</Czs>
-    <AreMileageReal>0</AreMileageReal>
+    <Gearbox>Автоматична</Gearbox>
+    <Extras>
+    </Extras>
+    <NumberOfKeys>4</NumberOfKeys>
+    <Tires>Зимни</Tires>
+    <DateOfCreatingAd>2018-02-24</DateOfCreatingAd>
+    <RealSellingPrice>4000</RealSellingPrice>
+    <MinBillValue>234</MinBillValue>
+    <MaxBillValue>4</MaxBillValue>
+    <OwnerByVoucher>me</OwnerByVoucher>
+    <OwnerByBusiness>me again</OwnerByBusiness>
+    <FuelCosts>5</FuelCosts>
+    <ServiceCosts>5</ServiceCosts>
+    <CosmeticsCosts>45</CosmeticsCosts>
+    <Comission>0</Comission>
+    <Czs>0</Czs>
+    <AreMileageReal>1</AreMileageReal>
   </Car>
 </Cars>

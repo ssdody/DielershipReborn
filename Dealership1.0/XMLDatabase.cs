@@ -294,16 +294,23 @@ namespace Dealership1._0
 
         public static List<Car> LoadCarsListFromXmlDB() //CHECKED ! WORKS FINE
         {
-            XDocument xDoc = new XDocument();
+            
+            XDocument xDoc = new XDocument(new XElement("Car"));
             if (!File.Exists(filename))
             {
-                xDoc.Save(filename);
+                
+                xDoc.Save(filename,SaveOptions.None);
             }
 
             List<Car> xmlCarList = new List<Car>();
             xDoc = XDocument.Load(filename);
 
-            int outParamValue;
+            if (!xDoc.Root.Elements().Any())
+            {
+                return xmlCarList;
+            }
+
+            int outParamValue = 0;
             foreach (var d in xDoc.Descendants("Car"))
             {
                 var newCar = new Car();

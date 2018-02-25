@@ -27,6 +27,7 @@
         private BindingSource soldCarsListBinding = new BindingSource();
         private int contractNumber;
         private bool IsInfoShowed;
+        private string logPath = "..\\Log.txt";
 
         public DielershipUI()
         {
@@ -54,7 +55,7 @@
         //buttonClick
         private void addButton_Click(object sender, EventArgs e)
         {
-
+            Log("addButton() clicked!");
             if (IsInfoShowed == true)
             {
                 this.ClearTextboxesAndComboboxes();
@@ -118,12 +119,13 @@
             this.ClearTextboxesAndComboboxes();
             UncheckCheckboxes();
             SetHidablePricePanelTextboxesToDefaultValue();
+
             //this.UncheckCheckboxes();
 
         }
         private void UncheckCheckboxes()
         {
-
+            Log("Uncheck checkboxes invoked!");
 
             for (int i = 0; i < ExtrasCheckedListBox.Items.Count; i++)
             {
@@ -145,6 +147,7 @@
 
         private void HidePricePanelButton_Click(object sender, EventArgs e)
         {
+            Log("Hide price panel button clicked!");
             if (HidablePricePanel.Visible == true)
             {
                 HidablePricePanel.Visible = false;
@@ -161,6 +164,7 @@
 
         private void UploadButton_Click(object sender, EventArgs e) // OK! 21.02.18
         {
+            Log("Upload button clicked!");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             if (carsListBox.SelectedItem == null)
@@ -198,6 +202,7 @@
 
         private void SaveImageButton_Click(object sender, EventArgs e) // OK! 05.02.18
         {
+            Log("Save image button clicked!");
             Car currCar = (Car)carsListBox.SelectedItem;
             if (pictureBox1.Image != null && currCar != null)
             {
@@ -217,7 +222,7 @@
 
                     if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
                     {
-                        System.IO.File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
+                        File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
                     }
 
 
@@ -258,12 +263,12 @@
 
         private void ShowInfoFormButton_Click(object sender, EventArgs e)
         {
+            Log("Info button clicked!");
             if (carsListBox.Items.Count > 0 && carsListBox.SelectedItem != null)
             {
-
                 //FillCarInfoToTextboxes(carsListBox.SelectedItem);
 
-                ExtrasForm infoForm = new ExtrasForm();
+                ExtrasInfoForm infoForm = new ExtrasInfoForm();
                 if (true)
                 {
 
@@ -276,31 +281,27 @@
             }
         }
 
-        private void clearSoldCarsButton_Click(object sender, EventArgs e)
-        {
-            ////mark item as sold 
-            ////clear soldCarsList
+        //private void clearSoldCarsButton_Click(object sender, EventArgs e)
+        //{
+        //    foreach (var item in soldCarsList)
+        //    {
+        //        if (item == null)
+        //        {
+        //            return;
+        //        }
 
-            foreach (var item in soldCarsList)
-            {
-                if (item == null)
-                {
-                    return;
-                }
+        //        item.IsSold = true;
+        //    }
 
-                item.IsSold = true;
-            }
+        //    this.soldCarsList.Clear();
 
-            this.soldCarsList.Clear();
-            //this.carsBinding.DataSource = this.dieler.CarsList.Where(x => x.IsSold == false).ToList();
-
-            this.soldCarsListBinding.ResetBindings(false);
-            this.carsListBinding.ResetBindings(false);
-        }
+        //    this.soldCarsListBinding.ResetBindings(false);
+        //    this.carsListBinding.ResetBindings(false);
+        //}
 
         private void soldButton_Click(object sender, EventArgs e)
         {
-
+            Log("soldButton clicked!");
             // copy item to soldCarsList
             // erase from carsList
             if (carsListBox.SelectedItem != null)
@@ -322,10 +323,15 @@
                     carsListBox.Refresh();
                     carsListBox.ClearSelected();
 
-                    ProfitLabel.Text = Settings.Default.MonthlyProfit.ToString() + "$";
+                    if (Directory.Exists($"..\\Images\\{selectedCar.ContractNumber}"))
+                    {
+                        Directory.Delete($"..\\Images\\{selectedCar.ContractNumber}");
+                    }
+
                 }
                 else
                 {
+
                     return;
                 }
             }
@@ -354,24 +360,24 @@
 
             FillCarInfoToTextboxes(carsListBox.SelectedItem);
         }
-        //
-        public void UpdateCarData(Car carToUpdateData) // to do
-        {
-            int carIndex = carToUpdateData.ContractNumber;
+        //change xml element value method
+        //public void UpdateCarData(Car carToUpdateData) // to do
+        //{
+        //    int carIndex = carToUpdateData.ContractNumber;
 
-            XDocument xDoc = XDocument.Load("data.xml");
-
-
-
-            var xElemAgent = xDoc.Descendants("Car")
-                            .First(a => a.Element("ContractNumber").Value == carIndex.ToString());
+        //    XDocument xDoc = XDocument.Load("data.xml");
 
 
-            xElemAgent.Element("Price").Value = "5555555";
 
-            xDoc.Save("data.xml");
+        //    var xElemAgent = xDoc.Descendants("Car")
+        //                    .First(a => a.Element("ContractNumber").Value == carIndex.ToString());
 
-        }
+
+        //    xElemAgent.Element("Price").Value = "5555555";
+
+        //    xDoc.Save("data.xml");
+
+        //}
 
         //private void UncheckCheckboxes()
         //{
@@ -706,30 +712,25 @@
         //form load&close
         private void DielershipUI_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Log("Form closed");
+            Log("-----------------------------------");
         }
 
         private void DielershipUI_Load(object sender, EventArgs e)
         {
+            Log("Form load!");
             carsListBox.Update();
 
             this.contractNumber = int.Parse(Settings.Default["NumOfContracts"].ToString());
-
-            ProfitLabel.Text = Settings.Default.MonthlyProfit.ToString() + " $";
 
             carsListBox.ClearSelected();
         }
 
         //indexChanged
-        private void ResetProfitLabelButton_Click(object sender, EventArgs e)
-        {
-            Settings.Default.MonthlyProfit = 0;
-            ProfitLabel.Text = Settings.Default.MonthlyProfit.ToString() + "$";
-            Settings.Default.Save();
-        }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-
+            Log("UpdateButton clicked!");
 
             if (StatusRadioButton.Checked)
             {
@@ -925,7 +926,7 @@
 
         private void StatusRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            
             if (carsListBox.SelectedItem == null)
             {
                 MessageBox.Show("Не е избран автомобил!", "Промяна", MessageBoxButtons.OK, MessageBoxIcon.Hand);
@@ -935,9 +936,22 @@
 
         }
         //methods
+        private void Log(string content)
+        {
+            string fullContent = DateTime.Now + " - " + content;
+            if (!File.Exists(logPath))
+            {
+                File.Create(logPath).Dispose();
+            }
+            File.AppendAllText(logPath, fullContent);
+            File.AppendAllText(logPath, "\r\n");
+        }
+
         private Car CreateCar()
         {
-            var Id = IsIdAlreadyTaken(this.NextContractNumber());
+            Log("CreateCar method invoked!");
+
+            var Id = /*IsIdAlreadyTaken(*/this.GetContractNumber();
             Car newCar = new Car(Id);
             newCar.DateOfCreatingAd = DateTime.Now.Date.ToShortDateString();
             newCar.Category = Convert.ToString(CategoryCombobox.SelectedItem);
@@ -1000,6 +1014,7 @@
 
         private void SaveImageToDir()
         {
+            Log("SaveImageToDir() invoked!");
             Car currCar = (Car)carsListBox.SelectedItem;
             if (pictureBox1.Image != null && currCar != null)
             {
@@ -1084,16 +1099,29 @@
             VinTextBox.ReadOnly = condition;
         }
 
-        private int NextContractNumber()
+        private int GetContractNumber()
         {
             int id = int.Parse(Settings.Default["NumOfContracts"].ToString());
-            Settings.Default["NumOfContracts"] = id + 1;
+            Settings.Default["NumOfContracts"] = id++;
             Settings.Default.Save();
-            return ++id;
+
+            int finalId = id;
+            foreach (var car in carsListBox.Items)
+            {
+                Car currentCar = (Car)car;
+                if (currentCar.ContractNumber >= id)
+                {
+                    finalId++;
+                }
+
+            }
+            return finalId;
+
         }
 
         private void ShowPicture()
         {
+            Log("ShowPicture() method invoked!");
             var car = (Car)carsListBox.SelectedItem;
             string carNumber = car.ContractNumber.ToString();
             if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
@@ -1111,6 +1139,7 @@
         }
         private void OpenFolder(object car)
         {
+            Log("OpenFolder() method invoked!");
             Car carCasted = (Car)car;
             if (!Directory.Exists($"..\\Images\\{carCasted.ContractNumber}\\"))
             {
@@ -1120,20 +1149,20 @@
 
         }
 
-        private int IsIdAlreadyTaken(int id)
-        {
-            int finalId = id;
-            foreach (var car in carsListBox.Items)
-            {
-                Car currentCar = (Car)car;
-                if (currentCar.ContractNumber > id)
-                {
-                    finalId = currentCar.ContractNumber + 1;
-                }
+        //private int IsIdAlreadyTaken(int id)
+        //{
+        //    int finalId = id;
+        //    foreach (var car in carsListBox.Items)
+        //    {
+        //        Car currentCar = (Car)car;
+        //        if (currentCar.ContractNumber >= id)
+        //        {
+        //            finalId++;
+        //        }
 
-            }
-            return finalId;
-        }
+        //    }
+        //    return finalId;
+        //}
 
         private void FillCarInfoToTextboxes(object selectedItem)
         {
@@ -1207,7 +1236,7 @@
             this.IsInfoShowed = true;
 
 
-        }
+        }// todo
 
         private bool CheckIfAllComboboxesAreAssigned()
         {
@@ -1255,21 +1284,7 @@
 
         }
 
-        //mouseHover
-        private void CategoryCombobox_MouseHover(object sender, EventArgs e)
-        {
-            //if (IsReadOnly)
-            //{
-            //    CategoryCombobox.Enabled = false;
-
-            //}
-        }
-
-        private void CategoryCombobox_MouseLeave(object sender, EventArgs e)
-        {
-            //CategoryCombobox.Enabled = true;
-        }
-
+        //visiblechange
         private void UpdateButton_VisibleChanged(object sender, EventArgs e)
         {
             if (UpdateButton.Visible)

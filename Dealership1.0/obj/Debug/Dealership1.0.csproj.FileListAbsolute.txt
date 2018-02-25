@@ -51,4 +51,13 @@ D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\Interop.AcroPDFLib.
 D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\AxInterop.AcroPDFLib.dll
 D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUInotsure.resources
 D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.resources
-D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.ExtrasForm.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.ExtrasInfoForm.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\ar-YE\Dealership1.0.resources.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\bg-BG\Dealership1.0.resources.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\bin\Debug\ca\Dealership1.0.resources.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.ar-YE.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.bg-BG.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\Dealership1._0.DielershipUI.ca.resources
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\ar-YE\Dealership1.0.resources.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\bg-BG\Dealership1.0.resources.dll
+D:\dealershipReborn\DielershipReborn\Dealership1.0\obj\Debug\ca\Dealership1.0.resources.dll
