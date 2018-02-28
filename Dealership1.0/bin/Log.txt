@@ -1,0 +1,12 @@
+2018-02-25 2:58:39 AM - Form load!
+2018-02-25 2:59:02 AM - ShowPicture() method invoked!
+2018-02-25 2:59:03 AM - ShowPicture() method invoked!
+2018-02-25 2:59:04 AM - Info button clicked!
+2018-02-25 2:59:10 AM - addButton() clicked!
+2018-02-25 2:59:12 AM - soldButton clicked!
+2018-02-25 3:00:01 AM - ShowPicture() method invoked!
+2018-02-25 3:00:02 AM - ShowPicture() method invoked!
+2018-02-25 3:00:03 AM - ShowPicture() method invoked!
+2018-02-25 3:00:05 AM - Hide price panel button clicked!
+2018-02-25 3:00:08 AM - Form closed
+2018-02-25 3:00:08 AM - -----------------------------------
