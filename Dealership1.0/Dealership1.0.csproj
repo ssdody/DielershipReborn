@@ -57,17 +57,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DielershipUInotsure.resx</DependentUpon>
     </Compile>
-    <Compile Include="FullInfoForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FullInfoForm.Designer.cs">
-      <DependentUpon>FullInfoForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="InfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InfoForm.Designer.cs">
       <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,11 +93,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>DielershipUInotsure.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="FullInfoForm.resx">
-      <DependentUpon>FullInfoForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="InfoForm.resx">
       <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -195,6 +195,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-push-pin-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-big[128].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24 %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

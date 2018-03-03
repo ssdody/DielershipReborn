@@ -6,3 +6,8 @@ D:\dealershipReborn\DielershipReborn\DielershipLibrary\bin\Release\DielershipLib
 D:\dealershipReborn\DielershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.pdb
 D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.dll
 D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.csprojResolveAssemblyReference.cache
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.pdb

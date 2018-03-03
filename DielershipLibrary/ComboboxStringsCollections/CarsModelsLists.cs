@@ -8,7 +8,8 @@ namespace DielershipLibrary.CarModelsLists
 {
     public class CarsModelsLists
     {
-        public static readonly object[] AudiModels = new object[] {
+        public static readonly object[] AudiModels = new object[] 
+        {
             "A3" ,"S3", "RS3",
             "A4", "S4","RS4",
             "A5", "S5" , "RS5",
@@ -21,9 +22,11 @@ namespace DielershipLibrary.CarModelsLists
             "Q7" , "SQ7",
             "Q8"  ,"Quattro", "Coupe GT",
             "R8", "R8 GT",
-            "TT","TTS", "TT RS"};
+            "TT","TTS", "TT RS","Other"
+        };
 
-        public static readonly object[] BMWModels = new object[] {
+        public static readonly object[] BMWModels = new object[] 
+        {
             "1 Series",
             "3 series",
             "5 Series" ,
@@ -39,7 +42,7 @@ namespace DielershipLibrary.CarModelsLists
             "BMW E9",
             "X5 M",
             "X5",
-            "X3"
+            "X3","Other"
         };
 
         public static readonly object[] FordModels = new object[] {
@@ -57,7 +60,7 @@ namespace DielershipLibrary.CarModelsLists
             "Kuga",
             "Puma",
             "Rheinland",
-            "Taunus"
+            "Taunus","Other"
         };
 
         public static readonly object[] MercedesModels = new object[] {
@@ -193,6 +196,7 @@ namespace DielershipLibrary.CarModelsLists
             "SLR McLaren",
             "SLS",
             "V-Class",
+            "Other"
         };
 
         public static readonly object[] OpelModels = new object[] {
@@ -223,7 +227,7 @@ namespace DielershipLibrary.CarModelsLists
             "Vectra",
             "Vivaro",
             "Zafira",
-            "Zafira Tourer"
+            "Zafira Tourer","Other"
         };
 
         public static readonly object[] PorscheModels = new object[] {
@@ -241,7 +245,7 @@ namespace DielershipLibrary.CarModelsLists
             "Cayenne",
             "Cayman",
             "Panamera",
-            "Macan"
+            "Macan","Other"
         };
 
         public static readonly object[] VolkswagenModels = new object[] {
@@ -254,8 +258,8 @@ namespace DielershipLibrary.CarModelsLists
             "Fox",
             "Golf",
             "Golf Plus",
-            "Jetta / Bora / Vento",
-            "Karmann Ghia",
+            "Jetta / Bora",
+            "Karmann",
             "Lupo",
             "New Beetle",
             "Passat",
@@ -267,10 +271,11 @@ namespace DielershipLibrary.CarModelsLists
             "Tiguan",
             "Touareg",
             "Touran",
-            "Transporter / Caravelle / Microbus / Vanagon / Eurovan",
+            "Transporter","Other"
         };
 
         public static readonly object[] CitroenModels = new object[] {
+            "C1",
             "C2",
             "C3",
             "C4",
@@ -290,7 +295,7 @@ namespace DielershipLibrary.CarModelsLists
             "Elysee",
             "Nemo",
             "Jumper",
-            "Jumpy",
+            "Jumpy","Other"
         };
 
         public static readonly object[] PeugeotModels = new object[] {
@@ -315,13 +320,12 @@ namespace DielershipLibrary.CarModelsLists
         "Bipper",
         "Partner",
         "Expert",
-        "Boxer"
+        "Boxer","Other"
         };
 
         public static readonly object[] AlfaRomeoModels = new object[] {
            "MiTo",
            "Giulietta",
-           "4C",
            "4C",
            "Spider",
            "Giulia",
@@ -329,10 +333,11 @@ namespace DielershipLibrary.CarModelsLists
            "Giulia",
            "Alfetta",
            "Giulietta",
+           "147",
            "156",
            "166",
            "159",
-           "Giulia"
+           "Giulia","Other"
         };
 
         public static readonly object[] FiatModels = new object[] {
@@ -344,7 +349,8 @@ namespace DielershipLibrary.CarModelsLists
              "Sedic",
              "Albea",
              "Idea",
-             "Freemont"
+             "Freemont",
+             "Croma","Other"
         };
         public static readonly object[] FerrariModels = new object[] {
            "488",
@@ -357,7 +363,7 @@ namespace DielershipLibrary.CarModelsLists
            "F12tdf",
            "GTC4Lusso / GTC4Lusso T",
            "LaFerrari",
-           "LaFerrari Aperta",
+           "LaFerrari Aperta","Other"
         };
 
         public static readonly object[] HondaModels = new object[] {
@@ -387,7 +393,7 @@ namespace DielershipLibrary.CarModelsLists
            "Jazz RS",
            "Legend",
            "Odyssey/Shuttle",
-           "Shuttle",
+           "Shuttle","Other"
         };
 
         public static readonly object[] AcuraModels = new object[] {
@@ -407,7 +413,7 @@ namespace DielershipLibrary.CarModelsLists
            "RL",
            "ZDX",
            "TL",
-           "TSX",
+           "TSX","Other"
         };
 
         public static readonly object[] MazdaModels = new object[] {
@@ -422,7 +428,7 @@ namespace DielershipLibrary.CarModelsLists
             "CX-8",
             "CX-9",
             "BT-50",
-            "Titan",
+            "Titan","Other"
         };
 
         public static readonly object[] MitsubishiModels = new object[] {
@@ -451,7 +457,7 @@ namespace DielershipLibrary.CarModelsLists
             "L 200",
             "Pajero",
             "Lancer",
-            "Pajero Pinin",
+            "Pajero Pinin","Other"
         };
 
         public static readonly object[] NissanModels = new object[] {
@@ -502,7 +508,7 @@ namespace DielershipLibrary.CarModelsLists
             "Dayz",
             "Dayz Roox",
             "NV300",
-            "Kicks"
+            "Kicks","Other"
         };
 
         public static readonly object[] InfinityModels = new object[] {
@@ -521,7 +527,7 @@ namespace DielershipLibrary.CarModelsLists
             "Q40",
             "Q45",
             "ESQ",
-            "QX70"
+            "QX70","Other"
         };
 
         public static readonly object[] SubaruModels = new object[] {
@@ -531,7 +537,7 @@ namespace DielershipLibrary.CarModelsLists
             "Outback",
             "WRX",
             "BRZ",
-            "GTB"
+            "GTB","Other"
 
         };
 
@@ -563,7 +569,7 @@ namespace DielershipLibrary.CarModelsLists
             "Venuza",
             "Sequoia",
             "Yaris Verso",
-            "Avensis Verso"
+            "Avensis Verso","Other"
         };
 
         public static readonly object[] HyundaiModels = new object[]
@@ -590,7 +596,7 @@ namespace DielershipLibrary.CarModelsLists
             "Getz",
             "Lavita",
             "Coupe",
-            "Trajet",
+            "Trajet","Other"
 
         };
         public static readonly object[] KiaModels = new object[]
@@ -614,7 +620,7 @@ namespace DielershipLibrary.CarModelsLists
             "Sportage",
             "Pregio",
             "Soul",
-            "Niro"
+            "Niro","Other"
        };
 
         public static readonly object[] DaciaModels = new object[]
@@ -627,7 +633,7 @@ namespace DielershipLibrary.CarModelsLists
         "Lodgy Stepway",
         "Dokker",
         "Dokker Van",
-        "Dokker Stepway",
+        "Dokker Stepway","Other"
       };
 
         public static readonly object[] VolvoModels = new object[]
@@ -649,7 +655,7 @@ namespace DielershipLibrary.CarModelsLists
           "V50",
           "C30",
           "XC60",
-          "S90",
+          "S90","Other"
      };
 
 
@@ -669,7 +675,7 @@ namespace DielershipLibrary.CarModelsLists
             "Cygnet",
             "V12 Zagato",
             "Vanquish / Volante",
-            "DB11"
+            "DB11","Other"
      };
 
         public static readonly object[] BentleyModels = new object[]
@@ -678,7 +684,7 @@ namespace DielershipLibrary.CarModelsLists
          "Bentayga",
          "Continental GT",
          "Mulsanne",
-         "Continental GTC"
+         "Continental GTC","Other"
      };
 
         public static readonly object[] JaguarModels = new object[]
@@ -687,7 +693,7 @@ namespace DielershipLibrary.CarModelsLists
             "XE",
             "XF",
             "XJ",
-            "R"
+            "R","Other"
 
       };
 
@@ -698,7 +704,7 @@ namespace DielershipLibrary.CarModelsLists
         "Range Rover Evoque",
         "Range Rover Velar",
         "Range Rover Sport",
-        "Range Rover",
+        "Range Rover","Other"
       };
 
         public static readonly object[] MiniModels = new object[]
@@ -719,7 +725,7 @@ namespace DielershipLibrary.CarModelsLists
          "Cooper SD",
          "Cooper S",
          "E",
-         "John Cooper Works"
+         "John Cooper Works","Other"
      };
 
         public static readonly object[] GreatWallModels = new object[]
@@ -728,7 +734,7 @@ namespace DielershipLibrary.CarModelsLists
        "Hover",
        "Hover H3",
        "Hover H5",
-       "Hover H6"
+       "Hover H6","Other"
 
     };
 
@@ -758,13 +764,13 @@ namespace DielershipLibrary.CarModelsLists
         "Logan",
         "Sandero",
         "Lodgy",
-        "Latitude",
+        "Latitude","Other"
     };
 
         public static readonly object[] BugattiModels = new object[]
     {
         "Veyron",
-        "Chiron",
+        "Chiron","Other"
     };
 
         public static readonly object[] SmartModels = new object[]
@@ -773,7 +779,7 @@ namespace DielershipLibrary.CarModelsLists
         "ForFour",
         "Roadster",
         "Crossblade",
-        "City"
+        "City","Other"
     };
 
         public static readonly object[] LexusModels = new object[]
@@ -841,7 +847,7 @@ namespace DielershipLibrary.CarModelsLists
         "LS 460L AWD",
         "LS 600hL",
         "LS 500",
-        "LS 500h",
+        "LS 500h","Other"
 
     };
 
@@ -856,7 +862,7 @@ namespace DielershipLibrary.CarModelsLists
         "Rodius/Stavic",
         "Chairman W",
         "Kyron",
-        "Musso",
+        "Musso","Other"
     };
 
         public static readonly object[] DodgeModels = new object[]
@@ -876,7 +882,7 @@ namespace DielershipLibrary.CarModelsLists
         "Dart",
         "Dakota",
         "Caliber",
-        "Avenger"
+        "Avenger","Other"
    };
 
         public static readonly object[] ChryslerModels = new object[]
@@ -890,7 +896,7 @@ namespace DielershipLibrary.CarModelsLists
        "200",
        "300M",
        "300C",
-       "Ypsilon"
+       "Ypsilon","Other"
    };
 
         public static readonly object[] JeepModels = new object[]
@@ -900,7 +906,7 @@ namespace DielershipLibrary.CarModelsLists
        "Gladiator",
        "Wrangler",
        "Commander",
-       "Compass",
+       "Compass","Other"
    };
         public static readonly object[] CadillacModels = new object[]
    {
@@ -913,7 +919,7 @@ namespace DielershipLibrary.CarModelsLists
         "ATS-V",
         "XTS",
         "CT6",
-        "XT5"
+        "XT5","Other"
    };
         public static readonly object[] ChevroletModels = new object[]
    {
@@ -932,7 +938,7 @@ namespace DielershipLibrary.CarModelsLists
        "Tahoe",
        "Colorado",
        "Silverado",
-       "Lanos",
+       "Lanos","Other"
    };
     }
 }

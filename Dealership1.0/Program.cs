@@ -16,7 +16,7 @@ namespace Dealership1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DielershipUI());
+            Application.Run(new DielershipUIForm());
         }
     }
 }

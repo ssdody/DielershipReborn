@@ -19,20 +19,31 @@
     /// <summary>
     /// Dielership Main
     /// </summary>
-    public partial class DielershipUI : Form, IClearTextboxes
+    public partial class DielershipUIForm : Form, IClearTextboxes
     {
-
-        private List<Car> soldCarsList = new List<Car>();
         private BindingSource carsListBinding = new BindingSource();
-        private BindingSource soldCarsListBinding = new BindingSource();
         private int contractNumber;
         private bool IsInfoShowed;
         private string logPath = "..\\Log.txt";
 
-        public DielershipUI()
+
+        public DielershipUIForm()
         {
             this.InitializeComponent();
-            this.SetupData();
+
+            ////login form
+            LogInForm logForm = new LogInForm();
+            logForm.ShowDialog();
+
+            bool IsAuth = false;
+
+            while (!IsAuth)
+            {
+                this.Enabled = false;
+                IsAuth = LogInForm.CanContinue;
+            }
+            this.Enabled = true;
+            ////
 
             this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
 
@@ -44,9 +55,8 @@
             HidablePricePanel.Visible = false;
             UpdateButton.Visible = false;
             AreRealMileageCheckbox.Visible = false;
-
-
         }
+
         //// setupData empty
         private void SetupData()
         {
@@ -59,43 +69,20 @@
             if (IsInfoShowed == true)
             {
                 this.ClearTextboxesAndComboboxes();
-                SetHidablePricePanelTextboxesToDefaultValue();
-                IsInfoShowed = false;
+                pictureBox1.Image = null;
+                this.SetHidablePricePanelTextboxesToDefaultValue();
+                this.IsInfoShowed = false;
                 return;
             }
 
 
             if (CheckIfAllComboboxesAreAssigned())
             {
-
                 Car newCar = this.CreateCar();
-                //var Id = IsIdAlreadyTaken(this.NextContractNumber());
-                //Car newCar = new Car(Id);
-                //newCar.DateOfCreatingAd = DateTime.Now.Date.ToShortDateString();
-                //newCar.Category = Convert.ToString(CategoryCombobox.SelectedItem);
-                //newCar.Brand = Convert.ToString(BrandsComboBox.SelectedItem);
-                //newCar.Model = Convert.ToString(ModelCombobox.SelectedItem);
-                //newCar.BodyworkType = Convert.ToString(BodyTypeCombobox.SelectedItem);
-                //newCar.EngineVolumeCc = EngineVolumeCCTextBox.Text;
-                //newCar.HorsePower = horsePowerTextBox.Text;
-                //newCar.FuelType = Convert.ToString(FuelTypeCombobox.SelectedItem);
-                //newCar.Color = Convert.ToString(ColorsCombobox.SelectedItem);
-                //newCar.ProductionDate = productionDateTextBox.Text;
-                //newCar.Mileage = mileageTextBox.Text;
-                //newCar.Price = priceTextBox.Text;
-                //newCar.AdditionalInfo = additionalCarInfoTextBox.Text;
-                //newCar.Vin = WinTextBox.Text;
-                //newCar.IsSold = false;
-                //newCar.Status = Convert.ToString(StatusCombobox.SelectedItem);
-                //newCar.Category = Convert.ToString(CategoryCombobox.SelectedItem);
-                //newCar.NumberOfKeys = NumberOfKeysNumericUpDown.Value.ToString();
-                //newCar.Tires = Convert.ToString(TiresCombobox.SelectedItem);
+
                 this.AddExtrasToCarExtrasFieldIfChecked(newCar);
 
                 XMLDatabase.AppendNewCarDataToXML(newCar); // works fine
-
-
-
             }
             else
             {
@@ -115,23 +102,26 @@
                     return;
                 }
             }
-            ResetCarsList();
+            this.ResetCarsList();
             this.ClearTextboxesAndComboboxes();
-            UncheckCheckboxes();
-            SetHidablePricePanelTextboxesToDefaultValue();
 
-            //this.UncheckCheckboxes();
+            this.UncheckCheckboxes();
+            this.SetHidablePricePanelTextboxesToDefaultValue();
+
+            
 
         }
-        private void UncheckCheckboxes()
+
+        private void OpenPicDirButton_Click(object sender, EventArgs e)
         {
-            Log("Uncheck checkboxes invoked!");
-
-            for (int i = 0; i < ExtrasCheckedListBox.Items.Count; i++)
+            if (carsListBox.SelectedItem != null)
             {
-                ExtrasCheckedListBox.SetItemCheckState(i, CheckState.Unchecked);
+                OpenFolder(carsListBox.SelectedItem);
             }
-
+            else
+            {
+                MessageBox.Show("Избери кола от списъка и опитай пак.", "Опа");
+            }
         }
 
         private void AddExtrasToCarExtrasFieldIfChecked(Car newCar)
@@ -164,7 +154,8 @@
 
         private void UploadButton_Click(object sender, EventArgs e) // OK! 21.02.18
         {
-            Log("Upload button clicked!");
+            Log("UploadButton() clicked!");
+
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             if (carsListBox.SelectedItem == null)
@@ -199,68 +190,6 @@
 
         }
 
-
-        private void SaveImageButton_Click(object sender, EventArgs e) // OK! 05.02.18
-        {
-            Log("Save image button clicked!");
-            Car currCar = (Car)carsListBox.SelectedItem;
-            if (pictureBox1.Image != null && currCar != null)
-            {
-
-                int carNumber = currCar.ContractNumber;
-                if (Directory.Exists($"..\\Images\\{carNumber}"))
-                {
-
-                    string fileName = carNumber.ToString();
-                    // wallpaper pic naming
-                    if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
-                    {
-                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "header.jpeg", ImageFormat.Jpeg);
-                        pictureBox1.Image = null;
-                        return;
-                    }
-
-                    if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
-                    {
-                        File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
-                    }
-
-
-                    pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + ".jpeg", ImageFormat.Jpeg);
-
-
-                    //pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}.jpeg", ImageFormat.Jpeg);
-
-                }
-                else
-                {
-                    Directory.CreateDirectory($"..\\Images\\{currCar.ContractNumber}");
-
-                    string fileName = carNumber.ToString();
-
-                    if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
-                    {
-                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "header.jpeg", ImageFormat.Jpeg);
-                        pictureBox1.Image = null;
-                        return;
-                    }
-                    fileName += "1";
-
-                    while (File.Exists($"{carNumber}" + "1"))
-                    {
-                        fileName += "1";
-                    }
-                    pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "1" + ".jpeg", ImageFormat.Jpeg);
-
-
-                    //pictureBox1.Image.Save($"..\\Images\\{carNumber}.jpeg", ImageFormat.Jpeg);
-                }
-                pictureBox1.Image = null;
-
-
-            }
-        }
-
         private void ShowInfoFormButton_Click(object sender, EventArgs e)
         {
             Log("Info button clicked!");
@@ -277,456 +206,48 @@
 
                 infoForm.Show();
 
-                ////soldCarsListBox.ClearSelected();
+
             }
         }
-
-        //private void clearSoldCarsButton_Click(object sender, EventArgs e)
-        //{
-        //    foreach (var item in soldCarsList)
-        //    {
-        //        if (item == null)
-        //        {
-        //            return;
-        //        }
-
-        //        item.IsSold = true;
-        //    }
-
-        //    this.soldCarsList.Clear();
-
-        //    this.soldCarsListBinding.ResetBindings(false);
-        //    this.carsListBinding.ResetBindings(false);
-        //}
 
         private void soldButton_Click(object sender, EventArgs e)
         {
             Log("soldButton clicked!");
-            // copy item to soldCarsList
+            if (pictureBox1.Image != null)
+            {
+                pictureBox1.Image.Dispose();
+
+            }
             // erase from carsList
             if (carsListBox.SelectedItem != null)
             {
-                DialogResult dialogResult = MessageBox.Show("Are you sure ?", "Check", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Are you sure ?", "Check", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
+
                     Car selectedCar = (Car)carsListBox.SelectedItem;
                     var selectedCarPrice = int.Parse(selectedCar.Price);
-                    Settings.Default.MonthlyProfit += selectedCarPrice;
-                    Settings.Default.Save();
-
 
                     XMLDatabase.Remove(carsListBox.SelectedItem);
-                    this.soldCarsList.Add(selectedCar);
-                    this.soldCarsListBinding.ResetBindings(false);
 
                     this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
                     carsListBox.Refresh();
                     carsListBox.ClearSelected();
 
+                    //deletes all files in dir and then the delete the dir
                     if (Directory.Exists($"..\\Images\\{selectedCar.ContractNumber}"))
                     {
-                        Directory.Delete($"..\\Images\\{selectedCar.ContractNumber}");
+                        Directory.Delete($"..\\Images\\{selectedCar.ContractNumber}", true);
+
                     }
+                    else
+                    {
 
-                }
-                else
-                {
-
-                    return;
+                        return;
+                    }
                 }
             }
         }
-        // DoubleClick
-        private void carsListBox_DoubleClick(object sender, EventArgs e)
-        {
-
-            //var car = (Car)carsListBox.SelectedItem;
-            //string carNumber = car.ContractNumber.ToString();
-            //if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
-            //{
-            //    pictureBox1.Image = null;
-            //    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            //    pictureBox1.Image = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
-            //    SaveImageButton.Enabled = false;
-            //}
-            //else
-            //{
-            //    pictureBox1.Image = pictureBox1.InitialImage;
-
-            //}
-            ClearTextboxesAndComboboxes();
-            IsInfoShowed = true;
-            ShowPicture();
-
-            FillCarInfoToTextboxes(carsListBox.SelectedItem);
-        }
-        //change xml element value method
-        //public void UpdateCarData(Car carToUpdateData) // to do
-        //{
-        //    int carIndex = carToUpdateData.ContractNumber;
-
-        //    XDocument xDoc = XDocument.Load("data.xml");
-
-
-
-        //    var xElemAgent = xDoc.Descendants("Car")
-        //                    .First(a => a.Element("ContractNumber").Value == carIndex.ToString());
-
-
-        //    xElemAgent.Element("Price").Value = "5555555";
-
-        //    xDoc.Save("data.xml");
-
-        //}
-
-        //private void UncheckCheckboxes()
-        //{
-        //    AutoStartStopCheckBox.Checked = false;
-        //    BluetoothHFCheckbox.Checked = false;
-        //    DvdTvCheckbox.Checked = false;
-        //    SteptronicTiptronicCheckbox.Checked = false;
-        //    USBAudioVideoAUXCheckbox.Checked = false;
-        //    AdaptiveAirSuspCheckbox.Checked = false;
-        //    KeylessGoCheckbox.Checked = false;
-        //    DifferentialLockCheckbox.Checked = false;
-        //    ECUCheckbox.Checked = false;
-        //    ElMirrorsCheckbox.Checked = false;
-        //    ElWindowsCheckbox.Checked = false;
-        //    ElAdjustmentSuspCheckbox.Checked = false;
-        //    DPFFilterCheckbox.Checked = false;
-        //    CoolingGloveboxCheckbox.Checked = false;
-        //    StereoCheckbox.Checked = false;
-        //    ElAdjustmentSeatsCheckbox.Checked = false;
-        //    ElSteerAmplifierCheckbox.Checked = false;
-        //    AirConditioningCheckbox.Checked = false;
-        //    ClimatronicCheckbox.Checked = false;
-        //    MultifunctionSteerCheckbox.Checked = false;
-        //    NavigationCheckbox.Checked = false;
-        //    SteeringHeaterCheckbox.Checked = false;
-        //    FrontWindowHeatingCheckbox.Checked = false;
-        //    AutopilotCheckbox.Checked = false;
-        //    SeatsHeatingCheckbox.Checked = false;
-        //    RainSensorCheckbox.Checked = false;
-        //    SteeringAdjustmentCheckbox.Checked = false;
-        //    ServoSteerAmplifierCheckbox.Checked = false;
-        //    HeadlightsWashCheckbox.Checked = false;
-        //    HeatingSysCheckbox.Checked = false;
-        //}
-
-        ////private void DeserializeXMLDatabase()
-        ////{
-        ////    if (!File.Exists("data.xml"))
-        ////    {
-        ////        XmlSerializer xSerializer = new XmlSerializer(typeof(Car));
-        ////        using (FileStream read = new FileStream("data.xml", FileMode.Open, FileAccess.Read, FileShare.Read))
-        ////        {
-        ////            Car xmlCar = (Car)xSerializer.Deserialize(read);
-        ////            dieler.CarsList.Add(xmlCar);
-        ////        }
-        ////    }
-        //
-        ////}
-
-
-        //private void AddExtrasToCarExtrasFieldIfChecked(Car car)
-        //{
-        //    var tempBuilder = new StringBuilder();
-        //    List<CheckBox> checkboxList = new List<CheckBox>();
-        //    checkboxList.Add(AlluminRimsCheckbox);
-        //    checkboxList.Add(BrakeAssistCheckbox);
-        //    checkboxList.Add(BluetoothHFCheckbox);
-        //    checkboxList.Add(BarterCheckbox);
-        //    checkboxList.Add(AutoStartStopCheckBox);
-        //    checkboxList.Add(AutopilotCheckbox);
-        //    checkboxList.Add(AutoGasSysCheckbox);
-        //    checkboxList.Add(ASRCheckbox);
-        //    checkboxList.Add(ASCCheckbox);
-        //    checkboxList.Add(AirConditioningCheckbox);
-        //    checkboxList.Add(AigBagSysCheckbox);
-        //    checkboxList.Add(AdaptiveAirSuspCheckbox);
-        //    checkboxList.Add(HeatingSysCheckbox);
-        //    checkboxList.Add(CoolingGloveboxCheckbox);
-        //    checkboxList.Add(DPFFilterCheckbox);
-        //    checkboxList.Add(StereoCheckbox);
-        //    checkboxList.Add(HeadlightsWashCheckbox);
-        //    checkboxList.Add(ServoSteerAmplifierCheckbox);
-        //    checkboxList.Add(SteeringAdjustmentCheckbox);
-        //    checkboxList.Add(SeatsHeatingCheckbox);
-        //    checkboxList.Add(RainSensorCheckbox);
-        //    checkboxList.Add(FrontWindowHeatingCheckbox);
-        //    checkboxList.Add(NavigationCheckbox);
-        //    checkboxList.Add(SteeringHeaterCheckbox);
-        //    checkboxList.Add(MultifunctionSteerCheckbox);
-        //    checkboxList.Add(ClimatronicCheckbox);
-        //    checkboxList.Add(ElSteerAmplifierCheckbox);
-        //    checkboxList.Add(ElAdjustmentSeatsCheckbox);
-        //    checkboxList.Add(ElAdjustmentSuspCheckbox);
-        //    checkboxList.Add(ElMirrorsCheckbox);
-        //    checkboxList.Add(ElWindowsCheckbox);
-        //    checkboxList.Add(ECUCheckbox);
-        //    checkboxList.Add(DifferentialLockCheckbox);
-        //    checkboxList.Add(KeylessGoCheckbox);
-        //    checkboxList.Add(USBAudioVideoAUXCheckbox);
-        //    checkboxList.Add(SteptronicTiptronicCheckbox);
-        //    checkboxList.Add(DvdTvCheckbox);
-        //    checkboxList.Add(InStockCheckbox);
-        //    checkboxList.Add(LeasingCheckbox);
-        //    checkboxList.Add(MethanSysCheckbox);
-        //    checkboxList.Add(NewImportCheckbox);
-        //    checkboxList.Add(SevenSeatsCheckbox);
-        //    checkboxList.Add(ServiceBookCheckbox);
-        //    checkboxList.Add(TuningCheckbox);
-        //    checkboxList.Add(FullServicedCheckbox);
-        //    checkboxList.Add(RegisteredCheckbox);
-        //    checkboxList.Add(FourWheelDriveCheckbox);
-        //    checkboxList.Add(MetallicCheckbox);
-        //    checkboxList.Add(FourOrFiveDoorsCheckbox);
-        //    checkboxList.Add(HeatingWipesCheckbox);
-        //    checkboxList.Add(XenonHeadlightsCheckbox);
-        //    checkboxList.Add(SpoilerCheckbox);
-        //    checkboxList.Add(PanoramicHatchCheckbox);
-        //    checkboxList.Add(LedHeadlightsCheckbox);
-        //    checkboxList.Add(DrawbarCheckbox);
-        //    checkboxList.Add(DSACheckbox);
-        //    checkboxList.Add(DistronicCheckbox);
-        //    checkboxList.Add(DryBrakeSysCheckbox);
-        //    checkboxList.Add(ISOFIXCheckbox);
-        //    checkboxList.Add(SmartTireCheckbox);
-        //    checkboxList.Add(ParktronicCheckbox);
-        //    checkboxList.Add(ESPCheckbox);
-        //    checkboxList.Add(ABSCheckbox);
-        //    checkboxList.Add(AdaptiveFrontLightsCheckbox);
-        //    checkboxList.Add(GPSCheckbox);
-        //    checkboxList.Add(TwoOrThreeDoorsCheckbox);
-        //    checkboxList.Add(HalogenLightsCheckbox);
-        //    checkboxList.Add(ShuttleCheckbox);
-
-
-        //    foreach (var box in checkboxList)
-        //    {
-        //        if (box.Checked == true)
-        //        {
-        //            tempBuilder.Append(box.Text + "$");
-        //        }
-        //    }
-
-        //    car.Extras += tempBuilder.ToString();
-        //    ////if (this.AutoStartStopCheckBox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Auto start stop function" + "$");
-        //    ////    //car.Extras += "Auto start stop function";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.BluetoothHFCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Bluetooth , handsfree система" + "$");
-        //    ////    //car.Extras += "Bluetooth , handsfree система";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.DvdTvCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("DVD, TV" + "$");
-        //    ////    //car.Extras += "DVD, TV";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.SteptronicTiptronicCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Steptronic, Tiptronic" + "$");
-        //    ////    //car.Extras += "Steptronic, Tiptronic";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.USBAudioVideoAUXCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("USB, audio video, IN AUX изводи" + "$");
-        //    ////    //car.Extras += "USB, audio video, IN AUX изводи";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.AdaptiveAirSuspCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Адаптивно въздушно окачване" + "$");
-        //    ////    //car.Extras += "Адаптивно въздушно окачване";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.KeylessGoCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Безключово палене" + "$");
-        //    ////    //car.Extras += "Безключово палене";
-        //    ////    //car.Extras += "$";
-
-        //    ////}
-
-        //    ////if (this.DifferentialLockCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Блокаж на диференциала" + "$");
-        //    ////    //car.Extras += "Блокаж на диференциала";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ECUCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Бордкомпютър" + "$");
-        //    ////    //car.Extras += "Бордкомпютър";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ElMirrorsCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Ел. Огледала" + "$");
-        //    ////    //car.Extras += "Ел. Огледала";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ElWindowsCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Ел.стъкла" + "$");
-        //    ////    //car.Extras += "Ел.стъкла";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ElAdjustmentSuspCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Ел. регулиране на окачването" + "$");
-        //    ////    //car.Extras += "Ел. регулиране на окачването";
-        //    ////    //car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.DPFFilterCheckbox.Checked)
-        //    ////{
-        //    ////    tempBuilder.Append("Филтър за твърди частици" + "$");
-        //    ////    car.Extras += "Филтър за твърди частици";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.CoolingGloveboxCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Хладилна жабка";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.StereoCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Стерео уредба";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ElAdjustmentSeatsCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Ел. регулиране на седалките";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ElSteerAmplifierCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Ел. усилвател на волана";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.AirConditioningCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Климатик";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ClimatronicCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Климатроник";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.MultifunctionSteerCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Мултифункционален волан";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.NavigationCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Навигация";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.SteeringHeaterCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Отопление на волана";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.FrontWindowHeatingCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Подгряване на предното стъкло";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.AutopilotCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Автопилот";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.SeatsHeatingCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Подгряване на седалките";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.RainSensorCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Сензор за дъжд";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.SteeringAdjustmentCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Регулиране на волана";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.ServoSteerAmplifierCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Серво усилвател на волана";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.HeadlightsWashCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Система за измиване на фаровете";
-        //    ////    car.Extras += "$";
-        //    ////}
-
-        //    ////if (this.HeatingSysCheckbox.Checked)
-        //    ////{
-        //    ////    car.Extras += "Печка";
-        //    ////    car.Extras += "$";
-        //    ////}
-        //}
-
-
-        //KeyPress
-        //key press
-        //form load&close
-        private void DielershipUI_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Log("Form closed");
-            Log("-----------------------------------");
-        }
-
-        private void DielershipUI_Load(object sender, EventArgs e)
-        {
-            Log("Form load!");
-            carsListBox.Update();
-
-            this.contractNumber = int.Parse(Settings.Default["NumOfContracts"].ToString());
-
-            carsListBox.ClearSelected();
-        }
-
-        //indexChanged
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
@@ -756,6 +277,42 @@
             //UpdateCarData((Car)carsListBox.SelectedItem);
             ResetCarsList();
         }
+        // IndexChanged
+        private void carsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ClearTextboxesAndComboboxes();
+            IsInfoShowed = true;
+            ShowPicture();
+
+            FillCarInfoToTextboxes(carsListBox.SelectedItem);
+        }
+
+        //form load&close
+        private void DielershipUI_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Log("Form closed");
+            Log("-----------------------------------");
+
+        }
+
+        private void DielershipUI_Load(object sender, EventArgs e)
+        {
+            Log("Form load!");
+            carsListBox.Update();
+
+            this.contractNumber = int.Parse(Settings.Default["NumOfContracts"].ToString());
+
+            carsListBox.ClearSelected();
+            ClearTextboxesAndComboboxes();
+            pictureBox1.Image = pictureBox1.InitialImage;
+        }
+
+        private void DielershipUI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        //indexChanged
+
 
         private void ResetCarsList()
         {
@@ -919,6 +476,11 @@
                     ModelCombobox.Items.Clear();
                     ModelCombobox.Items.AddRange(CarsModelsLists.JaguarModels);
                     break;
+                case "OTHER":
+                    ModelCombobox.Items.Clear();
+                    ModelCombobox.Items.Add("Other");
+                    ModelCombobox.SelectedIndex = 0;
+                    break;
                 default:
                     break;
             }
@@ -926,7 +488,7 @@
 
         private void StatusRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             if (carsListBox.SelectedItem == null)
             {
                 MessageBox.Show("Не е избран автомобил!", "Промяна", MessageBoxButtons.OK, MessageBoxIcon.Hand);
@@ -1028,18 +590,23 @@
                     if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
                     {
                         pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "header.jpeg", ImageFormat.Jpeg);
-                        pictureBox1.Image = null;
+                        MessageBox.Show("Добавена е снимка!", "Upload");
                         return;
                     }
 
                     if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
                     {
-                        System.IO.File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
+                        File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
+                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + ".jpeg", ImageFormat.Jpeg);
                     }
 
 
-                    pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + ".jpeg", ImageFormat.Jpeg);
 
+                }
+                else
+                {
+                    Directory.CreateDirectory($"..\\Images\\{carNumber}");
+                    SaveImageToDir();
                 }
             }
         }
@@ -1083,9 +650,9 @@
             //labels
             ContractNumberInfoLabel.Text = "";
             DateOfCreatingAdLabel.Text = "";
-
+            //numericUpDown
             NumberOfKeysNumericUpDown.Value = 1;
-            pictureBox1.Image = null;
+
         }
 
         public void TextboxesReadOnlyOrNot(bool condition) //// out of date
@@ -1102,20 +669,31 @@
         private int GetContractNumber()
         {
             int id = int.Parse(Settings.Default["NumOfContracts"].ToString());
-            Settings.Default["NumOfContracts"] = id++;
-            Settings.Default.Save();
-
+            Car currentCar;
             int finalId = id;
             foreach (var car in carsListBox.Items)
             {
-                Car currentCar = (Car)car;
-                if (currentCar.ContractNumber >= id)
+                currentCar = (Car)car;
+                if (currentCar.ContractNumber >= finalId)
                 {
-                    finalId++;
+                    finalId = currentCar.ContractNumber + 1;
                 }
 
             }
+            Settings.Default["NumOfContracts"] = finalId + 1;
+            Settings.Default.Save();
+
             return finalId;
+        }
+
+        private void UncheckCheckboxes()
+        {
+            Log("UncheckCheckboxes() invoked!");
+
+            for (int i = 0; i < ExtrasCheckedListBox.Items.Count; i++)
+            {
+                ExtrasCheckedListBox.SetItemCheckState(i, CheckState.Unchecked);
+            }
 
         }
 
@@ -1123,13 +701,19 @@
         {
             Log("ShowPicture() method invoked!");
             var car = (Car)carsListBox.SelectedItem;
+            if (car == null)
+            {
+                carsListBox.SelectedIndex = 0;
+            }
+            car = (Car)carsListBox.SelectedItem;
             string carNumber = car.ContractNumber.ToString();
             if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
             {
                 pictureBox1.Image = null;
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox1.Image = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
-                SaveImageButton.Enabled = false;
+                var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
+
+                pictureBox1.Image = img;
             }
             else
             {
@@ -1137,6 +721,7 @@
 
             }
         }
+
         private void OpenFolder(object car)
         {
             Log("OpenFolder() method invoked!");
@@ -1144,6 +729,30 @@
             if (!Directory.Exists($"..\\Images\\{carCasted.ContractNumber}\\"))
             {
                 Directory.CreateDirectory($"..\\Images\\{carCasted.ContractNumber}\\");
+                DialogResult dialR = MessageBox.Show("Папката е празна!\r\nИскате ли да отворите папката все пак ?","Галерия",MessageBoxButtons.RetryCancel);
+                if (dialR == DialogResult.Retry)
+                {
+                    Process.Start("explorer.exe", $"..\\Images\\{carCasted.ContractNumber}\\");
+                    return;
+                }
+                if (dialR == DialogResult.Cancel)
+                {
+                    return;
+                }
+            }
+            if (!Directory.EnumerateFileSystemEntries($"..\\Images\\{carCasted.ContractNumber}\\").Any())
+            {
+                DialogResult dialR = MessageBox.Show("Папката е празна!\r\nИскате ли да отворите папката все пак ?", "Галерия", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                if (dialR == DialogResult.Yes)
+                {
+                    Process.Start("explorer.exe", $"..\\Images\\{carCasted.ContractNumber}\\");
+                    return;
+                }
+                if (dialR == DialogResult.No)
+                {
+                    return;
+                }
+                
             }
             Process.Start("explorer.exe", $"..\\Images\\{carCasted.ContractNumber}\\");
 
@@ -1422,17 +1031,8 @@
             }
         }
 
-        private void OpenPicDirButton_Click(object sender, EventArgs e)
-        {
-            if (carsListBox.SelectedItem != null)
-            {
-                OpenFolder(carsListBox.SelectedItem);
-            }
-            else
-            {
-                MessageBox.Show("Избери кола от списъка и опитай пак.", "Опа");
-            }
-        }
+
+
     }
 }
 

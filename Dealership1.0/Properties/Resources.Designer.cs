@@ -103,6 +103,16 @@ namespace Dealership1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_window_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_copy_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-copy-24", resourceCulture);
@@ -116,6 +126,26 @@ namespace Dealership1._0.Properties {
         internal static System.Drawing.Bitmap icons8_delete_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-delete-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_24__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-24 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +266,16 @@ namespace Dealership1._0.Properties {
         internal static System.Drawing.Bitmap icons8_upload_24__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-upload-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_big_128_ {
+            get {
+                object obj = ResourceManager.GetObject("logo-big[128]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

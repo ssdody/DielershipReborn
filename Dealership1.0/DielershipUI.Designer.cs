@@ -2,7 +2,7 @@
 
 namespace Dealership1._0
 {
-    partial class DielershipUI
+    partial class DielershipUIForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Dealership1._0
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DielershipUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DielershipUIForm));
             this.carsListBox = new System.Windows.Forms.ListBox();
             this.brandLabel = new System.Windows.Forms.Label();
             this.modelLabel = new System.Windows.Forms.Label();
@@ -106,13 +106,13 @@ namespace Dealership1._0
             this.label15 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ShowInfoFormButton = new System.Windows.Forms.Button();
-            this.SaveImageButton = new System.Windows.Forms.Button();
             this.UploadButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.soldButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.OpenPicDirButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
             this.HidablePricePanel.SuspendLayout();
@@ -121,14 +121,14 @@ namespace Dealership1._0
             // 
             // carsListBox
             // 
-            resources.ApplyResources(this.carsListBox, "carsListBox");
             this.carsListBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.carsListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.carsListBox, "carsListBox");
             this.carsListBox.ForeColor = System.Drawing.Color.White;
             this.carsListBox.FormattingEnabled = true;
             this.carsListBox.Name = "carsListBox";
             this.carsListBox.Sorted = true;
-            this.carsListBox.DoubleClick += new System.EventHandler(this.carsListBox_DoubleClick);
+            this.carsListBox.SelectedIndexChanged += new System.EventHandler(this.carsListBox_SelectedIndexChanged);
             this.carsListBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.carsListBox_KeyPress);
             // 
             // brandLabel
@@ -196,32 +196,32 @@ namespace Dealership1._0
             // 
             // EngineVolumeCCTextBox
             // 
-            resources.ApplyResources(this.EngineVolumeCCTextBox, "EngineVolumeCCTextBox");
             this.EngineVolumeCCTextBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.EngineVolumeCCTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.EngineVolumeCCTextBox, "EngineVolumeCCTextBox");
             this.EngineVolumeCCTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.EngineVolumeCCTextBox.Name = "EngineVolumeCCTextBox";
             this.EngineVolumeCCTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EngineVolumeCCTextBox_KeyPress);
             // 
             // productionDateTextBox
             // 
-            resources.ApplyResources(this.productionDateTextBox, "productionDateTextBox");
             this.productionDateTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.productionDateTextBox, "productionDateTextBox");
             this.productionDateTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.productionDateTextBox.Name = "productionDateTextBox";
             // 
             // horsePowerTextBox
             // 
-            resources.ApplyResources(this.horsePowerTextBox, "horsePowerTextBox");
             this.horsePowerTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.horsePowerTextBox, "horsePowerTextBox");
             this.horsePowerTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.horsePowerTextBox.Name = "horsePowerTextBox";
             this.horsePowerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.horsePowerTextBox_KeyPress);
             // 
             // mileageTextBox
             // 
-            resources.ApplyResources(this.mileageTextBox, "mileageTextBox");
             this.mileageTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.mileageTextBox, "mileageTextBox");
             this.mileageTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.mileageTextBox.Name = "mileageTextBox";
             this.mileageTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mileageTextBox_KeyPress);
@@ -235,9 +235,9 @@ namespace Dealership1._0
             // 
             // additionalCarInfoTextBox
             // 
-            resources.ApplyResources(this.additionalCarInfoTextBox, "additionalCarInfoTextBox");
             this.additionalCarInfoTextBox.BackColor = System.Drawing.Color.Black;
             this.additionalCarInfoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.additionalCarInfoTextBox, "additionalCarInfoTextBox");
             this.additionalCarInfoTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.additionalCarInfoTextBox.Name = "additionalCarInfoTextBox";
             // 
@@ -250,8 +250,8 @@ namespace Dealership1._0
             // 
             // priceTextBox
             // 
-            resources.ApplyResources(this.priceTextBox, "priceTextBox");
             this.priceTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.priceTextBox, "priceTextBox");
             this.priceTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceTextBox_KeyPress);
@@ -265,8 +265,8 @@ namespace Dealership1._0
             // 
             // VinTextBox
             // 
-            resources.ApplyResources(this.VinTextBox, "VinTextBox");
             this.VinTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.VinTextBox, "VinTextBox");
             this.VinTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.VinTextBox.Name = "VinTextBox";
             this.VinTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WinTextBox_KeyPress);
@@ -280,10 +280,10 @@ namespace Dealership1._0
             // 
             // BrandsComboBox
             // 
-            resources.ApplyResources(this.BrandsComboBox, "BrandsComboBox");
             this.BrandsComboBox.BackColor = System.Drawing.SystemColors.InfoText;
             this.BrandsComboBox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.BrandsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.BrandsComboBox, "BrandsComboBox");
             this.BrandsComboBox.ForeColor = System.Drawing.SystemColors.Window;
             this.BrandsComboBox.FormattingEnabled = true;
             this.BrandsComboBox.Items.AddRange(new object[] {
@@ -326,17 +326,18 @@ namespace Dealership1._0
             resources.GetString("BrandsComboBox.Items36"),
             resources.GetString("BrandsComboBox.Items37"),
             resources.GetString("BrandsComboBox.Items38"),
-            resources.GetString("BrandsComboBox.Items39")});
+            resources.GetString("BrandsComboBox.Items39"),
+            resources.GetString("BrandsComboBox.Items40")});
             this.BrandsComboBox.Name = "BrandsComboBox";
             this.BrandsComboBox.Sorted = true;
             this.BrandsComboBox.SelectedIndexChanged += new System.EventHandler(this.BrandsComboBox_SelectedIndexChanged);
             // 
             // ModelCombobox
             // 
-            resources.ApplyResources(this.ModelCombobox, "ModelCombobox");
             this.ModelCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.ModelCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ModelCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.ModelCombobox, "ModelCombobox");
             this.ModelCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.ModelCombobox.FormattingEnabled = true;
             this.ModelCombobox.Name = "ModelCombobox";
@@ -344,10 +345,10 @@ namespace Dealership1._0
             // 
             // BodyTypeCombobox
             // 
-            resources.ApplyResources(this.BodyTypeCombobox, "BodyTypeCombobox");
             this.BodyTypeCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.BodyTypeCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.BodyTypeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.BodyTypeCombobox, "BodyTypeCombobox");
             this.BodyTypeCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.BodyTypeCombobox.FormattingEnabled = true;
             this.BodyTypeCombobox.Items.AddRange(new object[] {
@@ -361,10 +362,10 @@ namespace Dealership1._0
             // 
             // FuelTypeCombobox
             // 
-            resources.ApplyResources(this.FuelTypeCombobox, "FuelTypeCombobox");
             this.FuelTypeCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.FuelTypeCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FuelTypeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.FuelTypeCombobox, "FuelTypeCombobox");
             this.FuelTypeCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.FuelTypeCombobox.FormattingEnabled = true;
             this.FuelTypeCombobox.Items.AddRange(new object[] {
@@ -375,10 +376,10 @@ namespace Dealership1._0
             // 
             // ColorsCombobox
             // 
-            resources.ApplyResources(this.ColorsCombobox, "ColorsCombobox");
             this.ColorsCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.ColorsCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ColorsCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.ColorsCombobox, "ColorsCombobox");
             this.ColorsCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.ColorsCombobox.FormattingEnabled = true;
             this.ColorsCombobox.Items.AddRange(new object[] {
@@ -407,10 +408,10 @@ namespace Dealership1._0
             // 
             // GearboxesCombobox
             // 
-            resources.ApplyResources(this.GearboxesCombobox, "GearboxesCombobox");
             this.GearboxesCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.GearboxesCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.GearboxesCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.GearboxesCombobox, "GearboxesCombobox");
             this.GearboxesCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.GearboxesCombobox.FormattingEnabled = true;
             this.GearboxesCombobox.Items.AddRange(new object[] {
@@ -443,10 +444,10 @@ namespace Dealership1._0
             // 
             // StatusCombobox
             // 
-            resources.ApplyResources(this.StatusCombobox, "StatusCombobox");
             this.StatusCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.StatusCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.StatusCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.StatusCombobox, "StatusCombobox");
             this.StatusCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.StatusCombobox.FormattingEnabled = true;
             this.StatusCombobox.Items.AddRange(new object[] {
@@ -463,9 +464,9 @@ namespace Dealership1._0
             // 
             // NumberOfKeysNumericUpDown
             // 
-            resources.ApplyResources(this.NumberOfKeysNumericUpDown, "NumberOfKeysNumericUpDown");
             this.NumberOfKeysNumericUpDown.BackColor = System.Drawing.SystemColors.WindowText;
             this.NumberOfKeysNumericUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.NumberOfKeysNumericUpDown, "NumberOfKeysNumericUpDown");
             this.NumberOfKeysNumericUpDown.ForeColor = System.Drawing.SystemColors.Window;
             this.NumberOfKeysNumericUpDown.Name = "NumberOfKeysNumericUpDown";
             this.NumberOfKeysNumericUpDown.Value = new decimal(new int[] {
@@ -483,10 +484,10 @@ namespace Dealership1._0
             // 
             // TiresCombobox
             // 
-            resources.ApplyResources(this.TiresCombobox, "TiresCombobox");
             this.TiresCombobox.BackColor = System.Drawing.SystemColors.WindowText;
             this.TiresCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.TiresCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.TiresCombobox, "TiresCombobox");
             this.TiresCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.TiresCombobox.FormattingEnabled = true;
             this.TiresCombobox.Items.AddRange(new object[] {
@@ -505,9 +506,9 @@ namespace Dealership1._0
             // 
             // PayCaseComboBox
             // 
-            resources.ApplyResources(this.PayCaseComboBox, "PayCaseComboBox");
             this.PayCaseComboBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.PayCaseComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.PayCaseComboBox, "PayCaseComboBox");
             this.PayCaseComboBox.ForeColor = System.Drawing.SystemColors.Window;
             this.PayCaseComboBox.FormattingEnabled = true;
             this.PayCaseComboBox.Items.AddRange(new object[] {
@@ -518,10 +519,10 @@ namespace Dealership1._0
             // 
             // CategoryCombobox
             // 
-            resources.ApplyResources(this.CategoryCombobox, "CategoryCombobox");
             this.CategoryCombobox.BackColor = System.Drawing.SystemColors.InfoText;
             this.CategoryCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.CategoryCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.CategoryCombobox, "CategoryCombobox");
             this.CategoryCombobox.ForeColor = System.Drawing.SystemColors.Window;
             this.CategoryCombobox.FormattingEnabled = true;
             this.CategoryCombobox.Items.AddRange(new object[] {
@@ -545,10 +546,10 @@ namespace Dealership1._0
             // 
             // ExtrasCheckedListBox
             // 
-            resources.ApplyResources(this.ExtrasCheckedListBox, "ExtrasCheckedListBox");
             this.ExtrasCheckedListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ExtrasCheckedListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ExtrasCheckedListBox.CheckOnClick = true;
+            resources.ApplyResources(this.ExtrasCheckedListBox, "ExtrasCheckedListBox");
             this.ExtrasCheckedListBox.ForeColor = System.Drawing.SystemColors.Window;
             this.ExtrasCheckedListBox.FormattingEnabled = true;
             this.ExtrasCheckedListBox.Items.AddRange(new object[] {
@@ -641,7 +642,6 @@ namespace Dealership1._0
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.HidePricePanelButton);
@@ -655,12 +655,13 @@ namespace Dealership1._0
             this.panel1.Controls.Add(this.ContractNumberInfoLabel);
             this.panel1.Controls.Add(this.DateOfCreatingAdLabel);
             this.panel1.Controls.Add(this.PayCaseComboBox);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // HidePricePanelButton
             // 
-            resources.ApplyResources(this.HidePricePanelButton, "HidePricePanelButton");
             this.HidePricePanelButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.HidePricePanelButton, "HidePricePanelButton");
             this.HidePricePanelButton.ForeColor = System.Drawing.SystemColors.Window;
             this.HidePricePanelButton.Name = "HidePricePanelButton";
             this.HidePricePanelButton.UseVisualStyleBackColor = false;
@@ -668,8 +669,8 @@ namespace Dealership1._0
             // 
             // OwnerByBusinessTextbox
             // 
-            resources.ApplyResources(this.OwnerByBusinessTextbox, "OwnerByBusinessTextbox");
             this.OwnerByBusinessTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.OwnerByBusinessTextbox, "OwnerByBusinessTextbox");
             this.OwnerByBusinessTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.OwnerByBusinessTextbox.Name = "OwnerByBusinessTextbox";
             // 
@@ -689,8 +690,8 @@ namespace Dealership1._0
             // 
             // OwnerByVoucherTextbox
             // 
-            resources.ApplyResources(this.OwnerByVoucherTextbox, "OwnerByVoucherTextbox");
             this.OwnerByVoucherTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.OwnerByVoucherTextbox, "OwnerByVoucherTextbox");
             this.OwnerByVoucherTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.OwnerByVoucherTextbox.Name = "OwnerByVoucherTextbox";
             // 
@@ -728,7 +729,7 @@ namespace Dealership1._0
             // 
             // HidablePricePanel
             // 
-            resources.ApplyResources(this.HidablePricePanel, "HidablePricePanel");
+            this.HidablePricePanel.BackColor = System.Drawing.Color.Transparent;
             this.HidablePricePanel.Controls.Add(this.CzsTextbox);
             this.HidablePricePanel.Controls.Add(this.ComissionTextbox);
             this.HidablePricePanel.Controls.Add(this.label24);
@@ -749,20 +750,21 @@ namespace Dealership1._0
             this.HidablePricePanel.Controls.Add(this.label16);
             this.HidablePricePanel.Controls.Add(this.RealSellingPriceTextbox);
             this.HidablePricePanel.Controls.Add(this.label15);
+            resources.ApplyResources(this.HidablePricePanel, "HidablePricePanel");
             this.HidablePricePanel.Name = "HidablePricePanel";
             // 
             // CzsTextbox
             // 
-            resources.ApplyResources(this.CzsTextbox, "CzsTextbox");
             this.CzsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.CzsTextbox, "CzsTextbox");
             this.CzsTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.CzsTextbox.Name = "CzsTextbox";
             this.CzsTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CzsTextbox_KeyPress);
             // 
             // ComissionTextbox
             // 
-            resources.ApplyResources(this.ComissionTextbox, "ComissionTextbox");
             this.ComissionTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.ComissionTextbox, "ComissionTextbox");
             this.ComissionTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.ComissionTextbox.Name = "ComissionTextbox";
             this.ComissionTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ComissionTextbox_KeyPress);
@@ -781,24 +783,24 @@ namespace Dealership1._0
             // 
             // FuelCostsTextbox
             // 
-            resources.ApplyResources(this.FuelCostsTextbox, "FuelCostsTextbox");
             this.FuelCostsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.FuelCostsTextbox, "FuelCostsTextbox");
             this.FuelCostsTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.FuelCostsTextbox.Name = "FuelCostsTextbox";
             this.FuelCostsTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FuelCostsTextbox_KeyPress);
             // 
             // ServiceCostsTextbox
             // 
-            resources.ApplyResources(this.ServiceCostsTextbox, "ServiceCostsTextbox");
             this.ServiceCostsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.ServiceCostsTextbox, "ServiceCostsTextbox");
             this.ServiceCostsTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.ServiceCostsTextbox.Name = "ServiceCostsTextbox";
             this.ServiceCostsTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ServiceCostsTextbox_KeyPress);
             // 
             // CosmeticsCostsTextbox
             // 
-            resources.ApplyResources(this.CosmeticsCostsTextbox, "CosmeticsCostsTextbox");
             this.CosmeticsCostsTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.CosmeticsCostsTextbox, "CosmeticsCostsTextbox");
             this.CosmeticsCostsTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.CosmeticsCostsTextbox.Name = "CosmeticsCostsTextbox";
             this.CosmeticsCostsTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CosmeticsCostsTextbox_KeyPress);
@@ -841,24 +843,24 @@ namespace Dealership1._0
             // 
             // MaxBillValueTextbox
             // 
-            resources.ApplyResources(this.MaxBillValueTextbox, "MaxBillValueTextbox");
             this.MaxBillValueTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.MaxBillValueTextbox, "MaxBillValueTextbox");
             this.MaxBillValueTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.MaxBillValueTextbox.Name = "MaxBillValueTextbox";
             this.MaxBillValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaxBillValueTextbox_KeyPress);
             // 
             // MinBillValueTextbox
             // 
-            resources.ApplyResources(this.MinBillValueTextbox, "MinBillValueTextbox");
             this.MinBillValueTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.MinBillValueTextbox, "MinBillValueTextbox");
             this.MinBillValueTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.MinBillValueTextbox.Name = "MinBillValueTextbox";
             this.MinBillValueTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MinBillValueTextbox_KeyPress);
             // 
             // DDSTextbox
             // 
-            resources.ApplyResources(this.DDSTextbox, "DDSTextbox");
             this.DDSTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.DDSTextbox, "DDSTextbox");
             this.DDSTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.DDSTextbox.Name = "DDSTextbox";
             this.DDSTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DDSTextbox_KeyPress);
@@ -877,8 +879,8 @@ namespace Dealership1._0
             // 
             // RealSellingPriceTextbox
             // 
-            resources.ApplyResources(this.RealSellingPriceTextbox, "RealSellingPriceTextbox");
             this.RealSellingPriceTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.RealSellingPriceTextbox, "RealSellingPriceTextbox");
             this.RealSellingPriceTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.RealSellingPriceTextbox.Name = "RealSellingPriceTextbox";
             this.RealSellingPriceTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RealSellingPriceTextbox_KeyPress);
@@ -892,12 +894,11 @@ namespace Dealership1._0
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
             // ShowInfoFormButton
             // 
-            resources.ApplyResources(this.ShowInfoFormButton, "ShowInfoFormButton");
             this.ShowInfoFormButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ShowInfoFormButton, "ShowInfoFormButton");
             this.ShowInfoFormButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.ShowInfoFormButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ShowInfoFormButton.ForeColor = System.Drawing.SystemColors.Window;
@@ -906,24 +907,12 @@ namespace Dealership1._0
             this.ShowInfoFormButton.UseVisualStyleBackColor = false;
             this.ShowInfoFormButton.Click += new System.EventHandler(this.ShowInfoFormButton_Click);
             // 
-            // SaveImageButton
-            // 
-            resources.ApplyResources(this.SaveImageButton, "SaveImageButton");
-            this.SaveImageButton.BackColor = System.Drawing.Color.Transparent;
-            this.SaveImageButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.SaveImageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.SaveImageButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.SaveImageButton.Image = global::Dealership1._0.Properties.Resources.icons8_upload_24__1_;
-            this.SaveImageButton.Name = "SaveImageButton";
-            this.SaveImageButton.UseVisualStyleBackColor = false;
-            this.SaveImageButton.Click += new System.EventHandler(this.SaveImageButton_Click);
-            // 
             // UploadButton
             // 
-            resources.ApplyResources(this.UploadButton, "UploadButton");
             this.UploadButton.BackColor = System.Drawing.Color.Transparent;
             this.UploadButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.UploadButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.UploadButton, "UploadButton");
             this.UploadButton.ForeColor = System.Drawing.SystemColors.Window;
             this.UploadButton.Image = global::Dealership1._0.Properties.Resources.icons8_browse_folder_filled_24;
             this.UploadButton.Name = "UploadButton";
@@ -932,6 +921,7 @@ namespace Dealership1._0
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Name = "pictureBox1";
@@ -939,8 +929,8 @@ namespace Dealership1._0
             // 
             // UpdateButton
             // 
-            resources.ApplyResources(this.UpdateButton, "UpdateButton");
             this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.UpdateButton, "UpdateButton");
             this.UpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.UpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.UpdateButton.ForeColor = System.Drawing.SystemColors.Window;
@@ -952,11 +942,11 @@ namespace Dealership1._0
             // 
             // soldButton
             // 
-            resources.ApplyResources(this.soldButton, "soldButton");
             this.soldButton.BackColor = System.Drawing.Color.Transparent;
             this.soldButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.soldButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.soldButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.soldButton, "soldButton");
             this.soldButton.ForeColor = System.Drawing.SystemColors.Window;
             this.soldButton.Image = global::Dealership1._0.Properties.Resources.icons8_trash_can_26;
             this.soldButton.Name = "soldButton";
@@ -965,8 +955,8 @@ namespace Dealership1._0
             // 
             // addButton
             // 
-            resources.ApplyResources(this.addButton, "addButton");
             this.addButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.addButton, "addButton");
             this.addButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.addButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.addButton.ForeColor = System.Drawing.SystemColors.Window;
@@ -977,24 +967,31 @@ namespace Dealership1._0
             // 
             // OpenPicDirButton
             // 
-            resources.ApplyResources(this.OpenPicDirButton, "OpenPicDirButton");
             this.OpenPicDirButton.BackColor = System.Drawing.Color.Transparent;
             this.OpenPicDirButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.OpenPicDirButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.OpenPicDirButton, "OpenPicDirButton");
             this.OpenPicDirButton.ForeColor = System.Drawing.SystemColors.Window;
             this.OpenPicDirButton.Image = global::Dealership1._0.Properties.Resources.icons8_pictures_folder_filled_24;
             this.OpenPicDirButton.Name = "OpenPicDirButton";
             this.OpenPicDirButton.UseVisualStyleBackColor = false;
             this.OpenPicDirButton.Click += new System.EventHandler(this.OpenPicDirButton_Click);
             // 
-            // DielershipUI
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Name = "label1";
+            // 
+            // DielershipUIForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.OpenPicDirButton);
             this.Controls.Add(this.ShowInfoFormButton);
-            this.Controls.Add(this.SaveImageButton);
             this.Controls.Add(this.UploadButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HidablePricePanel);
@@ -1045,9 +1042,10 @@ namespace Dealership1._0
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "DielershipUI";
+            this.Name = "DielershipUIForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DielershipUI_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DielershipUI_FormClosed);
             this.Load += new System.EventHandler(this.DielershipUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).EndInit();
@@ -1143,9 +1141,9 @@ namespace Dealership1._0
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button UploadButton;
-        private System.Windows.Forms.Button SaveImageButton;
         private System.Windows.Forms.Button ShowInfoFormButton;
         private System.Windows.Forms.Button OpenPicDirButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
