@@ -13,8 +13,8 @@ namespace Dealership1._0
 {
     public partial class LogInForm : Form
     {
-
-        public readonly string[] password = { "asda", "123" };
+        public readonly string[] usernames = { "exoticcars", "admin" };
+        public readonly string[] password = { "00001", "123" };
         private static bool _canContinue;
 
         public LogInForm()
@@ -33,7 +33,7 @@ namespace Dealership1._0
         {
 
 
-            if (UsernameTextbox.Text.ToLower() != "exoticcars" && UsernameTextbox.Text.ToLower() != "admin")
+            if (UsernameTextbox.Text.ToLower() != usernames[0] && UsernameTextbox.Text.ToLower() != usernames[1])
             {
                 MessageBox.Show("Invalid username or password!");
                 UsernameTextbox.Text = string.Empty;

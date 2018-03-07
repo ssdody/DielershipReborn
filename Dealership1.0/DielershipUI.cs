@@ -5,58 +5,81 @@
     using System.Data;
     using System.Linq;
     using System.Windows.Forms;
-    using DielershipLibrary.Contracts;
     using DielershipLibrary.CarModelsLists;
     using DielershipLibrary;
     using Properties;
-    using System.Xml.Linq;
     using System.Drawing;
     using System.IO;
     using System.Drawing.Imaging;
     using System.Text;
     using System.Diagnostics;
+    using System.Net.NetworkInformation;
 
     /// <summary>
     /// Dielership Main
     /// </summary>
-    public partial class DielershipUIForm : Form, IClearTextboxes
+    public partial class DielershipUIForm : Form
     {
         private BindingSource carsListBinding = new BindingSource();
         private int contractNumber;
         private bool IsInfoShowed;
         private string logPath = "..\\Log.txt";
-
+        public readonly string[] authorized = { "0026C7DFBD78", "002522c628dd" };
+        private readonly string mac = string.Empty;
 
         public DielershipUIForm()
         {
-            this.InitializeComponent();
-
-            ////login form
-            LogInForm logForm = new LogInForm();
-            logForm.ShowDialog();
-
-            bool IsAuth = false;
-
-            while (!IsAuth)
+            try
             {
-                this.Enabled = false;
-                IsAuth = LogInForm.CanContinue;
+                this.InitializeComponent();
+
+                ////login form
+                mac = GetMacAddress();
+                bool IsAuth = false;
+                foreach (var auth in authorized)
+                {
+                    if (auth == mac)
+                    {
+                        IsAuth = true;
+                    }
+                }
+                if (!IsAuth)
+                {
+                    MessageBox.Show("You are not authorized!");
+                    Environment.Exit(1);
+                }
+
+                //login form
+                //LogInForm logForm = new LogInForm();
+                //logForm.ShowDialog();
+
+
+                //while (!IsAuth)
+                //{
+                //    this.Enabled = false;
+                //    IsAuth = LogInForm.CanContinue;
+                //}
+                //this.Enabled = true;
+                ////
+
+                this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
+
+                carsListBox.DataSource = this.carsListBinding;
+
+                carsListBox.DisplayMember = "Display";
+                carsListBox.ValueMember = "Display";
+
+                HideOrShowPrivateOptions(false);
+                SetHidablePricePanelTextboxesToDefaultValue();
+
             }
-            this.Enabled = true;
-            ////
+            catch (Exception ex)
+            {
+                Log("Exception throwed when starting program!\n" + ex.StackTrace);
+                throw;
+            }
 
-            this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
-
-            carsListBox.DataSource = this.carsListBinding;
-
-            carsListBox.DisplayMember = "Display";
-            carsListBox.ValueMember = "Display";
-
-            HidablePricePanel.Visible = false;
-            UpdateButton.Visible = false;
-            AreRealMileageCheckbox.Visible = false;
         }
-
         //// setupData empty
         private void SetupData()
         {
@@ -72,6 +95,9 @@
                 pictureBox1.Image = null;
                 this.SetHidablePricePanelTextboxesToDefaultValue();
                 this.IsInfoShowed = false;
+                ExtrasCheckedListBox.ClearSelected();
+                UncheckCheckboxes();
+                
                 return;
             }
 
@@ -80,7 +106,9 @@
             {
                 Car newCar = this.CreateCar();
 
-                this.AddExtrasToCarExtrasFieldIfChecked(newCar);
+                CheckIfAllPricePanelTextboxesHaveValueDifferentThanNullOfEmptyString();
+
+                //this.AddExtrasToCarExtrasFieldIfChecked(newCar);
 
                 XMLDatabase.AppendNewCarDataToXML(newCar); // works fine
             }
@@ -108,7 +136,7 @@
             this.UncheckCheckboxes();
             this.SetHidablePricePanelTextboxesToDefaultValue();
 
-            
+
 
         }
 
@@ -116,7 +144,7 @@
         {
             if (carsListBox.SelectedItem != null)
             {
-                OpenFolder(carsListBox.SelectedItem);
+                OpenSelectedCarDirectoryFolder(carsListBox.SelectedItem);
             }
             else
             {
@@ -140,15 +168,11 @@
             Log("Hide price panel button clicked!");
             if (HidablePricePanel.Visible == true)
             {
-                HidablePricePanel.Visible = false;
-                UpdateButton.Visible = false;
-                AreRealMileageCheckbox.Visible = false;
+                HideOrShowPrivateOptions(false);
             }
             else if (HidablePricePanel.Visible == false)
             {
-                HidablePricePanel.Visible = true;
-                UpdateButton.Visible = true;
-                AreRealMileageCheckbox.Visible = true;
+                HideOrShowPrivateOptions(true);
             }
         }
 
@@ -221,7 +245,7 @@
             // erase from carsList
             if (carsListBox.SelectedItem != null)
             {
-                DialogResult dialogResult = MessageBox.Show("Are you sure ?", "Check", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                DialogResult dialogResult = MessageBox.Show("Are you sure ?", "Check", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
 
@@ -283,7 +307,7 @@
             ClearTextboxesAndComboboxes();
             IsInfoShowed = true;
             ShowPicture();
-
+            UncheckCheckboxes();
             FillCarInfoToTextboxes(carsListBox.SelectedItem);
         }
 
@@ -309,16 +333,12 @@
 
         private void DielershipUI_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
             Application.Exit();
         }
         //indexChanged
 
 
-        private void ResetCarsList()
-        {
-            this.carsListBinding.ResetBindings(false);
-            this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
-        }
 
         private void BrandsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -509,11 +529,62 @@
             File.AppendAllText(logPath, "\r\n");
         }
 
+        private string GetMacAddress()
+        {
+            string macAddresses = string.Empty;
+
+            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                if (nic.OperationalStatus == OperationalStatus.Up)
+                {
+                    macAddresses += nic.GetPhysicalAddress().ToString();
+                    break;
+                }
+            }
+
+            return macAddresses;
+        }
+
+        private void ResetCarsList()
+        {
+            this.carsListBinding.ResetBindings(false);
+            this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
+        }
+
+        private void CheckIfAllPricePanelTextboxesHaveValueDifferentThanNullOfEmptyString()
+        {
+            List<TextBox> PriceTexboxes = new List<TextBox> { RealSellingPriceTextbox,
+            MinBillValueTextbox,
+            MaxBillValueTextbox,
+            ServiceCostsTextbox,
+            FuelCostsTextbox,
+            CosmeticsCostsTextbox,
+            CzsTextbox,
+            ComissionTextbox,
+        };
+            foreach (var box in PriceTexboxes)
+            {
+                if (string.IsNullOrEmpty(box.Text))
+                {
+                    box.Text = "0";
+                }
+            }
+
+        }
+
+        private void HideOrShowPrivateOptions(bool condition)
+        {
+            HidablePricePanel.Visible = condition;
+            UpdateButton.Visible = condition;
+            AreRealMileageCheckbox.Visible = condition;
+        }
+
+
         private Car CreateCar()
         {
             Log("CreateCar method invoked!");
 
-            var Id = /*IsIdAlreadyTaken(*/this.GetContractNumber();
+            var Id = this.GetContractNumber();
             Car newCar = new Car(Id);
             newCar.DateOfCreatingAd = DateTime.Now.Date.ToShortDateString();
             newCar.Category = Convert.ToString(CategoryCombobox.SelectedItem);
@@ -548,7 +619,7 @@
             newCar.Comission = Convert.ToInt32(ComissionTextbox.Text);
             newCar.OwnerByBusiness = OwnerByBusinessTextbox.Text;
             newCar.OwnerByVoucher = OwnerByVoucherTextbox.Text;
-            //this.AddExtrasToCarExtrasFieldIfChecked(newCar);
+            this.AddExtrasToCarExtrasFieldIfChecked(newCar);
             if (AreRealMileageCheckbox.Checked)
             {
 
@@ -655,17 +726,6 @@
 
         }
 
-        public void TextboxesReadOnlyOrNot(bool condition) //// out of date
-        {
-            horsePowerTextBox.ReadOnly = condition;
-            productionDateTextBox.ReadOnly = condition;
-            mileageTextBox.ReadOnly = condition;
-            additionalCarInfoTextBox.ReadOnly = condition;
-            priceTextBox.ReadOnly = condition;
-            EngineVolumeCCTextBox.ReadOnly = condition;
-            VinTextBox.ReadOnly = condition;
-        }
-
         private int GetContractNumber()
         {
             int id = int.Parse(Settings.Default["NumOfContracts"].ToString());
@@ -722,14 +782,14 @@
             }
         }
 
-        private void OpenFolder(object car)
+        private void OpenSelectedCarDirectoryFolder(object car)
         {
             Log("OpenFolder() method invoked!");
             Car carCasted = (Car)car;
             if (!Directory.Exists($"..\\Images\\{carCasted.ContractNumber}\\"))
             {
                 Directory.CreateDirectory($"..\\Images\\{carCasted.ContractNumber}\\");
-                DialogResult dialR = MessageBox.Show("Папката е празна!\r\nИскате ли да отворите папката все пак ?","Галерия",MessageBoxButtons.RetryCancel);
+                DialogResult dialR = MessageBox.Show("Папката е празна!\r\nИскате ли да отворите папката все пак ?", "Галерия", MessageBoxButtons.RetryCancel);
                 if (dialR == DialogResult.Retry)
                 {
                     Process.Start("explorer.exe", $"..\\Images\\{carCasted.ContractNumber}\\");
@@ -742,7 +802,7 @@
             }
             if (!Directory.EnumerateFileSystemEntries($"..\\Images\\{carCasted.ContractNumber}\\").Any())
             {
-                DialogResult dialR = MessageBox.Show("Папката е празна!\r\nИскате ли да отворите папката все пак ?", "Галерия", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                DialogResult dialR = MessageBox.Show("Папката е празна!\r\nИскате ли да отворите папката все пак ?", "Галерия", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialR == DialogResult.Yes)
                 {
                     Process.Start("explorer.exe", $"..\\Images\\{carCasted.ContractNumber}\\");
@@ -752,7 +812,7 @@
                 {
                     return;
                 }
-                
+
             }
             Process.Start("explorer.exe", $"..\\Images\\{carCasted.ContractNumber}\\");
 

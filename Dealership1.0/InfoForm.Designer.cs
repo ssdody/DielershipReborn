@@ -53,7 +53,7 @@
             this.CopyToClipboardButton.BackColor = System.Drawing.Color.Transparent;
             this.CopyToClipboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CopyToClipboardButton.Image = global::Dealership1._0.Properties.Resources.icons8_copy_24;
-            this.CopyToClipboardButton.Location = new System.Drawing.Point(332, -2);
+            this.CopyToClipboardButton.Location = new System.Drawing.Point(33, -2);
             this.CopyToClipboardButton.Name = "CopyToClipboardButton";
             this.CopyToClipboardButton.Size = new System.Drawing.Size(24, 23);
             this.CopyToClipboardButton.TabIndex = 3;
@@ -65,7 +65,7 @@
             this.TopMostButton.BackColor = System.Drawing.Color.Transparent;
             this.TopMostButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.TopMostButton.Image = global::Dealership1._0.Properties.Resources.icons8_pin_24;
-            this.TopMostButton.Location = new System.Drawing.Point(302, -2);
+            this.TopMostButton.Location = new System.Drawing.Point(3, -2);
             this.TopMostButton.Name = "TopMostButton";
             this.TopMostButton.Size = new System.Drawing.Size(24, 23);
             this.TopMostButton.TabIndex = 2;

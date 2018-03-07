@@ -121,9 +121,9 @@
     <None Include="Resources\64.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DielershipLibrary\DielershipLibrary.csproj">
+    <ProjectReference Include="..\DielershipLibrary\DealershipLibrary.csproj">
       <Project>{5bf249aa-c959-4942-9102-a42d3d316800}</Project>
-      <Name>DielershipLibrary</Name>
+      <Name>DealershipLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

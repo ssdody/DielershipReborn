@@ -2248,3 +2248,881 @@
 2018-03-04 1:49:05 AM - -----------------------------------
 2018-03-04 1:49:05 AM - Form closed
 2018-03-04 1:49:05 AM - -----------------------------------
+2018-03-06 11:12:04 AM - ShowPicture() method invoked!
+2018-03-06 11:12:04 AM - ShowPicture() method invoked!
+2018-03-06 11:12:04 AM - ShowPicture() method invoked!
+2018-03-06 11:12:05 AM - Form load!
+2018-03-06 11:12:05 AM - ShowPicture() method invoked!
+2018-03-06 11:12:05 AM - ShowPicture() method invoked!
+2018-03-06 11:12:07 AM - Hide price panel button clicked!
+2018-03-06 11:12:09 AM - ShowPicture() method invoked!
+2018-03-06 11:12:10 AM - ShowPicture() method invoked!
+2018-03-06 11:12:10 AM - ShowPicture() method invoked!
+2018-03-06 11:12:10 AM - ShowPicture() method invoked!
+2018-03-06 11:12:11 AM - ShowPicture() method invoked!
+2018-03-06 11:12:11 AM - ShowPicture() method invoked!
+2018-03-06 11:12:12 AM - ShowPicture() method invoked!
+2018-03-06 11:12:12 AM - ShowPicture() method invoked!
+2018-03-06 11:12:13 AM - ShowPicture() method invoked!
+2018-03-06 11:12:13 AM - ShowPicture() method invoked!
+2018-03-06 11:14:02 AM - Form closed
+2018-03-06 11:14:02 AM - -----------------------------------
+2018-03-06 11:14:02 AM - Form closed
+2018-03-06 11:14:02 AM - -----------------------------------
+2018-03-06 11:20:17 AM - ShowPicture() method invoked!
+2018-03-06 11:20:17 AM - ShowPicture() method invoked!
+2018-03-06 11:20:17 AM - ShowPicture() method invoked!
+2018-03-06 11:20:17 AM - Form load!
+2018-03-06 11:20:17 AM - ShowPicture() method invoked!
+2018-03-06 11:20:17 AM - ShowPicture() method invoked!
+2018-03-06 11:20:31 AM - ShowPicture() method invoked!
+2018-03-06 11:20:32 AM - ShowPicture() method invoked!
+2018-03-06 11:20:33 AM - Hide price panel button clicked!
+2018-03-06 11:20:37 AM - Hide price panel button clicked!
+2018-03-06 11:20:40 AM - Hide price panel button clicked!
+2018-03-06 11:20:41 AM - Hide price panel button clicked!
+2018-03-06 11:20:41 AM - Hide price panel button clicked!
+2018-03-06 11:20:44 AM - Hide price panel button clicked!
+2018-03-06 11:20:44 AM - Hide price panel button clicked!
+2018-03-06 11:20:52 AM - ShowPicture() method invoked!
+2018-03-06 11:20:53 AM - ShowPicture() method invoked!
+2018-03-06 11:20:53 AM - ShowPicture() method invoked!
+2018-03-06 11:20:54 AM - ShowPicture() method invoked!
+2018-03-06 11:20:55 AM - ShowPicture() method invoked!
+2018-03-06 11:20:55 AM - ShowPicture() method invoked!
+2018-03-06 11:20:55 AM - ShowPicture() method invoked!
+2018-03-06 11:20:56 AM - ShowPicture() method invoked!
+2018-03-06 11:20:57 AM - ShowPicture() method invoked!
+2018-03-06 11:20:57 AM - ShowPicture() method invoked!
+2018-03-06 11:20:57 AM - ShowPicture() method invoked!
+2018-03-06 11:20:57 AM - ShowPicture() method invoked!
+2018-03-06 11:20:58 AM - ShowPicture() method invoked!
+2018-03-06 11:21:14 AM - ShowPicture() method invoked!
+2018-03-06 11:21:15 AM - ShowPicture() method invoked!
+2018-03-06 11:21:16 AM - ShowPicture() method invoked!
+2018-03-06 11:21:17 AM - ShowPicture() method invoked!
+2018-03-06 11:21:17 AM - ShowPicture() method invoked!
+2018-03-06 11:21:18 AM - ShowPicture() method invoked!
+2018-03-06 11:21:35 AM - addButton() clicked!
+2018-03-06 11:23:38 AM - ShowPicture() method invoked!
+2018-03-06 11:28:48 AM - ShowPicture() method invoked!
+2018-03-06 11:28:49 AM - ShowPicture() method invoked!
+2018-03-06 11:28:49 AM - ShowPicture() method invoked!
+2018-03-06 11:28:49 AM - ShowPicture() method invoked!
+2018-03-06 11:28:50 AM - ShowPicture() method invoked!
+2018-03-06 11:28:50 AM - ShowPicture() method invoked!
+2018-03-06 11:28:50 AM - ShowPicture() method invoked!
+2018-03-06 11:28:50 AM - ShowPicture() method invoked!
+2018-03-06 11:28:50 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:51 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:52 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:53 AM - ShowPicture() method invoked!
+2018-03-06 11:28:54 AM - ShowPicture() method invoked!
+2018-03-06 11:28:54 AM - ShowPicture() method invoked!
+2018-03-06 11:28:54 AM - ShowPicture() method invoked!
+2018-03-06 11:29:13 AM - ShowPicture() method invoked!
+2018-03-06 11:29:13 AM - ShowPicture() method invoked!
+2018-03-06 11:29:15 AM - ShowPicture() method invoked!
+2018-03-06 11:29:16 AM - ShowPicture() method invoked!
+2018-03-06 11:29:17 AM - ShowPicture() method invoked!
+2018-03-06 11:29:17 AM - ShowPicture() method invoked!
+2018-03-06 11:29:18 AM - ShowPicture() method invoked!
+2018-03-06 11:29:19 AM - ShowPicture() method invoked!
+2018-03-06 11:29:19 AM - ShowPicture() method invoked!
+2018-03-06 11:29:19 AM - ShowPicture() method invoked!
+2018-03-06 11:29:33 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:34 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:35 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:36 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:37 AM - ShowPicture() method invoked!
+2018-03-06 11:29:40 AM - ShowPicture() method invoked!
+2018-03-06 11:29:41 AM - ShowPicture() method invoked!
+2018-03-06 11:29:42 AM - ShowPicture() method invoked!
+2018-03-06 11:29:44 AM - ShowPicture() method invoked!
+2018-03-06 11:29:45 AM - ShowPicture() method invoked!
+2018-03-06 11:29:49 AM - ShowPicture() method invoked!
+2018-03-06 11:29:49 AM - ShowPicture() method invoked!
+2018-03-06 11:29:49 AM - ShowPicture() method invoked!
+2018-03-06 11:29:51 AM - addButton() clicked!
+2018-03-06 11:29:56 AM - OpenFolder() method invoked!
+2018-03-06 11:32:14 AM - ShowPicture() method invoked!
+2018-03-06 11:32:14 AM - ShowPicture() method invoked!
+2018-03-06 11:32:15 AM - ShowPicture() method invoked!
+2018-03-06 11:32:15 AM - ShowPicture() method invoked!
+2018-03-06 11:32:16 AM - ShowPicture() method invoked!
+2018-03-06 11:32:43 AM - ShowPicture() method invoked!
+2018-03-06 11:32:44 AM - ShowPicture() method invoked!
+2018-03-06 11:32:45 AM - ShowPicture() method invoked!
+2018-03-06 11:32:45 AM - ShowPicture() method invoked!
+2018-03-06 11:32:45 AM - ShowPicture() method invoked!
+2018-03-06 11:32:46 AM - ShowPicture() method invoked!
+2018-03-06 11:32:47 AM - ShowPicture() method invoked!
+2018-03-06 11:32:48 AM - ShowPicture() method invoked!
+2018-03-06 11:32:48 AM - ShowPicture() method invoked!
+2018-03-06 11:32:49 AM - ShowPicture() method invoked!
+2018-03-06 11:32:49 AM - ShowPicture() method invoked!
+2018-03-06 11:32:50 AM - ShowPicture() method invoked!
+2018-03-06 11:32:50 AM - ShowPicture() method invoked!
+2018-03-06 11:32:50 AM - ShowPicture() method invoked!
+2018-03-06 11:32:50 AM - ShowPicture() method invoked!
+2018-03-06 11:32:51 AM - ShowPicture() method invoked!
+2018-03-06 11:32:51 AM - ShowPicture() method invoked!
+2018-03-06 11:32:52 AM - ShowPicture() method invoked!
+2018-03-06 11:32:52 AM - ShowPicture() method invoked!
+2018-03-06 11:32:52 AM - ShowPicture() method invoked!
+2018-03-06 11:33:51 AM - addButton() clicked!
+2018-03-06 11:33:54 AM - Form closed
+2018-03-06 11:33:54 AM - -----------------------------------
+2018-03-06 11:33:54 AM - Form closed
+2018-03-06 11:33:54 AM - -----------------------------------
+2018-03-07 9:29:11 PM - ShowPicture() method invoked!
+2018-03-07 9:29:11 PM - ShowPicture() method invoked!
+2018-03-07 9:29:11 PM - ShowPicture() method invoked!
+2018-03-07 9:29:11 PM - Form load!
+2018-03-07 9:29:12 PM - ShowPicture() method invoked!
+2018-03-07 9:29:12 PM - ShowPicture() method invoked!
+2018-03-07 9:43:31 PM - ShowPicture() method invoked!
+2018-03-07 9:43:31 PM - ShowPicture() method invoked!
+2018-03-07 9:43:31 PM - ShowPicture() method invoked!
+2018-03-07 9:43:31 PM - Form load!
+2018-03-07 9:43:31 PM - ShowPicture() method invoked!
+2018-03-07 9:43:31 PM - ShowPicture() method invoked!
+2018-03-07 9:43:38 PM - Hide price panel button clicked!
+2018-03-07 9:43:42 PM - ShowPicture() method invoked!
+2018-03-07 9:43:42 PM - ShowPicture() method invoked!
+2018-03-07 9:43:44 PM - ShowPicture() method invoked!
+2018-03-07 9:43:44 PM - ShowPicture() method invoked!
+2018-03-07 9:43:45 PM - ShowPicture() method invoked!
+2018-03-07 9:43:46 PM - ShowPicture() method invoked!
+2018-03-07 9:43:50 PM - ShowPicture() method invoked!
+2018-03-07 9:43:51 PM - ShowPicture() method invoked!
+2018-03-07 9:43:51 PM - ShowPicture() method invoked!
+2018-03-07 9:43:52 PM - ShowPicture() method invoked!
+2018-03-07 9:44:08 PM - ShowPicture() method invoked!
+2018-03-07 9:44:08 PM - ShowPicture() method invoked!
+2018-03-07 9:44:08 PM - ShowPicture() method invoked!
+2018-03-07 9:44:09 PM - ShowPicture() method invoked!
+2018-03-07 9:44:09 PM - ShowPicture() method invoked!
+2018-03-07 9:44:10 PM - ShowPicture() method invoked!
+2018-03-07 9:44:10 PM - ShowPicture() method invoked!
+2018-03-07 9:44:10 PM - ShowPicture() method invoked!
+2018-03-07 9:44:10 PM - ShowPicture() method invoked!
+2018-03-07 9:44:11 PM - ShowPicture() method invoked!
+2018-03-07 9:44:11 PM - ShowPicture() method invoked!
+2018-03-07 9:44:11 PM - ShowPicture() method invoked!
+2018-03-07 9:44:11 PM - ShowPicture() method invoked!
+2018-03-07 9:44:11 PM - ShowPicture() method invoked!
+2018-03-07 9:44:12 PM - ShowPicture() method invoked!
+2018-03-07 9:44:12 PM - ShowPicture() method invoked!
+2018-03-07 9:44:16 PM - ShowPicture() method invoked!
+2018-03-07 9:44:17 PM - ShowPicture() method invoked!
+2018-03-07 9:44:17 PM - ShowPicture() method invoked!
+2018-03-07 9:44:17 PM - ShowPicture() method invoked!
+2018-03-07 9:44:18 PM - ShowPicture() method invoked!
+2018-03-07 9:44:18 PM - ShowPicture() method invoked!
+2018-03-07 9:44:18 PM - ShowPicture() method invoked!
+2018-03-07 9:44:18 PM - ShowPicture() method invoked!
+2018-03-07 9:44:24 PM - ShowPicture() method invoked!
+2018-03-07 9:44:24 PM - ShowPicture() method invoked!
+2018-03-07 9:44:24 PM - ShowPicture() method invoked!
+2018-03-07 9:44:27 PM - Hide price panel button clicked!
+2018-03-07 9:44:34 PM - addButton() clicked!
+2018-03-07 9:44:36 PM - ShowPicture() method invoked!
+2018-03-07 9:44:37 PM - ShowPicture() method invoked!
+2018-03-07 9:44:37 PM - ShowPicture() method invoked!
+2018-03-07 9:44:37 PM - ShowPicture() method invoked!
+2018-03-07 9:44:38 PM - ShowPicture() method invoked!
+2018-03-07 9:44:38 PM - ShowPicture() method invoked!
+2018-03-07 9:44:38 PM - ShowPicture() method invoked!
+2018-03-07 9:44:39 PM - ShowPicture() method invoked!
+2018-03-07 9:44:40 PM - ShowPicture() method invoked!
+2018-03-07 9:44:40 PM - ShowPicture() method invoked!
+2018-03-07 9:44:40 PM - ShowPicture() method invoked!
+2018-03-07 9:44:41 PM - ShowPicture() method invoked!
+2018-03-07 9:44:41 PM - ShowPicture() method invoked!
+2018-03-07 9:44:41 PM - ShowPicture() method invoked!
+2018-03-07 9:44:41 PM - ShowPicture() method invoked!
+2018-03-07 9:44:42 PM - ShowPicture() method invoked!
+2018-03-07 9:44:42 PM - ShowPicture() method invoked!
+2018-03-07 9:44:42 PM - ShowPicture() method invoked!
+2018-03-07 9:44:43 PM - ShowPicture() method invoked!
+2018-03-07 9:44:43 PM - ShowPicture() method invoked!
+2018-03-07 9:44:43 PM - ShowPicture() method invoked!
+2018-03-07 9:44:43 PM - ShowPicture() method invoked!
+2018-03-07 9:44:44 PM - ShowPicture() method invoked!
+2018-03-07 9:44:44 PM - ShowPicture() method invoked!
+2018-03-07 9:44:44 PM - ShowPicture() method invoked!
+2018-03-07 9:44:44 PM - ShowPicture() method invoked!
+2018-03-07 9:44:45 PM - ShowPicture() method invoked!
+2018-03-07 9:44:45 PM - ShowPicture() method invoked!
+2018-03-07 9:44:45 PM - ShowPicture() method invoked!
+2018-03-07 9:44:45 PM - ShowPicture() method invoked!
+2018-03-07 9:44:45 PM - ShowPicture() method invoked!
+2018-03-07 9:44:46 PM - ShowPicture() method invoked!
+2018-03-07 9:44:46 PM - ShowPicture() method invoked!
+2018-03-07 9:44:46 PM - ShowPicture() method invoked!
+2018-03-07 9:44:46 PM - ShowPicture() method invoked!
+2018-03-07 9:44:46 PM - ShowPicture() method invoked!
+2018-03-07 9:44:46 PM - ShowPicture() method invoked!
+2018-03-07 9:44:47 PM - ShowPicture() method invoked!
+2018-03-07 9:44:47 PM - ShowPicture() method invoked!
+2018-03-07 9:44:49 PM - Form closed
+2018-03-07 9:44:49 PM - -----------------------------------
+2018-03-07 9:44:49 PM - Form closed
+2018-03-07 9:44:49 PM - -----------------------------------
+2018-03-07 9:45:07 PM - ShowPicture() method invoked!
+2018-03-07 9:45:07 PM - ShowPicture() method invoked!
+2018-03-07 9:45:07 PM - ShowPicture() method invoked!
+2018-03-07 9:45:07 PM - Form load!
+2018-03-07 9:45:07 PM - ShowPicture() method invoked!
+2018-03-07 9:45:07 PM - ShowPicture() method invoked!
+2018-03-07 9:45:11 PM - Form closed
+2018-03-07 9:45:11 PM - -----------------------------------
+2018-03-07 9:45:11 PM - Form closed
+2018-03-07 9:45:11 PM - -----------------------------------
+2018-03-07 9:46:01 PM - ShowPicture() method invoked!
+2018-03-07 9:46:01 PM - ShowPicture() method invoked!
+2018-03-07 9:46:01 PM - ShowPicture() method invoked!
+2018-03-07 9:46:01 PM - Form load!
+2018-03-07 9:46:01 PM - ShowPicture() method invoked!
+2018-03-07 9:46:01 PM - ShowPicture() method invoked!
+2018-03-07 9:46:05 PM - Form closed
+2018-03-07 9:46:05 PM - -----------------------------------
+2018-03-07 9:46:05 PM - Form closed
+2018-03-07 9:46:05 PM - -----------------------------------
+2018-03-07 9:49:54 PM - ShowPicture() method invoked!
+2018-03-07 9:49:54 PM - ShowPicture() method invoked!
+2018-03-07 9:49:54 PM - ShowPicture() method invoked!
+2018-03-07 9:49:55 PM - Form load!
+2018-03-07 9:49:55 PM - ShowPicture() method invoked!
+2018-03-07 9:49:55 PM - ShowPicture() method invoked!
+2018-03-07 9:49:57 PM - ShowPicture() method invoked!
+2018-03-07 9:49:57 PM - ShowPicture() method invoked!
+2018-03-07 9:49:58 PM - ShowPicture() method invoked!
+2018-03-07 9:49:58 PM - ShowPicture() method invoked!
+2018-03-07 9:49:59 PM - ShowPicture() method invoked!
+2018-03-07 9:49:59 PM - ShowPicture() method invoked!
+2018-03-07 9:49:59 PM - ShowPicture() method invoked!
+2018-03-07 9:50:00 PM - ShowPicture() method invoked!
+2018-03-07 9:50:03 PM - Hide price panel button clicked!
+2018-03-07 9:50:10 PM - addButton() clicked!
+2018-03-07 9:50:11 PM - OpenFolder() method invoked!
+2018-03-07 9:50:28 PM - ShowPicture() method invoked!
+2018-03-07 9:50:28 PM - ShowPicture() method invoked!
+2018-03-07 9:50:29 PM - ShowPicture() method invoked!
+2018-03-07 9:50:30 PM - ShowPicture() method invoked!
+2018-03-07 9:50:30 PM - ShowPicture() method invoked!
+2018-03-07 9:50:33 PM - Form closed
+2018-03-07 9:50:33 PM - -----------------------------------
+2018-03-07 9:50:33 PM - Form closed
+2018-03-07 9:50:33 PM - -----------------------------------
+2018-03-07 9:51:25 PM - ShowPicture() method invoked!
+2018-03-07 9:51:25 PM - ShowPicture() method invoked!
+2018-03-07 9:51:25 PM - ShowPicture() method invoked!
+2018-03-07 9:51:25 PM - Form load!
+2018-03-07 9:51:25 PM - ShowPicture() method invoked!
+2018-03-07 9:51:25 PM - ShowPicture() method invoked!
+2018-03-07 9:51:28 PM - ShowPicture() method invoked!
+2018-03-07 9:51:29 PM - addButton() clicked!
+2018-03-07 9:51:29 PM - ShowPicture() method invoked!
+2018-03-07 9:51:29 PM - ShowPicture() method invoked!
+2018-03-07 9:51:31 PM - addButton() clicked!
+2018-03-07 9:51:31 PM - ShowPicture() method invoked!
+2018-03-07 9:51:31 PM - ShowPicture() method invoked!
+2018-03-07 9:51:32 PM - addButton() clicked!
+2018-03-07 9:51:32 PM - ShowPicture() method invoked!
+2018-03-07 9:51:32 PM - ShowPicture() method invoked!
+2018-03-07 9:51:33 PM - addButton() clicked!
+2018-03-07 9:51:33 PM - ShowPicture() method invoked!
+2018-03-07 9:51:33 PM - ShowPicture() method invoked!
+2018-03-07 9:51:35 PM - Form closed
+2018-03-07 9:51:35 PM - -----------------------------------
+2018-03-07 9:51:35 PM - Form closed
+2018-03-07 9:51:35 PM - -----------------------------------
+2018-03-07 9:52:21 PM - ShowPicture() method invoked!
+2018-03-07 9:52:21 PM - ShowPicture() method invoked!
+2018-03-07 9:52:21 PM - ShowPicture() method invoked!
+2018-03-07 9:52:22 PM - Form load!
+2018-03-07 9:52:22 PM - ShowPicture() method invoked!
+2018-03-07 9:52:22 PM - ShowPicture() method invoked!
+2018-03-07 9:52:23 PM - ShowPicture() method invoked!
+2018-03-07 9:52:24 PM - addButton() clicked!
+2018-03-07 9:52:24 PM - ShowPicture() method invoked!
+2018-03-07 9:52:24 PM - ShowPicture() method invoked!
+2018-03-07 9:52:26 PM - addButton() clicked!
+2018-03-07 9:52:26 PM - ShowPicture() method invoked!
+2018-03-07 9:52:26 PM - ShowPicture() method invoked!
+2018-03-07 9:52:31 PM - Form closed
+2018-03-07 9:52:31 PM - -----------------------------------
+2018-03-07 9:52:31 PM - Form closed
+2018-03-07 9:52:31 PM - -----------------------------------
+2018-03-07 9:55:20 PM - ShowPicture() method invoked!
+2018-03-07 9:55:20 PM - ShowPicture() method invoked!
+2018-03-07 9:55:20 PM - ShowPicture() method invoked!
+2018-03-07 9:55:21 PM - Form load!
+2018-03-07 9:55:21 PM - ShowPicture() method invoked!
+2018-03-07 9:55:21 PM - ShowPicture() method invoked!
+2018-03-07 9:55:24 PM - Hide price panel button clicked!
+2018-03-07 9:55:26 PM - ShowPicture() method invoked!
+2018-03-07 9:55:27 PM - ShowPicture() method invoked!
+2018-03-07 9:55:28 PM - ShowPicture() method invoked!
+2018-03-07 9:55:29 PM - ShowPicture() method invoked!
+2018-03-07 9:55:29 PM - ShowPicture() method invoked!
+2018-03-07 9:55:30 PM - ShowPicture() method invoked!
+2018-03-07 9:55:30 PM - ShowPicture() method invoked!
+2018-03-07 9:55:31 PM - ShowPicture() method invoked!
+2018-03-07 9:55:31 PM - ShowPicture() method invoked!
+2018-03-07 9:55:32 PM - ShowPicture() method invoked!
+2018-03-07 9:55:33 PM - ShowPicture() method invoked!
+2018-03-07 9:55:33 PM - ShowPicture() method invoked!
+2018-03-07 9:55:34 PM - ShowPicture() method invoked!
+2018-03-07 9:55:34 PM - ShowPicture() method invoked!
+2018-03-07 9:55:35 PM - ShowPicture() method invoked!
+2018-03-07 9:55:35 PM - ShowPicture() method invoked!
+2018-03-07 9:55:35 PM - ShowPicture() method invoked!
+2018-03-07 9:55:36 PM - ShowPicture() method invoked!
+2018-03-07 9:55:36 PM - ShowPicture() method invoked!
+2018-03-07 9:55:36 PM - ShowPicture() method invoked!
+2018-03-07 9:55:36 PM - ShowPicture() method invoked!
+2018-03-07 9:55:37 PM - ShowPicture() method invoked!
+2018-03-07 9:55:37 PM - ShowPicture() method invoked!
+2018-03-07 9:55:38 PM - ShowPicture() method invoked!
+2018-03-07 9:55:38 PM - ShowPicture() method invoked!
+2018-03-07 9:55:38 PM - ShowPicture() method invoked!
+2018-03-07 9:55:39 PM - ShowPicture() method invoked!
+2018-03-07 9:55:39 PM - ShowPicture() method invoked!
+2018-03-07 9:55:40 PM - ShowPicture() method invoked!
+2018-03-07 9:55:40 PM - ShowPicture() method invoked!
+2018-03-07 9:55:41 PM - ShowPicture() method invoked!
+2018-03-07 9:55:41 PM - ShowPicture() method invoked!
+2018-03-07 9:55:41 PM - ShowPicture() method invoked!
+2018-03-07 9:55:42 PM - ShowPicture() method invoked!
+2018-03-07 9:55:42 PM - ShowPicture() method invoked!
+2018-03-07 9:55:42 PM - ShowPicture() method invoked!
+2018-03-07 9:55:43 PM - ShowPicture() method invoked!
+2018-03-07 9:55:43 PM - ShowPicture() method invoked!
+2018-03-07 9:55:43 PM - ShowPicture() method invoked!
+2018-03-07 9:55:43 PM - ShowPicture() method invoked!
+2018-03-07 9:55:43 PM - ShowPicture() method invoked!
+2018-03-07 9:55:44 PM - ShowPicture() method invoked!
+2018-03-07 9:55:44 PM - ShowPicture() method invoked!
+2018-03-07 9:55:44 PM - ShowPicture() method invoked!
+2018-03-07 9:55:44 PM - ShowPicture() method invoked!
+2018-03-07 9:55:45 PM - ShowPicture() method invoked!
+2018-03-07 9:55:45 PM - ShowPicture() method invoked!
+2018-03-07 9:55:45 PM - ShowPicture() method invoked!
+2018-03-07 9:55:46 PM - ShowPicture() method invoked!
+2018-03-07 9:55:46 PM - ShowPicture() method invoked!
+2018-03-07 9:55:47 PM - ShowPicture() method invoked!
+2018-03-07 9:55:47 PM - ShowPicture() method invoked!
+2018-03-07 9:55:47 PM - ShowPicture() method invoked!
+2018-03-07 9:55:48 PM - ShowPicture() method invoked!
+2018-03-07 9:55:48 PM - ShowPicture() method invoked!
+2018-03-07 9:55:48 PM - ShowPicture() method invoked!
+2018-03-07 9:55:48 PM - ShowPicture() method invoked!
+2018-03-07 9:55:54 PM - Info button clicked!
+2018-03-07 9:55:57 PM - ShowPicture() method invoked!
+2018-03-07 9:55:59 PM - Info button clicked!
+2018-03-07 9:56:05 PM - ShowPicture() method invoked!
+2018-03-07 9:56:06 PM - Info button clicked!
+2018-03-07 9:56:21 PM - Form closed
+2018-03-07 9:56:21 PM - -----------------------------------
+2018-03-07 9:56:21 PM - Form closed
+2018-03-07 9:56:21 PM - -----------------------------------
+2018-03-07 10:01:00 PM - ShowPicture() method invoked!
+2018-03-07 10:01:00 PM - ShowPicture() method invoked!
+2018-03-07 10:01:00 PM - ShowPicture() method invoked!
+2018-03-07 10:01:00 PM - Form load!
+2018-03-07 10:01:01 PM - ShowPicture() method invoked!
+2018-03-07 10:01:01 PM - ShowPicture() method invoked!
+2018-03-07 10:01:06 PM - Hide price panel button clicked!
+2018-03-07 10:01:10 PM - ShowPicture() method invoked!
+2018-03-07 10:01:10 PM - ShowPicture() method invoked!
+2018-03-07 10:01:11 PM - ShowPicture() method invoked!
+2018-03-07 10:01:11 PM - ShowPicture() method invoked!
+2018-03-07 10:01:12 PM - ShowPicture() method invoked!
+2018-03-07 10:01:13 PM - ShowPicture() method invoked!
+2018-03-07 10:01:13 PM - ShowPicture() method invoked!
+2018-03-07 10:01:14 PM - ShowPicture() method invoked!
+2018-03-07 10:01:15 PM - ShowPicture() method invoked!
+2018-03-07 10:01:15 PM - ShowPicture() method invoked!
+2018-03-07 10:01:16 PM - ShowPicture() method invoked!
+2018-03-07 10:01:16 PM - ShowPicture() method invoked!
+2018-03-07 10:01:16 PM - ShowPicture() method invoked!
+2018-03-07 10:01:16 PM - ShowPicture() method invoked!
+2018-03-07 10:01:17 PM - ShowPicture() method invoked!
+2018-03-07 10:01:17 PM - ShowPicture() method invoked!
+2018-03-07 10:01:18 PM - ShowPicture() method invoked!
+2018-03-07 10:01:18 PM - ShowPicture() method invoked!
+2018-03-07 10:01:19 PM - ShowPicture() method invoked!
+2018-03-07 10:01:19 PM - ShowPicture() method invoked!
+2018-03-07 10:01:20 PM - ShowPicture() method invoked!
+2018-03-07 10:01:20 PM - ShowPicture() method invoked!
+2018-03-07 10:01:20 PM - ShowPicture() method invoked!
+2018-03-07 10:01:20 PM - ShowPicture() method invoked!
+2018-03-07 10:01:21 PM - ShowPicture() method invoked!
+2018-03-07 10:01:21 PM - ShowPicture() method invoked!
+2018-03-07 10:01:24 PM - addButton() clicked!
+2018-03-07 10:02:23 PM - addButton() clicked!
+2018-03-07 10:02:23 PM - CreateCar method invoked!
+2018-03-07 10:02:23 PM - UncheckCheckboxes() invoked!
+2018-03-07 10:02:26 PM - ShowPicture() method invoked!
+2018-03-07 10:02:29 PM - UploadButton() clicked!
+2018-03-07 10:05:27 PM - SaveImageToDir() invoked!
+2018-03-07 10:05:27 PM - SaveImageToDir() invoked!
+2018-03-07 10:05:33 PM - ShowPicture() method invoked!
+2018-03-07 10:05:33 PM - ShowPicture() method invoked!
+2018-03-07 10:05:34 PM - ShowPicture() method invoked!
+2018-03-07 10:05:34 PM - ShowPicture() method invoked!
+2018-03-07 10:05:34 PM - ShowPicture() method invoked!
+2018-03-07 10:05:34 PM - ShowPicture() method invoked!
+2018-03-07 10:05:35 PM - ShowPicture() method invoked!
+2018-03-07 10:05:36 PM - ShowPicture() method invoked!
+2018-03-07 10:05:36 PM - ShowPicture() method invoked!
+2018-03-07 10:05:37 PM - ShowPicture() method invoked!
+2018-03-07 10:05:37 PM - ShowPicture() method invoked!
+2018-03-07 10:05:37 PM - ShowPicture() method invoked!
+2018-03-07 10:06:00 PM - ShowPicture() method invoked!
+2018-03-07 10:06:00 PM - ShowPicture() method invoked!
+2018-03-07 10:06:00 PM - ShowPicture() method invoked!
+2018-03-07 10:06:01 PM - ShowPicture() method invoked!
+2018-03-07 10:06:01 PM - ShowPicture() method invoked!
+2018-03-07 10:06:02 PM - ShowPicture() method invoked!
+2018-03-07 10:06:02 PM - ShowPicture() method invoked!
+2018-03-07 10:06:02 PM - ShowPicture() method invoked!
+2018-03-07 10:06:02 PM - ShowPicture() method invoked!
+2018-03-07 10:06:03 PM - ShowPicture() method invoked!
+2018-03-07 10:06:03 PM - ShowPicture() method invoked!
+2018-03-07 10:06:03 PM - ShowPicture() method invoked!
+2018-03-07 10:06:10 PM - ShowPicture() method invoked!
+2018-03-07 10:06:10 PM - ShowPicture() method invoked!
+2018-03-07 10:06:10 PM - ShowPicture() method invoked!
+2018-03-07 10:06:11 PM - ShowPicture() method invoked!
+2018-03-07 10:06:11 PM - ShowPicture() method invoked!
+2018-03-07 10:06:11 PM - ShowPicture() method invoked!
+2018-03-07 10:06:11 PM - ShowPicture() method invoked!
+2018-03-07 10:06:12 PM - ShowPicture() method invoked!
+2018-03-07 10:06:12 PM - ShowPicture() method invoked!
+2018-03-07 10:06:13 PM - ShowPicture() method invoked!
+2018-03-07 10:06:13 PM - ShowPicture() method invoked!
+2018-03-07 10:06:13 PM - ShowPicture() method invoked!
+2018-03-07 10:06:21 PM - addButton() clicked!
+2018-03-07 10:06:34 PM - addButton() clicked!
+2018-03-07 10:06:34 PM - CreateCar method invoked!
+2018-03-07 10:06:34 PM - UncheckCheckboxes() invoked!
+2018-03-07 10:06:36 PM - ShowPicture() method invoked!
+2018-03-07 10:06:37 PM - ShowPicture() method invoked!
+2018-03-07 10:06:41 PM - soldButton clicked!
+2018-03-07 10:06:42 PM - ShowPicture() method invoked!
+2018-03-07 10:06:42 PM - ShowPicture() method invoked!
+2018-03-07 10:06:45 PM - UpdateButton clicked!
+2018-03-07 10:06:48 PM - UpdateButton clicked!
+2018-03-07 10:06:55 PM - Hide price panel button clicked!
+2018-03-07 10:06:59 PM - addButton() clicked!
+2018-03-07 10:07:01 PM - ShowPicture() method invoked!
+2018-03-07 10:07:01 PM - ShowPicture() method invoked!
+2018-03-07 10:07:02 PM - ShowPicture() method invoked!
+2018-03-07 10:07:02 PM - ShowPicture() method invoked!
+2018-03-07 10:07:02 PM - ShowPicture() method invoked!
+2018-03-07 10:07:04 PM - ShowPicture() method invoked!
+2018-03-07 10:07:05 PM - ShowPicture() method invoked!
+2018-03-07 10:07:25 PM - ShowPicture() method invoked!
+2018-03-07 10:07:25 PM - ShowPicture() method invoked!
+2018-03-07 10:07:26 PM - ShowPicture() method invoked!
+2018-03-07 10:07:26 PM - ShowPicture() method invoked!
+2018-03-07 10:07:26 PM - ShowPicture() method invoked!
+2018-03-07 10:07:26 PM - ShowPicture() method invoked!
+2018-03-07 10:07:27 PM - ShowPicture() method invoked!
+2018-03-07 10:07:46 PM - Form closed
+2018-03-07 10:07:46 PM - -----------------------------------
+2018-03-07 10:07:46 PM - Form closed
+2018-03-07 10:07:46 PM - -----------------------------------
+2018-03-07 10:08:11 PM - Form load!
+2018-03-07 10:08:15 PM - addButton() clicked!
+2018-03-07 10:08:23 PM - addButton() clicked!
+2018-03-07 10:08:32 PM - addButton() clicked!
+2018-03-07 10:08:32 PM - CreateCar method invoked!
+2018-03-07 10:08:41 PM - Form closed
+2018-03-07 10:08:41 PM - -----------------------------------
+2018-03-07 10:08:49 PM - Form load!
+2018-03-07 10:08:52 PM - addButton() clicked!
+2018-03-07 10:09:02 PM - addButton() clicked!
+2018-03-07 10:09:02 PM - CreateCar method invoked!
+2018-03-07 10:09:52 PM - Form load!
+2018-03-07 10:09:54 PM - Hide price panel button clicked!
+2018-03-07 10:09:56 PM - addButton() clicked!
+2018-03-07 10:10:04 PM - addButton() clicked!
+2018-03-07 10:10:06 PM - addButton() clicked!
+2018-03-07 10:10:06 PM - CreateCar method invoked!
+2018-03-07 10:10:37 PM - ShowPicture() method invoked!
+2018-03-07 10:10:37 PM - ShowPicture() method invoked!
+2018-03-07 10:10:37 PM - ShowPicture() method invoked!
+2018-03-07 10:10:37 PM - Form load!
+2018-03-07 10:10:37 PM - ShowPicture() method invoked!
+2018-03-07 10:10:37 PM - ShowPicture() method invoked!
+2018-03-07 10:10:40 PM - Hide price panel button clicked!
+2018-03-07 10:10:42 PM - addButton() clicked!
+2018-03-07 10:10:46 PM - Form closed
+2018-03-07 10:10:46 PM - -----------------------------------
+2018-03-07 10:10:46 PM - Form closed
+2018-03-07 10:10:46 PM - -----------------------------------
+2018-03-07 10:30:36 PM - ShowPicture() method invoked!
+2018-03-07 10:30:36 PM - ShowPicture() method invoked!
+2018-03-07 10:30:36 PM - ShowPicture() method invoked!
+2018-03-07 10:30:36 PM - Form load!
+2018-03-07 10:30:36 PM - ShowPicture() method invoked!
+2018-03-07 10:30:36 PM - ShowPicture() method invoked!
+2018-03-07 10:30:47 PM - Hide price panel button clicked!
+2018-03-07 10:30:53 PM - ShowPicture() method invoked!
+2018-03-07 10:30:55 PM - Form closed
+2018-03-07 10:30:55 PM - -----------------------------------
+2018-03-07 10:30:55 PM - Form closed
+2018-03-07 10:30:55 PM - -----------------------------------
+2018-03-07 10:31:00 PM - ShowPicture() method invoked!
+2018-03-07 10:31:00 PM - ShowPicture() method invoked!
+2018-03-07 10:31:00 PM - ShowPicture() method invoked!
+2018-03-07 10:31:00 PM - Form load!
+2018-03-07 10:31:00 PM - ShowPicture() method invoked!
+2018-03-07 10:31:00 PM - ShowPicture() method invoked!
+2018-03-07 10:31:03 PM - Hide price panel button clicked!
+2018-03-07 10:31:05 PM - addButton() clicked!
+2018-03-07 10:31:09 PM - Form closed
+2018-03-07 10:31:09 PM - -----------------------------------
+2018-03-07 10:31:09 PM - Form closed
+2018-03-07 10:31:10 PM - -----------------------------------
+2018-03-07 10:36:48 PM - ShowPicture() method invoked!
+2018-03-07 10:36:48 PM - ShowPicture() method invoked!
+2018-03-07 10:36:48 PM - ShowPicture() method invoked!
+2018-03-07 10:36:48 PM - Form load!
+2018-03-07 10:36:48 PM - ShowPicture() method invoked!
+2018-03-07 10:36:48 PM - ShowPicture() method invoked!
+2018-03-07 10:36:51 PM - Form closed
+2018-03-07 10:36:51 PM - -----------------------------------
+2018-03-07 10:36:51 PM - Form closed
+2018-03-07 10:36:51 PM - -----------------------------------
+2018-03-07 10:40:17 PM - ShowPicture() method invoked!
+2018-03-07 10:40:17 PM - ShowPicture() method invoked!
+2018-03-07 10:40:17 PM - ShowPicture() method invoked!
+2018-03-07 10:40:17 PM - Form load!
+2018-03-07 10:40:18 PM - ShowPicture() method invoked!
+2018-03-07 10:40:18 PM - ShowPicture() method invoked!
+2018-03-07 10:40:21 PM - Hide price panel button clicked!
+2018-03-07 10:40:23 PM - ShowPicture() method invoked!
+2018-03-07 10:40:24 PM - addButton() clicked!
+2018-03-07 10:40:26 PM - ShowPicture() method invoked!
+2018-03-07 10:40:27 PM - ShowPicture() method invoked!
+2018-03-07 10:40:27 PM - ShowPicture() method invoked!
+2018-03-07 10:40:28 PM - ShowPicture() method invoked!
+2018-03-07 10:40:29 PM - ShowPicture() method invoked!
+2018-03-07 10:40:30 PM - ShowPicture() method invoked!
+2018-03-07 10:40:30 PM - ShowPicture() method invoked!
+2018-03-07 10:40:31 PM - ShowPicture() method invoked!
+2018-03-07 10:40:31 PM - ShowPicture() method invoked!
+2018-03-07 10:40:31 PM - ShowPicture() method invoked!
+2018-03-07 10:40:32 PM - ShowPicture() method invoked!
+2018-03-07 10:40:34 PM - ShowPicture() method invoked!
+2018-03-07 10:40:35 PM - ShowPicture() method invoked!
+2018-03-07 10:40:35 PM - ShowPicture() method invoked!
+2018-03-07 10:40:36 PM - ShowPicture() method invoked!
+2018-03-07 10:40:37 PM - ShowPicture() method invoked!
+2018-03-07 10:40:37 PM - ShowPicture() method invoked!
+2018-03-07 10:40:37 PM - ShowPicture() method invoked!
+2018-03-07 10:40:38 PM - ShowPicture() method invoked!
+2018-03-07 10:40:38 PM - ShowPicture() method invoked!
+2018-03-07 10:40:39 PM - ShowPicture() method invoked!
+2018-03-07 10:40:39 PM - ShowPicture() method invoked!
+2018-03-07 10:40:39 PM - ShowPicture() method invoked!
+2018-03-07 10:40:40 PM - ShowPicture() method invoked!
+2018-03-07 10:40:42 PM - ShowPicture() method invoked!
+2018-03-07 10:40:43 PM - ShowPicture() method invoked!
+2018-03-07 10:40:43 PM - ShowPicture() method invoked!
+2018-03-07 10:40:44 PM - ShowPicture() method invoked!
+2018-03-07 10:40:44 PM - ShowPicture() method invoked!
+2018-03-07 10:40:44 PM - ShowPicture() method invoked!
+2018-03-07 10:40:45 PM - ShowPicture() method invoked!
+2018-03-07 10:40:45 PM - ShowPicture() method invoked!
+2018-03-07 10:40:45 PM - ShowPicture() method invoked!
+2018-03-07 10:40:45 PM - ShowPicture() method invoked!
+2018-03-07 10:40:46 PM - ShowPicture() method invoked!
+2018-03-07 10:40:48 PM - addButton() clicked!
+2018-03-07 10:41:07 PM - addButton() clicked!
+2018-03-07 10:41:07 PM - CreateCar method invoked!
+2018-03-07 10:41:07 PM - UncheckCheckboxes() invoked!
+2018-03-07 10:41:10 PM - ShowPicture() method invoked!
+2018-03-07 10:41:14 PM - Info button clicked!
+2018-03-07 10:41:24 PM - soldButton clicked!
+2018-03-07 10:41:25 PM - ShowPicture() method invoked!
+2018-03-07 10:41:25 PM - ShowPicture() method invoked!
+2018-03-07 10:41:29 PM - ShowPicture() method invoked!
+2018-03-07 10:41:31 PM - ShowPicture() method invoked!
+2018-03-07 10:41:35 PM - addButton() clicked!
+2018-03-07 10:41:40 PM - Form closed
+2018-03-07 10:41:40 PM - -----------------------------------
+2018-03-07 10:41:40 PM - Form closed
+2018-03-07 10:41:40 PM - -----------------------------------
+2018-03-07 10:42:34 PM - ShowPicture() method invoked!
+2018-03-07 10:42:34 PM - ShowPicture() method invoked!
+2018-03-07 10:42:34 PM - ShowPicture() method invoked!
+2018-03-07 10:42:35 PM - Form load!
+2018-03-07 10:42:35 PM - ShowPicture() method invoked!
+2018-03-07 10:42:35 PM - ShowPicture() method invoked!
+2018-03-07 10:42:36 PM - ShowPicture() method invoked!
+2018-03-07 10:42:45 PM - ShowPicture() method invoked!
+2018-03-07 10:42:46 PM - ShowPicture() method invoked!
+2018-03-07 10:42:46 PM - ShowPicture() method invoked!
+2018-03-07 10:42:46 PM - ShowPicture() method invoked!
+2018-03-07 10:42:47 PM - ShowPicture() method invoked!
+2018-03-07 10:42:47 PM - ShowPicture() method invoked!
+2018-03-07 10:42:49 PM - addButton() clicked!
+2018-03-07 10:42:57 PM - addButton() clicked!
+2018-03-07 10:42:59 PM - ShowPicture() method invoked!
+2018-03-07 10:42:59 PM - ShowPicture() method invoked!
+2018-03-07 10:42:59 PM - ShowPicture() method invoked!
+2018-03-07 10:42:59 PM - ShowPicture() method invoked!
+2018-03-07 10:43:02 PM - Form closed
+2018-03-07 10:43:02 PM - -----------------------------------
+2018-03-07 10:43:02 PM - Form closed
+2018-03-07 10:43:02 PM - -----------------------------------
+2018-03-07 10:48:06 PM - ShowPicture() method invoked!
+2018-03-07 10:48:06 PM - ShowPicture() method invoked!
+2018-03-07 10:48:07 PM - ShowPicture() method invoked!
+2018-03-07 10:48:07 PM - Form load!
+2018-03-07 10:48:07 PM - ShowPicture() method invoked!
+2018-03-07 10:48:07 PM - ShowPicture() method invoked!
+2018-03-07 10:48:10 PM - ShowPicture() method invoked!
+2018-03-07 10:48:23 PM - ShowPicture() method invoked!
+2018-03-07 10:48:23 PM - ShowPicture() method invoked!
+2018-03-07 10:48:23 PM - ShowPicture() method invoked!
+2018-03-07 10:48:23 PM - ShowPicture() method invoked!
+2018-03-07 10:48:26 PM - addButton() clicked!
+2018-03-07 10:48:26 PM - UncheckCheckboxes() invoked!
+2018-03-07 10:48:29 PM - Hide price panel button clicked!
+2018-03-07 10:48:34 PM - Form closed
+2018-03-07 10:48:34 PM - -----------------------------------
+2018-03-07 10:48:34 PM - Form closed
+2018-03-07 10:48:34 PM - -----------------------------------

@@ -177,4 +177,42 @@
     <Czs>0</Czs>
     <AreMileageReal>1</AreMileageReal>
   </Car>
+  <Car>
+    <ContractNumber>70</ContractNumber>
+    <Category>Лек автомобил</Category>
+    <PayCase>
+    </PayCase>
+    <Brand>BMW</Brand>
+    <Model>5 Series</Model>
+    <BodyworkType>Седан</BodyworkType>
+    <HorsePower>184</HorsePower>
+    <FuelType>Дизел</FuelType>
+    <Color>Сив</Color>
+    <ProductionDate>1999</ProductionDate>
+    <Mileage>2599887</Mileage>
+    <Price>2999</Price>
+    <AdditionalInfo>Бива...</AdditionalInfo>
+    <EngineVolumeCc>2989</EngineVolumeCc>
+    <Vin>WBAGDKGJ6434</Vin>
+    <Status>Налична</Status>
+    <Gearbox>Ръчна</Gearbox>
+    <Extras>
+    </Extras>
+    <NumberOfKeys>2</NumberOfKeys>
+    <Tires>Зимни</Tires>
+    <DateOfCreatingAd>2018-03-07</DateOfCreatingAd>
+    <RealSellingPrice>0</RealSellingPrice>
+    <MinBillValue>0</MinBillValue>
+    <MaxBillValue>0</MaxBillValue>
+    <OwnerByVoucher>
+    </OwnerByVoucher>
+    <OwnerByBusiness>
+    </OwnerByBusiness>
+    <FuelCosts>0</FuelCosts>
+    <ServiceCosts>0</ServiceCosts>
+    <CosmeticsCosts>0</CosmeticsCosts>
+    <Comission>0</Comission>
+    <Czs>0</Czs>
+    <AreMileageReal>0</AreMileageReal>
+  </Car>
 </Cars>
