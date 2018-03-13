@@ -59,8 +59,6 @@ namespace Dealership1._0
             this.ColorsCombobox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.GearboxesCombobox = new System.Windows.Forms.ComboBox();
-            this.StatusRadioButton = new System.Windows.Forms.RadioButton();
-            this.PriceRadioButton = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.StatusCombobox = new System.Windows.Forms.ComboBox();
             this.AreRealMileageCheckbox = new System.Windows.Forms.CheckBox();
@@ -75,7 +73,7 @@ namespace Dealership1._0
             this.panel1 = new System.Windows.Forms.Panel();
             this.HidePricePanelButton = new System.Windows.Forms.Button();
             this.OwnerByBusinessTextbox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.TraderLabel = new System.Windows.Forms.Label();
             this.OwnerByVoucherLabel = new System.Windows.Forms.Label();
             this.OwnerByVoucherTextbox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -107,16 +105,31 @@ namespace Dealership1._0
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ShowInfoFormButton = new System.Windows.Forms.Button();
             this.UploadButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
+            this.MainPicturebox = new System.Windows.Forms.PictureBox();
             this.soldButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.OpenPicDirButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.CzsValueUpdateButton = new System.Windows.Forms.Button();
+            this.ComissionValueUpdateButton = new System.Windows.Forms.Button();
+            this.FuelCostsValueUpdateButton = new System.Windows.Forms.Button();
+            this.ServiceCostsValueUpdateButton = new System.Windows.Forms.Button();
+            this.CosmeticsCostsValueUpdateButton = new System.Windows.Forms.Button();
+            this.MinBillValue = new System.Windows.Forms.Button();
+            this.MaxBillValueUpdateButton = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ShoferTextbox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CountryCombobox = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.PriceValueUpdateButton = new System.Windows.Forms.Button();
+            this.StatusValueUpdateButton = new System.Windows.Forms.Button();
+            this.RealSellingPriceValueUpdateButton = new System.Windows.Forms.Button();
+            this.RegistrationNumberTextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
             this.HidablePricePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPicturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // carsListBox
@@ -356,7 +369,11 @@ namespace Dealership1._0
             resources.GetString("BodyTypeCombobox.Items1"),
             resources.GetString("BodyTypeCombobox.Items2"),
             resources.GetString("BodyTypeCombobox.Items3"),
-            resources.GetString("BodyTypeCombobox.Items4")});
+            resources.GetString("BodyTypeCombobox.Items4"),
+            resources.GetString("BodyTypeCombobox.Items5"),
+            resources.GetString("BodyTypeCombobox.Items6"),
+            resources.GetString("BodyTypeCombobox.Items7"),
+            resources.GetString("BodyTypeCombobox.Items8")});
             this.BodyTypeCombobox.Name = "BodyTypeCombobox";
             this.BodyTypeCombobox.Sorted = true;
             // 
@@ -419,21 +436,6 @@ namespace Dealership1._0
             resources.GetString("GearboxesCombobox.Items1"),
             resources.GetString("GearboxesCombobox.Items2")});
             this.GearboxesCombobox.Name = "GearboxesCombobox";
-            // 
-            // StatusRadioButton
-            // 
-            resources.ApplyResources(this.StatusRadioButton, "StatusRadioButton");
-            this.StatusRadioButton.Name = "StatusRadioButton";
-            this.StatusRadioButton.TabStop = true;
-            this.StatusRadioButton.UseVisualStyleBackColor = true;
-            this.StatusRadioButton.CheckedChanged += new System.EventHandler(this.StatusRadioButton_CheckedChanged);
-            // 
-            // PriceRadioButton
-            // 
-            resources.ApplyResources(this.PriceRadioButton, "PriceRadioButton");
-            this.PriceRadioButton.Name = "PriceRadioButton";
-            this.PriceRadioButton.TabStop = true;
-            this.PriceRadioButton.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -528,12 +530,7 @@ namespace Dealership1._0
             this.CategoryCombobox.Items.AddRange(new object[] {
             resources.GetString("CategoryCombobox.Items"),
             resources.GetString("CategoryCombobox.Items1"),
-            resources.GetString("CategoryCombobox.Items2"),
-            resources.GetString("CategoryCombobox.Items3"),
-            resources.GetString("CategoryCombobox.Items4"),
-            resources.GetString("CategoryCombobox.Items5"),
-            resources.GetString("CategoryCombobox.Items6"),
-            resources.GetString("CategoryCombobox.Items7")});
+            resources.GetString("CategoryCombobox.Items2")});
             this.CategoryCombobox.Name = "CategoryCombobox";
             this.CategoryCombobox.Sorted = true;
             // 
@@ -642,11 +639,12 @@ namespace Dealership1._0
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.HidePricePanelButton);
             this.panel1.Controls.Add(this.OwnerByBusinessTextbox);
-            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.TraderLabel);
             this.panel1.Controls.Add(this.OwnerByVoucherLabel);
             this.panel1.Controls.Add(this.OwnerByVoucherTextbox);
             this.panel1.Controls.Add(this.label10);
@@ -655,7 +653,6 @@ namespace Dealership1._0
             this.panel1.Controls.Add(this.ContractNumberInfoLabel);
             this.panel1.Controls.Add(this.DateOfCreatingAdLabel);
             this.panel1.Controls.Add(this.PayCaseComboBox);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // HidePricePanelButton
@@ -674,12 +671,13 @@ namespace Dealership1._0
             this.OwnerByBusinessTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.OwnerByBusinessTextbox.Name = "OwnerByBusinessTextbox";
             // 
-            // label13
+            // TraderLabel
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.ForeColor = System.Drawing.SystemColors.Window;
-            this.label13.Name = "label13";
+            resources.ApplyResources(this.TraderLabel, "TraderLabel");
+            this.TraderLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TraderLabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.TraderLabel.Name = "TraderLabel";
+            this.TraderLabel.Click += new System.EventHandler(this.TraderLabel_Click);
             // 
             // OwnerByVoucherLabel
             // 
@@ -729,7 +727,16 @@ namespace Dealership1._0
             // 
             // HidablePricePanel
             // 
+            resources.ApplyResources(this.HidablePricePanel, "HidablePricePanel");
             this.HidablePricePanel.BackColor = System.Drawing.Color.Transparent;
+            this.HidablePricePanel.Controls.Add(this.RealSellingPriceValueUpdateButton);
+            this.HidablePricePanel.Controls.Add(this.MaxBillValueUpdateButton);
+            this.HidablePricePanel.Controls.Add(this.MinBillValue);
+            this.HidablePricePanel.Controls.Add(this.CosmeticsCostsValueUpdateButton);
+            this.HidablePricePanel.Controls.Add(this.ServiceCostsValueUpdateButton);
+            this.HidablePricePanel.Controls.Add(this.FuelCostsValueUpdateButton);
+            this.HidablePricePanel.Controls.Add(this.ComissionValueUpdateButton);
+            this.HidablePricePanel.Controls.Add(this.CzsValueUpdateButton);
             this.HidablePricePanel.Controls.Add(this.CzsTextbox);
             this.HidablePricePanel.Controls.Add(this.ComissionTextbox);
             this.HidablePricePanel.Controls.Add(this.label24);
@@ -750,7 +757,6 @@ namespace Dealership1._0
             this.HidablePricePanel.Controls.Add(this.label16);
             this.HidablePricePanel.Controls.Add(this.RealSellingPriceTextbox);
             this.HidablePricePanel.Controls.Add(this.label15);
-            resources.ApplyResources(this.HidablePricePanel, "HidablePricePanel");
             this.HidablePricePanel.Name = "HidablePricePanel";
             // 
             // CzsTextbox
@@ -919,26 +925,14 @@ namespace Dealership1._0
             this.UploadButton.UseVisualStyleBackColor = false;
             this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
             // 
-            // pictureBox1
+            // MainPicturebox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // UpdateButton
-            // 
-            this.UpdateButton.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.UpdateButton, "UpdateButton");
-            this.UpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.UpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.UpdateButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.UpdateButton.Image = global::Dealership1._0.Properties.Resources.icons8_synchronize_26__1_;
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.UseVisualStyleBackColor = false;
-            this.UpdateButton.VisibleChanged += new System.EventHandler(this.UpdateButton_VisibleChanged);
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            this.MainPicturebox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MainPicturebox.BackgroundImage = global::Dealership1._0.Properties.Resources.logo_big_128_;
+            resources.ApplyResources(this.MainPicturebox, "MainPicturebox");
+            this.MainPicturebox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MainPicturebox.Name = "MainPicturebox";
+            this.MainPicturebox.TabStop = false;
             // 
             // soldButton
             // 
@@ -984,16 +978,212 @@ namespace Dealership1._0
             this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Name = "label1";
             // 
+            // CzsValueUpdateButton
+            // 
+            this.CzsValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.CzsValueUpdateButton, "CzsValueUpdateButton");
+            this.CzsValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.CzsValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.CzsValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.CzsValueUpdateButton.Name = "CzsValueUpdateButton";
+            this.CzsValueUpdateButton.UseVisualStyleBackColor = false;
+            this.CzsValueUpdateButton.Click += new System.EventHandler(this.CzsValueUpdateButton_Click);
+            // 
+            // ComissionValueUpdateButton
+            // 
+            this.ComissionValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ComissionValueUpdateButton, "ComissionValueUpdateButton");
+            this.ComissionValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ComissionValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ComissionValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.ComissionValueUpdateButton.Name = "ComissionValueUpdateButton";
+            this.ComissionValueUpdateButton.UseVisualStyleBackColor = false;
+            this.ComissionValueUpdateButton.Click += new System.EventHandler(this.ComissionValueUpdateButton_Click);
+            // 
+            // FuelCostsValueUpdateButton
+            // 
+            this.FuelCostsValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.FuelCostsValueUpdateButton, "FuelCostsValueUpdateButton");
+            this.FuelCostsValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.FuelCostsValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.FuelCostsValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.FuelCostsValueUpdateButton.Name = "FuelCostsValueUpdateButton";
+            this.FuelCostsValueUpdateButton.UseVisualStyleBackColor = false;
+            this.FuelCostsValueUpdateButton.Click += new System.EventHandler(this.FuelCostValueUpdateButton_Click);
+            // 
+            // ServiceCostsValueUpdateButton
+            // 
+            this.ServiceCostsValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ServiceCostsValueUpdateButton, "ServiceCostsValueUpdateButton");
+            this.ServiceCostsValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ServiceCostsValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ServiceCostsValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.ServiceCostsValueUpdateButton.Name = "ServiceCostsValueUpdateButton";
+            this.ServiceCostsValueUpdateButton.UseVisualStyleBackColor = false;
+            this.ServiceCostsValueUpdateButton.Click += new System.EventHandler(this.ServiceCostsValueUpdateButton_Click);
+            // 
+            // CosmeticsCostsValueUpdateButton
+            // 
+            this.CosmeticsCostsValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.CosmeticsCostsValueUpdateButton, "CosmeticsCostsValueUpdateButton");
+            this.CosmeticsCostsValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.CosmeticsCostsValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.CosmeticsCostsValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.CosmeticsCostsValueUpdateButton.Name = "CosmeticsCostsValueUpdateButton";
+            this.CosmeticsCostsValueUpdateButton.UseVisualStyleBackColor = false;
+            this.CosmeticsCostsValueUpdateButton.Click += new System.EventHandler(this.CosmeticsCostsValueUpdateButton_Click);
+            // 
+            // MinBillValue
+            // 
+            this.MinBillValue.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.MinBillValue, "MinBillValue");
+            this.MinBillValue.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.MinBillValue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.MinBillValue.ForeColor = System.Drawing.SystemColors.Window;
+            this.MinBillValue.Name = "MinBillValue";
+            this.MinBillValue.UseVisualStyleBackColor = false;
+            this.MinBillValue.Click += new System.EventHandler(this.MinBillValue_Click);
+            // 
+            // MaxBillValueUpdateButton
+            // 
+            this.MaxBillValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.MaxBillValueUpdateButton, "MaxBillValueUpdateButton");
+            this.MaxBillValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.MaxBillValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.MaxBillValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.MaxBillValueUpdateButton.Name = "MaxBillValueUpdateButton";
+            this.MaxBillValueUpdateButton.UseVisualStyleBackColor = false;
+            this.MaxBillValueUpdateButton.Click += new System.EventHandler(this.MaxBillValueUpdateButton_Click);
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.SystemColors.Window;
+            this.label8.Name = "label8";
+            // 
+            // ShoferTextbox
+            // 
+            this.ShoferTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.ShoferTextbox, "ShoferTextbox");
+            this.ShoferTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.ShoferTextbox.Name = "ShoferTextbox";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.SystemColors.Window;
+            this.label11.Name = "label11";
+            // 
+            // CountryCombobox
+            // 
+            this.CountryCombobox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.CountryCombobox.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.CountryCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.CountryCombobox, "CountryCombobox");
+            this.CountryCombobox.ForeColor = System.Drawing.SystemColors.Window;
+            this.CountryCombobox.FormattingEnabled = true;
+            this.CountryCombobox.Items.AddRange(new object[] {
+            resources.GetString("CountryCombobox.Items"),
+            resources.GetString("CountryCombobox.Items1"),
+            resources.GetString("CountryCombobox.Items2"),
+            resources.GetString("CountryCombobox.Items3"),
+            resources.GetString("CountryCombobox.Items4"),
+            resources.GetString("CountryCombobox.Items5"),
+            resources.GetString("CountryCombobox.Items6"),
+            resources.GetString("CountryCombobox.Items7"),
+            resources.GetString("CountryCombobox.Items8"),
+            resources.GetString("CountryCombobox.Items9"),
+            resources.GetString("CountryCombobox.Items10"),
+            resources.GetString("CountryCombobox.Items11"),
+            resources.GetString("CountryCombobox.Items12"),
+            resources.GetString("CountryCombobox.Items13"),
+            resources.GetString("CountryCombobox.Items14"),
+            resources.GetString("CountryCombobox.Items15"),
+            resources.GetString("CountryCombobox.Items16"),
+            resources.GetString("CountryCombobox.Items17"),
+            resources.GetString("CountryCombobox.Items18"),
+            resources.GetString("CountryCombobox.Items19"),
+            resources.GetString("CountryCombobox.Items20"),
+            resources.GetString("CountryCombobox.Items21"),
+            resources.GetString("CountryCombobox.Items22"),
+            resources.GetString("CountryCombobox.Items23"),
+            resources.GetString("CountryCombobox.Items24"),
+            resources.GetString("CountryCombobox.Items25"),
+            resources.GetString("CountryCombobox.Items26"),
+            resources.GetString("CountryCombobox.Items27"),
+            resources.GetString("CountryCombobox.Items28"),
+            resources.GetString("CountryCombobox.Items29"),
+            resources.GetString("CountryCombobox.Items30")});
+            this.CountryCombobox.Name = "CountryCombobox";
+            this.CountryCombobox.Sorted = true;
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.ForeColor = System.Drawing.SystemColors.Window;
+            this.label26.Name = "label26";
+            // 
+            // PriceValueUpdateButton
+            // 
+            this.PriceValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.PriceValueUpdateButton, "PriceValueUpdateButton");
+            this.PriceValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.PriceValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.PriceValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.PriceValueUpdateButton.Name = "PriceValueUpdateButton";
+            this.PriceValueUpdateButton.UseVisualStyleBackColor = false;
+            this.PriceValueUpdateButton.Click += new System.EventHandler(this.PriceValueUpdateButton_Click);
+            // 
+            // StatusValueUpdateButton
+            // 
+            this.StatusValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.StatusValueUpdateButton, "StatusValueUpdateButton");
+            this.StatusValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.StatusValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.StatusValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.StatusValueUpdateButton.Name = "StatusValueUpdateButton";
+            this.StatusValueUpdateButton.UseVisualStyleBackColor = false;
+            this.StatusValueUpdateButton.Click += new System.EventHandler(this.StatusValueUpdateButton_Click);
+            // 
+            // RealSellingPriceValueUpdateButton
+            // 
+            this.RealSellingPriceValueUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.RealSellingPriceValueUpdateButton, "RealSellingPriceValueUpdateButton");
+            this.RealSellingPriceValueUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.RealSellingPriceValueUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.RealSellingPriceValueUpdateButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.RealSellingPriceValueUpdateButton.Name = "RealSellingPriceValueUpdateButton";
+            this.RealSellingPriceValueUpdateButton.UseVisualStyleBackColor = false;
+            this.RealSellingPriceValueUpdateButton.Click += new System.EventHandler(this.RealSellingPriceValueUpdateButton_Click);
+            // 
+            // RegistrationNumberTextbox
+            // 
+            this.RegistrationNumberTextbox.BackColor = System.Drawing.SystemColors.WindowText;
+            resources.ApplyResources(this.RegistrationNumberTextbox, "RegistrationNumberTextbox");
+            this.RegistrationNumberTextbox.ForeColor = System.Drawing.SystemColors.Window;
+            this.RegistrationNumberTextbox.Name = "RegistrationNumberTextbox";
+            // 
             // DielershipUIForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.RegistrationNumberTextbox);
+            this.Controls.Add(this.StatusValueUpdateButton);
+            this.Controls.Add(this.PriceValueUpdateButton);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.CountryCombobox);
+            this.Controls.Add(this.ShoferTextbox);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.OpenPicDirButton);
             this.Controls.Add(this.ShowInfoFormButton);
             this.Controls.Add(this.UploadButton);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.MainPicturebox);
             this.Controls.Add(this.HidablePricePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ExtrasCheckedListBox);
@@ -1006,9 +1196,6 @@ namespace Dealership1._0
             this.Controls.Add(this.AreRealMileageCheckbox);
             this.Controls.Add(this.StatusCombobox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.PriceRadioButton);
-            this.Controls.Add(this.StatusRadioButton);
-            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.GearboxesCombobox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.ColorsCombobox);
@@ -1041,7 +1228,7 @@ namespace Dealership1._0
             this.Controls.Add(this.carsListBox);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DielershipUIForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1053,7 +1240,7 @@ namespace Dealership1._0
             this.panel1.PerformLayout();
             this.HidablePricePanel.ResumeLayout(false);
             this.HidablePricePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPicturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1092,9 +1279,6 @@ namespace Dealership1._0
         private System.Windows.Forms.ComboBox ColorsCombobox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox GearboxesCombobox;
-        private System.Windows.Forms.Button UpdateButton;
-        private System.Windows.Forms.RadioButton StatusRadioButton;
-        private System.Windows.Forms.RadioButton PriceRadioButton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox StatusCombobox;
         private System.Windows.Forms.CheckBox AreRealMileageCheckbox;
@@ -1108,7 +1292,7 @@ namespace Dealership1._0
         private System.Windows.Forms.CheckedListBox ExtrasCheckedListBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox OwnerByBusinessTextbox;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label TraderLabel;
         private System.Windows.Forms.Label OwnerByVoucherLabel;
         private System.Windows.Forms.TextBox OwnerByVoucherTextbox;
         private System.Windows.Forms.Label label10;
@@ -1138,12 +1322,28 @@ namespace Dealership1._0
         private System.Windows.Forms.TextBox ComissionTextbox;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox MainPicturebox;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button UploadButton;
         private System.Windows.Forms.Button ShowInfoFormButton;
         private System.Windows.Forms.Button OpenPicDirButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button MaxBillValueUpdateButton;
+        private System.Windows.Forms.Button MinBillValue;
+        private System.Windows.Forms.Button CosmeticsCostsValueUpdateButton;
+        private System.Windows.Forms.Button ServiceCostsValueUpdateButton;
+        private System.Windows.Forms.Button FuelCostsValueUpdateButton;
+        private System.Windows.Forms.Button ComissionValueUpdateButton;
+        private System.Windows.Forms.Button CzsValueUpdateButton;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox ShoferTextbox;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox CountryCombobox;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button PriceValueUpdateButton;
+        private System.Windows.Forms.Button StatusValueUpdateButton;
+        private System.Windows.Forms.Button RealSellingPriceValueUpdateButton;
+        private System.Windows.Forms.TextBox RegistrationNumberTextbox;
     }
 }
 

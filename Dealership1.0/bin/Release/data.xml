@@ -25,7 +25,7 @@
     <NumberOfKeys>3</NumberOfKeys>
     <Tires>Летни и зимни</Tires>
     <DateOfCreatingAd>2018-02-22</DateOfCreatingAd>
-    <RealSellingPrice>300000</RealSellingPrice>
+    <RealSellingPrice>100000</RealSellingPrice>
     <MinBillValue>234555</MinBillValue>
     <MaxBillValue>689990</MaxBillValue>
     <OwnerByVoucher>az</OwnerByVoucher>
@@ -36,6 +36,12 @@
     <Comission>1223</Comission>
     <Czs>21</Czs>
     <AreMileageReal>0</AreMileageReal>
+    <Country>
+    </Country>
+    <RegistrationNumber>
+    </RegistrationNumber>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>59</ContractNumber>
@@ -72,6 +78,12 @@
     <Comission>4244</Comission>
     <Czs>523</Czs>
     <AreMileageReal>0</AreMileageReal>
+    <Country>
+    </Country>
+    <RegistrationNumber>
+    </RegistrationNumber>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>61</ContractNumber>
@@ -106,6 +118,12 @@
     <Comission>1233</Comission>
     <Czs>2344</Czs>
     <AreMileageReal>0</AreMileageReal>
+    <Country>
+    </Country>
+    <RegistrationNumber>
+    </RegistrationNumber>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>65</ContractNumber>
@@ -140,6 +158,9 @@
     <Comission>1100</Comission>
     <Czs>234</Czs>
     <AreMileageReal>0</AreMileageReal>
+    <Country>България</Country>
+    <RegistrationNumber>4234сфс</RegistrationNumber>
+    <Shofer>Дидо</Shofer>
   </Car>
   <Car>
     <ContractNumber>68</ContractNumber>
@@ -153,7 +174,7 @@
     <Color>Сив</Color>
     <ProductionDate>2003</ProductionDate>
     <Mileage>1323214</Mileage>
-    <Price>3000</Price>
+    <Price>4500</Price>
     <AdditionalInfo>
     </AdditionalInfo>
     <EngineVolumeCc>1789</EngineVolumeCc>
@@ -165,17 +186,20 @@
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2018-02-24</DateOfCreatingAd>
-    <RealSellingPrice>4000</RealSellingPrice>
-    <MinBillValue>234</MinBillValue>
+    <RealSellingPrice>2000</RealSellingPrice>
+    <MinBillValue>3</MinBillValue>
     <MaxBillValue>4</MaxBillValue>
     <OwnerByVoucher>me</OwnerByVoucher>
     <OwnerByBusiness>me again</OwnerByBusiness>
-    <FuelCosts>5</FuelCosts>
-    <ServiceCosts>5</ServiceCosts>
-    <CosmeticsCosts>45</CosmeticsCosts>
-    <Comission>0</Comission>
-    <Czs>0</Czs>
+    <FuelCosts>1</FuelCosts>
+    <ServiceCosts>2</ServiceCosts>
+    <CosmeticsCosts>3</CosmeticsCosts>
+    <Comission>5</Comission>
+    <Czs>4</Czs>
     <AreMileageReal>1</AreMileageReal>
+    <Country>Швеция</Country>
+    <RegistrationNumber>СВ8690</RegistrationNumber>
+    <Shofer>Гого</Shofer>
   </Car>
   <Car>
     <ContractNumber>70</ContractNumber>
@@ -212,7 +236,10 @@
     <ServiceCosts>0</ServiceCosts>
     <CosmeticsCosts>0</CosmeticsCosts>
     <Comission>0</Comission>
-    <Czs>0</Czs>
+    <Czs>1</Czs>
     <AreMileageReal>0</AreMileageReal>
+    <Country>Белгия</Country>
+    <RegistrationNumber>асд3434</RegistrationNumber>
+    <Shofer>Гошо</Shofer>
   </Car>
 </Cars>

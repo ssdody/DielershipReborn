@@ -93,127 +93,6 @@ namespace Dealership1._0
             StatusNode.InnerText = car.Status;
             headNode.AppendChild(StatusNode);
 
-            //XmlNode AutoStartStopNode = doc.CreateElement("AutoStartStop");
-            //AutoStartStopNode.InnerText = car.AutoStartStop;
-            //headNode.AppendChild(AutoStartStopNode);
-
-            //XmlNode BluetoothHFNode = doc.CreateElement("BluetoothHF");
-            //BluetoothHFNode.InnerText = car.BluetoothHF;
-            //headNode.AppendChild(BluetoothHFNode);
-
-            //XmlNode DvdTvNode = doc.CreateElement("DvdTv");
-            //DvdTvNode.InnerText = car.DvdTv;
-            //headNode.AppendChild(DvdTvNode);
-
-            //XmlNode SteptronicTiptronicNode = doc.CreateElement("SteptronicTiptronic");
-            //SteptronicTiptronicNode.InnerText = car.SteptronicTiptronic;
-            //headNode.AppendChild(SteptronicTiptronicNode);
-
-            //XmlNode USBAudioVideoAUXNode = doc.CreateElement("USBAudioVideoAUX");
-            //USBAudioVideoAUXNode.InnerText = car.USBAudioVideoAUX;
-            //headNode.AppendChild(USBAudioVideoAUXNode);
-
-            //XmlNode AdaptiveAirSuspNode = doc.CreateElement("AdaptiveAirSusp");
-            //AdaptiveAirSuspNode.InnerText = car.AdaptiveAirSusp;
-            //headNode.AppendChild(AdaptiveAirSuspNode);
-
-            //XmlNode KeylessGoNode = doc.CreateElement("KeylessGo");
-            //KeylessGoNode.InnerText = car.KeylessGo;
-            //headNode.AppendChild(KeylessGoNode);
-
-            //XmlNode DifferentialLockNode = doc.CreateElement("DifferentialLock");
-            //DifferentialLockNode.InnerText = car.DifferentialLock;
-            //headNode.AppendChild(DifferentialLockNode);
-
-            //XmlNode ECUNode = doc.CreateElement("ECU");
-            //ECUNode.InnerText = car.ECU;
-            //headNode.AppendChild(ECUNode);
-
-            //XmlNode ElMirrorsNode = doc.CreateElement("ElMirrors");
-            //ElMirrorsNode.InnerText = car.ElMirrors;
-            //headNode.AppendChild(ElMirrorsNode);
-
-            //XmlNode ElWindowsNode = doc.CreateElement("ElWindows");
-            //ElWindowsNode.InnerText = car.ElWindows;
-            //headNode.AppendChild(ElWindowsNode);
-
-
-            //XmlNode ElAdjustmentSuspNode = doc.CreateElement("ElAdjustmentSusp");
-            //ElAdjustmentSuspNode.InnerText = car.ElAdjustmentSusp;
-            //headNode.AppendChild(ElAdjustmentSuspNode);
-
-            //XmlNode DPFFilterNode = doc.CreateElement("DPFFilter");
-            //DPFFilterNode.InnerText = car.DPFFilter;
-            //headNode.AppendChild(DPFFilterNode);
-
-            //XmlNode CoolingGloveboxNode = doc.CreateElement("CoolingGlovebox");
-            //CoolingGloveboxNode.InnerText = car.CoolingGlovebox;
-            //headNode.AppendChild(CoolingGloveboxNode);
-
-            //XmlNode StereoNode = doc.CreateElement("Stereo");
-            //StereoNode.InnerText = car.Stereo;
-            //headNode.AppendChild(StereoNode);
-
-            //XmlNode ElAdjustmentSeatsNode = doc.CreateElement("ElAdjustmentSeats");
-            //ElAdjustmentSeatsNode.InnerText = car.ElAdjustmentSeats;
-            //headNode.AppendChild(ElAdjustmentSeatsNode);
-
-            //XmlNode ElSteerAmplifierNode = doc.CreateElement("ElSteerAmplifier");
-            //ElSteerAmplifierNode.InnerText = car.ElSteerAmplifier;
-            //headNode.AppendChild(ElSteerAmplifierNode);
-
-            //XmlNode AirConditioningNode = doc.CreateElement("AirConditioning");
-            //AirConditioningNode.InnerText = car.AirConditioning;
-            //headNode.AppendChild(AirConditioningNode);
-
-            //XmlNode ClimatronicNode = doc.CreateElement("Climatronic");
-            //ClimatronicNode.InnerText = car.Climatronic;
-            //headNode.AppendChild(ClimatronicNode);
-
-            //XmlNode MultifunctionSteerNode = doc.CreateElement("MultifunctionSteer");
-            //MultifunctionSteerNode.InnerText = car.MultifunctionSteer;
-            //headNode.AppendChild(MultifunctionSteerNode);
-
-            //XmlNode NavigationNode = doc.CreateElement("Navigation");
-            //NavigationNode.InnerText = car.Navigation;
-            //headNode.AppendChild(NavigationNode);
-
-            //XmlNode SteeringHeaterNode = doc.CreateElement("SteeringHeater");
-            //SteeringHeaterNode.InnerText = car.SteeringHeater;
-            //headNode.AppendChild(SteeringHeaterNode);
-
-            //XmlNode FrontWindowHeatingNode = doc.CreateElement("FrontWindowHeating");
-            //FrontWindowHeatingNode.InnerText = car.FrontWindowHeating;
-            //headNode.AppendChild(FrontWindowHeatingNode);
-
-            //XmlNode AutopilotNode = doc.CreateElement("Autopilot");
-            //AutopilotNode.InnerText = car.Autopilot;
-            //headNode.AppendChild(AutopilotNode);
-
-            //XmlNode SeatsHeatingNode = doc.CreateElement("SeatsHeating");
-            //SeatsHeatingNode.InnerText = car.SeatsHeating;
-            //headNode.AppendChild(SeatsHeatingNode);
-
-            //XmlNode RainSensorNode = doc.CreateElement("RainSensor");
-            //RainSensorNode.InnerText = car.RainSensor;
-            //headNode.AppendChild(RainSensorNode);
-
-            //XmlNode SteeringAdjustmentNode = doc.CreateElement("SteeringAdjustment");
-            //SteeringAdjustmentNode.InnerText = car.SteeringAdjustment;
-            //headNode.AppendChild(SteeringAdjustmentNode);
-
-            //XmlNode ServoSteerAmplifierNode = doc.CreateElement("ServoSteerAmplifier");
-            //ServoSteerAmplifierNode.InnerText = car.ServoSteerAmplifier;
-            //headNode.AppendChild(ServoSteerAmplifierNode);
-
-            //XmlNode HeadlightsWashNode = doc.CreateElement("HeadlightsWash");
-            //HeadlightsWashNode.InnerText = car.HeadlightsWash;
-            //headNode.AppendChild(HeadlightsWashNode);
-
-            //XmlNode HeatingSysNode = doc.CreateElement("HeatingSys");
-            //HeatingSysNode.InnerText = car.HeatingSys;
-            //headNode.AppendChild(HeatingSysNode);
-
             XmlNode GearboxNode = doc.CreateElement("Gearbox");
             GearboxNode.InnerText = car.Gearbox.ToString();
             headNode.AppendChild(GearboxNode);
@@ -255,7 +134,7 @@ namespace Dealership1._0
             headNode.AppendChild(OwnerByBusinessNode);
 
             XmlNode FuelCostsNode = doc.CreateElement("FuelCosts");
-            FuelCostsNode.InnerText = car.FuelCosts.ToString();
+            FuelCostsNode.InnerText = car.FuelCosts;
             headNode.AppendChild(FuelCostsNode);
 
             XmlNode ServiceCostsNode = doc.CreateElement("ServiceCosts");
@@ -263,11 +142,11 @@ namespace Dealership1._0
             headNode.AppendChild(ServiceCostsNode);
 
             XmlNode CosmeticsCostsNode = doc.CreateElement("CosmeticsCosts");
-            CosmeticsCostsNode.InnerText = car.CosmeticsCosts.ToString();
+            CosmeticsCostsNode.InnerText = car.CosmeticsCosts;
             headNode.AppendChild(CosmeticsCostsNode);
 
             XmlNode ComissionNode = doc.CreateElement("Comission");
-            ComissionNode.InnerText = car.Comission.ToString();
+            ComissionNode.InnerText = car.Comission;
             headNode.AppendChild(ComissionNode);
 
             XmlNode CzsNode = doc.CreateElement("Czs");
@@ -278,9 +157,17 @@ namespace Dealership1._0
             AreMileageRealNode.InnerText = car.AreMileageReal.ToString();
             headNode.AppendChild(AreMileageRealNode);
 
+            XmlNode CountryNode = doc.CreateElement("Country");
+            CountryNode.InnerText = car.Country;
+            headNode.AppendChild(CountryNode);
 
+            XmlNode RegistrationNumberNode = doc.CreateElement("RegistrationNumber");
+            RegistrationNumberNode.InnerText = car.RegistrationNumber;
+            headNode.AppendChild(RegistrationNumberNode);
 
-
+            XmlNode ShoferNode = doc.CreateElement("Shofer");
+            ShoferNode.InnerText = car.Shofer;
+            headNode.AppendChild(ShoferNode);
 
             //add to elements collection
             doc.DocumentElement.AppendChild(headNode);
@@ -294,12 +181,12 @@ namespace Dealership1._0
 
         public static List<Car> LoadCarsListFromXmlDB() //CHECKED ! WORKS FINE
         {
-            
+
             XDocument xDoc = new XDocument(new XElement("Car"));
             if (!File.Exists(filename))
             {
-                
-                xDoc.Save(filename,SaveOptions.None);
+
+                xDoc.Save(filename, SaveOptions.None);
             }
 
             List<Car> xmlCarList = new List<Car>();
@@ -331,36 +218,7 @@ namespace Dealership1._0
                 newCar.AdditionalInfo = d.Element("AdditionalInfo").Value;
                 newCar.Vin = d.Element("Vin").Value;
                 newCar.Status = d.Element("Status").Value;
-                //newCar.AutoStartStop = d.Element("AutoStartStop").Value;
-                //newCar.BluetoothHF = d.Element("BluetoothHF").Value;
-                //newCar.DvdTv = d.Element("DvdTv").Value;
-                //newCar.SteptronicTiptronic = d.Element("SteptronicTiptronic").Value;
-                //newCar.USBAudioVideoAUX = d.Element("USBAudioVideoAUX").Value;
-                //newCar.AdaptiveAirSusp = d.Element("AdaptiveAirSusp").Value;
-                //newCar.KeylessGo = d.Element("KeylessGo").Value;
-                //newCar.DifferentialLock = d.Element("DifferentialLock").Value;
-                //newCar.ECU = d.Element("ECU").Value;
-                //newCar.ElMirrors = d.Element("ElMirrors").Value;
-                //newCar.ElWindows = d.Element("ElWindows").Value;
-                //newCar.ElAdjustmentSusp = d.Element("ElAdjustmentSusp").Value;
-                //newCar.DPFFilter = d.Element("DPFFilter").Value;
-                //newCar.CoolingGlovebox = d.Element("CoolingGlovebox").Value;
-                //newCar.Stereo = d.Element("Stereo").Value;
-                //newCar.ElAdjustmentSeats = d.Element("ElAdjustmentSeats").Value;
-                //newCar.ElSteerAmplifier = d.Element("ElSteerAmplifier").Value;
-                //newCar.AirConditioning = d.Element("AirConditioning").Value;
-                //newCar.Climatronic = d.Element("Climatronic").Value;
-                //newCar.MultifunctionSteer = d.Element("MultifunctionSteer").Value;
-                //newCar.Navigation = d.Element("Navigation").Value;
-                //newCar.SteeringHeater = d.Element("SteeringHeater").Value;
-                //newCar.FrontWindowHeating = d.Element("FrontWindowHeating").Value;
-                //newCar.Autopilot = d.Element("Autopilot").Value;
-                //newCar.SeatsHeating = d.Element("SeatsHeating").Value;
-                //newCar.RainSensor = d.Element("RainSensor").Value;
-                //newCar.SteeringAdjustment = d.Element("SteeringAdjustment").Value;
-                //newCar.ServoSteerAmplifier = d.Element("ServoSteerAmplifier").Value;
-                //newCar.HeadlightsWash = d.Element("HeadlightsWash").Value;
-                //newCar.HeatingSys = d.Element("HeatingSys").Value;
+
                 newCar.Extras = d.Element("Extras").Value;
                 newCar.Gearbox = d.Element("Gearbox").Value;
                 newCar.NumberOfKeys = d.Element("NumberOfKeys").Value;
@@ -381,28 +239,15 @@ namespace Dealership1._0
                 newCar.DateOfCreatingAd = d.Element("DateOfCreatingAd").Value;
                 newCar.OwnerByVoucher = d.Element("OwnerByVoucher").Value;
                 newCar.OwnerByBusiness = d.Element("OwnerByBusiness").Value;
-                if (int.TryParse(d.Element("FuelCosts").Value, out outParamValue))
-                {
-                    newCar.FuelCosts = outParamValue;
-                }
-                if (int.TryParse(d.Element("ServiceCosts").Value, out outParamValue))
-                {
-                    newCar.ServiceCosts = outParamValue;
-                }
-                if (int.TryParse(d.Element("CosmeticsCosts").Value, out outParamValue))
-                {
-                    newCar.CosmeticsCosts = outParamValue;
-                }
-                if (int.TryParse(d.Element("Comission").Value, out outParamValue))
-                {
-                    newCar.Comission = outParamValue;
-                }
-                if (int.TryParse(d.Element("Czs").Value, out outParamValue))
-                {
-                    newCar.Czs = outParamValue;
-                }
+                newCar.FuelCosts = d.Element("FuelCosts").Value;
+                newCar.ServiceCosts = d.Element("ServiceCosts").Value;
+                newCar.CosmeticsCosts = d.Element("CosmeticsCosts").Value;
+                newCar.Comission = d.Element("Comission").Value;
+                newCar.Czs = d.Element("Czs").Value;
                 newCar.AreMileageReal = d.Element("AreMileageReal").Value;
-
+                newCar.Country = d.Element("Country").Value;
+                newCar.RegistrationNumber = d.Element("RegistrationNumber").Value;
+                newCar.Shofer = d.Element("Shofer").Value;
 
                 xmlCarList.Add(newCar);
             }

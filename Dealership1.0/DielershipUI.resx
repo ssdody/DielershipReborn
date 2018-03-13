@@ -126,10 +126,10 @@
     <value>19</value>
   </data>
   <data name="carsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 147</value>
+    <value>7, 147</value>
   </data>
   <data name="carsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 534</value>
+    <value>184, 534</value>
   </data>
   <data name="carsListBox.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;carsListBox.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>54</value>
   </data>
   <data name="brandLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -153,7 +153,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="brandLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 168</value>
+    <value>193, 177</value>
   </data>
   <data name="brandLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 19</value>
@@ -174,7 +174,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;brandLabel.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>53</value>
   </data>
   <data name="modelLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -183,7 +183,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="modelLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 191</value>
+    <value>193, 200</value>
   </data>
   <data name="modelLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 19</value>
@@ -204,7 +204,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;modelLabel.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>52</value>
   </data>
   <data name="typeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -213,7 +213,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="typeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 214</value>
+    <value>193, 224</value>
   </data>
   <data name="typeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 19</value>
@@ -234,7 +234,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;typeLabel.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>51</value>
   </data>
   <data name="engineVolumeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -243,7 +243,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="engineVolumeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 237</value>
+    <value>194, 248</value>
   </data>
   <data name="engineVolumeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 19</value>
@@ -264,7 +264,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;engineVolumeLabel.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>50</value>
   </data>
   <data name="enginePowerLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -273,7 +273,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="enginePowerLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 260</value>
+    <value>193, 271</value>
   </data>
   <data name="enginePowerLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 19</value>
@@ -294,7 +294,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;enginePowerLabel.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>49</value>
   </data>
   <data name="fuelTypeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -303,7 +303,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="fuelTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 283</value>
+    <value>194, 294</value>
   </data>
   <data name="fuelTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 19</value>
@@ -324,7 +324,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;fuelTypeLabel.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>48</value>
   </data>
   <data name="colorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -333,7 +333,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="colorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 308</value>
+    <value>194, 317</value>
   </data>
   <data name="colorLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 19</value>
@@ -354,7 +354,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;colorLabel.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>47</value>
   </data>
   <data name="productionDateLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -363,16 +363,16 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="productionDateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 331</value>
+    <value>194, 340</value>
   </data>
   <data name="productionDateLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 19</value>
+    <value>111, 19</value>
   </data>
   <data name="productionDateLabel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="productionDateLabel.Text" xml:space="preserve">
-    <value>Дата</value>
+    <value>Дата на рег.</value>
   </data>
   <data name="&gt;&gt;productionDateLabel.Name" xml:space="preserve">
     <value>productionDateLabel</value>
@@ -384,7 +384,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;productionDateLabel.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>46</value>
   </data>
   <data name="mileageLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -393,7 +393,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="mileageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 354</value>
+    <value>193, 363</value>
   </data>
   <data name="mileageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 19</value>
@@ -414,19 +414,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mileageLabel.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>45</value>
   </data>
   <data name="EngineVolumeCCTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="EngineVolumeCCTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 236</value>
+    <value>299, 246</value>
   </data>
   <data name="EngineVolumeCCTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>104, 20</value>
   </data>
   <data name="EngineVolumeCCTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>4</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="EngineVolumeCCTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
@@ -442,19 +442,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;EngineVolumeCCTextBox.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>44</value>
   </data>
   <data name="productionDateTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="productionDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 329</value>
+    <value>299, 340</value>
   </data>
   <data name="productionDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>104, 20</value>
   </data>
   <data name="productionDateTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>8</value>
   </data>
   <data name="productionDateTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -469,19 +469,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;productionDateTextBox.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>42</value>
   </data>
   <data name="horsePowerTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="horsePowerTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 258</value>
+    <value>299, 269</value>
   </data>
   <data name="horsePowerTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>104, 20</value>
   </data>
   <data name="horsePowerTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>5</value>
   </data>
   <data name="horsePowerTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -496,19 +496,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;horsePowerTextBox.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>43</value>
   </data>
   <data name="mileageTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="mileageTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 352</value>
+    <value>299, 363</value>
   </data>
   <data name="mileageTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>104, 20</value>
   </data>
   <data name="mileageTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>9</value>
   </data>
   <data name="mileageTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -523,19 +523,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mileageTextBox.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>41</value>
   </data>
   <data name="InfoTextboxLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="InfoTextboxLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Niagara Solid, 24pt</value>
+    <value>Century, 14.25pt, style=Bold</value>
   </data>
   <data name="InfoTextboxLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 252</value>
+    <value>414, 300</value>
   </data>
   <data name="InfoTextboxLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 34</value>
+    <value>50, 23</value>
   </data>
   <data name="InfoTextboxLabel.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -553,13 +553,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;InfoTextboxLabel.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>40</value>
   </data>
   <data name="additionalCarInfoTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="additionalCarInfoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 286</value>
+    <value>417, 325</value>
   </data>
   <data name="additionalCarInfoTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -568,10 +568,10 @@
     <value>Vertical</value>
   </data>
   <data name="additionalCarInfoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 136</value>
+    <value>224, 129</value>
   </data>
   <data name="additionalCarInfoTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;additionalCarInfoTextBox.Name" xml:space="preserve">
     <value>additionalCarInfoTextBox</value>
@@ -583,7 +583,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;additionalCarInfoTextBox.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>37</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -592,7 +592,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 148</value>
+    <value>413, 154</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 19</value>
@@ -613,19 +613,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>36</value>
   </data>
   <data name="priceTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="priceTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 146</value>
+    <value>505, 152</value>
   </data>
   <data name="priceTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 22</value>
   </data>
   <data name="priceTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+    <value>13</value>
   </data>
   <data name="priceTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -640,7 +640,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;priceTextBox.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>35</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -649,7 +649,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>790, 147</value>
+    <value>608, 153</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 19</value>
@@ -670,19 +670,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>34</value>
   </data>
   <data name="VinTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="VinTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 376</value>
+    <value>299, 386</value>
   </data>
   <data name="VinTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 20</value>
+    <value>104, 20</value>
   </data>
   <data name="VinTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>10</value>
   </data>
   <data name="VinTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -697,7 +697,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;VinTextBox.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>32</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -706,7 +706,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 378</value>
+    <value>194, 386</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 19</value>
@@ -727,7 +727,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>33</value>
   </data>
   <data name="BrandsComboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -859,13 +859,13 @@
     <value>Volvo</value>
   </data>
   <data name="BrandsComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 167</value>
+    <value>299, 174</value>
   </data>
   <data name="BrandsComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="BrandsComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;BrandsComboBox.Name" xml:space="preserve">
     <value>BrandsComboBox</value>
@@ -877,7 +877,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BrandsComboBox.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>31</value>
   </data>
   <data name="ModelCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -886,13 +886,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="ModelCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 190</value>
+    <value>299, 198</value>
   </data>
   <data name="ModelCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="ModelCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;ModelCombobox.Name" xml:space="preserve">
     <value>ModelCombobox</value>
@@ -904,7 +904,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ModelCombobox.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>30</value>
   </data>
   <data name="BodyTypeCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -913,28 +913,40 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="BodyTypeCombobox.Items" xml:space="preserve">
-    <value>Кабрио</value>
+    <value>Бус</value>
   </data>
   <data name="BodyTypeCombobox.Items1" xml:space="preserve">
-    <value>Комби</value>
+    <value>Ван</value>
   </data>
   <data name="BodyTypeCombobox.Items2" xml:space="preserve">
-    <value>Купе</value>
+    <value>Джип</value>
   </data>
   <data name="BodyTypeCombobox.Items3" xml:space="preserve">
-    <value>Седан</value>
+    <value>Кабрио</value>
   </data>
   <data name="BodyTypeCombobox.Items4" xml:space="preserve">
+    <value>Комби</value>
+  </data>
+  <data name="BodyTypeCombobox.Items5" xml:space="preserve">
+    <value>Купе</value>
+  </data>
+  <data name="BodyTypeCombobox.Items6" xml:space="preserve">
+    <value>Пикап</value>
+  </data>
+  <data name="BodyTypeCombobox.Items7" xml:space="preserve">
+    <value>Седан</value>
+  </data>
+  <data name="BodyTypeCombobox.Items8" xml:space="preserve">
     <value>Хечбек</value>
   </data>
   <data name="BodyTypeCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 213</value>
+    <value>299, 222</value>
   </data>
   <data name="BodyTypeCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="BodyTypeCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;BodyTypeCombobox.Name" xml:space="preserve">
     <value>BodyTypeCombobox</value>
@@ -946,7 +958,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BodyTypeCombobox.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>29</value>
   </data>
   <data name="FuelTypeCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -964,13 +976,13 @@
     <value>Електрически</value>
   </data>
   <data name="FuelTypeCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 280</value>
+    <value>299, 292</value>
   </data>
   <data name="FuelTypeCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="FuelTypeCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;FuelTypeCombobox.Name" xml:space="preserve">
     <value>FuelTypeCombobox</value>
@@ -982,7 +994,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FuelTypeCombobox.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>28</value>
   </data>
   <data name="ColorsCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1030,13 +1042,13 @@
     <value>Черен</value>
   </data>
   <data name="ColorsCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 305</value>
+    <value>299, 316</value>
   </data>
   <data name="ColorsCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="ColorsCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;ColorsCombobox.Name" xml:space="preserve">
     <value>ColorsCombobox</value>
@@ -1048,7 +1060,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ColorsCombobox.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>27</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1057,7 +1069,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 403</value>
+    <value>194, 409</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 19</value>
@@ -1078,7 +1090,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>26</value>
   </data>
   <data name="GearboxesCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1096,13 +1108,13 @@
     <value>Полуавтоматична</value>
   </data>
   <data name="GearboxesCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 401</value>
+    <value>299, 409</value>
   </data>
   <data name="GearboxesCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="GearboxesCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;GearboxesCombobox.Name" xml:space="preserve">
     <value>GearboxesCombobox</value>
@@ -1114,55 +1126,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GearboxesCombobox.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="StatusRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="StatusRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>809, 180</value>
-  </data>
-  <data name="StatusRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="StatusRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="&gt;&gt;StatusRadioButton.Name" xml:space="preserve">
-    <value>StatusRadioButton</value>
-  </data>
-  <data name="&gt;&gt;StatusRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatusRadioButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;StatusRadioButton.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="PriceRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="PriceRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>809, 150</value>
-  </data>
-  <data name="PriceRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="PriceRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>119</value>
-  </data>
-  <data name="&gt;&gt;PriceRadioButton.Name" xml:space="preserve">
-    <value>PriceRadioButton</value>
-  </data>
-  <data name="&gt;&gt;PriceRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PriceRadioButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PriceRadioButton.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>25</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1171,7 +1135,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 175</value>
+    <value>413, 178</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 19</value>
@@ -1192,7 +1156,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>24</value>
   </data>
   <data name="StatusCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1210,13 +1174,13 @@
     <value>Очакван внос</value>
   </data>
   <data name="StatusCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 177</value>
+    <value>505, 177</value>
   </data>
   <data name="StatusCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="StatusCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;StatusCombobox.Name" xml:space="preserve">
     <value>StatusCombobox</value>
@@ -1228,13 +1192,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;StatusCombobox.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>23</value>
   </data>
   <data name="AreRealMileageCheckbox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="AreRealMileageCheckbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 356</value>
+    <value>403, 368</value>
   </data>
   <data name="AreRealMileageCheckbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
@@ -1252,19 +1216,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AreRealMileageCheckbox.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>22</value>
   </data>
   <data name="NumberOfKeysNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="NumberOfKeysNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 230</value>
+    <value>505, 275</value>
   </data>
   <data name="NumberOfKeysNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 20</value>
   </data>
   <data name="NumberOfKeysNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;NumberOfKeysNumericUpDown.Name" xml:space="preserve">
     <value>NumberOfKeysNumericUpDown</value>
@@ -1276,7 +1240,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;NumberOfKeysNumericUpDown.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>21</value>
   </data>
   <data name="NumberOfKeysLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1285,7 +1249,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="NumberOfKeysLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 229</value>
+    <value>413, 275</value>
   </data>
   <data name="NumberOfKeysLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 19</value>
@@ -1306,7 +1270,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;NumberOfKeysLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>20</value>
   </data>
   <data name="TiresCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1324,13 +1288,13 @@
     <value>Летни и зимни</value>
   </data>
   <data name="TiresCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 203</value>
+    <value>505, 201</value>
   </data>
   <data name="TiresCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="TiresCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;TiresCombobox.Name" xml:space="preserve">
     <value>TiresCombobox</value>
@@ -1342,7 +1306,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TiresCombobox.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>19</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1351,7 +1315,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 202</value>
+    <value>413, 202</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 19</value>
@@ -1372,13 +1336,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>18</value>
   </data>
   <data name="PayCaseComboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
   <data name="PayCaseComboBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="PayCaseComboBox.Items" xml:space="preserve">
     <value>DYNAMIC AUTO</value>
@@ -1387,13 +1351,13 @@
     <value>EXOTIC CARS</value>
   </data>
   <data name="PayCaseComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 4</value>
+    <value>333, 6</value>
   </data>
   <data name="PayCaseComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 29</value>
+    <value>127, 25</value>
   </data>
   <data name="PayCaseComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;PayCaseComboBox.Name" xml:space="preserve">
     <value>PayCaseComboBox</value>
@@ -1414,37 +1378,22 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="CategoryCombobox.Items" xml:space="preserve">
-    <value>Бус</value>
-  </data>
-  <data name="CategoryCombobox.Items1" xml:space="preserve">
-    <value>Ван</value>
-  </data>
-  <data name="CategoryCombobox.Items2" xml:space="preserve">
-    <value>Джип</value>
-  </data>
-  <data name="CategoryCombobox.Items3" xml:space="preserve">
     <value>Камион</value>
   </data>
-  <data name="CategoryCombobox.Items4" xml:space="preserve">
+  <data name="CategoryCombobox.Items1" xml:space="preserve">
     <value>Лек автомобил</value>
   </data>
-  <data name="CategoryCombobox.Items5" xml:space="preserve">
-    <value>Миниван</value>
-  </data>
-  <data name="CategoryCombobox.Items6" xml:space="preserve">
+  <data name="CategoryCombobox.Items2" xml:space="preserve">
     <value>Мотоциклет</value>
   </data>
-  <data name="CategoryCombobox.Items7" xml:space="preserve">
-    <value>Пикап</value>
-  </data>
   <data name="CategoryCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 144</value>
+    <value>299, 150</value>
   </data>
   <data name="CategoryCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>104, 21</value>
   </data>
   <data name="CategoryCombobox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;CategoryCombobox.Name" xml:space="preserve">
     <value>CategoryCombobox</value>
@@ -1456,7 +1405,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CategoryCombobox.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>17</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1465,7 +1414,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 145</value>
+    <value>193, 154</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 19</value>
@@ -1486,7 +1435,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>16</value>
   </data>
   <data name="ExtrasCheckedListBox.ColumnWidth" type="System.Int32, mscorlib">
     <value>217</value>
@@ -1753,7 +1702,7 @@
     <value>Кожен салон</value>
   </data>
   <data name="ExtrasCheckedListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 526</value>
+    <value>201, 526</value>
   </data>
   <data name="ExtrasCheckedListBox.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -1762,10 +1711,10 @@
     <value>True</value>
   </data>
   <data name="ExtrasCheckedListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1062, 155</value>
+    <value>811, 155</value>
   </data>
   <data name="ExtrasCheckedListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;ExtrasCheckedListBox.Name" xml:space="preserve">
     <value>ExtrasCheckedListBox</value>
@@ -1777,7 +1726,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ExtrasCheckedListBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
+  </data>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="HidePricePanelButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -1788,7 +1740,7 @@
   <data name="HidePricePanelButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
-        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAbqAAAG6gGednyuAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAboAAAG6AHhiL8nAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
         aW5rc2NhcGUub3Jnm+48GgAAAqlJREFUSEvNlV1ojmEcxl9spqmN+RibEVpDac6cUA5kzQkn8pGDOeSM
         ZePE2pLkM4cUaoxCJAcotVaEiJSPIZ+ZCYn5iJZev+vuyuvxPO+8rwO56tf93Nf/fz/ve3/9n9R/oXQ6
         PR6a4Cr0wDu36jdDhVPzF4OHwmZ4CVthDpTBSJgA82AHKL4Fijw0NzFgDFyEwzDKdqKIj4YjcBnKbQ8s
@@ -1805,13 +1757,13 @@
 </value>
   </data>
   <data name="HidePricePanelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1325, 1</value>
+    <value>980, 1</value>
   </data>
   <data name="HidePricePanelButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 36</value>
   </data>
   <data name="HidePricePanelButton.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;HidePricePanelButton.Name" xml:space="preserve">
     <value>HidePricePanelButton</value>
@@ -1826,16 +1778,19 @@
     <value>0</value>
   </data>
   <data name="OwnerByBusinessTextbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="OwnerByBusinessTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1056, 6</value>
+    <value>826, 7</value>
+  </data>
+  <data name="OwnerByBusinessTextbox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="OwnerByBusinessTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 27</value>
+    <value>148, 20</value>
   </data>
   <data name="OwnerByBusinessTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;OwnerByBusinessTextbox.Name" xml:space="preserve">
     <value>OwnerByBusinessTextbox</value>
@@ -1849,47 +1804,47 @@
   <data name="&gt;&gt;OwnerByBusinessTextbox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+  <data name="TraderLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+  <data name="TraderLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10pt</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>941, 11</value>
+  <data name="TraderLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 10</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 21</value>
+  <data name="TraderLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 19</value>
   </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+  <data name="TraderLabel.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Собственик</value>
+  <data name="TraderLabel.Text" xml:space="preserve">
+    <value>Търговец</value>
   </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
+  <data name="&gt;&gt;TraderLabel.Name" xml:space="preserve">
+    <value>TraderLabel</value>
   </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+  <data name="&gt;&gt;TraderLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TraderLabel.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TraderLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="OwnerByVoucherLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="OwnerByVoucherLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="OwnerByVoucherLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 11</value>
+    <value>461, 10</value>
   </data>
   <data name="OwnerByVoucherLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 21</value>
+    <value>157, 19</value>
   </data>
   <data name="OwnerByVoucherLabel.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -1910,16 +1865,16 @@
     <value>3</value>
   </data>
   <data name="OwnerByVoucherTextbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="OwnerByVoucherTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 6</value>
+    <value>619, 7</value>
   </data>
   <data name="OwnerByVoucherTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 27</value>
+    <value>129, 23</value>
   </data>
   <data name="OwnerByVoucherTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;OwnerByVoucherTextbox.Name" xml:space="preserve">
     <value>OwnerByVoucherTextbox</value>
@@ -1937,13 +1892,13 @@
     <value>True</value>
   </data>
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 9</value>
+    <value>281, 10</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 21</value>
+    <value>46, 19</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1967,13 +1922,13 @@
     <value>True</value>
   </data>
   <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 9</value>
+    <value>112, 9</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 21</value>
+    <value>60, 19</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1997,13 +1952,13 @@
     <value>True</value>
   </data>
   <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 9</value>
+    <value>-1, 9</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>68, 19</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2030,16 +1985,16 @@
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="ContractNumberInfoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 9</value>
+    <value>68, 9</value>
   </data>
   <data name="ContractNumberInfoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 23</value>
+    <value>24, 23</value>
   </data>
   <data name="ContractNumberInfoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="ContractNumberInfoLabel.Text" xml:space="preserve">
-    <value>#-----</value>
+    <value>#</value>
   </data>
   <data name="&gt;&gt;ContractNumberInfoLabel.Name" xml:space="preserve">
     <value>ContractNumberInfoLabel</value>
@@ -2060,16 +2015,16 @@
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="DateOfCreatingAdLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 9</value>
+    <value>180, 9</value>
   </data>
   <data name="DateOfCreatingAdLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 23</value>
+    <value>93, 23</value>
   </data>
   <data name="DateOfCreatingAdLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="DateOfCreatingAdLabel.Text" xml:space="preserve">
-    <value>             </value>
+    <value>111111111</value>
   </data>
   <data name="&gt;&gt;DateOfCreatingAdLabel.Name" xml:space="preserve">
     <value>DateOfCreatingAdLabel</value>
@@ -2083,14 +2038,11 @@
   <data name="&gt;&gt;DateOfCreatingAdLabel.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1370, 40</value>
+    <value>1362, 40</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
@@ -2105,19 +2057,398 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="HidablePricePanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="RealSellingPriceValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;RealSellingPriceValueUpdateButton.Name" xml:space="preserve">
+    <value>RealSellingPriceValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;RealSellingPriceValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RealSellingPriceValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;RealSellingPriceValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 6</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="MaxBillValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;MaxBillValueUpdateButton.Name" xml:space="preserve">
+    <value>MaxBillValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;MaxBillValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MaxBillValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;MaxBillValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="MinBillValue.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MinBillValue.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="MinBillValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="MinBillValue.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="MinBillValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MinBillValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 65</value>
+  </data>
+  <data name="MinBillValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="MinBillValue.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="MinBillValue.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;MinBillValue.Name" xml:space="preserve">
+    <value>MinBillValue</value>
+  </data>
+  <data name="&gt;&gt;MinBillValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MinBillValue.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;MinBillValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>714, 61</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="CosmeticsCostsValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;CosmeticsCostsValueUpdateButton.Name" xml:space="preserve">
+    <value>CosmeticsCostsValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;CosmeticsCostsValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CosmeticsCostsValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;CosmeticsCostsValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>714, 39</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="ServiceCostsValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;ServiceCostsValueUpdateButton.Name" xml:space="preserve">
+    <value>ServiceCostsValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;ServiceCostsValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ServiceCostsValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;ServiceCostsValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>714, 13</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="FuelCostsValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;FuelCostsValueUpdateButton.Name" xml:space="preserve">
+    <value>FuelCostsValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;FuelCostsValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FuelCostsValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;FuelCostsValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ComissionValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ComissionValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="ComissionValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="ComissionValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="ComissionValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ComissionValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>901, 37</value>
+  </data>
+  <data name="ComissionValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="ComissionValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="ComissionValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;ComissionValueUpdateButton.Name" xml:space="preserve">
+    <value>ComissionValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;ComissionValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComissionValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;ComissionValueUpdateButton.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="CzsValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="CzsValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="CzsValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="CzsValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="CzsValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CzsValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>901, 7</value>
+  </data>
+  <data name="CzsValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="CzsValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="CzsValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;CzsValueUpdateButton.Name" xml:space="preserve">
+    <value>CzsValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;CzsValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CzsValueUpdateButton.Parent" xml:space="preserve">
+    <value>HidablePricePanel</value>
+  </data>
+  <data name="&gt;&gt;CzsValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="CzsTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="CzsTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1057, 0</value>
+    <value>918, 1</value>
   </data>
   <data name="CzsTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 27</value>
+    <value>53, 27</value>
   </data>
   <data name="CzsTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>6</value>
   </data>
   <data name="CzsTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2135,19 +2466,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;CzsTextbox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
   <data name="ComissionTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="ComissionTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1057, 31</value>
+    <value>918, 32</value>
   </data>
   <data name="ComissionTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 27</value>
+    <value>53, 27</value>
   </data>
   <data name="ComissionTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>7</value>
   </data>
   <data name="ComissionTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2165,19 +2496,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;ComissionTextbox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>942, 10</value>
+    <value>803, 11</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 21</value>
+    <value>36, 19</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -2195,19 +2526,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>942, 37</value>
+    <value>803, 38</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 21</value>
+    <value>100, 19</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -2225,19 +2556,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>11</value>
   </data>
   <data name="FuelCostsTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="FuelCostsTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>811, 7</value>
+    <value>731, 7</value>
   </data>
   <data name="FuelCostsTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 27</value>
+    <value>62, 27</value>
   </data>
   <data name="FuelCostsTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>3</value>
   </data>
   <data name="FuelCostsTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2255,19 +2586,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;FuelCostsTextbox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="ServiceCostsTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="ServiceCostsTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>811, 34</value>
+    <value>731, 34</value>
   </data>
   <data name="ServiceCostsTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 27</value>
+    <value>62, 27</value>
   </data>
   <data name="ServiceCostsTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>4</value>
   </data>
   <data name="ServiceCostsTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2285,19 +2616,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;ServiceCostsTextbox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>13</value>
   </data>
   <data name="CosmeticsCostsTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="CosmeticsCostsTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>811, 61</value>
+    <value>731, 61</value>
   </data>
   <data name="CosmeticsCostsTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 27</value>
+    <value>62, 27</value>
   </data>
   <data name="CosmeticsCostsTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="CosmeticsCostsTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2315,19 +2646,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;CosmeticsCostsTextbox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>14</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 64</value>
+    <value>631, 64</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 21</value>
+    <value>84, 19</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -2345,19 +2676,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 11</value>
+    <value>631, 11</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 21</value>
+    <value>59, 19</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2375,19 +2706,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>16</value>
   </data>
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 38</value>
+    <value>631, 38</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 21</value>
+    <value>61, 19</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2405,19 +2736,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>17</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 22</value>
+    <value>321, 7</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 21</value>
+    <value>52, 19</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -2435,19 +2766,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>18</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 22</value>
+    <value>330, 64</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 21</value>
+    <value>43, 19</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -2465,19 +2796,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>19</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 22</value>
+    <value>394, 32</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 21</value>
+    <value>71, 19</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2495,19 +2826,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>20</value>
   </data>
   <data name="MaxBillValueTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="MaxBillValueTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 46</value>
+    <value>377, 1</value>
   </data>
   <data name="MaxBillValueTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 27</value>
   </data>
   <data name="MaxBillValueTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>1</value>
   </data>
   <data name="MaxBillValueTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2525,19 +2856,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;MaxBillValueTextbox.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>21</value>
   </data>
   <data name="MinBillValueTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="MinBillValueTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 46</value>
+    <value>377, 60</value>
   </data>
   <data name="MinBillValueTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 27</value>
   </data>
   <data name="MinBillValueTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="MinBillValueTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2555,13 +2886,13 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;MinBillValueTextbox.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>22</value>
   </data>
   <data name="DDSTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="DDSTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 49</value>
+    <value>138, 49</value>
   </data>
   <data name="DDSTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 27</value>
@@ -2582,19 +2913,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;DDSTextbox.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>23</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 52</value>
+    <value>248, 52</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 21</value>
+    <value>71, 19</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2612,19 +2943,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>24</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 13</value>
+    <value>250, 13</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 21</value>
+    <value>53, 19</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2642,19 +2973,19 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>25</value>
   </data>
   <data name="RealSellingPriceTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="RealSellingPriceTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 9</value>
+    <value>138, 9</value>
   </data>
   <data name="RealSellingPriceTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 27</value>
   </data>
   <data name="RealSellingPriceTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="RealSellingPriceTextbox.Text" xml:space="preserve">
     <value>0</value>
@@ -2672,25 +3003,25 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;RealSellingPriceTextbox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>26</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>Century Gothic, 10pt</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 13</value>
+    <value>1, 13</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 21</value>
+    <value>117, 19</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>Продажна цена</value>
+    <value>Доставна цена</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
@@ -2702,16 +3033,13 @@
     <value>HidablePricePanel</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="HidablePricePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>27</value>
   </data>
   <data name="HidablePricePanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 40</value>
   </data>
   <data name="HidablePricePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1370, 96</value>
+    <value>1362, 96</value>
   </data>
   <data name="HidablePricePanel.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
@@ -2726,7 +3054,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;HidablePricePanel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>13</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -2741,7 +3069,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="ShowInfoFormButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 439</value>
+    <value>236, 486</value>
   </data>
   <data name="ShowInfoFormButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 33</value>
@@ -2762,13 +3090,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ShowInfoFormButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="UploadButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
   <data name="UploadButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1308, 428</value>
+    <value>978, 433</value>
   </data>
   <data name="UploadButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 34</value>
@@ -2786,70 +3114,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;UploadButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>11</value>
   </data>
-  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <data name="MainPicturebox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="pictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="MainPicturebox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MainPicturebox.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>934, 145</value>
+  <data name="MainPicturebox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>661, 153</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 277</value>
+  <data name="MainPicturebox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 277</value>
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="MainPicturebox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="MainPicturebox.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="&gt;&gt;MainPicturebox.Name" xml:space="preserve">
+    <value>MainPicturebox</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;MainPicturebox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MainPicturebox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="UpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="UpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="UpdateButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt, style=Bold</value>
-  </data>
-  <data name="UpdateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>829, 150</value>
-  </data>
-  <data name="UpdateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 37</value>
-  </data>
-  <data name="UpdateButton.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="UpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
-  </data>
-  <data name="&gt;&gt;UpdateButton.Name" xml:space="preserve">
-    <value>UpdateButton</value>
-  </data>
-  <data name="&gt;&gt;UpdateButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UpdateButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UpdateButton.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="&gt;&gt;MainPicturebox.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="soldButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -2858,7 +3156,7 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="soldButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1333, 479</value>
+    <value>273, 486</value>
   </data>
   <data name="soldButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 32</value>
@@ -2876,7 +3174,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;soldButton.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>38</value>
   </data>
   <data name="addButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -2888,13 +3186,13 @@
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="addButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 478</value>
+    <value>199, 487</value>
   </data>
   <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 33</value>
   </data>
   <data name="addButton.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+    <value>21</value>
   </data>
   <data name="addButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
@@ -2909,13 +3207,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>39</value>
   </data>
   <data name="OpenPicDirButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
   <data name="OpenPicDirButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>934, 428</value>
+    <value>661, 433</value>
   </data>
   <data name="OpenPicDirButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 34</value>
@@ -2933,7 +3231,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OpenPicDirButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2942,7 +3240,7 @@
     <value>Century Gothic, 12pt, style=Underline</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1284, 684</value>
+    <value>942, 684</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 21</value>
@@ -2963,13 +3261,380 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 226</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 19</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Шофьор</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ShoferTextbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="ShoferTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 225</value>
+  </data>
+  <data name="ShoferTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 22</value>
+  </data>
+  <data name="ShoferTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="ShoferTextbox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;ShoferTextbox.Name" xml:space="preserve">
+    <value>ShoferTextbox</value>
+  </data>
+  <data name="&gt;&gt;ShoferTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ShoferTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ShoferTextbox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 250</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Държава</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CountryCombobox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CountryCombobox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="CountryCombobox.Items" xml:space="preserve">
+    <value>Австрия</value>
+  </data>
+  <data name="CountryCombobox.Items1" xml:space="preserve">
+    <value>Англия</value>
+  </data>
+  <data name="CountryCombobox.Items2" xml:space="preserve">
+    <value>Англия</value>
+  </data>
+  <data name="CountryCombobox.Items3" xml:space="preserve">
+    <value>Беларус</value>
+  </data>
+  <data name="CountryCombobox.Items4" xml:space="preserve">
+    <value>Белгия</value>
+  </data>
+  <data name="CountryCombobox.Items5" xml:space="preserve">
+    <value>България</value>
+  </data>
+  <data name="CountryCombobox.Items6" xml:space="preserve">
+    <value>Германия</value>
+  </data>
+  <data name="CountryCombobox.Items7" xml:space="preserve">
+    <value>Гърция</value>
+  </data>
+  <data name="CountryCombobox.Items8" xml:space="preserve">
+    <value>Дания</value>
+  </data>
+  <data name="CountryCombobox.Items9" xml:space="preserve">
+    <value>Естония</value>
+  </data>
+  <data name="CountryCombobox.Items10" xml:space="preserve">
+    <value>Испания</value>
+  </data>
+  <data name="CountryCombobox.Items11" xml:space="preserve">
+    <value>Италия</value>
+  </data>
+  <data name="CountryCombobox.Items12" xml:space="preserve">
+    <value>Латвия</value>
+  </data>
+  <data name="CountryCombobox.Items13" xml:space="preserve">
+    <value>Литва</value>
+  </data>
+  <data name="CountryCombobox.Items14" xml:space="preserve">
+    <value>Македония</value>
+  </data>
+  <data name="CountryCombobox.Items15" xml:space="preserve">
+    <value>Молдова</value>
+  </data>
+  <data name="CountryCombobox.Items16" xml:space="preserve">
+    <value>Норвегия</value>
+  </data>
+  <data name="CountryCombobox.Items17" xml:space="preserve">
+    <value>Полша</value>
+  </data>
+  <data name="CountryCombobox.Items18" xml:space="preserve">
+    <value>Румъния</value>
+  </data>
+  <data name="CountryCombobox.Items19" xml:space="preserve">
+    <value>Русия</value>
+  </data>
+  <data name="CountryCombobox.Items20" xml:space="preserve">
+    <value>Словакия</value>
+  </data>
+  <data name="CountryCombobox.Items21" xml:space="preserve">
+    <value>Сърбия</value>
+  </data>
+  <data name="CountryCombobox.Items22" xml:space="preserve">
+    <value>Украйна</value>
+  </data>
+  <data name="CountryCombobox.Items23" xml:space="preserve">
+    <value>Унгария</value>
+  </data>
+  <data name="CountryCombobox.Items24" xml:space="preserve">
+    <value>Финландия</value>
+  </data>
+  <data name="CountryCombobox.Items25" xml:space="preserve">
+    <value>Франция</value>
+  </data>
+  <data name="CountryCombobox.Items26" xml:space="preserve">
+    <value>Холандия</value>
+  </data>
+  <data name="CountryCombobox.Items27" xml:space="preserve">
+    <value>Хърватска</value>
+  </data>
+  <data name="CountryCombobox.Items28" xml:space="preserve">
+    <value>Чехия</value>
+  </data>
+  <data name="CountryCombobox.Items29" xml:space="preserve">
+    <value>Швейцария</value>
+  </data>
+  <data name="CountryCombobox.Items30" xml:space="preserve">
+    <value>Швеция</value>
+  </data>
+  <data name="CountryCombobox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 250</value>
+  </data>
+  <data name="CountryCombobox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 21</value>
+  </data>
+  <data name="CountryCombobox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;CountryCombobox.Name" xml:space="preserve">
+    <value>CountryCombobox</value>
+  </data>
+  <data name="&gt;&gt;CountryCombobox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CountryCombobox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CountryCombobox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 432</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 19</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Рег. номер</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PriceValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="PriceValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="PriceValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="PriceValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="PriceValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PriceValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 154</value>
+  </data>
+  <data name="PriceValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="PriceValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="PriceValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;PriceValueUpdateButton.Name" xml:space="preserve">
+    <value>PriceValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;PriceValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PriceValueUpdateButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PriceValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="StatusValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="StatusValueUpdateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="StatusValueUpdateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="StatusValueUpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAZ9AAAGfQGgFUaIAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAANFJREFUOE+1kU0KglAURnWag4jGFf0Mso0ItYaaJW2tSRBEP4Oa1hKE
+        JhG1jLBz5QMR0xzUgQPv3u8+n/qcvxDHsY97rKlVHTY1cYXHyg9gsI87fOAVXzhWXAxDA7zjHNtom6eK
+        y2Fwg6HWHgZJIKg7WmYhaKC9qqtWDrII6ypTaI7wrPIj5Bf0VabQtJMjlTnIXHxi/mSDIPNN1AF6Wi9w
+        nQTfYHCG9rdbGKLdQk9xMQxN0O73hvYTt9hVXA6DNTzhEptqV4dNds8HHKr1SxznDWWq1CA6AR3iAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="StatusValueUpdateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="StatusValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 177</value>
+  </data>
+  <data name="StatusValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="StatusValueUpdateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>154</value>
+  </data>
+  <data name="StatusValueUpdateButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="&gt;&gt;StatusValueUpdateButton.Name" xml:space="preserve">
+    <value>StatusValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;StatusValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusValueUpdateButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StatusValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RegistrationNumberTextbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="RegistrationNumberTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 432</value>
+  </data>
+  <data name="RegistrationNumberTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="RegistrationNumberTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="RegistrationNumberTextbox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;RegistrationNumberTextbox.Name" xml:space="preserve">
+    <value>RegistrationNumberTextbox</value>
+  </data>
+  <data name="&gt;&gt;RegistrationNumberTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegistrationNumberTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RegistrationNumberTextbox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>51</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -3211,7 +3876,7 @@
 </value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1370, 707</value>
+    <value>1362, 707</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>

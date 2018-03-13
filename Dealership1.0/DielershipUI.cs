@@ -24,60 +24,56 @@
         private int contractNumber;
         private bool IsInfoShowed;
         private string logPath = "..\\Log.txt";
-        public readonly string[] authorized = { "0026C7DFBD78", "002522c628dd" };
+        public readonly string[] authorized = { "0026C7DFBD78", "002522C628DD" };
         private readonly string mac = string.Empty;
 
         public DielershipUIForm()
         {
-            try
+
+            this.InitializeComponent();
+
+            ////login form
+            mac = GetMacAddress();
+            bool IsAuth = false;
+            foreach (var auth in authorized)
             {
-                this.InitializeComponent();
-
-                ////login form
-                mac = GetMacAddress();
-                bool IsAuth = false;
-                foreach (var auth in authorized)
+                if (auth.ToLower() == mac.ToLower())
                 {
-                    if (auth == mac)
-                    {
-                        IsAuth = true;
-                    }
+                    IsAuth = true;
+                    break;
                 }
-                if (!IsAuth)
-                {
-                    MessageBox.Show("You are not authorized!");
-                    Environment.Exit(1);
-                }
-
-                //login form
-                //LogInForm logForm = new LogInForm();
-                //logForm.ShowDialog();
-
-
-                //while (!IsAuth)
-                //{
-                //    this.Enabled = false;
-                //    IsAuth = LogInForm.CanContinue;
-                //}
-                //this.Enabled = true;
-                ////
-
-                this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
-
-                carsListBox.DataSource = this.carsListBinding;
-
-                carsListBox.DisplayMember = "Display";
-                carsListBox.ValueMember = "Display";
-
-                HideOrShowPrivateOptions(false);
-                SetHidablePricePanelTextboxesToDefaultValue();
-
             }
-            catch (Exception ex)
+            if (!IsAuth)
             {
-                Log("Exception throwed when starting program!\n" + ex.StackTrace);
-                throw;
+                MessageBox.Show("You are not authorized!");
+                Environment.Exit(1);
             }
+
+            //login form
+            //LogInForm logForm = new LogInForm();
+            //logForm.ShowDialog();
+
+
+            //while (!IsAuth)
+            //{
+            //    this.Enabled = false;
+            //    IsAuth = LogInForm.CanContinue;
+            //}
+            //this.Enabled = true;
+            ////
+
+            this.carsListBinding.DataSource = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == false).ToList();
+
+            carsListBox.DataSource = this.carsListBinding;
+
+            carsListBox.DisplayMember = "Display";
+            carsListBox.ValueMember = "Display";
+
+            HideOrShowPrivateOptions(false);
+            SetHidablePricePanelTextboxesToDefaultValue();
+
+
+
 
         }
         //// setupData empty
@@ -92,12 +88,12 @@
             if (IsInfoShowed == true)
             {
                 this.ClearTextboxesAndComboboxes();
-                pictureBox1.Image = null;
+                MainPicturebox.Image = null;
                 this.SetHidablePricePanelTextboxesToDefaultValue();
                 this.IsInfoShowed = false;
                 ExtrasCheckedListBox.ClearSelected();
                 UncheckCheckboxes();
-                
+
                 return;
             }
 
@@ -180,7 +176,7 @@
         {
             Log("UploadButton() clicked!");
 
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            MainPicturebox.SizeMode = PictureBoxSizeMode.StretchImage;
 
             if (carsListBox.SelectedItem == null)
             {
@@ -192,21 +188,32 @@
                 openFileDialog.Title = "Избери снимка !";
                 openFileDialog.Filter = "Image Files(*.BMP; *.JPG; *.GIF)| *.BMP; *.JPG; *.GIF";
                 openFileDialog.RestoreDirectory = true;
-
+                openFileDialog.Multiselect = true;
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string fileName = openFileDialog.FileName;
-                    Image imageFromFile = Image.FromFile(fileName);
-                    pictureBox1.Image = imageFromFile;
+                    foreach (var file in openFileDialog.FileNames)
+                    {
+                        
+                        
+                        Image imageFromFile = Image.FromFile(file);
+                        MainPicturebox.Image = imageFromFile;
+                        if (MainPicturebox.Image != null)
+                        {
+                            SaveImageToDir();
+                        }
+                    }
+                    //string fileName = openFileDialog.FileName;
+                    //Image imageFromFile = Image.FromFile(fileName);
+                    //MainPicturebox.Image = imageFromFile;
+                    //if (MainPicturebox.Image != null)
+                    //{
+                    //    SaveImageToDir();
+                    //}
 
                 }
                 else
                 {
                     return;
-                }
-                if (pictureBox1.Image != null)
-                {
-                    SaveImageToDir();
                 }
             }
 
@@ -237,9 +244,9 @@
         private void soldButton_Click(object sender, EventArgs e)
         {
             Log("soldButton clicked!");
-            if (pictureBox1.Image != null)
+            if (MainPicturebox.Image != null)
             {
-                pictureBox1.Image.Dispose();
+                MainPicturebox.Image.Dispose();
 
             }
             // erase from carsList
@@ -273,34 +280,6 @@
             }
         }
 
-        private void UpdateButton_Click(object sender, EventArgs e)
-        {
-            Log("UpdateButton clicked!");
-
-            if (StatusRadioButton.Checked)
-            {
-                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "Status", StatusCombobox.SelectedItem.ToString());
-                MessageBox.Show("Готово!", "Промяна", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                StatusRadioButton.Checked = false;
-
-            }
-            else if (PriceRadioButton.Checked)
-            {
-                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "Price", priceTextBox.Text);
-                MessageBox.Show("Готово!");
-                PriceRadioButton.Checked = false;
-
-            }
-            else
-            {
-                MessageBox.Show("Нещо не е както трябва, опитай пак!");
-
-            }
-            ClearTextboxesAndComboboxes();
-            //XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem,);
-            //UpdateCarData((Car)carsListBox.SelectedItem);
-            ResetCarsList();
-        }
         // IndexChanged
         private void carsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -328,12 +307,12 @@
 
             carsListBox.ClearSelected();
             ClearTextboxesAndComboboxes();
-            pictureBox1.Image = pictureBox1.InitialImage;
+            MainPicturebox.Image = MainPicturebox.InitialImage;
         }
 
         private void DielershipUI_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
             Application.Exit();
         }
         //indexChanged
@@ -575,8 +554,9 @@
         private void HideOrShowPrivateOptions(bool condition)
         {
             HidablePricePanel.Visible = condition;
-            UpdateButton.Visible = condition;
             AreRealMileageCheckbox.Visible = condition;
+            PriceValueUpdateButton.Visible = condition;
+            StatusValueUpdateButton.Visible = condition;
         }
 
 
@@ -612,11 +592,11 @@
             newCar.MaxBillValue = Convert.ToInt32(MaxBillValueTextbox.Text);
             newCar.OwnerByVoucher = OwnerByVoucherTextbox.Text;
             newCar.OwnerByBusiness = OwnerByBusinessTextbox.Text;
-            newCar.FuelCosts = Convert.ToInt32(FuelCostsTextbox.Text);
-            newCar.ServiceCosts = Convert.ToInt32(ServiceCostsTextbox.Text);
-            newCar.CosmeticsCosts = Convert.ToInt32(CosmeticsCostsTextbox.Text);
-            newCar.Czs = Convert.ToInt32(CzsTextbox.Text);
-            newCar.Comission = Convert.ToInt32(ComissionTextbox.Text);
+            newCar.FuelCosts = FuelCostsTextbox.Text;
+            newCar.ServiceCosts = ServiceCostsTextbox.Text;
+            newCar.CosmeticsCosts = CosmeticsCostsTextbox.Text;
+            newCar.Czs = CzsTextbox.Text;
+            newCar.Comission = ComissionTextbox.Text;
             newCar.OwnerByBusiness = OwnerByBusinessTextbox.Text;
             newCar.OwnerByVoucher = OwnerByVoucherTextbox.Text;
             this.AddExtrasToCarExtrasFieldIfChecked(newCar);
@@ -629,6 +609,9 @@
             {
                 newCar.AreMileageReal = "0";
             }
+            newCar.RegistrationNumber = RegistrationNumberTextbox.Text;
+            newCar.Country = Convert.ToString(CountryCombobox.SelectedItem);
+            newCar.Shofer = ShoferTextbox.Text;
             return newCar;
         }
 
@@ -649,26 +632,38 @@
         {
             Log("SaveImageToDir() invoked!");
             Car currCar = (Car)carsListBox.SelectedItem;
-            if (pictureBox1.Image != null && currCar != null)
+            if (MainPicturebox.Image != null && currCar != null)
             {
 
                 int carNumber = currCar.ContractNumber;
                 if (Directory.Exists($"..\\Images\\{carNumber}"))
                 {
 
-                    string fileName = carNumber.ToString();
+                    string carNumberStr = carNumber.ToString();
                     // wallpaper pic naming
                     if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
                     {
-                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + "header.jpeg", ImageFormat.Jpeg);
+                        MainPicturebox.Image.Save($"..\\Images\\{carNumber}\\{carNumberStr}" + "header.jpeg", ImageFormat.Jpeg);
                         MessageBox.Show("Добавена е снимка!", "Upload");
                         return;
                     }
-
+                    if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
+                    {
+                        MainPicturebox.Image.Save($"..\\Images\\{carNumber}\\{carNumberStr}" + ".jpeg", ImageFormat.Jpeg);
+                        MessageBox.Show("Добавена е снимка!", "Upload");
+                        return;
+                    }
                     if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}.jpeg"))
                     {
-                        File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg");
-                        pictureBox1.Image.Save($"..\\Images\\{carNumber}\\{fileName}" + ".jpeg", ImageFormat.Jpeg);
+                        var name = $"{carNumber}" + DateTime.Now.Second + ".jpeg";
+                        if (!File.Exists(name))
+                        {
+                            //{carNumber}" + $"{DateTime.Now.Second}" + ".jpeg"
+                            //File.Move($"..\\Images\\{carNumber}\\{carNumber}.jpeg", $"..\\Images\\{carNumber}\\{name}");
+                        MainPicturebox.Image.Save($"..\\Images\\{carNumber}\\{name}", ImageFormat.Jpeg);
+                        MessageBox.Show("Добавена е снимка!", "Upload");
+                        return;
+                        }
                     }
 
 
@@ -695,6 +690,7 @@
             StatusCombobox.SelectedIndex = -1;
             ColorsCombobox.SelectedIndex = -1;
             TiresCombobox.SelectedIndex = -1;
+            CountryCombobox.SelectedIndex = -1;
             //textboxes
             OwnerByBusinessTextbox.Clear();
             OwnerByVoucherTextbox.Clear();
@@ -715,6 +711,9 @@
             priceTextBox.Clear();
             VinTextBox.Clear();
             additionalCarInfoTextBox.Clear();
+            ShoferTextbox.Clear();
+            RegistrationNumberTextbox.Clear();
+
             //checkbox
             AreRealMileageCheckbox.Checked = false;
 
@@ -769,15 +768,15 @@
             string carNumber = car.ContractNumber.ToString();
             if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
             {
-                pictureBox1.Image = null;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                MainPicturebox.Image = null;
+                MainPicturebox.SizeMode = PictureBoxSizeMode.StretchImage;
                 var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
 
-                pictureBox1.Image = img;
+                MainPicturebox.Image = img;
             }
             else
             {
-                pictureBox1.Image = pictureBox1.InitialImage;
+                MainPicturebox.Image = MainPicturebox.InitialImage;
 
             }
         }
@@ -953,21 +952,6 @@
 
         }
 
-        //visiblechange
-        private void UpdateButton_VisibleChanged(object sender, EventArgs e)
-        {
-            if (UpdateButton.Visible)
-            {
-
-                PriceRadioButton.Visible = true;
-                StatusRadioButton.Visible = true;
-            }
-            else
-            {
-                PriceRadioButton.Visible = false;
-                StatusRadioButton.Visible = false;
-            }
-        }
         //keypresses
         private void carsListBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -1091,8 +1075,184 @@
             }
         }
 
+        private void StatusValueUpdateButton_Click(object sender, EventArgs e)
+        {
 
+            int index = StatusCombobox.SelectedIndex;
+            var item = StatusCombobox.SelectedItem.ToString();
+            var car = (Car)carsListBox.SelectedItem;
+            if (item != car.Status)
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "Status", StatusCombobox.SelectedItem.ToString());
+                MessageBox.Show("Готово!");
+                StatusCombobox.SelectedIndex = -1;
+                ResetCarsList();
+                StatusCombobox.SelectedIndex = index;
+            }
+        }
 
+        private void PriceValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = priceTextBox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.Price;
+            if (newValue != oldValue)
+            {
+
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "Price", priceTextBox.Text);
+                MessageBox.Show($"Цената променена!\n{oldValue}->{newValue}");
+
+                priceTextBox.Clear();
+                ResetCarsList();
+                priceTextBox.Text = newValue;
+            }
+        }
+
+        private void CzsValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = CzsTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.Czs;
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "Czs", CzsTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                CzsTextbox.Clear();
+                ResetCarsList();
+                CzsTextbox.Text = newValue;
+            }
+        }
+
+        private void ComissionValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = ComissionTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.Comission;
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "Comission", ComissionTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                ComissionTextbox.Clear();
+                ResetCarsList();
+                ComissionTextbox.Text = newValue;
+            }
+        }
+
+        private void FuelCostValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = FuelCostsTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.FuelCosts;
+
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "FuelCosts", FuelCostsTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                FuelCostsTextbox.Clear();
+                ResetCarsList();
+                FuelCostsTextbox.Text = newValue;
+            }
+
+        }
+
+        private void ServiceCostsValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = ServiceCostsTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.ServiceCosts;
+
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "ServiceCosts", ServiceCostsTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                ServiceCostsTextbox.Clear();
+                ResetCarsList();
+                ServiceCostsTextbox.Text = newValue;
+            }
+        }
+
+        private void CosmeticsCostsValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = CosmeticsCostsTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.CosmeticsCosts;
+
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "CosmeticsCosts", CosmeticsCostsTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                CosmeticsCostsTextbox.Clear();
+                ResetCarsList();
+                CosmeticsCostsTextbox.Text = newValue;
+            }
+        }
+
+        private void MaxBillValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = MaxBillValueTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.MaxBillValue;
+
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "MaxBillValue", MaxBillValueTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                MaxBillValueTextbox.Clear();
+                ResetCarsList();
+                MaxBillValueTextbox.Text = newValue;
+            }
+        }
+
+        private void MinBillValue_Click(object sender, EventArgs e)
+        {
+            var newValue = MinBillValueTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.MinBillValue;
+
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "MinBillValue", MinBillValueTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                MinBillValueTextbox.Clear();
+                ResetCarsList();
+                MinBillValueTextbox.Text = newValue;
+            }
+        }
+
+        private void RealSellingPriceValueUpdateButton_Click(object sender, EventArgs e)
+        {
+            var newValue = RealSellingPriceTextbox.Text;
+            var car = (Car)carsListBox.SelectedItem;
+            var oldValue = car.RealSellingPrice;
+
+            if (newValue != oldValue.ToString())
+            {
+                XMLDatabase.UpdateCarData((Car)carsListBox.SelectedItem, "RealSellingPrice", RealSellingPriceTextbox.Text);
+                MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
+
+                RealSellingPriceTextbox.Clear();
+                ResetCarsList();
+                RealSellingPriceTextbox.Text = newValue;
+            }
+        }
+
+        private void TraderLabel_Click(object sender, EventArgs e)
+        {
+            if (IsInfoShowed)
+            {
+                var car = carsListBox.SelectedItem as Car;
+                var content = car.OwnerByBusiness;
+                MessageBox.Show(content);
+
+            }
+        }
     }
 }
 
