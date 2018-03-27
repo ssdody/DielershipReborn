@@ -13,72 +13,35 @@ using System.Xml.Linq;
 
 namespace Dealership1._0
 {
-    public partial class ExtrasInfoForm : Form
+    public partial class InfoForm : Form
     {
-        public ExtrasInfoForm()
+        public InfoForm()
         {
             InitializeComponent();
         }
-        public void FillExtrasListFormTextbox(object car)
+        public void FillTextbox(Car car)
         {
-            if (car != null)
+
+            CarInfoTextbox.Text = CarInfoToStringBuilder(car).ToString();
+
+        }
+        public void FillTextbox(IEnumerable<Car> collection)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var thing in collection)
             {
 
-                var carConv = (Car)car;
-                XmlDocument doc = new XmlDocument();
-                doc.Load("data.xml");
-                XmlNodeList nodes = doc.SelectNodes("//Car[ContractNumber='" + carConv.ContractNumber + "']");
-                //string[] sb = new string[nodes.Count];
-
-                CarInfoTextbox.Text = CarInfoToStringBuilder(carConv).ToString();
+                sb.AppendLine(thing.ContractNumber + " " + thing.Display);
+                sb.AppendLine();
+                
             }
+            CarInfoTextbox.Text = sb.ToString();
+
         }
         private StringBuilder CarInfoToStringBuilder(Car car) ////load car info to stringBuilder
         {
             StringBuilder sBuilder = new StringBuilder();
             AppendToStringBuilderIfValuesAreNotNullOrEmptyString(car, sBuilder);
-            //sBuilder.AppendLine(car.Brand);
-            //sBuilder.AppendLine(car.Model);
-            //sBuilder.AppendLine(car.BodyworkType);
-            //sBuilder.AppendLine(car.EngineVolumeCc);
-            //sBuilder.AppendLine(car.HorsePower);
-            //sBuilder.AppendLine(car.Color);
-            //sBuilder.AppendLine(car.FuelType);
-            //sBuilder.AppendLine(car.ProductionDate);
-            //sBuilder.AppendLine(car.Mileage);
-            //sBuilder.AppendLine(car.Price);
-            //sBuilder.AppendLine(car.Win);
-            //sBuilder.AppendLine(car.AdditionalInfo);
-            //sBuilder.AppendLine("--------------------------------");
-            //sBuilder.AppendLine(car.AutoStartStop);
-            //sBuilder.AppendLine(car.BluetoothHF);
-            //sBuilder.AppendLine(car.DvdTv);
-            //sBuilder.AppendLine(car.SteptronicTiptronic);
-            //sBuilder.AppendLine(car.USBAudioVideoAUX);
-            //sBuilder.AppendLine(car.AdaptiveAirSusp);
-            //sBuilder.AppendLine(car.KeylessGo);
-            //sBuilder.AppendLine(car.DifferentialLock);
-            //sBuilder.AppendLine(car.ECU);
-            //sBuilder.AppendLine(car.ElMirrors);
-            //sBuilder.AppendLine(car.ElWindows);
-            //sBuilder.AppendLine(car.ElAdjustmentSusp);
-            //sBuilder.AppendLine(car.DPFFilter);
-            //sBuilder.AppendLine(car.CoolingGlovebox);
-            //sBuilder.AppendLine(car.Stereo);
-            //sBuilder.AppendLine(car.ElSteerAmplifier);
-            //sBuilder.AppendLine(car.AirConditioning);
-            //sBuilder.AppendLine(car.Climatronic);
-            //sBuilder.AppendLine(car.MultifunctionSteer);
-            //sBuilder.AppendLine(car.Navigation);
-            //sBuilder.AppendLine(car.SteeringHeater);
-            //sBuilder.AppendLine(car.FrontWindowHeating);
-            //sBuilder.AppendLine(car.Autopilot);
-            //sBuilder.AppendLine(car.SeatsHeating);
-            //sBuilder.AppendLine(car.RainSensor);
-            //sBuilder.AppendLine(car.SteeringAdjustment);
-            //sBuilder.AppendLine(car.ServoSteerAmplifier);
-            //sBuilder.AppendLine(car.HeatingSys);
-            //sBuilder.AppendLine("--------------------------------");
 
             return sBuilder;
         }
@@ -145,7 +108,7 @@ namespace Dealership1._0
         }
         private void InfoForm_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void CarInfoTextbox_KeyDown(object sender, KeyEventArgs e)
@@ -161,7 +124,7 @@ namespace Dealership1._0
             if (TopMost == false)
             {
                 this.TopMost = true;
-                
+
                 TopMostButton.Image = new Bitmap(Properties.Resources.icons8_push_pin_24);
                 CarInfoTextbox.Focus();
             }
@@ -176,6 +139,11 @@ namespace Dealership1._0
         private void CopyToClipboardButton_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(this.CarInfoTextbox.Text);
+        }
+
+        private void ExtrasInfoForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

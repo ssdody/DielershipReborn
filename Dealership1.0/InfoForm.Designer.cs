@@ -1,6 +1,6 @@
 ﻿namespace Dealership1._0
 {
-    partial class ExtrasInfoForm
+    partial class InfoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExtrasInfoForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoForm));
             this.CarInfoTextbox = new System.Windows.Forms.TextBox();
             this.CopyToClipboardButton = new System.Windows.Forms.Button();
             this.TopMostButton = new System.Windows.Forms.Button();
@@ -42,7 +42,6 @@
             this.CarInfoTextbox.Location = new System.Drawing.Point(3, 21);
             this.CarInfoTextbox.Multiline = true;
             this.CarInfoTextbox.Name = "CarInfoTextbox";
-            this.CarInfoTextbox.ReadOnly = true;
             this.CarInfoTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.CarInfoTextbox.Size = new System.Drawing.Size(364, 603);
             this.CarInfoTextbox.TabIndex = 1;
@@ -72,7 +71,7 @@
             this.TopMostButton.UseVisualStyleBackColor = false;
             this.TopMostButton.Click += new System.EventHandler(this.TopMostButton_Click);
             // 
-            // ExtrasInfoForm
+            // InfoForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -85,10 +84,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1000, 1000);
-            this.Name = "ExtrasInfoForm";
+            this.Name = "InfoForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация";
+            this.Load += new System.EventHandler(this.ExtrasInfoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

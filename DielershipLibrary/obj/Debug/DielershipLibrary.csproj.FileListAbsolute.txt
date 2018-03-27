@@ -1,0 +1,19 @@
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\bin\Debug\DielershipLibrary.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\bin\Debug\DielershipLibrary.pdb
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\obj\Debug\DielershipLibrary.csprojResolveAssemblyReference.cache
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\obj\Debug\DielershipLibrary.dll
+C:\Users\krisi\Documents\Visual Studio 2015\Projects\Dealership1.0\DielershipLibrary\obj\Debug\DielershipLibrary.pdb
+C:\Users\krisi\Desktop\gittest\Dealership1.0\DielershipLibrary\bin\Debug\DielershipLibrary.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\DielershipLibrary\bin\Debug\DielershipLibrary.pdb
+C:\Users\krisi\Desktop\gittest\Dealership1.0\DielershipLibrary\obj\Debug\DielershipLibrary.dll
+C:\Users\krisi\Desktop\gittest\Dealership1.0\DielershipLibrary\obj\Debug\DielershipLibrary.pdb
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\bin\Debug\DielershipLibrary.dll
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\bin\Debug\DielershipLibrary.pdb
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Debug\DielershipLibrary.csprojResolveAssemblyReference.cache
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Debug\DielershipLibrary.dll
+D:\dealershipReborn\DielershipReborn\DielershipLibrary\obj\Debug\DielershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Debug\DielershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Debug\DielershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Debug\DielershipLibrary.csprojResolveAssemblyReference.cache
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Debug\DielershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Debug\DielershipLibrary.pdb

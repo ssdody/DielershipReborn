@@ -52,6 +52,7 @@
             this.UsernameTextbox.TabIndex = 1;
             this.UsernameTextbox.TextChanged += new System.EventHandler(this.UsernameTextbox_TextChanged);
             this.UsernameTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UsernameTextbox_KeyDown);
+            this.UsernameTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UsernameTextbox_KeyPress);
             // 
             // PasswordTextbox
             // 
@@ -63,9 +64,8 @@
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(100, 23);
             this.PasswordTextbox.TabIndex = 2;
-            this.PasswordTextbox.UseSystemPasswordChar = true;
-            this.PasswordTextbox.TextChanged += new System.EventHandler(this.PasswordTextbox_TextChanged);
             this.PasswordTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PasswordTextbox_KeyDown);
+            this.PasswordTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextbox_KeyPress);
             // 
             // LogInButton
             // 
@@ -119,6 +119,7 @@
             // ExitButton
             // 
             this.ExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.FlatAppearance.BorderSize = 0;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitButton.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,6 +183,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogInForm";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LogInForm_FormClosing);
             this.Load += new System.EventHandler(this.LogInForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -14,7 +14,7 @@ namespace Dealership1._0
     public partial class LogInForm : Form
     {
         public readonly string[] usernames = { "exoticcars", "admin" };
-        public readonly string[] password = { "00001", "123" };
+        public readonly string[] password = { "1234", "123" };
         private static bool _canContinue;
 
         public LogInForm()
@@ -25,8 +25,9 @@ namespace Dealership1._0
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-            this.Close();
+            //Application.Exit();
+            Environment.Exit(1);
+            
         }
 
         private void LogInButton_Click(object sender, EventArgs e)
@@ -36,40 +37,41 @@ namespace Dealership1._0
             if (UsernameTextbox.Text.ToLower() != usernames[0] && UsernameTextbox.Text.ToLower() != usernames[1])
             {
                 MessageBox.Show("Invalid username or password!");
-                UsernameTextbox.Text = string.Empty;
-                PasswordTextbox.Text = string.Empty;
-            }
 
+                return;
+
+            }
             if (UsernameTextbox.Text.ToLower() == "admin" && PasswordTextbox.Text.ToLower() == password[0])
             {
                 CanContinue = true;
 
                 this.Hide();
+                return;
             }
-
-            if (UsernameTextbox.Text.ToLower() == "exoticcars" && PasswordTextbox.Text.ToLower() == password[1])
+            else if (UsernameTextbox.Text.ToLower() == "exoticcars" && PasswordTextbox.Text.ToLower() == password[1])
             {
                 CanContinue = true;
-               
+
                 this.Hide();
+                return;
             }
+            
+                MessageBox.Show("Invalid username or password!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                UsernameTextbox.Clear();
+                PasswordTextbox.Clear();
+                return;
+            
+
+
+
 
         }
 
-        private void UsernameTextbox_TextChanged(object sender, EventArgs e)
-        {
 
-            if (!Regex.IsMatch(UsernameTextbox.Text, @"^[a-zA-Z0-9_]+$"))
-            {
-                MessageBox.Show("This textbox accepts only alphabetical characters");
-                UsernameTextbox.Text = string.Empty;
-
-            }
-        }
 
         private void PasswordTextbox_TextChanged(object sender, EventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.IsMatch(PasswordTextbox.Text, @"^\w+$"))
+            if (!Regex.IsMatch(PasswordTextbox.Text, @"^\w+$"))
             {
                 MessageBox.Show("Invalid symbol!");
                 PasswordTextbox.Text = string.Empty;
@@ -109,5 +111,45 @@ namespace Dealership1._0
         {
             UsernameTextbox.Focus();
         }
+
+        private void LogInForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!CanContinue == true)
+            {
+                e.Cancel = true;
+
+            }
+        }
+
+        private void UsernameTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+
+        private void PasswordTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+
+        private void UsernameTextbox_TextChanged(object sender, EventArgs e)
+        {
+            string oldText = string.Empty;
+            if (UsernameTextbox.Text.All(chr => char.IsLetter(chr)))
+            {
+                oldText = UsernameTextbox.Text;
+                UsernameTextbox.Text = oldText;
+
+                UsernameTextbox.BackColor = System.Drawing.Color.White;
+                UsernameTextbox.ForeColor = System.Drawing.Color.Black;
+            }
+            else
+            {
+                UsernameTextbox.Text = oldText;
+                UsernameTextbox.BackColor = System.Drawing.Color.Red;
+                UsernameTextbox.ForeColor = System.Drawing.Color.White;
+            }
+            UsernameTextbox.SelectionStart = UsernameTextbox.Text.Length;
+        }
     }
 }
+

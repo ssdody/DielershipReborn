@@ -60,7 +60,6 @@ D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\Interop.AcroPDFLi
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\AxInterop.AcroPDFLib.dll
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1.0.csprojResolveAssemblyReference.cache
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUInotsure.resources
-D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.ExtrasInfoForm.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.Properties.Resources.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1.0.csproj.GenerateResource.Cache
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\ar-YE\Dealership1.0.resources.dll
@@ -71,3 +70,4 @@ D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.Lo
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUIForm.ar-YE.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUIForm.bg-BG.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUIForm.ca.resources
+D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.InfoForm.resources
