@@ -71,3 +71,4 @@ D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.Di
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUIForm.bg-BG.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUIForm.ca.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.InfoForm.resources
+D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.PrintForm.resources

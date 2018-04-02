@@ -77,6 +77,10 @@ namespace Dealership1._0
             priceNode.InnerText = car.Price;
             headNode.AppendChild(priceNode);
 
+            XmlNode isSoldNode = doc.CreateElement("IsSold");
+            isSoldNode.InnerText = car.IsSold;
+            headNode.AppendChild(isSoldNode);
+
             XmlNode addictionalInfoNode = doc.CreateElement("AdditionalInfo");
             addictionalInfoNode.InnerText = car.AdditionalInfo;
             headNode.AppendChild(addictionalInfoNode);
@@ -106,7 +110,7 @@ namespace Dealership1._0
             headNode.AppendChild(NumberOfKeysNode);
 
             XmlNode TiresNode = doc.CreateElement("Tires");
-            TiresNode.InnerText = car.Tires.ToString();
+            TiresNode.InnerText = car.TYres.ToString();
             headNode.AppendChild(TiresNode);
 
             XmlNode DateOfCreatingAdNode = doc.CreateElement("DateOfCreatingAd");
@@ -219,10 +223,12 @@ namespace Dealership1._0
                 newCar.Vin = d.Element("Vin").Value;
                 newCar.Status = d.Element("Status").Value;
 
+                newCar.IsSold = d.Element("IsSold").Value;
+
                 newCar.Extras = d.Element("Extras").Value;
                 newCar.Gearbox = d.Element("Gearbox").Value;
                 newCar.NumberOfKeys = d.Element("NumberOfKeys").Value;
-                newCar.Tires = d.Element("Tires").Value;
+                newCar.TYres = d.Element("Tires").Value;
 
                 if (int.TryParse(d.Element("RealSellingPrice").Value, out outParamValue))
                 {

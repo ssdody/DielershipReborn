@@ -13,13 +13,16 @@
     <ProductionDate>2017</ProductionDate>
     <Mileage>10000</Mileage>
     <Price>250000</Price>
-    <AdditionalInfo></AdditionalInfo>
+    <IsSold>0</IsSold>
+    <AdditionalInfo>
+    </AdditionalInfo>
     <EngineVolumeCc>3994</EngineVolumeCc>
     <Vin>ADSF43RT3</Vin>
     <Status>Налична</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras></Extras>
-    <NumberOfKeys>3</NumberOfKeys>
+    <Extras>
+    </Extras>
+    <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни и зимни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
     <RealSellingPrice>100000</RealSellingPrice>
@@ -50,14 +53,16 @@
     <ProductionDate>2010</ProductionDate>
     <Mileage>21150</Mileage>
     <Price>50000</Price>
+    <IsSold>0</IsSold>
     <AdditionalInfo>Баца чат пат , трудно пали ама запали ли няма мърдане..
 </AdditionalInfo>
     <EngineVolumeCc>3500</EngineVolumeCc>
     <Vin>SDGEG345FS</Vin>
-    <Status>В сервиз</Status>
+    <Status>Очакван внос</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras></Extras>
-    <NumberOfKeys>3</NumberOfKeys>
+    <Extras>
+    </Extras>
+    <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
     <RealSellingPrice>45999</RealSellingPrice>
@@ -73,7 +78,8 @@
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
     <RegistrationNumber>PK9823KH</RegistrationNumber>
-    <Shofer></Shofer>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>61</ContractNumber>
@@ -88,8 +94,9 @@
     <ProductionDate>2012</ProductionDate>
     <Mileage>212022</Mileage>
     <Price>3250</Price>
+    <IsSold>1</IsSold>
     <AdditionalInfo>Удри...</AdditionalInfo>
-    <EngineVolumeCc>9500</EngineVolumeCc>
+    <EngineVolumeCc>3500</EngineVolumeCc>
     <Vin>SDFK3465346TG</Vin>
     <Status>В сервиз</Status>
     <Gearbox>Полуавтоматична</Gearbox>
@@ -110,7 +117,8 @@
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
     <RegistrationNumber>CB7482AA</RegistrationNumber>
-    <Shofer></Shofer>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>65</ContractNumber>
@@ -125,10 +133,11 @@
     <ProductionDate>2012</ProductionDate>
     <Mileage>23010</Mileage>
     <Price>60000</Price>
+    <IsSold>0</IsSold>
     <AdditionalInfo> Яката работа..</AdditionalInfo>
     <EngineVolumeCc>3498</EngineVolumeCc>
     <Vin>SDF345435</Vin>
-    <Status>Налична</Status>
+    <Status>В сервиз</Status>
     <Gearbox>Автоматична</Gearbox>
     <Extras>Bluetooth \ handsfree система$DVD, TV$Steptronic, Tiptronic$USB, audio\video, IN\AUX изводи$Адаптивно въздушно окачване$Безключово палене $Ел. Огледала$Ел. Стъкла$Ел. регулиране на седалките$Климатроник$Мултифункционален волан$Навигация$Печка$Подгряване на предното стъкло$Подгряване на седалките$Сензор за дъжд$Система за контрол на скоростта (автопилот)$Стерео уредба$Филтър за твърди частици$GPS система за проследяване$Адаптивни предни светлини$На части$Нов внос$С право на дан.к-т$С регистрация$Сервизна книжка$4(5) Врати$LED фарове$Лети джанти$Отопляеми чистачки$Теглич$Брониран$Десен волан$</Extras>
     <NumberOfKeys>3</NumberOfKeys>
@@ -146,7 +155,7 @@
     <Czs>234</Czs>
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
-    <RegistrationNumber>4234сфс</RegistrationNumber>
+    <RegistrationNumber>REGS577</RegistrationNumber>
     <Shofer>Дидо</Shofer>
   </Car>
   <Car>
@@ -162,12 +171,15 @@
     <ProductionDate>2003</ProductionDate>
     <Mileage>1323214</Mileage>
     <Price>4500</Price>
-    <AdditionalInfo></AdditionalInfo>
-    <EngineVolumeCc>1789</EngineVolumeCc>
+    <IsSold>0</IsSold>
+    <AdditionalInfo>
+    </AdditionalInfo>
+    <EngineVolumeCc>1889</EngineVolumeCc>
     <Vin>LLJLKJ</Vin>
-    <Status>Налична</Status>
+    <Status>Очакван внос</Status>
     <Gearbox>Ръчна</Gearbox>
-    <Extras></Extras>
+    <Extras>
+    </Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2018-03-24</DateOfCreatingAd>
@@ -199,72 +211,33 @@
     <ProductionDate>1999</ProductionDate>
     <Mileage>2599887</Mileage>
     <Price>2999</Price>
-    <AdditionalInfo>Бива...</AdditionalInfo>
+    <IsSold>1</IsSold>
+    <AdditionalInfo>Бива......</AdditionalInfo>
     <EngineVolumeCc>2989</EngineVolumeCc>
-    <Vin>WBAGDKGJ6434</Vin>
-    <Status>Налична</Status>
+    <Vin>BAGDKGJ6434</Vin>
+    <Status>Продадена</Status>
     <Gearbox>Ръчна</Gearbox>
-    <Extras></Extras>
+    <Extras>
+    </Extras>
     <NumberOfKeys>2</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2018-03-07</DateOfCreatingAd>
-    <RealSellingPrice>0</RealSellingPrice>
-    <MinBillValue>0</MinBillValue>
-    <MaxBillValue>0</MaxBillValue>
+    <RealSellingPrice>234234</RealSellingPrice>
+    <MinBillValue>434</MinBillValue>
+    <MaxBillValue>234</MaxBillValue>
     <OwnerByVoucher>Urko</OwnerByVoucher>
     <OwnerByBusiness>Ali
 Baba
 0866328386</OwnerByBusiness>
-    <FuelCosts>0</FuelCosts>
-    <ServiceCosts>0</ServiceCosts>
-    <CosmeticsCosts>0</CosmeticsCosts>
-    <Comission>0</Comission>
+    <FuelCosts>234</FuelCosts>
+    <ServiceCosts>234</ServiceCosts>
+    <CosmeticsCosts>432</CosmeticsCosts>
+    <Comission>0234</Comission>
     <Czs>1</Czs>
     <AreMileageReal>0</AreMileageReal>
     <Country>Белгия</Country>
-    <RegistrationNumber>асд3434</RegistrationNumber>
+    <RegistrationNumber>CB8237PA</RegistrationNumber>
     <Shofer>Гошо</Shofer>
-  </Car>
-  <Car>
-    <ContractNumber>82</ContractNumber>
-    <Category>Лек автомобил</Category>
-    <PayCase>DYNAMIC AUTO</PayCase>
-    <Brand>Acura</Brand>
-    <Model>CDX</Model>
-    <BodyworkType>Ван</BodyworkType>
-    <HorsePower>5555</HorsePower>
-    <FuelType>Бензин</FuelType>
-    <Color>Бял</Color>
-    <ProductionDate>1999</ProductionDate>
-    <Mileage>232948</Mileage>
-    <Price>54646</Price>
-    <AdditionalInfo>4</AdditionalInfo>
-    <EngineVolumeCc>344</EngineVolumeCc>
-    <Vin>DFSDF345435</Vin>
-    <Status>В сервиз</Status>
-    <Gearbox>Полуавтоматична</Gearbox>
-    <Extras>Адаптивно въздушно окачване$Безключово палене $Блокаж на диференциала$Бордкомпютър$Сензор за дъжд$Автоматичен контрол на стабилността$Адаптивни предни светлини$Антиблокираща система$Въздушни възглавници - Задни$4(5) Врати$Аларма$</Extras>
-    <NumberOfKeys>3</NumberOfKeys>
-    <Tires>Летни и зимни</Tires>
-    <DateOfCreatingAd>2017-10-14</DateOfCreatingAd>
-    <RealSellingPrice>4444</RealSellingPrice>
-    <MinBillValue>444</MinBillValue>
-    <MaxBillValue>333</MaxBillValue>
-    <OwnerByVoucher>Аз</OwnerByVoucher>
-    <OwnerByBusiness>Аз
-и
-баба
-ти
-</OwnerByBusiness>
-    <FuelCosts>444</FuelCosts>
-    <ServiceCosts>44</ServiceCosts>
-    <CosmeticsCosts>4</CosmeticsCosts>
-    <Comission>44444</Comission>
-    <Czs>4444</Czs>
-    <AreMileageReal>0</AreMileageReal>
-    <Country>Англия</Country>
-    <RegistrationNumber>KH2388PC</RegistrationNumber>
-    <Shofer>Пешо</Shofer>
   </Car>
   <Car>
     <ContractNumber>83</ContractNumber>
@@ -273,19 +246,21 @@ Baba
     <Brand>ACURA</Brand>
     <Model>CDX</Model>
     <BodyworkType>Бус</BodyworkType>
-    <HorsePower>500</HorsePower>
+    <HorsePower>220</HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Бежов</Color>
     <ProductionDate>2001</ProductionDate>
     <Mileage>332343</Mileage>
     <Price>3393</Price>
+    <IsSold>0</IsSold>
     <AdditionalInfo>йебре..</AdditionalInfo>
-    <EngineVolumeCc>322</EngineVolumeCc>
+    <EngineVolumeCc>522</EngineVolumeCc>
     <Vin>DKFMSDFU4</Vin>
-    <Status>Налична</Status>
-    <Gearbox>Ръчна</Gearbox>
-    <Extras></Extras>
-    <NumberOfKeys>2</NumberOfKeys>
+    <Status>В сервиз</Status>
+    <Gearbox>Автоматична</Gearbox>
+    <Extras>
+    </Extras>
+    <NumberOfKeys>3</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2017-01-15</DateOfCreatingAd>
     <RealSellingPrice>2020</RealSellingPrice>

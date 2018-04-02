@@ -19,13 +19,13 @@ namespace DielershipLibrary
         private string _color = string.Empty;
         private string _productionDate = string.Empty;
         private string _mileage = string.Empty;
-        private bool _isSold;
+        private string _isSold = string.Empty;
         private string _areMileageReal;
         private string _additionalCarInfo = string.Empty;
         private string _price = string.Empty;
         private string _engineVolumeCc = string.Empty;
         private string _vin = string.Empty;
-        private string _tires = string.Empty;
+        private string _tyres = string.Empty;
         private string _gearbox = string.Empty;
         private string _numberOfKeys = string.Empty;
         private string _payCase = string.Empty;
@@ -568,7 +568,7 @@ namespace DielershipLibrary
             }
         }
         [System.Xml.Serialization.XmlElement("IsSold")]
-        public bool IsSold
+        public string IsSold
         {
             get
             {
@@ -576,7 +576,12 @@ namespace DielershipLibrary
             }
             set
             {
-                _isSold = value;
+                if (string.IsNullOrEmpty(value))
+                {
+                    _isSold = "0";
+                }
+                else
+                    _isSold = value;
             }
         }
         [System.Xml.Serialization.XmlElement("AdditionalCarInfo")]
@@ -685,22 +690,22 @@ namespace DielershipLibrary
             }
         }
         [System.Xml.Serialization.XmlElement("Tires")]
-        public string Tires
+        public string TYres
         {
             get
             {
-                return _tires;
+                return _tyres;
             }
 
             set
             {
                 if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
-                    _tires = string.Empty;
+                    _tyres = string.Empty;
                 }
                 else
                 {
-                    _tires = value;
+                    _tyres = value;
 
                 }
             }
@@ -1057,9 +1062,12 @@ namespace DielershipLibrary
             {
                 return string.Format(" {0} {1} {2}  ", Brand, Model, ProductionDate);
             }
+            private set
+            {
+
+            }
         }
-
-
+        
         public static string FirstLetterToUpperCaseOrConvertNullToEmptyString(string value)
         {
             if (string.IsNullOrEmpty(value))

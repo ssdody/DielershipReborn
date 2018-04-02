@@ -114,8 +114,8 @@ namespace Dealership1._0
             this.label16 = new System.Windows.Forms.Label();
             this.RealSellingPriceTextbox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.ShowInfoFormButton = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.InformationButton = new System.Windows.Forms.Button();
             this.UploadButton = new System.Windows.Forms.Button();
             this.MainPicturebox = new System.Windows.Forms.PictureBox();
             this.soldButton = new System.Windows.Forms.Button();
@@ -149,8 +149,12 @@ namespace Dealership1._0
             this.NumberOfKeysValueUpdateButton = new System.Windows.Forms.Button();
             this.AdditionalInfoValueUpdateButton = new System.Windows.Forms.Button();
             this.ContractButton = new System.Windows.Forms.Button();
-            this.CaptureFormToBitmapButton = new System.Windows.Forms.Button();
+            this.PrintButton = new System.Windows.Forms.Button();
             this.NotifyIconTool = new System.Windows.Forms.NotifyIcon(this.components);
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.SoldCarsListButton = new System.Windows.Forms.Button();
+            this.SearchTextbox = new System.Windows.Forms.TextBox();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
             this.HidablePricePanel.SuspendLayout();
@@ -165,7 +169,7 @@ namespace Dealership1._0
             this.carsListBox.ForeColor = System.Drawing.Color.White;
             this.carsListBox.FormattingEnabled = true;
             this.carsListBox.Name = "carsListBox";
-            this.carsListBox.Sorted = true;
+            this.carsListBox.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.carsListBox_DrawItem);
             this.carsListBox.SelectedIndexChanged += new System.EventHandler(this.carsListBox_SelectedIndexChanged);
             this.carsListBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.carsListBox_KeyPress);
             // 
@@ -665,7 +669,7 @@ namespace Dealership1._0
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.PayCaseValueUpdateButton);
             this.panel1.Controls.Add(this.OwnerByVoucherValueUpdateButton);
@@ -1048,21 +1052,21 @@ namespace Dealership1._0
             this.label15.ForeColor = System.Drawing.SystemColors.Window;
             this.label15.Name = "label15";
             // 
-            // openFileDialog1
+            // openFileDialog
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog.FileName = "openFileDialogOne";
             // 
-            // ShowInfoFormButton
+            // InformationButton
             // 
-            this.ShowInfoFormButton.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.ShowInfoFormButton, "ShowInfoFormButton");
-            this.ShowInfoFormButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.ShowInfoFormButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ShowInfoFormButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.ShowInfoFormButton.Image = global::Dealership1._0.Properties.Resources.icons8_information_filled_24__1_;
-            this.ShowInfoFormButton.Name = "ShowInfoFormButton";
-            this.ShowInfoFormButton.UseVisualStyleBackColor = false;
-            this.ShowInfoFormButton.Click += new System.EventHandler(this.ShowInfoFormButton_Click);
+            this.InformationButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.InformationButton, "InformationButton");
+            this.InformationButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.InformationButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.InformationButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.InformationButton.Image = global::Dealership1._0.Properties.Resources.icons8_information_filled_24__1_;
+            this.InformationButton.Name = "InformationButton";
+            this.InformationButton.UseVisualStyleBackColor = false;
+            this.InformationButton.Click += new System.EventHandler(this.ShowInfoFormButton_Click);
             // 
             // UploadButton
             // 
@@ -1093,7 +1097,6 @@ namespace Dealership1._0
             this.soldButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.soldButton, "soldButton");
             this.soldButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.soldButton.Image = global::Dealership1._0.Properties.Resources.icons8_trash_can_26;
             this.soldButton.Name = "soldButton";
             this.soldButton.UseVisualStyleBackColor = false;
             this.soldButton.Click += new System.EventHandler(this.soldButton_Click);
@@ -1438,16 +1441,16 @@ namespace Dealership1._0
             this.ContractButton.UseVisualStyleBackColor = false;
             this.ContractButton.Click += new System.EventHandler(this.ContractButton_Click);
             // 
-            // CaptureFormToBitmapButton
+            // PrintButton
             // 
-            this.CaptureFormToBitmapButton.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.CaptureFormToBitmapButton, "CaptureFormToBitmapButton");
-            this.CaptureFormToBitmapButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.CaptureFormToBitmapButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.CaptureFormToBitmapButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.CaptureFormToBitmapButton.Name = "CaptureFormToBitmapButton";
-            this.CaptureFormToBitmapButton.UseVisualStyleBackColor = false;
-            this.CaptureFormToBitmapButton.Click += new System.EventHandler(this.CaptureFormToBitmapButton_Click);
+            this.PrintButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.PrintButton, "PrintButton");
+            this.PrintButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.PrintButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.PrintButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.UseVisualStyleBackColor = false;
+            this.PrintButton.Click += new System.EventHandler(this.CaptureFormToBitmapButton_Click);
             // 
             // NotifyIconTool
             // 
@@ -1455,12 +1458,48 @@ namespace Dealership1._0
             this.NotifyIconTool.BalloonTipClicked += new System.EventHandler(this.NotifyIconTool_BalloonTipClicked);
             this.NotifyIconTool.Click += new System.EventHandler(this.NotifyIconTool_Click);
             // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.SearchButton, "SearchButton");
+            this.SearchButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.SearchButton.FlatAppearance.BorderSize = 2;
+            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SearchButton.ForeColor = System.Drawing.Color.Transparent;
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // SoldCarsListButton
+            // 
+            this.SoldCarsListButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.SoldCarsListButton, "SoldCarsListButton");
+            this.SoldCarsListButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.SoldCarsListButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SoldCarsListButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.SoldCarsListButton.Image = global::Dealership1._0.Properties.Resources.icons8_move_stock_24__1_;
+            this.SoldCarsListButton.Name = "SoldCarsListButton";
+            this.SoldCarsListButton.UseVisualStyleBackColor = false;
+            this.SoldCarsListButton.Click += new System.EventHandler(this.ShowSoldCarsListButton_Click);
+            // 
+            // SearchTextbox
+            // 
+            this.SearchTextbox.BackColor = System.Drawing.Color.Black;
+            this.SearchTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.SearchTextbox, "SearchTextbox");
+            this.SearchTextbox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.SearchTextbox.Name = "SearchTextbox";
+            this.SearchTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchTextbox_KeyPress);
+            // 
             // DielershipUIForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Controls.Add(this.CaptureFormToBitmapButton);
+            this.Controls.Add(this.SearchTextbox);
+            this.Controls.Add(this.SoldCarsListButton);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.ContractButton);
             this.Controls.Add(this.AdditionalInfoValueUpdateButton);
             this.Controls.Add(this.NumberOfKeysValueUpdateButton);
@@ -1490,7 +1529,7 @@ namespace Dealership1._0
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.OpenPicDirButton);
-            this.Controls.Add(this.ShowInfoFormButton);
+            this.Controls.Add(this.InformationButton);
             this.Controls.Add(this.UploadButton);
             this.Controls.Add(this.MainPicturebox);
             this.Controls.Add(this.HidablePricePanel);
@@ -1632,9 +1671,9 @@ namespace Dealership1._0
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox MainPicturebox;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Button UploadButton;
-        private System.Windows.Forms.Button ShowInfoFormButton;
+        private System.Windows.Forms.Button InformationButton;
         private System.Windows.Forms.Button OpenPicDirButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button MaxBillValueUpdateButton;
@@ -1675,8 +1714,12 @@ namespace Dealership1._0
         private System.Windows.Forms.Button OwnerByVoucherValueUpdateButton;
         private System.Windows.Forms.Button OwnerByBusinessValueUpdateButton;
         private System.Windows.Forms.Button PayCaseValueUpdateButton;
-        private System.Windows.Forms.Button CaptureFormToBitmapButton;
+        private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.NotifyIcon NotifyIconTool;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Button SoldCarsListButton;
+        private System.Windows.Forms.TextBox SearchTextbox;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }
 
