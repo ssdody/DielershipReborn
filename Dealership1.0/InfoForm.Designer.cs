@@ -37,7 +37,7 @@
             // CarInfoTextbox
             // 
             this.CarInfoTextbox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CarInfoTextbox.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CarInfoTextbox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CarInfoTextbox.ForeColor = System.Drawing.SystemColors.Window;
             this.CarInfoTextbox.Location = new System.Drawing.Point(3, 21);
             this.CarInfoTextbox.Multiline = true;

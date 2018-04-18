@@ -14,14 +14,12 @@
     <Mileage>10000</Mileage>
     <Price>250000</Price>
     <IsSold>0</IsSold>
-    <AdditionalInfo>
-    </AdditionalInfo>
+    <AdditionalInfo></AdditionalInfo>
     <EngineVolumeCc>3994</EngineVolumeCc>
     <Vin>ADSF43RT3</Vin>
     <Status>Налична</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras>
-    </Extras>
+    <Extras></Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни и зимни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
@@ -60,8 +58,7 @@
     <Vin>SDGEG345FS</Vin>
     <Status>Очакван внос</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras>
-    </Extras>
+    <Extras></Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
@@ -78,8 +75,7 @@
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
     <RegistrationNumber>PK9823KH</RegistrationNumber>
-    <Shofer>
-    </Shofer>
+    <Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>61</ContractNumber>
@@ -103,7 +99,7 @@
     <Extras>Auto Start Stop function$Bluetooth \ handsfree система$DVD, TV$Steptronic, Tiptronic$Адаптивно въздушно окачване$Безключово палене $Бордкомпютър$Ел. Огледала$Ел. регулиране на окачването$Ел. регулиране на седалките$Ел. усилвател на волана$Климатик$Мултифункционален волан$Навигация$Печка$Серво усилвател на волана$Система за измиване на фаровете$Система за контрол на скоростта (автопилот)$Филтър за твърди частици$Хладилна жабка$Напълно обслужен$2(3) Врати$LED фарове$Лети джанти$Металик$Халогенни фарове$Аларма$</Extras>
     <NumberOfKeys>3</NumberOfKeys>
     <Tires>Летни и зимни</Tires>
-    <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
+    <DateOfCreatingAd>2017-01-02</DateOfCreatingAd>
     <RealSellingPrice>5000</RealSellingPrice>
     <MinBillValue>2300</MinBillValue>
     <MaxBillValue>6000</MaxBillValue>
@@ -117,8 +113,7 @@
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
     <RegistrationNumber>CB7482AA</RegistrationNumber>
-    <Shofer>
-    </Shofer>
+    <Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>65</ContractNumber>
@@ -172,14 +167,12 @@
     <Mileage>1323214</Mileage>
     <Price>4500</Price>
     <IsSold>0</IsSold>
-    <AdditionalInfo>
-    </AdditionalInfo>
+    <AdditionalInfo></AdditionalInfo>
     <EngineVolumeCc>1889</EngineVolumeCc>
     <Vin>LLJLKJ</Vin>
     <Status>Очакван внос</Status>
     <Gearbox>Ръчна</Gearbox>
-    <Extras>
-    </Extras>
+    <Extras></Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2018-03-24</DateOfCreatingAd>
@@ -199,47 +192,6 @@
     <Shofer>Гого</Shofer>
   </Car>
   <Car>
-    <ContractNumber>70</ContractNumber>
-    <Category>Лек автомобил</Category>
-    <PayCase>DYNAMIC AUTO</PayCase>
-    <Brand>BMW</Brand>
-    <Model>5 Series</Model>
-    <BodyworkType>Седан</BodyworkType>
-    <HorsePower>184</HorsePower>
-    <FuelType>Дизел</FuelType>
-    <Color>Сив</Color>
-    <ProductionDate>1999</ProductionDate>
-    <Mileage>2599887</Mileage>
-    <Price>2999</Price>
-    <IsSold>1</IsSold>
-    <AdditionalInfo>Бива......</AdditionalInfo>
-    <EngineVolumeCc>2989</EngineVolumeCc>
-    <Vin>BAGDKGJ6434</Vin>
-    <Status>Продадена</Status>
-    <Gearbox>Ръчна</Gearbox>
-    <Extras>
-    </Extras>
-    <NumberOfKeys>2</NumberOfKeys>
-    <Tires>Зимни</Tires>
-    <DateOfCreatingAd>2018-03-07</DateOfCreatingAd>
-    <RealSellingPrice>234234</RealSellingPrice>
-    <MinBillValue>434</MinBillValue>
-    <MaxBillValue>234</MaxBillValue>
-    <OwnerByVoucher>Urko</OwnerByVoucher>
-    <OwnerByBusiness>Ali
-Baba
-0866328386</OwnerByBusiness>
-    <FuelCosts>234</FuelCosts>
-    <ServiceCosts>234</ServiceCosts>
-    <CosmeticsCosts>432</CosmeticsCosts>
-    <Comission>0234</Comission>
-    <Czs>1</Czs>
-    <AreMileageReal>0</AreMileageReal>
-    <Country>Белгия</Country>
-    <RegistrationNumber>CB8237PA</RegistrationNumber>
-    <Shofer>Гошо</Shofer>
-  </Car>
-  <Car>
     <ContractNumber>83</ContractNumber>
     <Category>Лек автомобил</Category>
     <PayCase>DYNAMIC AUTO</PayCase>
@@ -249,17 +201,16 @@ Baba
     <HorsePower>220</HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Бежов</Color>
-    <ProductionDate>2001</ProductionDate>
+    <ProductionDate>2017</ProductionDate>
     <Mileage>332343</Mileage>
-    <Price>3393</Price>
+    <Price>33393</Price>
     <IsSold>0</IsSold>
     <AdditionalInfo>йебре..</AdditionalInfo>
     <EngineVolumeCc>522</EngineVolumeCc>
     <Vin>DKFMSDFU4</Vin>
     <Status>В сервиз</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras>
-    </Extras>
+    <Extras></Extras>
     <NumberOfKeys>3</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2017-01-15</DateOfCreatingAd>
@@ -278,5 +229,49 @@ Ruku</OwnerByBusiness>
     <Country>Австрия</Country>
     <RegistrationNumber>C3487KP</RegistrationNumber>
     <Shofer>Байчо</Shofer>
+  </Car>
+  <Car>
+    <ContractNumber>84</ContractNumber>
+    <Category>Лек автомобил</Category>
+    <PayCase>EXOTIC CARS</PayCase>
+    <Brand>BMW</Brand>
+    <Model>5 Series</Model>
+    <BodyworkType>Седан</BodyworkType>
+    <HorsePower>350</HorsePower>
+    <FuelType>Бензин</FuelType>
+    <Color>Черен</Color>
+    <ProductionDate>2010</ProductionDate>
+    <Mileage>137900</Mileage>
+    <Price>15000</Price>
+    <IsSold>0</IsSold>
+    <AdditionalInfo>Летни 245/40/18 Hankook 0916
+Зимни 225/45/17 Michelin 0118
+
+1#  Пукнато предно стъкло.
+2# Свещи за смяна 
+3# Датчик парктроник смяна</AdditionalInfo>
+    <EngineVolumeCc>3489</EngineVolumeCc>
+    <Vin>WBA4234JFN3421</Vin>
+    <Status>Налична</Status>
+    <Gearbox>Автоматична</Gearbox>
+    <Extras>Bluetooth \ handsfree система$DVD, TV$Steptronic, Tiptronic$USB, audio\video, IN\AUX изводи$Адаптивно въздушно окачване$Безключово палене $Блокаж на диференциала$Бордкомпютър$Датчик за светлина$Ел. Огледала$Ел. Стъкла$Ел. регулиране на окачването$Ел. регулиране на седалките$Ел. усилвател на волана$Климатик$Климатроник$Мултифункционален волан$Навигация$Отопление на волана$Печка$Подгряване на предното стъкло$Подгряване на седалките$Регулиране на волана$Сензор за дъжд$Серво усилвател на волана$Система за контрол на скоростта (автопилот)$Хладилна жабка$GPS система за проследяване$Адаптивни предни светлини$Въздушни възглавници - Задни$Въздушни възглавници - Предни$Въздушни възглавници - Странични$Ел. разпределяне на спирачното усилие$Електронна програма за стабилизиране$Контрол на налягането на гумите$Парктроник$Система за динамична устойчивост$Система за изсушаване на накладките$Система за контрол на дистанцията$Система за подпомагане на спирането$4x4$Buy back$Бартер$Газова уредба$Лизинг$Напълно обслужен$Нов внос$Сервизна книжка$Тунинг$4(5) Врати$LED фарове$Ксенонови фарове$Лети джанти$Металик$Отопляеми чистачки$Панорамен люк$Теглич$Халогенни фарове$Аларма$Брониран$Имобилайзер$Каско$Централно заключване$Кожен салон$</Extras>
+    <NumberOfKeys>3</NumberOfKeys>
+    <Tires>Летни и зимни</Tires>
+    <DateOfCreatingAd>2018-04-09</DateOfCreatingAd>
+    <RealSellingPrice>7000</RealSellingPrice>
+    <MinBillValue>2300</MinBillValue>
+    <MaxBillValue>499</MaxBillValue>
+    <OwnerByVoucher>ShoshoAuto</OwnerByVoucher>
+    <OwnerByBusiness>ShoshoAutoGroup
+0465 837 839 123</OwnerByBusiness>
+    <FuelCosts>40</FuelCosts>
+    <ServiceCosts>1000</ServiceCosts>
+    <CosmeticsCosts>120</CosmeticsCosts>
+    <Comission>700</Comission>
+    <Czs>7000</Czs>
+    <AreMileageReal>0</AreMileageReal>
+    <Country>Дания</Country>
+    <RegistrationNumber>CB9009AA</RegistrationNumber>
+    <Shofer>Чичо Пешо</Shofer>
   </Car>
 </Cars>

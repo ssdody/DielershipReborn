@@ -14,10 +14,12 @@ namespace Dealership1._0
     {
         private static XmlSerializer seriliazer = new XmlSerializer(typeof(Car));
         private const string filename = "data.xml";
+
         private XMLDatabase()
         {
 
         }
+
         public static void AppendNewCarDataToXML(Car car)        // CHECKED
         {
             XmlDocument doc = new XmlDocument();
@@ -321,15 +323,15 @@ namespace Dealership1._0
         }
 
 
-        public static void Remove(object car)
+        public static void Remove(Car car)
         {
             if (car != null)
             {
 
                 XmlDocument doc = new XmlDocument();
                 doc.Load(filename);
-                var carConv = (Car)car;
-                XmlNodeList nodes = doc.SelectNodes("//Car[ContractNumber='" + carConv.ContractNumber + "']");
+ 
+                XmlNodeList nodes = doc.SelectNodes("//Car[ContractNumber='" + car.ContractNumber + "']");
 
                 foreach (XmlNode node in nodes)
                 {

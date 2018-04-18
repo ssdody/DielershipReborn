@@ -20,14 +20,13 @@ namespace Dealership1._0
         public LogInForm()
         {
             InitializeComponent();
+            UsernameTextbox.Select();
             this.TopMost = true;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            //Application.Exit();
             Environment.Exit(1);
-            
         }
 
         private void LogInButton_Click(object sender, EventArgs e)

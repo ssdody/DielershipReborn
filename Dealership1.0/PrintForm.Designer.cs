@@ -281,7 +281,7 @@
             this.label1234.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1234.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1234.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1234.Location = new System.Drawing.Point(66, 58);
+            this.label1234.Location = new System.Drawing.Point(85, 58);
             this.label1234.Name = "label1234";
             this.label1234.Size = new System.Drawing.Size(159, 16);
             this.label1234.TabIndex = 152;
@@ -294,7 +294,7 @@
             this.label124434.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label124434.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label124434.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label124434.Location = new System.Drawing.Point(99, 375);
+            this.label124434.Location = new System.Drawing.Point(129, 375);
             this.label124434.Name = "label124434";
             this.label124434.Size = new System.Drawing.Size(91, 16);
             this.label124434.TabIndex = 153;
@@ -597,6 +597,7 @@
             // 
             // exitButton
             // 
+            this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Location = new System.Drawing.Point(628, -1);
@@ -640,7 +641,7 @@
             this.button_printForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_printForm.FlatAppearance.BorderSize = 0;
             this.button_printForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_printForm.Location = new System.Drawing.Point(578, 22);
+            this.button_printForm.Location = new System.Drawing.Point(573, 22);
             this.button_printForm.Name = "button_printForm";
             this.button_printForm.Size = new System.Drawing.Size(28, 23);
             this.button_printForm.TabIndex = 178;
@@ -661,11 +662,10 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(290, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(588, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(316, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

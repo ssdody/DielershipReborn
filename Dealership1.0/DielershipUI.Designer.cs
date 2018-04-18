@@ -155,6 +155,8 @@ namespace Dealership1._0
             this.SoldCarsListButton = new System.Windows.Forms.Button();
             this.SearchTextbox = new System.Windows.Forms.TextBox();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.RemoveButton = new System.Windows.Forms.Button();
+            this.OrganizerButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
             this.HidablePricePanel.SuspendLayout();
@@ -562,6 +564,7 @@ namespace Dealership1._0
             resources.GetString("CategoryCombobox.Items2")});
             this.CategoryCombobox.Name = "CategoryCombobox";
             this.CategoryCombobox.Sorted = true;
+            this.CategoryCombobox.SelectedIndexChanged += new System.EventHandler(this.CategoryCombobox_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -1491,11 +1494,38 @@ namespace Dealership1._0
             this.SearchTextbox.Name = "SearchTextbox";
             this.SearchTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchTextbox_KeyPress);
             // 
+            // RemoveButton
+            // 
+            this.RemoveButton.BackColor = System.Drawing.Color.Transparent;
+            this.RemoveButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.RemoveButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.RemoveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.RemoveButton, "RemoveButton");
+            this.RemoveButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.RemoveButton.Image = global::Dealership1._0.Properties.Resources.icons8_trash_can_26;
+            this.RemoveButton.Name = "RemoveButton";
+            this.RemoveButton.UseVisualStyleBackColor = false;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
+            // 
+            // OrganizerButton
+            // 
+            this.OrganizerButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.OrganizerButton, "OrganizerButton");
+            this.OrganizerButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.OrganizerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.OrganizerButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.OrganizerButton.Image = global::Dealership1._0.Properties.Resources.icons8_timer_24;
+            this.OrganizerButton.Name = "OrganizerButton";
+            this.OrganizerButton.UseVisualStyleBackColor = false;
+            this.OrganizerButton.Click += new System.EventHandler(this.OrganizerButton_Click);
+            // 
             // DielershipUIForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.OrganizerButton);
+            this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.SearchTextbox);
             this.Controls.Add(this.SoldCarsListButton);
             this.Controls.Add(this.SearchButton);
@@ -1720,6 +1750,8 @@ namespace Dealership1._0
         private System.Windows.Forms.Button SoldCarsListButton;
         private System.Windows.Forms.TextBox SearchTextbox;
         private System.Windows.Forms.ToolTip ToolTip;
+        private System.Windows.Forms.Button RemoveButton;
+        private System.Windows.Forms.Button OrganizerButton;
     }
 }
 

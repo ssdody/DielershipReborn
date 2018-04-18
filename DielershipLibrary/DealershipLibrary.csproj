@@ -41,11 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdditionalCarExtrasStrings.cs" />
     <Compile Include="Car.cs" />
-    <Compile Include="ComboboxStringsCollections\CarsModelsLists.cs" />
+    <Compile Include="ComboboxStringsCollections\CarsModels.cs" />
     <Compile Include="ComboboxStringsCollections\CategoryFuelTypeAndGearboxesCollections.cs" />
-    <Compile Include="Dieler.cs" />
+    <Compile Include="Dealer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
