@@ -88,9 +88,9 @@
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label10.Location = new System.Drawing.Point(25, 273);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 17);
+            this.label10.Size = new System.Drawing.Size(108, 17);
             this.label10.TabIndex = 116;
-            this.label10.Text = "Скорости";
+            this.label10.Text = "Скоростна кутия";
             // 
             // label9
             // 
@@ -281,7 +281,7 @@
             this.label1234.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1234.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1234.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1234.Location = new System.Drawing.Point(85, 58);
+            this.label1234.Location = new System.Drawing.Point(85, 54);
             this.label1234.Name = "label1234";
             this.label1234.Size = new System.Drawing.Size(159, 16);
             this.label1234.TabIndex = 152;
@@ -651,9 +651,9 @@
             // PrintFormPicturebox
             // 
             this.PrintFormPicturebox.InitialImage = global::Dealership1._0.Properties.Resources.logo_big_128_;
-            this.PrintFormPicturebox.Location = new System.Drawing.Point(340, 74);
+            this.PrintFormPicturebox.Location = new System.Drawing.Point(327, 74);
             this.PrintFormPicturebox.Name = "PrintFormPicturebox";
-            this.PrintFormPicturebox.Size = new System.Drawing.Size(273, 274);
+            this.PrintFormPicturebox.Size = new System.Drawing.Size(286, 292);
             this.PrintFormPicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PrintFormPicturebox.TabIndex = 1;
             this.PrintFormPicturebox.TabStop = false;

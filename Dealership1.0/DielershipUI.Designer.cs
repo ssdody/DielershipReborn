@@ -492,7 +492,10 @@ namespace Dealership1._0
             // AreRealMileageCheckbox
             // 
             resources.ApplyResources(this.AreRealMileageCheckbox, "AreRealMileageCheckbox");
+            this.AreRealMileageCheckbox.Cursor = System.Windows.Forms.Cursors.Help;
+            this.AreRealMileageCheckbox.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
             this.AreRealMileageCheckbox.Name = "AreRealMileageCheckbox";
+            this.ToolTip.SetToolTip(this.AreRealMileageCheckbox, resources.GetString("AreRealMileageCheckbox.ToolTip"));
             this.AreRealMileageCheckbox.UseVisualStyleBackColor = true;
             // 
             // NumberOfKeysNumericUpDown
@@ -1492,6 +1495,7 @@ namespace Dealership1._0
             resources.ApplyResources(this.SearchTextbox, "SearchTextbox");
             this.SearchTextbox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.SearchTextbox.Name = "SearchTextbox";
+            this.ToolTip.SetToolTip(this.SearchTextbox, resources.GetString("SearchTextbox.ToolTip"));
             this.SearchTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchTextbox_KeyPress);
             // 
             // RemoveButton

@@ -129,7 +129,7 @@
     <value>7, 185</value>
   </data>
   <data name="carsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 496</value>
+    <value>184, 515</value>
   </data>
   <data name="carsListBox.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1194,17 +1194,24 @@
   <data name="&gt;&gt;StatusCombobox.ZOrder" xml:space="preserve">
     <value>48</value>
   </data>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>316, 7</value>
+  </metadata>
   <data name="AreRealMileageCheckbox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="AreRealMileageCheckbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 368</value>
+    <value>415, 366</value>
   </data>
   <data name="AreRealMileageCheckbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
   <data name="AreRealMileageCheckbox.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
+  </data>
+  <data name="AreRealMileageCheckbox.ToolTip" xml:space="preserve">
+    <value>Реални ли са километрите?
+</value>
   </data>
   <data name="&gt;&gt;AreRealMileageCheckbox.Name" xml:space="preserve">
     <value>AreRealMileageCheckbox</value>
@@ -1437,9 +1444,6 @@
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>41</value>
   </data>
-  <metadata name="ExtrasCheckedListBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="ExtrasCheckedListBox.ColumnWidth" type="System.Int32, mscorlib">
     <value>217</value>
   </data>
@@ -1705,7 +1709,7 @@
     <value>Кожен салон</value>
   </data>
   <data name="ExtrasCheckedListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 528</value>
+    <value>201, 529</value>
   </data>
   <data name="ExtrasCheckedListBox.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -1733,6 +1737,183 @@
   </data>
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;PayCaseValueUpdateButton.Name" xml:space="preserve">
+    <value>PayCaseValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;PayCaseValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PayCaseValueUpdateButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;PayCaseValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherValueUpdateButton.Name" xml:space="preserve">
+    <value>OwnerByVoucherValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherValueUpdateButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessValueUpdateButton.Name" xml:space="preserve">
+    <value>OwnerByBusinessValueUpdateButton</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessValueUpdateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessValueUpdateButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessValueUpdateButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;HidePricePanelButton.Name" xml:space="preserve">
+    <value>HidePricePanelButton</value>
+  </data>
+  <data name="&gt;&gt;HidePricePanelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HidePricePanelButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;HidePricePanelButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessTextbox.Name" xml:space="preserve">
+    <value>OwnerByBusinessTextbox</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessTextbox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;OwnerByBusinessTextbox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TraderLabel.Name" xml:space="preserve">
+    <value>TraderLabel</value>
+  </data>
+  <data name="&gt;&gt;TraderLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TraderLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;TraderLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherLabel.Name" xml:space="preserve">
+    <value>OwnerByVoucherLabel</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherTextbox.Name" xml:space="preserve">
+    <value>OwnerByVoucherTextbox</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherTextbox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;OwnerByVoucherTextbox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PayCaseLabel.Name" xml:space="preserve">
+    <value>PayCaseLabel</value>
+  </data>
+  <data name="&gt;&gt;PayCaseLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PayCaseLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;PayCaseLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ContractNumberInfoLabel.Name" xml:space="preserve">
+    <value>ContractNumberInfoLabel</value>
+  </data>
+  <data name="&gt;&gt;ContractNumberInfoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContractNumberInfoLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ContractNumberInfoLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;DateOfCreatingAdLabel.Name" xml:space="preserve">
+    <value>DateOfCreatingAdLabel</value>
+  </data>
+  <data name="&gt;&gt;DateOfCreatingAdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DateOfCreatingAdLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;DateOfCreatingAdLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1362, 40</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>39</value>
   </data>
   <data name="PayCaseValueUpdateButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -2185,27 +2366,6 @@
   <data name="&gt;&gt;DateOfCreatingAdLabel.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1362, 40</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
   <data name="HidablePricePanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2518,7 +2678,7 @@
     <value>NoControl</value>
   </data>
   <data name="ComissionValueUpdateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>885, 36</value>
+    <value>885, 32</value>
   </data>
   <data name="ComissionValueUpdateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 20</value>
@@ -2622,7 +2782,7 @@
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="ComissionTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>904, 32</value>
+    <value>904, 28</value>
   </data>
   <data name="ComissionTextbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 27</value>
@@ -2685,7 +2845,7 @@
     <value>Century Gothic, 10pt</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 38</value>
+    <value>786, 33</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 19</value>
@@ -3228,7 +3388,7 @@
     <value>141</value>
   </data>
   <data name="InformationButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;InformationButton.Name" xml:space="preserve">
     <value>InformationButton</value>
@@ -3335,6 +3495,9 @@
   <data name="soldButton.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
   </data>
+  <data name="soldButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
   <data name="&gt;&gt;soldButton.Name" xml:space="preserve">
     <value>soldButton</value>
   </data>
@@ -3366,7 +3529,7 @@
     <value>21</value>
   </data>
   <data name="addButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;addButton.Name" xml:space="preserve">
     <value>addButton</value>
@@ -4677,7 +4840,7 @@
     <value>174</value>
   </data>
   <data name="ContractButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;ContractButton.Name" xml:space="preserve">
     <value>ContractButton</value>
@@ -4725,7 +4888,7 @@
     <value>175</value>
   </data>
   <data name="PrintButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;PrintButton.Name" xml:space="preserve">
     <value>PrintButton</value>
@@ -4820,7 +4983,7 @@
     <value>177</value>
   </data>
   <data name="SoldCarsListButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;SoldCarsListButton.Name" xml:space="preserve">
     <value>SoldCarsListButton</value>
@@ -4834,6 +4997,9 @@
   <data name="&gt;&gt;SoldCarsListButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>316, 7</value>
+  </metadata>
   <data name="SearchTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt</value>
   </data>
@@ -4848,6 +5014,9 @@
   </data>
   <data name="SearchTextbox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
+  </data>
+  <data name="SearchTextbox.ToolTip" xml:space="preserve">
+    <value>ДО 5 знака за търсене по номер на договор или ОТ 6 знака за търсене по номер на рама!</value>
   </data>
   <data name="&gt;&gt;SearchTextbox.Name" xml:space="preserve">
     <value>SearchTextbox</value>
@@ -4881,6 +5050,9 @@
   </data>
   <data name="RemoveButton.TabIndex" type="System.Int32, mscorlib">
     <value>179</value>
+  </data>
+  <data name="RemoveButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;RemoveButton.Name" xml:space="preserve">
     <value>RemoveButton</value>
@@ -4916,7 +5088,7 @@
     <value>180</value>
   </data>
   <data name="OrganizerButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;OrganizerButton.Name" xml:space="preserve">
     <value>OrganizerButton</value>

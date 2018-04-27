@@ -185,21 +185,21 @@
             SearchToolTip.AutoPopDelay = 10000;
             SearchToolTip.InitialDelay = 1000;
             SearchToolTip.ReshowDelay = 500;
-            SearchToolTip.SetToolTip(SearchButton, "Търсене в списъка по номер на договор или рама");
+            SearchToolTip.SetToolTip(SearchButton, "Търсене в списъка по номер на договор(до 5 знака) или рама(6 знака или повече)");
 
             ToolTip SoldCarsListToolTip = new ToolTip();
             SoldCarsListToolTip.ShowAlways = true;
             SoldCarsListToolTip.AutoPopDelay = 10000;
             SoldCarsListToolTip.InitialDelay = 1000;
             SoldCarsListToolTip.ReshowDelay = 500;
-            SoldCarsListToolTip.SetToolTip(SoldCarsListButton, @"Смени списъка от ""налични"" на ""продадени"" и обратното");
+            SoldCarsListToolTip.SetToolTip(SoldCarsListButton, @"Смени списъка от ""налични"" на ""продадени"" или обратното");
 
             ToolTip RemoveButtonToolTip = new ToolTip();
             InfoToolTip.ShowAlways = true;
             InfoToolTip.AutoPopDelay = 10000;
             InfoToolTip.InitialDelay = 1000;
             InfoToolTip.ReshowDelay = 500;
-            InfoToolTip.SetToolTip(RemoveButton, "Изтриване на обявата от списъка и папката със снимки към обявата");
+            InfoToolTip.SetToolTip(RemoveButton, "Изтриване на обявата от списъка заедно с папката със снимки към обявата");
 
             ToolTip OrganizerToolTip = new ToolTip();
             AddToolTip.ShowAlways = true;
@@ -498,7 +498,7 @@
         //    //// timer
         //    //System.Timers.Timer Timer = new System.Timers.Timer();
         //        timer.Enabled = condition;
-            
+
         //    if (timer.Enabled)
         //    {
         //        OrganizerButton.Image = Properties.Resources.icons8_timer_24__1_;
@@ -1259,6 +1259,11 @@
         private void WinTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             VinTextBox.CharacterCasing = CharacterCasing.Upper;
+            if (char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                return;
+            }
+            e.Handled = true;
         }
 
         private void RealSellingPriceTextbox_KeyPress(object sender, KeyPressEventArgs e)
@@ -1858,6 +1863,13 @@
             {
                 SearchButton_Click(null, null);
             }
+
+            if (char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                return;
+            }
+
+            e.Handled = true;
         }
 
         private void carsListBox_DrawItem(object sender, DrawItemEventArgs e)
@@ -1934,7 +1946,6 @@
             }
         }
 
-
         private void OrganizerButton_Click(object sender, EventArgs e)
         {
             if (organizationForm == null)
@@ -1951,17 +1962,17 @@
 
 
 
-            if (OrganizerForm.isOrganizerOn)
-            {
+            //if (OrganizerForm.isOrganizerOn)
+            //{
 
-                organizationForm.DialogResult = DialogResult.None;
-            }
-            else if (organizationForm.DialogResult == DialogResult.Abort)
-            {
+            //    organizationForm.DialogResult = DialogResult.None;
+            //}
+            //else if (organizationForm.DialogResult == DialogResult.Abort)
+            //{
 
-                organizationForm.DialogResult = DialogResult.None;
+            //    organizationForm.DialogResult = DialogResult.None;
 
-            }
+            //}
 
         }
 
