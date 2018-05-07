@@ -306,7 +306,7 @@
             this.ExtrasTextbox.Location = new System.Drawing.Point(25, 394);
             this.ExtrasTextbox.Multiline = true;
             this.ExtrasTextbox.Name = "ExtrasTextbox";
-            this.ExtrasTextbox.Size = new System.Drawing.Size(287, 329);
+            this.ExtrasTextbox.Size = new System.Drawing.Size(287, 322);
             this.ExtrasTextbox.TabIndex = 154;
             // 
             // BrandLabel
@@ -498,7 +498,7 @@
             this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label22.Location = new System.Drawing.Point(522, 545);
+            this.label22.Location = new System.Drawing.Point(522, 542);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(92, 16);
             this.label22.TabIndex = 169;
@@ -511,7 +511,7 @@
             this.label23.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label23.Location = new System.Drawing.Point(506, 611);
+            this.label23.Location = new System.Drawing.Point(506, 608);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(108, 16);
             this.label23.TabIndex = 170;
@@ -524,7 +524,7 @@
             this.label24.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(446, 657);
+            this.label24.Location = new System.Drawing.Point(446, 654);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(168, 16);
             this.label24.TabIndex = 171;
@@ -537,7 +537,7 @@
             this.label25.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label25.Location = new System.Drawing.Point(484, 634);
+            this.label25.Location = new System.Drawing.Point(484, 631);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(130, 16);
             this.label25.TabIndex = 172;
@@ -550,7 +550,7 @@
             this.label26.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label26.Location = new System.Drawing.Point(472, 703);
+            this.label26.Location = new System.Drawing.Point(472, 700);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(142, 16);
             this.label26.TabIndex = 174;
@@ -563,7 +563,7 @@
             this.label27.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label27.Location = new System.Drawing.Point(423, 680);
+            this.label27.Location = new System.Drawing.Point(423, 677);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(191, 16);
             this.label27.TabIndex = 173;
@@ -576,7 +576,7 @@
             this.label28.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label28.Location = new System.Drawing.Point(506, 588);
+            this.label28.Location = new System.Drawing.Point(506, 585);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(108, 16);
             this.label28.TabIndex = 175;
@@ -600,12 +600,11 @@
             this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(628, -1);
+            this.exitButton.Location = new System.Drawing.Point(616, 0);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(13, 19);
+            this.exitButton.Size = new System.Drawing.Size(28, 25);
             this.exitButton.TabIndex = 179;
-            this.exitButton.Text = "X";
-            this.exitButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.exitButton.Text = "Х";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
@@ -675,7 +674,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(642, 732);
+            this.ClientSize = new System.Drawing.Size(642, 720);
             this.Controls.Add(this.ContractLabel);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.exitButton);

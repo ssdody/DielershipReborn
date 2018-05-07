@@ -74,3 +74,4 @@ D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.In
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.PrintForm.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.OrganizerForm.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.TasksPopUpForm.resources

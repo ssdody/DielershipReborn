@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoClosingMessageBox.cs" />
     <Compile Include="DielershipUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resolution.cs" />
     <Compile Include="XMLDatabase.cs" />
     <EmbeddedResource Include="DielershipUI.ar-YE.resx">
       <DependentUpon>DielershipUI.cs</DependentUpon>

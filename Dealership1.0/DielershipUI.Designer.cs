@@ -86,6 +86,7 @@ namespace Dealership1._0
             this.ContractNumberInfoLabel = new System.Windows.Forms.Label();
             this.DateOfCreatingAdLabel = new System.Windows.Forms.Label();
             this.HidablePricePanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.RealSellingPriceValueUpdateButton = new System.Windows.Forms.Button();
             this.MaxBillValueUpdateButton = new System.Windows.Forms.Button();
             this.MinBillValue = new System.Windows.Forms.Button();
@@ -121,7 +122,6 @@ namespace Dealership1._0
             this.soldButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.OpenPicDirButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.ShoferTextbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -796,12 +796,13 @@ namespace Dealership1._0
             this.DateOfCreatingAdLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DateOfCreatingAdLabel.ForeColor = System.Drawing.SystemColors.Window;
             this.DateOfCreatingAdLabel.Name = "DateOfCreatingAdLabel";
+            this.ToolTip.SetToolTip(this.DateOfCreatingAdLabel, resources.GetString("DateOfCreatingAdLabel.ToolTip"));
             // 
             // HidablePricePanel
             // 
             resources.ApplyResources(this.HidablePricePanel, "HidablePricePanel");
             this.HidablePricePanel.BackColor = System.Drawing.Color.Transparent;
-            this.HidablePricePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HidablePricePanel.Controls.Add(this.button1);
             this.HidablePricePanel.Controls.Add(this.RealSellingPriceValueUpdateButton);
             this.HidablePricePanel.Controls.Add(this.MaxBillValueUpdateButton);
             this.HidablePricePanel.Controls.Add(this.MinBillValue);
@@ -831,6 +832,14 @@ namespace Dealership1._0
             this.HidablePricePanel.Controls.Add(this.RealSellingPriceTextbox);
             this.HidablePricePanel.Controls.Add(this.label15);
             this.HidablePricePanel.Name = "HidablePricePanel";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderSize = 4;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // RealSellingPriceValueUpdateButton
             // 
@@ -1130,13 +1139,6 @@ namespace Dealership1._0
             this.OpenPicDirButton.Name = "OpenPicDirButton";
             this.OpenPicDirButton.UseVisualStyleBackColor = false;
             this.OpenPicDirButton.Click += new System.EventHandler(this.OpenPicDirButton_Click);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Name = "label1";
             // 
             // label8
             // 
@@ -1561,7 +1563,6 @@ namespace Dealership1._0
             this.Controls.Add(this.ShoferTextbox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.OpenPicDirButton);
             this.Controls.Add(this.InformationButton);
             this.Controls.Add(this.UploadButton);
@@ -1611,9 +1612,10 @@ namespace Dealership1._0
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
             this.Name = "DielershipUIForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DielershipUI_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DielershipUI_FormClosed);
             this.Load += new System.EventHandler(this.DielershipUI_Load);
@@ -1709,7 +1711,6 @@ namespace Dealership1._0
         private System.Windows.Forms.Button UploadButton;
         private System.Windows.Forms.Button InformationButton;
         private System.Windows.Forms.Button OpenPicDirButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button MaxBillValueUpdateButton;
         private System.Windows.Forms.Button MinBillValue;
         private System.Windows.Forms.Button CosmeticsCostsValueUpdateButton;
@@ -1756,6 +1757,7 @@ namespace Dealership1._0
         private System.Windows.Forms.ToolTip ToolTip;
         private System.Windows.Forms.Button RemoveButton;
         private System.Windows.Forms.Button OrganizerButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -16,12 +16,25 @@
     using System.Net.NetworkInformation;
     using System.Text.RegularExpressions;
     using System.Timers;
+    using System.Runtime.InteropServices;
 
     /// <summary>
     /// Dielership Main
     /// </summary>
     public partial class DielershipUIForm : Form
     {
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd,
+                         int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+        /// <summary>
+        /// /
+        /// </summary>
+
         private BindingSource carsListBinding = new BindingSource();
         private int contractNumber;
         private bool IsInfoShowed;
@@ -34,8 +47,11 @@
         //private object soldCarsListBinding = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
         private bool soldCarsListShowed = false;
         private OrganizerForm organizationForm = OrganizerForm.CreateInstance();
+       
         public DielershipUIForm()
         {
+           
+            
 
             this.InitializeComponent();
 
@@ -56,7 +72,8 @@
             //    Environment.Exit(1);
             //}
 
-            //auth start
+            ////auth start
+            //
             LogInForm logForm = new LogInForm();
             this.Enabled = false;
 
@@ -67,15 +84,17 @@
                 IsAuth = LogInForm.CanContinue;
 
             }
+            SetResolution();
             this.Enabled = true;
             RemoveButton.Visible = false;
-            //// auth end
+            // 
+            ////  auth end
+            var AvailableCarsList = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
+            AvailableCarsList.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.DateOfCreatingAd), DateTime.Parse(y.DateOfCreatingAd)));
+            AvailableCarsList.Reverse();
             //
-            var list = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
-            list.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.DateOfCreatingAd), DateTime.Parse(y.DateOfCreatingAd)));
-            list.Reverse();
-            //
-            this.carsListBinding.DataSource = list;//XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
+
+            this.carsListBinding.DataSource = AvailableCarsList;//XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
             carsListBox.DataSource = this.carsListBinding;
 
             carsListBox.DisplayMember = "Display";
@@ -83,15 +102,15 @@
 
 
 
-            //notifyIcon start
-
+            //  unsold cars for 3 or more months
+            //  notifyIcon start
+            //
             foreach (var car in carsListBox.Items)
             {
                 Car currCar = (Car)car;
+
                 if (currCar.Status != "")
                 {
-
-
                     var IsOlderThanThreeMonthsValue = IsOlderThanThreeMonths(currCar);
 
                     if (IsOlderThanThreeMonthsValue < 0)
@@ -100,9 +119,7 @@
                     }
                 }
             }
-
-
-
+            
             if (expiredDateCars.Count >= 1)
             {
                 NotifyIconTool.Icon = new Icon("..\\warning.ico");
@@ -110,6 +127,7 @@
                 NotifyIconTool.Visible = true;
                 NotifyIconTool.ShowBalloonTip(5000, "Известие", "Има обяви активни от 3 месеца или повече!", ToolTipIcon.Warning);
             }
+            //
             //// notifyIcon end
 
             SetButtonsToolTips();
@@ -120,6 +138,14 @@
             ShowPrivateOptions(false);
             SetHidablePricePanelTextboxesToDefaultValue();
 
+             
+            
+
+        }
+
+        private void SetResolution()
+        {
+            
         }
 
         private void SetButtonsToolTips()
@@ -185,7 +211,7 @@
             SearchToolTip.AutoPopDelay = 10000;
             SearchToolTip.InitialDelay = 1000;
             SearchToolTip.ReshowDelay = 500;
-            SearchToolTip.SetToolTip(SearchButton, "Търсене в списъка по номер на договор(до 5 знака) или рама(6 знака или повече)");
+            SearchToolTip.SetToolTip(SearchButton, "Търсене в списъка по номер на договор(до 5 символа) или рама(6 символа или повече)");
 
             ToolTip SoldCarsListToolTip = new ToolTip();
             SoldCarsListToolTip.ShowAlways = true;
@@ -480,6 +506,8 @@
 
 
             ////
+
+
         }
 
         //public void Organizer(bool condition)
@@ -1976,7 +2004,10 @@
 
         }
 
-        
+        private void DielershipUIForm_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
 
