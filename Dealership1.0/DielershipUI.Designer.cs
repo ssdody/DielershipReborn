@@ -1101,6 +1101,7 @@ namespace Dealership1._0
             this.MainPicturebox.BackgroundImage = global::Dealership1._0.Properties.Resources.logo_big_128_;
             resources.ApplyResources(this.MainPicturebox, "MainPicturebox");
             this.MainPicturebox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MainPicturebox.InitialImage = global::Dealership1._0.Properties.Resources.logo_big_128_;
             this.MainPicturebox.Name = "MainPicturebox";
             this.MainPicturebox.TabStop = false;
             // 

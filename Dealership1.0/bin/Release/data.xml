@@ -14,12 +14,13 @@
     <Mileage>10000</Mileage>
     <Price>250000</Price>
     <IsSold>0</IsSold>
-    <AdditionalInfo></AdditionalInfo>
+    <AdditionalInfo>Яката работа....</AdditionalInfo>
     <EngineVolumeCc>3994</EngineVolumeCc>
     <Vin>ADSF43RT3</Vin>
     <Status>Налична</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras></Extras>
+    <Extras>
+    </Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни и зимни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
@@ -58,7 +59,8 @@
     <Vin>SDGEG345FS</Vin>
     <Status>Очакван внос</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras></Extras>
+    <Extras>
+    </Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
@@ -75,7 +77,8 @@
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
     <RegistrationNumber>PK9823KH</RegistrationNumber>
-    <Shofer></Shofer>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>61</ContractNumber>
@@ -113,7 +116,8 @@
     <AreMileageReal>0</AreMileageReal>
     <Country>България</Country>
     <RegistrationNumber>CB7482AA</RegistrationNumber>
-    <Shofer></Shofer>
+    <Shofer>
+    </Shofer>
   </Car>
   <Car>
     <ContractNumber>65</ContractNumber>
@@ -129,7 +133,7 @@
     <Mileage>23010</Mileage>
     <Price>60000</Price>
     <IsSold>0</IsSold>
-    <AdditionalInfo> Яката работа..</AdditionalInfo>
+    <AdditionalInfo> Много яката работа!</AdditionalInfo>
     <EngineVolumeCc>3498</EngineVolumeCc>
     <Vin>SDF345435</Vin>
     <Status>В сервиз</Status>
@@ -167,12 +171,14 @@
     <Mileage>1323214</Mileage>
     <Price>4500</Price>
     <IsSold>0</IsSold>
-    <AdditionalInfo></AdditionalInfo>
+    <AdditionalInfo>
+    </AdditionalInfo>
     <EngineVolumeCc>1889</EngineVolumeCc>
     <Vin>LLJLKJ</Vin>
     <Status>Очакван внос</Status>
     <Gearbox>Ръчна</Gearbox>
-    <Extras></Extras>
+    <Extras>
+    </Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2018-03-24</DateOfCreatingAd>
@@ -210,7 +216,8 @@
     <Vin>DKFMSDFU4</Vin>
     <Status>В сервиз</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras></Extras>
+    <Extras>
+    </Extras>
     <NumberOfKeys>3</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2017-01-15</DateOfCreatingAd>

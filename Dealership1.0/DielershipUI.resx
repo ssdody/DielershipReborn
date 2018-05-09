@@ -3306,9 +3306,6 @@
   <data name="MainPicturebox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="MainPicturebox.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="MainPicturebox.Location" type="System.Drawing.Point, System.Drawing">
     <value>661, 138</value>
   </data>

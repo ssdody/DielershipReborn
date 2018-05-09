@@ -330,7 +330,7 @@ namespace Dealership1._0
 
                 XmlDocument doc = new XmlDocument();
                 doc.Load(filename);
- 
+
                 XmlNodeList nodes = doc.SelectNodes("//Car[ContractNumber='" + car.ContractNumber + "']");
 
                 foreach (XmlNode node in nodes)

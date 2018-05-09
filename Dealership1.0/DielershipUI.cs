@@ -47,11 +47,11 @@
         //private object soldCarsListBinding = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
         private bool soldCarsListShowed = false;
         private OrganizerForm organizationForm = OrganizerForm.CreateInstance();
-       
+
         public DielershipUIForm()
         {
-           
-            
+
+
 
             this.InitializeComponent();
 
@@ -119,7 +119,7 @@
                     }
                 }
             }
-            
+
             if (expiredDateCars.Count >= 1)
             {
                 NotifyIconTool.Icon = new Icon("..\\warning.ico");
@@ -138,14 +138,14 @@
             ShowPrivateOptions(false);
             SetHidablePricePanelTextboxesToDefaultValue();
 
-             
-            
+
+
 
         }
 
         private void SetResolution()
         {
-            
+
         }
 
         private void SetButtonsToolTips()
@@ -775,7 +775,7 @@
                 var list = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
                 list.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.DateOfCreatingAd), DateTime.Parse(y.DateOfCreatingAd)));
                 list.Reverse();
-                this.carsListBinding.DataSource = list;
+                //this.carsListBinding.DataSource = list;
                 //
                 this.carsListBinding.DataSource = list;//XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
                 carsListBox.Refresh();
@@ -788,7 +788,7 @@
                 var list = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
                 list.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.DateOfCreatingAd), DateTime.Parse(y.DateOfCreatingAd)));
                 list.Reverse();
-                this.carsListBinding.DataSource = list;
+                //this.carsListBinding.DataSource = list;
                 //
                 this.carsListBinding.DataSource = list;// XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
                 carsListBox.Refresh();
@@ -930,7 +930,7 @@
                 {
 
                     string carNumberStr = carNumber.ToString();
-                    // wallpaper pic naming
+                    // cover pic naming
                     if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
                     {
                         MainPicturebox.Image.Save($"..\\Images\\{carNumber}\\{carNumberStr}" + "header.jpeg", ImageFormat.Jpeg);
@@ -1053,9 +1053,11 @@
             {
                 MainPicturebox.Image = null;
                 MainPicturebox.SizeMode = PictureBoxSizeMode.StretchImage;
-                var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
+                //var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
 
-                MainPicturebox.Image = img;
+                MainPicturebox.Image = (System.Drawing.Image)Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
+
+
             }
             else
             {
@@ -1858,6 +1860,8 @@
 
                 RemoveButton.Visible = true;
 
+                addButton.Visible = false;
+
                 soldButton.Enabled = false;
 
                 soldCarsListShowed = true;
@@ -1871,6 +1875,8 @@
                 SoldCarsListButton.Image = new Bitmap(Resources.icons8_move_stock_24__1_);
 
                 RemoveButton.Visible = false;
+
+                addButton.Visible = true;
 
                 soldButton.Enabled = true;
 
@@ -1949,8 +1955,9 @@
                     Car selectedCar = (Car)carsListBox.SelectedItem;
 
                     ////pernament delete sold car data and refresh carsListbox
+                    MainPicturebox.Image.Dispose();
+                    MainPicturebox.Image = MainPicturebox.InitialImage;
                     XMLDatabase.Remove((Car)carsListBox.SelectedItem);
-                    MainPicturebox.Image.Dispose();// = MainPicturebox.InitialImage;
                     ResetCarsList();
 
 
@@ -1958,8 +1965,18 @@
                     //deletes all files in dir and then the delete the dir
                     if (Directory.Exists($"..\\Images\\{selectedCar.ContractNumber}"))
                     {
-                        Directory.Delete($"..\\Images\\{selectedCar.ContractNumber}", true);
+                        //System.IO.DirectoryInfo di = new DirectoryInfo($"..\\Images\\{ selectedCar.ContractNumber }");
 
+                        //foreach (FileInfo file in di.GetFiles())
+                        //{
+                        //    file.Delete();
+                        //}
+                        //foreach (DirectoryInfo dir in di.GetDirectories())
+                        //{
+                        //    dir.Delete(true);
+                        //}
+
+                        Directory.Delete($"..\\Images\\{selectedCar.ContractNumber}", true);
                     }
                     else
                     {
