@@ -1,4 +1,4 @@
-﻿using DielershipLibrary;
+﻿using DealershipLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,7 +49,7 @@ namespace Dealership1._0
             this.MileageLabel.Text = car.Mileage;
             this.VinLabel.Text = car.Vin;
             this.GearboxLabel.Text = car.Gearbox;
-            this.TyresLabel.Text = car.TYres;
+            this.TyresLabel.Text = car.Tyres;
             this.CountryLabel.Text = car.Country;
             this.NumberOfKeysLabel.Text = car.NumberOfKeys;
             this.PriceLabel.Text = car.Price + "лв.";

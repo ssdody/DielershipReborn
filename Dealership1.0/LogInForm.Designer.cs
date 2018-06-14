@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
             this.UsernameTextbox = new System.Windows.Forms.TextBox();
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.LogInButton = new System.Windows.Forms.Button();
@@ -65,6 +64,7 @@
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(100, 23);
             this.PasswordTextbox.TabIndex = 2;
+            this.PasswordTextbox.UseSystemPasswordChar = true;
             this.PasswordTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PasswordTextbox_KeyDown);
             this.PasswordTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTextbox_KeyPress);
             // 
@@ -76,7 +76,7 @@
             this.LogInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogInButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogInButton.ForeColor = System.Drawing.Color.Black;
-            this.LogInButton.Location = new System.Drawing.Point(100, 206);
+            this.LogInButton.Location = new System.Drawing.Point(100, 195);
             this.LogInButton.Name = "LogInButton";
             this.LogInButton.Size = new System.Drawing.Size(69, 27);
             this.LogInButton.TabIndex = 3;
@@ -122,16 +122,17 @@
             this.ExitButton.BackColor = System.Drawing.Color.Transparent;
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.FlatAppearance.BorderSize = 0;
+            this.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitButton.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
-            this.ExitButton.Location = new System.Drawing.Point(262, -2);
+            this.ExitButton.Location = new System.Drawing.Point(262, -4);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(19, 26);
+            this.ExitButton.Size = new System.Drawing.Size(20, 26);
             this.ExitButton.TabIndex = 0;
+            this.ExitButton.Text = "x";
             this.ExitButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ExitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ExitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 

@@ -14,7 +14,7 @@ namespace Dealership1._0
     public partial class LogInForm : Form
     {
         public readonly string[] usernames = { "exoticcars", "admin" };
-        public readonly string[] password = { "1234", "123" };
+        public readonly string[] password = { "123654", "1337" };
         private static bool _canContinue;
 
         public LogInForm()
@@ -40,14 +40,14 @@ namespace Dealership1._0
                 return;
 
             }
-            if (UsernameTextbox.Text.ToLower() == "admin" && PasswordTextbox.Text.ToLower() == password[0])
+            if (UsernameTextbox.Text.ToLower() == "admin" && PasswordTextbox.Text.ToLower() == password[1])
             {
                 CanContinue = true;
 
                 this.Hide();
                 return;
             }
-            else if (UsernameTextbox.Text.ToLower() == "exoticcars" && PasswordTextbox.Text.ToLower() == password[1])
+            else if (UsernameTextbox.Text.ToLower() == "exoticcars" && PasswordTextbox.Text.ToLower() == password[0])
             {
                 CanContinue = true;
 

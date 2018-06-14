@@ -1,5 +1,5 @@
 ﻿using System.Xml.Serialization;
-using DielershipLibrary;
+using DealershipLibrary;
 using System.Xml;
 using System.Collections.Generic;
 using System.Xml.Linq;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.IO;
 using System.Windows.Forms;
 using System;
+using DealershipLibrary;
 
 namespace Dealership1._0
 {
@@ -112,7 +113,7 @@ namespace Dealership1._0
             headNode.AppendChild(NumberOfKeysNode);
 
             XmlNode TiresNode = doc.CreateElement("Tires");
-            TiresNode.InnerText = car.TYres.ToString();
+            TiresNode.InnerText = car.Tyres.ToString();
             headNode.AppendChild(TiresNode);
 
             XmlNode DateOfCreatingAdNode = doc.CreateElement("DateOfCreatingAd");
@@ -230,7 +231,7 @@ namespace Dealership1._0
                 newCar.Extras = d.Element("Extras").Value;
                 newCar.Gearbox = d.Element("Gearbox").Value;
                 newCar.NumberOfKeys = d.Element("NumberOfKeys").Value;
-                newCar.TYres = d.Element("Tires").Value;
+                newCar.Tyres = d.Element("Tires").Value;
 
                 if (int.TryParse(d.Element("RealSellingPrice").Value, out outParamValue))
                 {

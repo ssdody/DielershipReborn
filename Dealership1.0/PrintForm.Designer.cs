@@ -316,7 +316,7 @@
             this.BrandLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrandLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.BrandLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BrandLabel.Location = new System.Drawing.Point(204, 91);
+            this.BrandLabel.Location = new System.Drawing.Point(194, 91);
             this.BrandLabel.Name = "BrandLabel";
             this.BrandLabel.Size = new System.Drawing.Size(40, 16);
             this.BrandLabel.TabIndex = 155;
@@ -329,7 +329,7 @@
             this.ModelLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModelLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.ModelLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ModelLabel.Location = new System.Drawing.Point(205, 108);
+            this.ModelLabel.Location = new System.Drawing.Point(195, 108);
             this.ModelLabel.Name = "ModelLabel";
             this.ModelLabel.Size = new System.Drawing.Size(29, 16);
             this.ModelLabel.TabIndex = 156;
@@ -342,7 +342,7 @@
             this.TypeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TypeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.TypeLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TypeLabel.Location = new System.Drawing.Point(204, 125);
+            this.TypeLabel.Location = new System.Drawing.Point(194, 125);
             this.TypeLabel.Name = "TypeLabel";
             this.TypeLabel.Size = new System.Drawing.Size(51, 16);
             this.TypeLabel.TabIndex = 157;
@@ -355,7 +355,7 @@
             this.engineVolumeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.engineVolumeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.engineVolumeLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.engineVolumeLabel.Location = new System.Drawing.Point(204, 142);
+            this.engineVolumeLabel.Location = new System.Drawing.Point(194, 142);
             this.engineVolumeLabel.Name = "engineVolumeLabel";
             this.engineVolumeLabel.Size = new System.Drawing.Size(36, 16);
             this.engineVolumeLabel.TabIndex = 158;
@@ -368,7 +368,7 @@
             this.HorsePowerLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HorsePowerLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.HorsePowerLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.HorsePowerLabel.Location = new System.Drawing.Point(205, 161);
+            this.HorsePowerLabel.Location = new System.Drawing.Point(195, 161);
             this.HorsePowerLabel.Name = "HorsePowerLabel";
             this.HorsePowerLabel.Size = new System.Drawing.Size(29, 16);
             this.HorsePowerLabel.TabIndex = 159;
@@ -381,7 +381,7 @@
             this.FuelTypeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FuelTypeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.FuelTypeLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.FuelTypeLabel.Location = new System.Drawing.Point(205, 179);
+            this.FuelTypeLabel.Location = new System.Drawing.Point(195, 179);
             this.FuelTypeLabel.Name = "FuelTypeLabel";
             this.FuelTypeLabel.Size = new System.Drawing.Size(44, 16);
             this.FuelTypeLabel.TabIndex = 160;
@@ -394,7 +394,7 @@
             this.ColorLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ColorLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.ColorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ColorLabel.Location = new System.Drawing.Point(205, 198);
+            this.ColorLabel.Location = new System.Drawing.Point(195, 198);
             this.ColorLabel.Name = "ColorLabel";
             this.ColorLabel.Size = new System.Drawing.Size(43, 16);
             this.ColorLabel.TabIndex = 161;
@@ -407,7 +407,7 @@
             this.ProductionDateLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductionDateLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.ProductionDateLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ProductionDateLabel.Location = new System.Drawing.Point(204, 217);
+            this.ProductionDateLabel.Location = new System.Drawing.Point(194, 217);
             this.ProductionDateLabel.Name = "ProductionDateLabel";
             this.ProductionDateLabel.Size = new System.Drawing.Size(74, 16);
             this.ProductionDateLabel.TabIndex = 162;
@@ -420,7 +420,7 @@
             this.MileageLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MileageLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.MileageLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.MileageLabel.Location = new System.Drawing.Point(205, 236);
+            this.MileageLabel.Location = new System.Drawing.Point(195, 236);
             this.MileageLabel.Name = "MileageLabel";
             this.MileageLabel.Size = new System.Drawing.Size(50, 16);
             this.MileageLabel.TabIndex = 163;
@@ -433,7 +433,7 @@
             this.VinLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VinLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.VinLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.VinLabel.Location = new System.Drawing.Point(204, 255);
+            this.VinLabel.Location = new System.Drawing.Point(194, 255);
             this.VinLabel.Name = "VinLabel";
             this.VinLabel.Size = new System.Drawing.Size(112, 16);
             this.VinLabel.TabIndex = 164;
@@ -446,7 +446,7 @@
             this.GearboxLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GearboxLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.GearboxLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.GearboxLabel.Location = new System.Drawing.Point(205, 273);
+            this.GearboxLabel.Location = new System.Drawing.Point(195, 273);
             this.GearboxLabel.Name = "GearboxLabel";
             this.GearboxLabel.Size = new System.Drawing.Size(58, 16);
             this.GearboxLabel.TabIndex = 165;
@@ -459,7 +459,7 @@
             this.TyresLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TyresLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.TyresLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TyresLabel.Location = new System.Drawing.Point(205, 292);
+            this.TyresLabel.Location = new System.Drawing.Point(195, 292);
             this.TyresLabel.Name = "TyresLabel";
             this.TyresLabel.Size = new System.Drawing.Size(116, 16);
             this.TyresLabel.TabIndex = 166;
@@ -472,7 +472,7 @@
             this.CountryLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CountryLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.CountryLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CountryLabel.Location = new System.Drawing.Point(205, 311);
+            this.CountryLabel.Location = new System.Drawing.Point(195, 311);
             this.CountryLabel.Name = "CountryLabel";
             this.CountryLabel.Size = new System.Drawing.Size(82, 16);
             this.CountryLabel.TabIndex = 167;
@@ -485,7 +485,7 @@
             this.NumberOfKeysLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberOfKeysLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.NumberOfKeysLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.NumberOfKeysLabel.Location = new System.Drawing.Point(205, 331);
+            this.NumberOfKeysLabel.Location = new System.Drawing.Point(195, 331);
             this.NumberOfKeysLabel.Name = "NumberOfKeysLabel";
             this.NumberOfKeysLabel.Size = new System.Drawing.Size(15, 16);
             this.NumberOfKeysLabel.TabIndex = 168;
@@ -589,7 +589,7 @@
             this.PriceLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.PriceLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PriceLabel.Location = new System.Drawing.Point(203, 347);
+            this.PriceLabel.Location = new System.Drawing.Point(193, 347);
             this.PriceLabel.Name = "PriceLabel";
             this.PriceLabel.Size = new System.Drawing.Size(71, 19);
             this.PriceLabel.TabIndex = 176;
@@ -628,7 +628,7 @@
             this.ContractLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContractLabel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.ContractLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ContractLabel.Location = new System.Drawing.Point(205, 74);
+            this.ContractLabel.Location = new System.Drawing.Point(195, 74);
             this.ContractLabel.Name = "ContractLabel";
             this.ContractLabel.Size = new System.Drawing.Size(22, 16);
             this.ContractLabel.TabIndex = 181;

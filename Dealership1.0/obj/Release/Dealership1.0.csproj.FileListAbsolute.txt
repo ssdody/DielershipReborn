@@ -54,12 +54,9 @@ D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\Dealership1.0.pdb
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\ar-YE\Dealership1.0.resources.dll
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\bg-BG\Dealership1.0.resources.dll
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\ca\Dealership1.0.resources.dll
-D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\DielershipLibrary.dll
-D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\DielershipLibrary.pdb
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\Interop.AcroPDFLib.dll
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\AxInterop.AcroPDFLib.dll
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1.0.csprojResolveAssemblyReference.cache
-D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DielershipUInotsure.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.Properties.Resources.resources
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1.0.csproj.GenerateResource.Cache
 D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\ar-YE\Dealership1.0.resources.dll
@@ -140,3 +137,8 @@ D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\NuGet.Resolver.xm
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\NuGet.Versioning.xml
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\System.Windows.Interactivity.xml
 D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\WpfContrib.xml
+D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\DealershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\DielershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\DealershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\Dealership1.0\bin\Release\DielershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\Dealership1.0\obj\Release\Dealership1._0.DealershipUInotsure.resources

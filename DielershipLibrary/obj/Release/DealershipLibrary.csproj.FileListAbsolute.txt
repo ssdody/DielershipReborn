@@ -1,5 +1,0 @@
-D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.dll
-D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Release\DielershipLibrary.pdb
-D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DealershipLibrary.csprojResolveAssemblyReference.cache
-D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.dll
-D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DielershipLibrary.pdb
