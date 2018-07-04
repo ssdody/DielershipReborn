@@ -1,0 +1,16 @@
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DealershipLibrary.csprojResolveAssemblyReference.cache
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Release\DealershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\bin\Release\DealershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DealershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DielershipLibrary\obj\Release\DealershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DealershipLibrary\bin\Release\DealershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DealershipLibrary\bin\Release\DealershipLibrary.pdb
+D:\dealershipReborn\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.csprojResolveAssemblyReference.cache
+D:\dealershipReborn\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.dll
+D:\dealershipReborn\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.pdb
+D:\DealershipThatWorks\DealershipReborn\DealershipLibrary\bin\Release\DealershipLibrary.dll
+D:\DealershipThatWorks\DealershipReborn\DealershipLibrary\bin\Release\DealershipLibrary.pdb
+D:\DealershipThatWorks\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.csprojAssemblyReference.cache
+D:\DealershipThatWorks\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.csproj.CoreCompileInputs.cache
+D:\DealershipThatWorks\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.dll
+D:\DealershipThatWorks\DealershipReborn\DealershipLibrary\obj\Release\DealershipLibrary.pdb
