@@ -38,7 +38,7 @@
         private int GeneralContractNumber;
         private bool IsInfoShowed = false;
         private string logPath = "..\\Log.txt";
-        public readonly string[] authorizedMacs = { "0026C7DFBD78", "002522C628DD" };
+        public readonly string[] authorizedMacs = { "0026C7DFBD78", "002522C628DD", "5891CF96BAB8" };
         private readonly string mac = string.Empty;
         private bool IsAuth = false;
         private List<Car> expiredDateCars = new List<Car>();
@@ -52,21 +52,21 @@
             this.InitializeComponent();
 
             // authorization via MacAdress
-            //mac = GetMacAddress();
-            //bool IsAuth = false;
-            //foreach (var auth in authorizedMacs)
-            //{
-            //    if (auth.ToLower() == mac.ToLower())
-            //    {
-            //        IsAuth = true;
-            //        break;
-            //    }
-            //}
-            //if (!IsAuth)
-            //{
-            //    MessageBox.Show("You are not authorized!");
-            //    Environment.Exit(1);
-            //}
+            mac = GetMacAddress();
+            bool IsAuth = false;
+            foreach (var auth in authorizedMacs)
+            {
+                if (auth.ToLower() == mac.ToLower())
+                {
+                    IsAuth = true;
+                    break;
+                }
+            }
+            if (!IsAuth)
+            {
+                MessageBox.Show("Not authorized!");
+                Environment.Exit(1);
+            }
 
 
             //          log in block
@@ -250,6 +250,25 @@
 
                 return;
             }
+            List<TextBox> hidableTextboxes = new List<TextBox>
+            {
+                RealSellingPriceTextbox,
+                MinBillValueTextbox,
+                MaxBillValueTextbox,
+                FuelCostsTextbox,
+                ServiceCostsTextbox,
+                CosmeticsCostsTextbox,
+                CzsTextbox,
+                ComissionTextbox
+            };
+
+            foreach (var box in hidableTextboxes)
+            {
+                if (string.IsNullOrEmpty(box.Text) || string.IsNullOrWhiteSpace(box.Text))
+                {
+                    box.Text = "0";
+                }
+            }
 
             if (CheckIfAllComboboxesAreAssigned())
             {
@@ -260,9 +279,16 @@
                 //this.AddExtrasToCarExtrasFieldIfChecked(newCar);
 
                 XMLDatabase.AppendNewCarDataToXML(newCar); // works fine
+                var carNumber = newCar.ContractNumber;
+                if (!Directory.Exists($"..\\Images\\{carNumber}"))
+                {
+                    Directory.CreateDirectory($"..\\Images\\{carNumber}");
+
+                }
             }
             else
             {
+
                 List<ComboBox> comboboxesList = new List<ComboBox>();
                 comboboxesList.Add(CategoryCombobox);
                 comboboxesList.Add(BrandComboBox);
@@ -444,8 +470,6 @@
             }
         }
 
-
-
         // IndexChanged
         private void carsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -457,8 +481,8 @@
 
                 IsInfoShowed = true;
                 addButton.Image = new Bitmap(Resources.icons8_erase_24);
-                ShowPicture();
                 FillCarInfoToTextboxes((Car)carsListBox.SelectedItem);
+                ShowPicture();
 
             }
             else if (IssoldCarsListShowed == true)
@@ -468,8 +492,8 @@
 
                 IsInfoShowed = true;
                 addButton.Image = new Bitmap(Resources.icons8_erase_24);
-                ShowPicture();
                 FillCarInfoToTextboxes((Car)carsListBox.SelectedItem);
+                ShowPicture();
 
             }
 
@@ -503,7 +527,7 @@
                 var currCar = (Car)car;
                 carNumbers.Add(Convert.ToString(currCar.ContractNumber));
             }
-           
+
 
             //
             //check if dir exists and delete only dirs which are not needed
@@ -1002,7 +1026,7 @@
                 }
                 else
                 {
-                    Directory.CreateDirectory($"..\\Images\\{carNumber}");
+
                     SaveImageToDir((car), fileName);
                 }
             }
@@ -1097,21 +1121,28 @@
             }
             car = (Car)carsListBox.SelectedItem;
             string carNumber = car.ContractNumber.ToString();
-            if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
+            try
             {
-                MainPicturebox.Image = null;
-                MainPicturebox.SizeMode = PictureBoxSizeMode.StretchImage;
-                //var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
-
-                MainPicturebox.Image = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
 
 
+                if (File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
+                {
+                    MainPicturebox.Image = null;
+                    MainPicturebox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    //var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
+
+                    MainPicturebox.Image = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
+
+                }
+                else
+                {
+                    MainPicturebox.Image = MainPicturebox.InitialImage;
+                }
             }
-            else
+            catch
             {
 
-                MainPicturebox.Image = MainPicturebox.InitialImage;
-
+                MessageBox.Show("Добави снимка към обявата за да можеш да продължиш.");
             }
         }
 
@@ -2209,11 +2240,10 @@
                 //MainPicturebox.Image = MainPicturebox.InitialImage;
                 if (dialogResult == DialogResult.Yes)
                 {
+                    MainPicturebox.Image = MainPicturebox.InitialImage;
                     Car selectedCar = (Car)carsListBox.SelectedItem;
 
-                    ////pernament delete sold car data and refresh carsListbox
 
-                    MainPicturebox.Image = MainPicturebox.InitialImage;
                     XMLDatabase.Remove(selectedCar);
                     ResetCarsList();
                     //deletes all files in dir and then the delete the dir

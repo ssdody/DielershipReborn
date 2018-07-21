@@ -19,8 +19,7 @@
     <Vin>ADSF43RT3</Vin>
     <Status>Налична</Status>
     <Gearbox>Автоматична</Gearbox>
-    <Extras>
-    </Extras>
+    <Extras></Extras>
     <NumberOfKeys>4</NumberOfKeys>
     <Tires>Летни и зимни</Tires>
     <DateOfCreatingAd>2018-03-22</DateOfCreatingAd>
@@ -128,39 +127,31 @@
   <Car>
     <ContractNumber>152</ContractNumber>
     <Category>Камион</Category>
-    <PayCase>
-    </PayCase>
+    <PayCase></PayCase>
     <Brand>ACURA</Brand>
     <Model>CDX</Model>
     <BodyworkType>Бус</BodyworkType>
-    <HorsePower>
-    </HorsePower>
+    <HorsePower></HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Бежов</Color>
-    <ProductionDate>
-    </ProductionDate>
-    <Mileage>
-    </Mileage>
+    <ProductionDate></ProductionDate>
+    <Mileage></Mileage>
     <Price>0</Price>
     <IsSold>1</IsSold>
-    <AdditionalInfo>
-    </AdditionalInfo>
+    <AdditionalInfo></AdditionalInfo>
     <EngineVolumeCc>----</EngineVolumeCc>
     <Vin>----</Vin>
     <Status>Продадена</Status>
     <Gearbox>Ръчна</Gearbox>
-    <Extras>
-    </Extras>
+    <Extras></Extras>
     <NumberOfKeys>1</NumberOfKeys>
     <Tires>Зимни</Tires>
     <DateOfCreatingAd>2018-06-14</DateOfCreatingAd>
     <RealSellingPrice>0</RealSellingPrice>
     <MinBillValue>0</MinBillValue>
     <MaxBillValue>0</MaxBillValue>
-    <OwnerByVoucher>
-    </OwnerByVoucher>
-    <OwnerByBusiness>
-    </OwnerByBusiness>
+    <OwnerByVoucher></OwnerByVoucher>
+    <OwnerByBusiness></OwnerByBusiness>
     <FuelCosts>0</FuelCosts>
     <ServiceCosts>0</ServiceCosts>
     <CosmeticsCosts>1213</CosmeticsCosts>
@@ -168,9 +159,45 @@
     <Czs>0</Czs>
     <AreMileageReal>0</AreMileageReal>
     <Country>Австрия</Country>
-    <RegistrationNumber>
-    </RegistrationNumber>
-    <Shofer>
-    </Shofer>
+    <RegistrationNumber></RegistrationNumber>
+    <Shofer></Shofer>
+  </Car>
+  <Car>
+    <ContractNumber>96</ContractNumber>
+    <Category>Камион</Category>
+    <PayCase></PayCase>
+    <Brand>ACURA</Brand>
+    <Model>CDX</Model>
+    <BodyworkType></BodyworkType>
+    <HorsePower></HorsePower>
+    <FuelType>Бензин</FuelType>
+    <Color>Бежов</Color>
+    <ProductionDate></ProductionDate>
+    <Mileage></Mileage>
+    <Price>0</Price>
+    <IsSold>1</IsSold>
+    <AdditionalInfo></AdditionalInfo>
+    <EngineVolumeCc>----</EngineVolumeCc>
+    <Vin>----</Vin>
+    <Status>Продадена</Status>
+    <Gearbox>Ръчна</Gearbox>
+    <Extras></Extras>
+    <NumberOfKeys>0</NumberOfKeys>
+    <Tires>Зимни</Tires>
+    <DateOfCreatingAd>21-Jul-18</DateOfCreatingAd>
+    <RealSellingPrice>0</RealSellingPrice>
+    <MinBillValue>0</MinBillValue>
+    <MaxBillValue>0</MaxBillValue>
+    <OwnerByVoucher></OwnerByVoucher>
+    <OwnerByBusiness></OwnerByBusiness>
+    <FuelCosts>0</FuelCosts>
+    <ServiceCosts>0</ServiceCosts>
+    <CosmeticsCosts>0</CosmeticsCosts>
+    <Comission>0</Comission>
+    <Czs>0</Czs>
+    <AreMileageReal>0</AreMileageReal>
+    <Country>Англия</Country>
+    <RegistrationNumber></RegistrationNumber>
+    <Shofer></Shofer>
   </Car>
 </Cars>

@@ -84,7 +84,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label10.Location = new System.Drawing.Point(25, 273);
             this.label10.Name = "label10";
@@ -97,7 +97,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label9.Location = new System.Drawing.Point(25, 255);
             this.label9.Name = "label9";
@@ -110,7 +110,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label8.Location = new System.Drawing.Point(24, 236);
             this.label8.Name = "label8";
@@ -123,7 +123,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label7.Location = new System.Drawing.Point(25, 217);
             this.label7.Name = "label7";
@@ -136,7 +136,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label6.Location = new System.Drawing.Point(25, 198);
             this.label6.Name = "label6";
@@ -149,7 +149,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(25, 179);
             this.label5.Name = "label5";
@@ -162,7 +162,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(24, 161);
             this.label3.Name = "label3";
@@ -175,7 +175,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(25, 142);
             this.label4.Name = "label4";
@@ -188,7 +188,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label19.Location = new System.Drawing.Point(24, 125);
             this.label19.Name = "label19";
@@ -201,7 +201,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label18.Location = new System.Drawing.Point(24, 109);
             this.label18.Name = "label18";
@@ -214,7 +214,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label15.Location = new System.Drawing.Point(24, 91);
             this.label15.Name = "label15";
@@ -227,7 +227,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(25, 311);
             this.label12.Name = "label12";
@@ -240,7 +240,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label11.Location = new System.Drawing.Point(24, 292);
             this.label11.Name = "label11";
@@ -253,7 +253,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(24, 331);
             this.label13.Name = "label13";
@@ -266,7 +266,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label14.Location = new System.Drawing.Point(25, 350);
             this.label14.Name = "label14";
@@ -279,7 +279,7 @@
             this.label1234.AutoSize = true;
             this.label1234.BackColor = System.Drawing.Color.Transparent;
             this.label1234.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1234.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1234.ForeColor = System.Drawing.Color.Black;
             this.label1234.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1234.Location = new System.Drawing.Point(85, 54);
             this.label1234.Name = "label1234";
@@ -292,7 +292,7 @@
             this.label124434.AutoSize = true;
             this.label124434.BackColor = System.Drawing.Color.Transparent;
             this.label124434.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label124434.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label124434.ForeColor = System.Drawing.Color.Black;
             this.label124434.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label124434.Location = new System.Drawing.Point(129, 375);
             this.label124434.Name = "label124434";
@@ -306,7 +306,7 @@
             this.ExtrasTextbox.Location = new System.Drawing.Point(25, 394);
             this.ExtrasTextbox.Multiline = true;
             this.ExtrasTextbox.Name = "ExtrasTextbox";
-            this.ExtrasTextbox.Size = new System.Drawing.Size(287, 322);
+            this.ExtrasTextbox.Size = new System.Drawing.Size(287, 350);
             this.ExtrasTextbox.TabIndex = 154;
             // 
             // BrandLabel
@@ -314,7 +314,7 @@
             this.BrandLabel.AutoSize = true;
             this.BrandLabel.BackColor = System.Drawing.Color.Transparent;
             this.BrandLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrandLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.BrandLabel.ForeColor = System.Drawing.Color.Black;
             this.BrandLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BrandLabel.Location = new System.Drawing.Point(194, 91);
             this.BrandLabel.Name = "BrandLabel";
@@ -327,7 +327,7 @@
             this.ModelLabel.AutoSize = true;
             this.ModelLabel.BackColor = System.Drawing.Color.Transparent;
             this.ModelLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ModelLabel.ForeColor = System.Drawing.Color.Black;
             this.ModelLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ModelLabel.Location = new System.Drawing.Point(195, 108);
             this.ModelLabel.Name = "ModelLabel";
@@ -340,7 +340,7 @@
             this.TypeLabel.AutoSize = true;
             this.TypeLabel.BackColor = System.Drawing.Color.Transparent;
             this.TypeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TypeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.TypeLabel.ForeColor = System.Drawing.Color.Black;
             this.TypeLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TypeLabel.Location = new System.Drawing.Point(194, 125);
             this.TypeLabel.Name = "TypeLabel";
@@ -353,7 +353,7 @@
             this.engineVolumeLabel.AutoSize = true;
             this.engineVolumeLabel.BackColor = System.Drawing.Color.Transparent;
             this.engineVolumeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.engineVolumeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.engineVolumeLabel.ForeColor = System.Drawing.Color.Black;
             this.engineVolumeLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.engineVolumeLabel.Location = new System.Drawing.Point(194, 142);
             this.engineVolumeLabel.Name = "engineVolumeLabel";
@@ -366,7 +366,7 @@
             this.HorsePowerLabel.AutoSize = true;
             this.HorsePowerLabel.BackColor = System.Drawing.Color.Transparent;
             this.HorsePowerLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HorsePowerLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.HorsePowerLabel.ForeColor = System.Drawing.Color.Black;
             this.HorsePowerLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.HorsePowerLabel.Location = new System.Drawing.Point(195, 161);
             this.HorsePowerLabel.Name = "HorsePowerLabel";
@@ -379,7 +379,7 @@
             this.FuelTypeLabel.AutoSize = true;
             this.FuelTypeLabel.BackColor = System.Drawing.Color.Transparent;
             this.FuelTypeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FuelTypeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.FuelTypeLabel.ForeColor = System.Drawing.Color.Black;
             this.FuelTypeLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.FuelTypeLabel.Location = new System.Drawing.Point(195, 179);
             this.FuelTypeLabel.Name = "FuelTypeLabel";
@@ -392,7 +392,7 @@
             this.ColorLabel.AutoSize = true;
             this.ColorLabel.BackColor = System.Drawing.Color.Transparent;
             this.ColorLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColorLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ColorLabel.ForeColor = System.Drawing.Color.Black;
             this.ColorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ColorLabel.Location = new System.Drawing.Point(195, 198);
             this.ColorLabel.Name = "ColorLabel";
@@ -405,7 +405,7 @@
             this.ProductionDateLabel.AutoSize = true;
             this.ProductionDateLabel.BackColor = System.Drawing.Color.Transparent;
             this.ProductionDateLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductionDateLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ProductionDateLabel.ForeColor = System.Drawing.Color.Black;
             this.ProductionDateLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ProductionDateLabel.Location = new System.Drawing.Point(194, 217);
             this.ProductionDateLabel.Name = "ProductionDateLabel";
@@ -418,7 +418,7 @@
             this.MileageLabel.AutoSize = true;
             this.MileageLabel.BackColor = System.Drawing.Color.Transparent;
             this.MileageLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MileageLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.MileageLabel.ForeColor = System.Drawing.Color.Black;
             this.MileageLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MileageLabel.Location = new System.Drawing.Point(195, 236);
             this.MileageLabel.Name = "MileageLabel";
@@ -431,7 +431,7 @@
             this.VinLabel.AutoSize = true;
             this.VinLabel.BackColor = System.Drawing.Color.Transparent;
             this.VinLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VinLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.VinLabel.ForeColor = System.Drawing.Color.Black;
             this.VinLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.VinLabel.Location = new System.Drawing.Point(194, 255);
             this.VinLabel.Name = "VinLabel";
@@ -444,7 +444,7 @@
             this.GearboxLabel.AutoSize = true;
             this.GearboxLabel.BackColor = System.Drawing.Color.Transparent;
             this.GearboxLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GearboxLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.GearboxLabel.ForeColor = System.Drawing.Color.Black;
             this.GearboxLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.GearboxLabel.Location = new System.Drawing.Point(195, 273);
             this.GearboxLabel.Name = "GearboxLabel";
@@ -457,7 +457,7 @@
             this.TyresLabel.AutoSize = true;
             this.TyresLabel.BackColor = System.Drawing.Color.Transparent;
             this.TyresLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TyresLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.TyresLabel.ForeColor = System.Drawing.Color.Black;
             this.TyresLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TyresLabel.Location = new System.Drawing.Point(195, 292);
             this.TyresLabel.Name = "TyresLabel";
@@ -470,7 +470,7 @@
             this.CountryLabel.AutoSize = true;
             this.CountryLabel.BackColor = System.Drawing.Color.Transparent;
             this.CountryLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CountryLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.CountryLabel.ForeColor = System.Drawing.Color.Black;
             this.CountryLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CountryLabel.Location = new System.Drawing.Point(195, 311);
             this.CountryLabel.Name = "CountryLabel";
@@ -483,7 +483,7 @@
             this.NumberOfKeysLabel.AutoSize = true;
             this.NumberOfKeysLabel.BackColor = System.Drawing.Color.Transparent;
             this.NumberOfKeysLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumberOfKeysLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.NumberOfKeysLabel.ForeColor = System.Drawing.Color.Black;
             this.NumberOfKeysLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.NumberOfKeysLabel.Location = new System.Drawing.Point(195, 331);
             this.NumberOfKeysLabel.Name = "NumberOfKeysLabel";
@@ -496,7 +496,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label22.Location = new System.Drawing.Point(522, 542);
             this.label22.Name = "label22";
@@ -509,7 +509,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label23.Location = new System.Drawing.Point(506, 608);
             this.label23.Name = "label23";
@@ -522,7 +522,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label24.Location = new System.Drawing.Point(446, 654);
             this.label24.Name = "label24";
@@ -535,7 +535,7 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label25.Location = new System.Drawing.Point(484, 631);
             this.label25.Name = "label25";
@@ -548,7 +548,7 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label26.Location = new System.Drawing.Point(472, 700);
             this.label26.Name = "label26";
@@ -561,7 +561,7 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label27.Location = new System.Drawing.Point(423, 677);
             this.label27.Name = "label27";
@@ -574,7 +574,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label28.Location = new System.Drawing.Point(506, 585);
             this.label28.Name = "label28";
@@ -587,7 +587,7 @@
             this.PriceLabel.AutoSize = true;
             this.PriceLabel.BackColor = System.Drawing.Color.Transparent;
             this.PriceLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.PriceLabel.ForeColor = System.Drawing.Color.Black;
             this.PriceLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.PriceLabel.Location = new System.Drawing.Point(193, 347);
             this.PriceLabel.Name = "PriceLabel";
@@ -613,7 +613,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label16.Location = new System.Drawing.Point(24, 74);
             this.label16.Name = "label16";
@@ -626,7 +626,7 @@
             this.ContractLabel.AutoSize = true;
             this.ContractLabel.BackColor = System.Drawing.Color.Transparent;
             this.ContractLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContractLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ContractLabel.ForeColor = System.Drawing.Color.Black;
             this.ContractLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ContractLabel.Location = new System.Drawing.Point(195, 74);
             this.ContractLabel.Name = "ContractLabel";
@@ -674,7 +674,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(642, 720);
+            this.ClientSize = new System.Drawing.Size(642, 756);
             this.Controls.Add(this.ContractLabel);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.exitButton);

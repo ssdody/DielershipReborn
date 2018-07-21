@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoForm));
             this.CarInfoTextbox = new System.Windows.Forms.TextBox();
             this.CopyToClipboardButton = new System.Windows.Forms.Button();
             this.TopMostButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // CarInfoTextbox
@@ -57,6 +59,7 @@
             this.CopyToClipboardButton.Name = "CopyToClipboardButton";
             this.CopyToClipboardButton.Size = new System.Drawing.Size(24, 23);
             this.CopyToClipboardButton.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.CopyToClipboardButton, "Копиране на съдържанието");
             this.CopyToClipboardButton.UseVisualStyleBackColor = false;
             this.CopyToClipboardButton.Click += new System.EventHandler(this.CopyToClipboardButton_Click);
             // 
@@ -69,6 +72,7 @@
             this.TopMostButton.Name = "TopMostButton";
             this.TopMostButton.Size = new System.Drawing.Size(24, 23);
             this.TopMostButton.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.TopMostButton, "Да се вижда винаги");
             this.TopMostButton.UseVisualStyleBackColor = false;
             this.TopMostButton.Click += new System.EventHandler(this.TopMostButton_Click);
             // 
@@ -111,5 +115,6 @@
         private System.Windows.Forms.Button TopMostButton;
         private System.Windows.Forms.Button CopyToClipboardButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
