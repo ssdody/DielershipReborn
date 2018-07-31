@@ -51,6 +51,8 @@
         {
             this.InitializeComponent();
 
+            
+
             // authorization via MacAdress
             mac = GetMacAddress();
             bool IsAuth = false;
