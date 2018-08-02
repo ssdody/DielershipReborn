@@ -158,6 +158,7 @@ namespace Dealership1._0
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.RemoveButton = new System.Windows.Forms.Button();
             this.OrganizerButton = new System.Windows.Forms.Button();
+            this.CarsListCounterLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfKeysNumericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
             this.HidablePricePanel.SuspendLayout();
@@ -1540,11 +1541,19 @@ namespace Dealership1._0
             this.OrganizerButton.UseVisualStyleBackColor = false;
             this.OrganizerButton.Click += new System.EventHandler(this.OrganizerButton_Click);
             // 
+            // CarsListCounterLabel
+            // 
+            resources.ApplyResources(this.CarsListCounterLabel, "CarsListCounterLabel");
+            this.CarsListCounterLabel.BackColor = System.Drawing.Color.Black;
+            this.CarsListCounterLabel.ForeColor = System.Drawing.Color.White;
+            this.CarsListCounterLabel.Name = "CarsListCounterLabel";
+            // 
             // DielershipUIForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.CarsListCounterLabel);
             this.Controls.Add(this.OrganizerButton);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.SearchTextbox);
@@ -1774,6 +1783,7 @@ namespace Dealership1._0
         private System.Windows.Forms.Button OrganizerButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button DateValueUpdateButton;
+        private System.Windows.Forms.Label CarsListCounterLabel;
     }
 }
 

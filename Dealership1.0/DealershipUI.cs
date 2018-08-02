@@ -51,7 +51,7 @@
         {
             this.InitializeComponent();
 
-            
+
 
             // authorization via MacAdress
             mac = GetMacAddress();
@@ -98,7 +98,7 @@
             carsListBox.DisplayMember = "Display";
             carsListBox.ValueMember = "Display";
 
-
+                        this.CarsListCounterLabel.Text = "(" + carsListBox.Items.Count.ToString() + ")";
 
             //  pop up message for unsold cars for 3 or more months
             //  notifyIcon start
@@ -2176,6 +2176,7 @@
             //    MainPicturebox.Image = MainPicturebox.InitialImage;
 
             //}
+            this.CarsListCounterLabel.Text = "(" + carsListBox.Items.Count.ToString() + ")";
 
         }
 
