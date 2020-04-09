@@ -16,6 +16,7 @@ namespace Dealership1._0
         static extern IntPtr SendMessage(IntPtr hWnd, UInt32 Msg, IntPtr wParam, IntPtr lParam);
         System.Threading.Timer _timeoutTimer;
         string _caption;
+
         AutoClosingMessageBox(string text, string caption, int timeout)
         {
             _caption = caption;

@@ -1062,12 +1062,12 @@ namespace DealershipLibrary
             {
                 return string.Format(" {0} {1} {2}  ", Brand, Model, ProductionDate);
             }
-            private set
+            set
             {
-
+                value = this.Display;
             }
         }
-        
+
         public static string FirstLetterToUpperCaseOrConvertNullToEmptyString(string value)
         {
             if (string.IsNullOrEmpty(value))

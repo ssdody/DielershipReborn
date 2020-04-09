@@ -1,0 +1,6 @@
+D:\github-repos\Dealership-exoticcars\DielershipReborn\DealershipLibrary\bin\Debug\DealershipLibrary.dll
+D:\github-repos\Dealership-exoticcars\DielershipReborn\DealershipLibrary\bin\Debug\DealershipLibrary.pdb
+D:\github-repos\Dealership-exoticcars\DielershipReborn\DealershipLibrary\obj\Debug\DealershipLibrary.csprojAssemblyReference.cache
+D:\github-repos\Dealership-exoticcars\DielershipReborn\DealershipLibrary\obj\Debug\DealershipLibrary.csproj.CoreCompileInputs.cache
+D:\github-repos\Dealership-exoticcars\DielershipReborn\DealershipLibrary\obj\Debug\DealershipLibrary.dll
+D:\github-repos\Dealership-exoticcars\DielershipReborn\DealershipLibrary\obj\Debug\DealershipLibrary.pdb

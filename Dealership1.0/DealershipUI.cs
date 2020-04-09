@@ -42,8 +42,6 @@
         private readonly string mac = string.Empty;
         private bool IsAuth = false;
         private List<Car> expiredDateCars = new List<Car>();
-        //private object availableCarsListBinding = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
-        //private object soldCarsListBinding = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
         private bool IssoldCarsListShowed = false;
         private OrganizerForm organizationForm = OrganizerForm.CreateInstance();
 
@@ -51,24 +49,22 @@
         {
             this.InitializeComponent();
 
-
-
-            // authorization via MacAdress
-            mac = GetMacAddress();
-            bool IsAuth = false;
-            foreach (var auth in authorizedMacs)
-            {
-                if (auth.ToLower() == mac.ToLower())
-                {
-                    IsAuth = true;
-                    break;
-                }
-            }
-            if (!IsAuth)
-            {
-                MessageBox.Show("Not authorized!");
-                Environment.Exit(1);
-            }
+            //// authorization via MacAdress
+            //mac = GetMacAddress();
+            //bool IsAuth = false;
+            //foreach (var auth in authorizedMacs)
+            //{
+            //    if (auth.ToLower() == mac.ToLower())
+            //    {
+            //        IsAuth = true;
+            //        break;
+            //    }
+            //}
+            //if (!IsAuth)
+            //{
+            //    MessageBox.Show("Not authorized!");
+            //    Environment.Exit(1);
+            //}
 
 
             //          log in block
@@ -98,7 +94,7 @@
             carsListBox.DisplayMember = "Display";
             carsListBox.ValueMember = "Display";
 
-                        this.CarsListCounterLabel.Text = "(" + carsListBox.Items.Count.ToString() + ")";
+            this.CarsListCounterLabel.Text = "(" + carsListBox.Items.Count.ToString() + ")";
 
             //  pop up message for unsold cars for 3 or more months
             //  notifyIcon start
@@ -571,57 +567,7 @@
             //aTimer.Enabled = true;
 
             ClearTextboxesComboboxesAndExtras();
-
-
-
-
-            //if (Directory.Exists($"..\\Images\\{selectedCar.ContractNumber}"))
-            //{
-            //    Directory.Delete($"..\\Images\\{selectedCar.ContractNumber}", true);
-            //}
         }
-
-        //public void Organizer(bool condition)
-        //{
-        //    if (timer == null)
-        //    {
-        //        timer = new System.Timers.Timer();
-
-        //    }
-        //    if (!condition)
-        //    {
-        //        timer.Dispose();
-        //        return;
-
-        //    }
-        //    //// timer
-        //    //System.Timers.Timer Timer = new System.Timers.Timer();
-        //        timer.Enabled = condition;
-
-        //    if (timer.Enabled)
-        //    {
-        //        OrganizerButton.Image = Properties.Resources.icons8_timer_24__1_;
-        //        timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
-        //        timer.Interval = 10000;
-        //    }
-        //    else if (!timer.Enabled)
-        //    {
-        //        OrganizerButton.Image = Properties.Resources.icons8_timer_24;
-        //    }
-
-
-
-        //}
-        //private static void OnTimedEvent(object source, ElapsedEventArgs e)
-        //{
-        //    var tasklist = File.ReadAllLines("tasklist.txt").ToArray();
-        //    StringBuilder sb = new StringBuilder();
-        //    foreach (var line in tasklist)
-        //    {
-        //        sb.AppendLine(line);
-        //    }
-        //    MessageBox.Show(sb.ToString());
-        //}
 
         private void DielershipUI_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -842,26 +788,24 @@
             if (!IssoldCarsListShowed)
             {
                 this.carsListBinding.ResetBindings(true);
-                //
+                
                 var list = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
                 list.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.DateOfCreatingAd), DateTime.Parse(y.DateOfCreatingAd)));
                 list.Reverse();
-                //this.carsListBinding.DataSource = list;
-                //
-                this.carsListBinding.DataSource = list;//XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "0").ToList();
+               
+                this.carsListBinding.DataSource = list;
                 carsListBox.Refresh();
 
             }
             else if (IssoldCarsListShowed)
             {
                 this.carsListBinding.ResetBindings(true);
-                //
+                
                 var list = XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
                 list.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.DateOfCreatingAd), DateTime.Parse(y.DateOfCreatingAd)));
                 list.Reverse();
-                //this.carsListBinding.DataSource = list;
-                //
-                this.carsListBinding.DataSource = list;// XMLDatabase.LoadCarsListFromXmlDB().Where(x => x.IsSold == "1").ToList();
+              
+                this.carsListBinding.DataSource = list;
                 carsListBox.Refresh();
 
             }
@@ -1002,9 +946,8 @@
                 int carNumber = car.ContractNumber;
                 if (Directory.Exists($"..\\Images\\{carNumber}"))
                 {
-
                     string carNumberStr = carNumber.ToString();
-                    // cover pic naming
+
                     if (!File.Exists($"..\\Images\\{carNumber}\\{carNumber}header.jpeg"))
                     {
                         MainPicturebox.Image.Save($"..\\Images\\{carNumber}\\{carNumberStr}" + "header.jpeg", ImageFormat.Jpeg);
@@ -1023,18 +966,15 @@
                         return;
                     }
 
-
-
                 }
                 else
                 {
-
                     SaveImageToDir((car), fileName);
                 }
             }
         }
 
-        public void ClearTextboxesComboboxesAndExtras() // WORKS FINE
+        public void ClearTextboxesComboboxesAndExtras()
         {
             //comboboxes
             CategoryCombobox.SelectedIndex = -1;
@@ -1071,13 +1011,11 @@
             ShoferTextbox.Clear();
             RegistrationNumberTextbox.Clear();
 
-            //checkbox
             AreRealMileageCheckbox.Checked = false;
 
-            //labels
             ContractNumberInfoLabel.Text = "";
             DateOfCreatingAdLabel.Text = "";
-            //numericUpDown
+
             NumberOfKeysNumericUpDown.Value = 1;
 
             ExtrasCheckedListBox.ClearSelected();
@@ -1104,7 +1042,7 @@
             return finalId;
         }
 
-        private void UncheckCheckboxes() // duplicate with ExtrasChecklistBox.ClearSelected() but work different , don't know why :/ 
+        private void UncheckCheckboxes()
         {
             for (int i = 0; i < ExtrasCheckedListBox.Items.Count; i++)
             {
@@ -1131,7 +1069,6 @@
                 {
                     MainPicturebox.Image = null;
                     MainPicturebox.SizeMode = PictureBoxSizeMode.StretchImage;
-                    //var img = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
 
                     MainPicturebox.Image = Image.FromFile($"..\\Images\\{carNumber}\\{carNumber}header.jpeg");
 
@@ -1184,81 +1121,67 @@
 
         }
 
-        //private int IsIdAlreadyTaken(int id)
-        //{
-        //    int finalId = id;
-        //    foreach (var car in carsListBox.Items)
-        //    {
-        //        Car currentCar = (Car)car;
-        //        if (currentCar.ContractNumber >= id)
-        //        {
-        //            finalId++;
-        //        }
-
-        //    }
-        //    return finalId;
-        //}
-
         private void FillCarInfoToTextboxes(Car car)
         {
-
-            Car selectedCar = car;
-            //TopPanel
-            DateOfCreatingAdLabel.Text = selectedCar.DateOfCreatingAd;
-            ContractNumberInfoLabel.Text = selectedCar.ContractNumber.ToString();
-            PayCaseComboBox.SelectedIndex = PayCaseComboBox.FindStringExact(selectedCar.PayCase);
-            OwnerByBusinessTextbox.Text = selectedCar.OwnerByBusiness;
-            OwnerByVoucherTextbox.Text = selectedCar.OwnerByVoucher;
-            //comboboxes
-            CategoryCombobox.SelectedIndex = CategoryCombobox.FindStringExact(selectedCar.Category);
-            BrandComboBox.SelectedIndex = BrandComboBox.FindStringExact(selectedCar.Brand);
-            ModelCombobox.SelectedIndex = ModelCombobox.FindStringExact(selectedCar.Model);
-            BodyworkTypeCombobox.SelectedIndex = BodyworkTypeCombobox.FindStringExact(selectedCar.BodyworkType);
-            FuelTypeCombobox.SelectedIndex = FuelTypeCombobox.FindStringExact(selectedCar.FuelType);
-            ColorCombobox.SelectedIndex = ColorCombobox.FindStringExact(selectedCar.Color);
-            GearboxCombobox.SelectedIndex = GearboxCombobox.FindStringExact(selectedCar.Gearbox);
-            StatusCombobox.SelectedIndex = StatusCombobox.FindStringExact(selectedCar.Status);
-            TiresCombobox.SelectedIndex = TiresCombobox.FindStringExact(selectedCar.Tyres);
-
-            NumberOfKeysNumericUpDown.Value = Convert.ToDecimal(selectedCar.NumberOfKeys);
-            if (selectedCar.AreMileageReal == "1")
+            if (car != null)
             {
-                AreRealMileageCheckbox.Checked = true;
-            }
-            else
-            {
-                AreRealMileageCheckbox.Checked = false;
-            }
-            //textboxes
-            EngineVolumeCCTextBox.Text = selectedCar.EngineVolumeCc;
-            horsePowerTextBox.Text = selectedCar.HorsePower;
-            ProductionDateTextBox.Text = selectedCar.ProductionDate;
-            mileageTextBox.Text = selectedCar.Mileage;
-            priceTextBox.Text = selectedCar.Price;
-            VinTextBox.Text = selectedCar.Vin;
-            AdditionalInfoTextBox.Text = selectedCar.AdditionalInfo;
-            //hidable additional price panel
-            RealSellingPriceTextbox.Text = selectedCar.RealSellingPrice.ToString();
-            DDSTextbox.Text = (((double)selectedCar.RealSellingPrice / 100) * 20).ToString();
-            MinBillValueTextbox.Text = selectedCar.MinBillValue.ToString();
-            MaxBillValueTextbox.Text = selectedCar.MaxBillValue.ToString();
-            FuelCostsTextbox.Text = selectedCar.FuelCosts.ToString();
-            ServiceCostsTextbox.Text = selectedCar.ServiceCosts.ToString();
-            CosmeticsCostsTextbox.Text = selectedCar.CosmeticsCosts.ToString();
-            ComissionTextbox.Text = selectedCar.Comission.ToString();
-            CzsTextbox.Text = selectedCar.Czs.ToString();
-            RegistrationNumberTextbox.Text = selectedCar.RegistrationNumber;
-            ShoferTextbox.Text = selectedCar.Shofer;
-            CountryCombobox.SelectedIndex = CountryCombobox.FindStringExact(selectedCar.Country);
+                Car selectedCar = car;
+                //TopPanel
+                DateOfCreatingAdLabel.Text = selectedCar.DateOfCreatingAd ?? "";
+                ContractNumberInfoLabel.Text = selectedCar.ContractNumber.ToString();
+                PayCaseComboBox.SelectedIndex = PayCaseComboBox.FindStringExact(selectedCar.PayCase);
+                OwnerByBusinessTextbox.Text = selectedCar.OwnerByBusiness;
+                OwnerByVoucherTextbox.Text = selectedCar.OwnerByVoucher;
+                //comboboxes
+                CategoryCombobox.SelectedIndex = CategoryCombobox.FindStringExact(selectedCar.Category);
+                BrandComboBox.SelectedIndex = BrandComboBox.FindStringExact(selectedCar.Brand);
+                ModelCombobox.SelectedIndex = ModelCombobox.FindStringExact(selectedCar.Model);
+                BodyworkTypeCombobox.SelectedIndex = BodyworkTypeCombobox.FindStringExact(selectedCar.BodyworkType);
+                FuelTypeCombobox.SelectedIndex = FuelTypeCombobox.FindStringExact(selectedCar.FuelType);
+                ColorCombobox.SelectedIndex = ColorCombobox.FindStringExact(selectedCar.Color);
+                GearboxCombobox.SelectedIndex = GearboxCombobox.FindStringExact(selectedCar.Gearbox);
+                StatusCombobox.SelectedIndex = StatusCombobox.FindStringExact(selectedCar.Status);
+                TiresCombobox.SelectedIndex = TiresCombobox.FindStringExact(selectedCar.Tyres);
 
-            for (int i = 0; i < ExtrasCheckedListBox.Items.Count; i++)
-            {
-                if (car.Extras.Contains(ExtrasCheckedListBox.Items[i].ToString()))
+                NumberOfKeysNumericUpDown.Value = Convert.ToDecimal(selectedCar.NumberOfKeys);
+                if (selectedCar.AreMileageReal == "1")
                 {
-                    ExtrasCheckedListBox.SetItemCheckState(i, CheckState.Checked);
+                    AreRealMileageCheckbox.Checked = true;
+                }
+                else
+                {
+                    AreRealMileageCheckbox.Checked = false;
+                }
+
+                EngineVolumeCCTextBox.Text = selectedCar.EngineVolumeCc;
+                horsePowerTextBox.Text = selectedCar.HorsePower;
+                ProductionDateTextBox.Text = selectedCar.ProductionDate;
+                mileageTextBox.Text = selectedCar.Mileage;
+                priceTextBox.Text = selectedCar.Price;
+                VinTextBox.Text = selectedCar.Vin;
+                AdditionalInfoTextBox.Text = selectedCar.AdditionalInfo;
+
+                RealSellingPriceTextbox.Text = selectedCar.RealSellingPrice.ToString();
+                DDSTextbox.Text = (((double)selectedCar.RealSellingPrice / 100) * 20).ToString();
+                MinBillValueTextbox.Text = selectedCar.MinBillValue.ToString();
+                MaxBillValueTextbox.Text = selectedCar.MaxBillValue.ToString();
+                FuelCostsTextbox.Text = selectedCar.FuelCosts.ToString();
+                ServiceCostsTextbox.Text = selectedCar.ServiceCosts.ToString();
+                CosmeticsCostsTextbox.Text = selectedCar.CosmeticsCosts.ToString();
+                ComissionTextbox.Text = selectedCar.Comission.ToString();
+                CzsTextbox.Text = selectedCar.Czs.ToString();
+                RegistrationNumberTextbox.Text = selectedCar.RegistrationNumber;
+                ShoferTextbox.Text = selectedCar.Shofer;
+                CountryCombobox.SelectedIndex = CountryCombobox.FindStringExact(selectedCar.Country);
+
+                for (int i = 0; i < ExtrasCheckedListBox.Items.Count; i++)
+                {
+                    if (car.Extras.Contains(ExtrasCheckedListBox.Items[i].ToString()))
+                    {
+                        ExtrasCheckedListBox.SetItemCheckState(i, CheckState.Checked);
+                    }
                 }
             }
-
         }
 
         private void ComboboxesAndTextboxesReadonly(bool condition)
@@ -1276,9 +1199,7 @@
 
             this.IsInfoShowed = true;
             addButton.Image = new Bitmap(Resources.icons8_plus_math_24__1_);
-
-
-        }// todo
+        }
 
         private bool CheckIfAllComboboxesAreAssigned()
         {
@@ -1296,7 +1217,6 @@
 
             if (comboboxesList.Any(x => x.SelectedItem == null))
             {
-                //comboboxesList.Find(x => x.SelectedItem == null).Focus();
                 CanContinue = false;
             }
             else
@@ -1304,29 +1224,9 @@
                 CanContinue = true;
             }
 
-            //}
-
-            //foreach (var box in comboboxesList)
-            //{
-            //    if (box.SelectedItem == null)
-            //    {
-            //        MessageBox.Show("Всички полета трябва да са попълнени");
-            //        box.Focus();
-            //        CanContinue = false;
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        CanContinue = true;
-            //    }
-            //}
-
-
             return CanContinue;
-
         }
 
-        //keypresses
         private void carsListBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -1361,7 +1261,6 @@
             {
                 e.Handled = true;
             }
-            //e.Handled = !char.IsDigit(e.KeyChar);
         }
 
         private void horsePowerTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -1464,7 +1363,7 @@
 
             }
         }
-        //updateButtons
+
         private void StatusValueUpdateButton_Click(object sender, EventArgs e)
         {
 
@@ -1533,10 +1432,9 @@
         private void CosmeticsCostsValueUpdateButton_Click(object sender, EventArgs e)
         {
             var car = (Car)carsListBox.SelectedItem;
+
             if (car != null && IsInfoShowed)
             {
-                //    UpdateTexboxButtonLogic(car,CosmeticsCostsTextbox, "CosmeticsCosts", CosmeticsCostsTextbox.Text);
-
                 var newValue = CosmeticsCostsTextbox.Text;
                 var oldValue = car.CosmeticsCosts;
 
@@ -1605,7 +1503,6 @@
 
                 if (newValue != oldValue.ToString())
                 {
-                    //UpdateTexboxButtonLogic(car, RealSellingPriceTextbox, "RealSellingPrice", RealSellingPriceTextbox.Text);
                     XMLDatabase.UpdateCarData(car, "RealSellingPrice", RealSellingPriceTextbox.Text);
                     MessageBox.Show($"Стойноста е променена!\n{oldValue}->{newValue}");
 
@@ -1625,7 +1522,7 @@
                 UpdateComboboxButtonLogic(CategoryCombobox, "Category", car.Category);
 
             }
-        }//ok
+        }
 
         private void BrandValueUpdateButton_Click(object sender, EventArgs e)
         {
@@ -1635,7 +1532,7 @@
 
                 UpdateComboboxButtonLogic(BrandComboBox, "Brand", car.Brand);
             }
-        }//ok
+        }
 
         private void ModelValueUpdateButton_Click(object sender, EventArgs e)
         {
@@ -1645,7 +1542,7 @@
 
                 UpdateComboboxButtonLogic(ModelCombobox, "Model", car.Model);
             }
-        }//ok
+        }
 
         private void BodyworkTypeValueUpdateButton_Click(object sender, EventArgs e)
         {
@@ -1655,7 +1552,7 @@
 
                 UpdateComboboxButtonLogic(BodyworkTypeCombobox, "BodyworkType", car.BodyworkType);
             }
-        }//ok
+        }
 
         private void EngineVolumeCcValueUpdateButton_Click(object sender, EventArgs e)
         {
@@ -1665,9 +1562,9 @@
 
                 UpdateTexboxButtonLogic(car, EngineVolumeCCTextBox, "EngineVolumeCc", car.EngineVolumeCc);
             }
-        }//ok
+        }
 
-        private void HorsePowerValueUpdateButton_Click(object sender, EventArgs e)//ok
+        private void HorsePowerValueUpdateButton_Click(object sender, EventArgs e)
         {
             var car = (Car)carsListBox.SelectedItem;
             if (car != null && IsInfoShowed)
@@ -1686,7 +1583,7 @@
 
                 UpdateComboboxButtonLogic(FuelTypeCombobox, "FuelType", car.FuelType);
             }
-        }//ok
+        }
 
         private void ColorValueUpdateButton_Click(object sender, EventArgs e)
         {
@@ -1696,7 +1593,7 @@
 
                 UpdateComboboxButtonLogic(ColorCombobox, "Color", car.Color);
             }
-        }//ok
+        }
 
         private void EngineVolumeCcValueUpdateButton_Click_1(object sender, EventArgs e)
         {
@@ -1718,7 +1615,7 @@
             }
         }
 
-        //texboxUpdateLogic
+
         private void UpdateTexboxButtonLogic(Car car, TextBox textBox, string nodeElement, string oldValue)
         {
             if (IsInfoShowed && car != null)
@@ -1741,11 +1638,8 @@
                 }
             }
 
-        }//ok
+        }
 
-
-
-        //comboboxUpdateLogic
         private void UpdateComboboxButtonLogic(ComboBox comboBox, string nodeElement, string currentValue)
         {
             var car = (Car)carsListBox.SelectedItem;
@@ -1773,7 +1667,7 @@
                 ResetCarsList();
                 comboBox.SelectedItem = newValue;
             }
-        }//ok
+        }
 
         private void MileageValueUpdateButton_Click(object sender, EventArgs e)
         {
@@ -1911,8 +1805,6 @@
 
         private void ContractButton_Click(object sender, EventArgs e)
         {
-
-
             string text = File.ReadAllText("BuySellContract.txt");
             text = Regex.Replace(text, "city", "София");
             text = Regex.Replace(text, "date", DateTime.Now.Date.ToShortDateString());
@@ -1923,9 +1815,8 @@
             text = Regex.Replace(text, "egn", "923234819");
             text = Regex.Replace(text, "jiveesht", "Перник");
             text = Regex.Replace(text, "kvartal", "Младост");
+
             File.WriteAllText("test.txt", text);
-
-
         }
 
         private void OwnerByVoucherValueUpdateButton_Click(object sender, EventArgs e)
@@ -1968,7 +1859,6 @@
 
         private void PayCaseValueUpdateButton_Click(object sender, EventArgs e)
         {
-
             var car = (Car)carsListBox.SelectedItem;
             if (car != null && IsInfoShowed)
             {
@@ -1989,39 +1879,6 @@
 
                 printForm.Show();
             }
-            //try
-            //{
-            //    int x = SystemInformation.WorkingArea.X;
-            //    int y = SystemInformation.WorkingArea.Y;
-
-            //    int width = this.Width;
-            //    int height = this.Height;
-
-            //    Rectangle bounds = new Rectangle(x, y, width, height);
-
-            //    Bitmap img = new Bitmap(width, height);
-
-            //    this.DrawToBitmap(img, bounds);
-            //    string date = "..\\" + DateTime.Now.ToString("Mdyyyy");
-            //    img.Save(date + ".bmp");
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message.ToString());
-            //    return;
-            //}
-            //DialogResult messageDialog = MessageBox.Show("Изображението е запазено.\nИскате ли да отворите изображението?", "Print", MessageBoxButtons.YesNo,
-            //    MessageBoxIcon.Question);
-            //if (messageDialog == DialogResult.Yes)
-            //{
-            //    string date = "..\\" + DateTime.Now.ToString("Mdyyyy") + ".bmp";
-            //    Process.Start(date);
-            //}
-            //else if (messageDialog == DialogResult.No)
-            //{
-
-            //}
 
         }
 

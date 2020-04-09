@@ -6,6 +6,7 @@
     <PayCase>EXOTIC CARS</PayCase>
     <Brand>AUDI</Brand>
     <Model>Q7</Model>
+	<Country>Italy</Country>
     <BodyworkType>
     </BodyworkType>
     <HorsePower>400</HorsePower>
@@ -36,6 +37,9 @@
     <Comission>1223</Comission>
     <Czs>21</Czs>
     <AreMileageReal>0</AreMileageReal>
+	<IsSold>0</IsSold>
+	<RegistrationNumber></RegistrationNumber>
+	<Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>59</ContractNumber>
@@ -47,6 +51,7 @@
     <HorsePower>400</HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Графит</Color>
+	<Country>Italy</Country>
     <ProductionDate>2010</ProductionDate>
     <Mileage>21150</Mileage>
     <Price>50000</Price>
@@ -72,6 +77,9 @@
     <Comission>4244</Comission>
     <Czs>523</Czs>
     <AreMileageReal>0</AreMileageReal>
+	<IsSold>0</IsSold>
+	<RegistrationNumber></RegistrationNumber>
+	<Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>61</ContractNumber>
@@ -83,6 +91,7 @@
     <HorsePower>250</HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Лилав</Color>
+	<Country>Italy</Country>
     <ProductionDate>2012</ProductionDate>
     <Mileage>212022</Mileage>
     <Price>3250</Price>
@@ -106,9 +115,13 @@
     <Comission>1233</Comission>
     <Czs>2344</Czs>
     <AreMileageReal>0</AreMileageReal>
+	<IsSold>0</IsSold>
+	<RegistrationNumber></RegistrationNumber>
+	<Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>65</ContractNumber>
+	<Country>Itali</Country>
     <Category>Лек автомобил</Category>
     <PayCase>DYNAMIC AUTO</PayCase>
     <Brand>BMW</Brand>
@@ -117,6 +130,7 @@
     <HorsePower>450</HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Бял</Color>
+	<Country>Italy</Country>
     <ProductionDate>2012</ProductionDate>
     <Mileage>23010</Mileage>
     <Price>60000</Price>
@@ -140,6 +154,9 @@
     <Comission>1100</Comission>
     <Czs>234</Czs>
     <AreMileageReal>0</AreMileageReal>
+	<IsSold>0</IsSold>
+	<RegistrationNumber></RegistrationNumber>
+	<Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>68</ContractNumber>
@@ -151,6 +168,7 @@
     <HorsePower>150</HorsePower>
     <FuelType>Бензин</FuelType>
     <Color>Сив</Color>
+	<Country>Italy</Country>
     <ProductionDate>2003</ProductionDate>
     <Mileage>1323214</Mileage>
     <Price>3000</Price>
@@ -176,6 +194,9 @@
     <Comission>0</Comission>
     <Czs>0</Czs>
     <AreMileageReal>1</AreMileageReal>
+	<IsSold>0</IsSold>
+	<RegistrationNumber></RegistrationNumber>
+	<Shofer></Shofer>
   </Car>
   <Car>
     <ContractNumber>77</ContractNumber>
@@ -187,6 +208,7 @@
     <HorsePower>140</HorsePower>
     <FuelType>Дизел</FuelType>
     <Color>Черен</Color>
+	<Country>Italy</Country>
     <ProductionDate>2005</ProductionDate>
     <Mileage>2329900</Mileage>
     <Price>8999</Price>
@@ -211,5 +233,8 @@
     <Comission>1000</Comission>
     <Czs>234</Czs>
     <AreMileageReal>0</AreMileageReal>
+	<IsSold>0</IsSold>
+	<RegistrationNumber></RegistrationNumber>
+	<Shofer></Shofer>
   </Car>
 </Cars>

@@ -32,7 +32,7 @@ namespace Dealership1._0
         private bool isElapsedAssign;
         public static bool isOrganizerOnState;
         public int PopBackInterval;
-        // only writes textbox.text to text file in separate lines
+
         private OrganizerForm()
         {
             InitializeComponent();
@@ -49,40 +49,24 @@ namespace Dealership1._0
 
         private void StartTimerButton_Click(object sender, EventArgs e)
         {
-            if (!File.Exists(path))
+            File.WriteAllText(path, String.Empty);
+
+            var lines = TaskTextbox.Text.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            using (var streamWriter = new StreamWriter(path, true))
             {
-                File.Create(path);
-            }
-            else
-            {// write textbox.text to file
-                File.WriteAllText(path, String.Empty);
-
-                var lines = TaskTextbox.Text.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
-                using (var streamWriter = new StreamWriter(path, true))
+                foreach (var line in lines)
                 {
-                    //if (lines.Count() < 1)
-                    //{
-                    //    streamWriter.WriteLine();
-
-                    //}
-                    foreach (var line in lines)
-                    {
-                        streamWriter.WriteLine(line);
-                    }
+                    streamWriter.WriteLine(line);
                 }
-                //end writing
-                
-                OrganizerOnOff(true);
-
-                StartButton.Enabled = false;
-                ElapsedTimeNumericUpDown.Enabled = false;
-                isOrganizerOnState = true;
-                TaskTextbox.Enabled = false;
-                StopButton.Enabled = true;
-
-                
             }
 
+            OrganizerOnOff(true);
+
+            StartButton.Enabled = false;
+            ElapsedTimeNumericUpDown.Enabled = false;
+            isOrganizerOnState = true;
+            TaskTextbox.Enabled = false;
+            StopButton.Enabled = true;           
         }
 
         private void StopButton_Click(object sender, EventArgs e)
@@ -94,27 +78,26 @@ namespace Dealership1._0
             isOrganizerOnState = false;
             TaskTextbox.Enabled = true;
             StopButton.Enabled = false;
-
         }
 
         private void OrganizerForm_Load(object sender, EventArgs e)
         {
             this.StopButton.Enabled = false;
-
-            var lines = File.ReadAllLines(path);
-            foreach (var line in lines)
+            if (File.Exists(path))
             {
-                TaskTextbox.Text += line;
-                TaskTextbox.Text += "\r\n";
+                var lines = File.ReadAllLines(path);
+                foreach (var line in lines)
+                {
+                    TaskTextbox.Text += line;
+                    TaskTextbox.Text += "\r\n";
+                }
             }
         }
 
         private void OrganizerForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
             this.timer = null;
             this.Hide();
-
         }
 
         public void OrganizerOnOff(bool condition)
@@ -148,12 +131,12 @@ namespace Dealership1._0
                 timer.Start();
             }
 
-            
+
 
 
         }
 
-        private  void OnTimedEvent(object source, ElapsedEventArgs e)
+        private void OnTimedEvent(object source, ElapsedEventArgs e)
         {
             var tasklist = File.ReadAllLines("tasklist.txt").ToArray();
             StringBuilder sb = new StringBuilder();
